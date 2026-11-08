@@ -1,0 +1,2529 @@
+{
+  "as_of_utc": "2026-11-08T22:05:36.582394+00:00",
+  "runs": {
+    "S01_eval_seed42": {
+      "final_test.json": {
+        "success_rate_pct": 8.25,
+        "pass_at_4_pct": 20.0,
+        "response_length": 3656.775,
+        "turns": 2.7525,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.18619436875567666,
+        "split": "test",
+        "seconds": 259.1120635129919,
+        "generated_tokens": 1462710
+      },
+      "validation_0000.json": {
+        "success_rate_pct": 9.0,
+        "pass_at_4_pct": 19.0,
+        "response_length": 3744.115,
+        "turns": 2.04,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.15318627450980393,
+        "split": "validation",
+        "seconds": 228.38644730499072,
+        "generated_tokens": 1497646
+      },
+      "supplemental500/summary.json": {
+        "n_tasks": 500,
+        "n_trajectories": 2000,
+        "success_rate": 0.0935,
+        "pass_at_4": 0.206
+      },
+      "protocol": {
+        "seed": 42,
+        "method": "grpo",
+        "environment": "sokoban",
+        "steps": 400,
+        "train_batch_size": 64,
+        "flat_group_size": 4,
+        "eval_every": 25,
+        "eval_samples": 4,
+        "max_response_tokens": 4096,
+        "max_turns": 10,
+        "ucf_beta": null,
+        "ucf_controller": null,
+        "initial_branches": 4,
+        "branch_interval": 5,
+        "top_k_branches": 2
+      },
+      "verified": {
+        "passed": true,
+        "steps": null,
+        "metrics_rows": null,
+        "duplicate_metric_rows": null,
+        "evaluation": {
+          "main100": {
+            "n_tasks": 100,
+            "success_rate": 0.0825,
+            "pass_at_4": 0.2
+          },
+          "supplemental500": {
+            "n_tasks": 500,
+            "success_rate": 0.0935,
+            "pass_at_4": 0.206
+          }
+        }
+      },
+      "validation_mean_17_points": null,
+      "final_sets": {
+        "main100": {
+          "n_tasks": 100,
+          "success_rate_pct": 8.25,
+          "pass_at_4_pct": 20.0
+        },
+        "supplemental500": {
+          "n_tasks": 500,
+          "success_rate_pct": 9.35,
+          "pass_at_4_pct": 20.6
+        }
+      },
+      "source_sha256": {
+        "final_test.json": "9db875cd3deb08b5386adc8ba489f989e912fa7e5858b4494a9a9f9fe592711f",
+        "validation_0000.json": "5b0b4bd8f67b4d10e863b7c96edd790b186c4931d22b5170f4da5d69e855a1ba",
+        "supplemental500/summary.json": "38b8687b89b115786fbdcaa9494d3caef41f627d1681738a4e0bfd5f7dfd9db5",
+        "config.json": "d628f8b7063220273b39b67a979703ffc68a1402895ff7e08c8e36af55297d84",
+        "verification.json": "5c4e0cab54292bd13a40a15802f78b982a1542c680d156d5f3b8149068adec25",
+        "additional_metrics.json": "3e4f7300d589382fef008cdc1899b9f1117e28c73ffa5045a41381e6af4e7c60"
+      }
+    },
+    "S02_SFT_seed42": {
+      "verified": {
+        "passed": true,
+        "steps": 63,
+        "metrics_rows": 63,
+        "duplicate_metric_rows": 0,
+        "evaluation": {
+          "main100": {
+            "n_tasks": 100,
+            "success_rate": 0.43,
+            "pass_at_4": 0.61
+          },
+          "supplemental500": {
+            "n_tasks": 500,
+            "success_rate": 0.391,
+            "pass_at_4": 0.57
+          }
+        }
+      },
+      "run_report_numeric": {
+        "steps": 63,
+        "verified": true,
+        "selection_uses_test": false
+      },
+      "source_sha256": {
+        "verification.json": "aee996c1dccdf0e82a30729fd5a69e27d98fb12d2c0b419fa6db3794fcd72164",
+        "run_report.json": "b9c1af1196185685df6b338d4169962a4892b867d141d4897d777e0b254b68a6",
+        "sft/status.json": "a5b57b70f6e21eb1b6038f654ae3c6519ad6cb8c47d906dbd35f41bf36bd2c65"
+      },
+      "cost": {
+        "sft_elapsed_seconds": 729.0450543570041,
+        "sft_peak_allocated_gib": 35.06868362426758,
+        "steps": 63,
+        "trajectories": 1000
+      }
+    },
+    "S03_grpo_seed42": {
+      "final_test.json": {
+        "success_rate_pct": 75.25,
+        "pass_at_4_pct": 76.0,
+        "response_length": 25.61,
+        "turns": 6.4025,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "test",
+        "seconds": 21.79650810000021,
+        "generated_tokens": 10244
+      },
+      "validation_0000.json": {
+        "success_rate_pct": 37.0,
+        "pass_at_4_pct": 56.00000000000001,
+        "response_length": 33.42,
+        "turns": 8.355,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 27.642071842987207,
+        "generated_tokens": 13368
+      },
+      "validation_0025.json": {
+        "success_rate_pct": 70.25,
+        "pass_at_4_pct": 73.0,
+        "response_length": 27.76,
+        "turns": 6.94,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 22.24263626598986,
+        "generated_tokens": 11104
+      },
+      "validation_0050.json": {
+        "success_rate_pct": 75.75,
+        "pass_at_4_pct": 79.0,
+        "response_length": 26.72,
+        "turns": 6.68,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 20.974335270002484,
+        "generated_tokens": 10688
+      },
+      "validation_0075.json": {
+        "success_rate_pct": 77.5,
+        "pass_at_4_pct": 80.0,
+        "response_length": 27.33,
+        "turns": 6.8325,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 21.85725020300015,
+        "generated_tokens": 10932
+      },
+      "validation_0100.json": {
+        "success_rate_pct": 76.0,
+        "pass_at_4_pct": 76.0,
+        "response_length": 27.84,
+        "turns": 6.96,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 21.891372469995986,
+        "generated_tokens": 11136
+      },
+      "validation_0400.json": {
+        "success_rate_pct": 83.0,
+        "pass_at_4_pct": 83.0,
+        "response_length": 26.81,
+        "turns": 6.7025,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 23.044109222013503,
+        "generated_tokens": 10724
+      },
+      "supplemental500/summary.json": {
+        "n_tasks": 500,
+        "n_trajectories": 2000,
+        "success_rate": 0.77,
+        "pass_at_4": 0.776
+      },
+      "protocol": {
+        "seed": 42,
+        "method": "grpo",
+        "environment": "sokoban",
+        "steps": 400,
+        "train_batch_size": 64,
+        "flat_group_size": 4,
+        "eval_every": 25,
+        "eval_samples": 4,
+        "max_response_tokens": 10240,
+        "max_turns": 10,
+        "ucf_beta": null,
+        "ucf_controller": null,
+        "initial_branches": 4,
+        "branch_interval": 5,
+        "top_k_branches": 2
+      },
+      "verified": {
+        "passed": true,
+        "steps": 400,
+        "metrics_rows": 400,
+        "duplicate_metric_rows": 0,
+        "evaluation": {
+          "main100": {
+            "n_tasks": 100,
+            "success_rate": 0.7525,
+            "pass_at_4": 0.76
+          },
+          "supplemental500": {
+            "n_tasks": 500,
+            "success_rate": 0.77,
+            "pass_at_4": 0.776
+          }
+        }
+      },
+      "validation_mean_17_points": {
+        "success_rate_pct": 76.5,
+        "pass_at_4_pct": 78.6470588235294
+      },
+      "final_sets": {
+        "main100": {
+          "n_tasks": 100,
+          "success_rate_pct": 75.25,
+          "pass_at_4_pct": 76.0
+        },
+        "supplemental500": {
+          "n_tasks": 500,
+          "success_rate_pct": 77.0,
+          "pass_at_4_pct": 77.6
+        }
+      },
+      "run_report_numeric": {
+        "steps": 400,
+        "verified": true,
+        "selection_uses_test": false
+      },
+      "metrics_rows": 400,
+      "last_step": 400,
+      "training_complete": true,
+      "cost": {
+        "generated_tokens": 2705733,
+        "input_tokens": 442931330,
+        "step_seconds": 17313.93473736501,
+        "rollout_seconds": 5731.102558666942,
+        "elapsed_seconds_at_last_step": 20145.23079438199,
+        "peak_allocated_gib": 64.9913911819458
+      },
+      "windows": {
+        "all": {
+          "n": 400,
+          "step_range": [
+            1,
+            400
+          ],
+          "kl": {
+            "mean": 0.1480648547871729,
+            "min": 0.0024792742888166686,
+            "max": 3.5574280051514506
+          },
+          "success_rate": {
+            "mean": 0.749326171875,
+            "min": 0.3515625,
+            "max": 0.91015625
+          },
+          "initial_group_counts_mixed": {
+            "mean": 6.3875,
+            "min": 0,
+            "max": 36
+          },
+          "all_failure_group_fraction_mean": 0.2065234375
+        },
+        "first50": {
+          "n": 50,
+          "step_range": [
+            1,
+            50
+          ],
+          "kl": {
+            "mean": 0.09678534111972567,
+            "min": 0.0024792742888166686,
+            "max": 0.2026623271376593
+          },
+          "success_rate": {
+            "mean": 0.627734375,
+            "min": 0.3515625,
+            "max": 0.828125
+          },
+          "initial_group_counts_mixed": {
+            "mean": 17.98,
+            "min": 7,
+            "max": 36
+          },
+          "all_failure_group_fraction_mean": 0.2409375
+        },
+        "first75": {
+          "n": 75,
+          "step_range": [
+            1,
+            75
+          ],
+          "kl": {
+            "mean": 0.12001241267420483,
+            "min": 0.0024792742888166686,
+            "max": 0.7861130591481924
+          },
+          "success_rate": {
+            "mean": 0.6592708333333334,
+            "min": 0.3515625,
+            "max": 0.828125
+          },
+          "initial_group_counts_mixed": {
+            "mean": 14.08,
+            "min": 1,
+            "max": 36
+          },
+          "all_failure_group_fraction_mean": 0.23875
+        },
+        "last20": {
+          "n": 20,
+          "step_range": [
+            381,
+            400
+          ],
+          "kl": {
+            "mean": 0.17342437995503132,
+            "min": 0.10902995057404041,
+            "max": 0.32626993308076635
+          },
+          "success_rate": {
+            "mean": 0.80078125,
+            "min": 0.6875,
+            "max": 0.91015625
+          },
+          "initial_group_counts_mixed": {
+            "mean": 3.6,
+            "min": 1,
+            "max": 10
+          },
+          "all_failure_group_fraction_mean": 0.175
+        }
+      },
+      "source_sha256": {
+        "final_test.json": "1ba3ebdad72a72d8d906ccb8f0379f1a2730855104e44266f52c102a13f3ddf3",
+        "validation_0000.json": "3eb4812ae6cfef1e294d578093ab1a417958614509adc700c30e0d1ea2137515",
+        "validation_0025.json": "a1494bd7cc58be0fb8052118c30e710cede8a5bbd905c57de97b2dd0f513e343",
+        "validation_0050.json": "082ce5793b2e178003ad4eba9b1f1880d6a71a6e0d1dc8edc8b8a7dd451a9535",
+        "validation_0075.json": "9632cb2aa68039ad2fbfae2e0bf3201c4b261c305c605464ad83532fc3eeb5f2",
+        "validation_0100.json": "6a916cee4c8c248e9a324c3699df8cc809027117f52f1cb75e0673921d6dd873",
+        "validation_0400.json": "535e79d8852d9b6e4e35ba35a1e0f4c1926cdc68ff101904c866460f25b3cc72",
+        "supplemental500/summary.json": "518771afbc132c94da0dd4fe29c02c39537e2bceb241126ca6191e833dca20ed",
+        "config.json": "989eb1e9af9f0a0464ab22941e13d229906e8b56abc5da15eb3b06d57908c404",
+        "verification.json": "6730f04e4291b8123760777a1c4e2a0902d4b308e341a4add2551fab940d704f",
+        "additional_metrics.json": "adb1c9d4fb45b88c2f2dd5588c8ee4691818d486f8b94b4215bccbb22368a06c",
+        "run_report.json": "3444d47c14f6074102c95f99d4a11cc21c59a8780fa5d13683bfe108ba60311c",
+        "train_metrics.jsonl": "a4feded56dbe2b066959f0a57ecfe25912ad3136208c5dbd7b06a1f184e47690"
+      }
+    },
+    "S04_tree_random_seed42": {
+      "final_test.json": {
+        "success_rate_pct": 76.5,
+        "pass_at_4_pct": 77.0,
+        "response_length": 26.12,
+        "turns": 6.53,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "test",
+        "seconds": 21.417811783991056,
+        "generated_tokens": 10448
+      },
+      "validation_0000.json": {
+        "success_rate_pct": 37.0,
+        "pass_at_4_pct": 56.00000000000001,
+        "response_length": 33.42,
+        "turns": 8.355,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 29.54750189598417,
+        "generated_tokens": 13368
+      },
+      "validation_0025.json": {
+        "success_rate_pct": 74.5,
+        "pass_at_4_pct": 77.0,
+        "response_length": 28.05,
+        "turns": 7.0125,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 23.570436599984532,
+        "generated_tokens": 11220
+      },
+      "validation_0050.json": {
+        "success_rate_pct": 79.0,
+        "pass_at_4_pct": 80.0,
+        "response_length": 27.74,
+        "turns": 6.935,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 23.25535132799996,
+        "generated_tokens": 11096
+      },
+      "validation_0075.json": {
+        "success_rate_pct": 73.5,
+        "pass_at_4_pct": 75.0,
+        "response_length": 28.83,
+        "turns": 7.2075,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 23.925315307016717,
+        "generated_tokens": 11532
+      },
+      "validation_0100.json": {
+        "success_rate_pct": 77.25,
+        "pass_at_4_pct": 78.0,
+        "response_length": 28.57,
+        "turns": 7.1425,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 24.605089797027176,
+        "generated_tokens": 11428
+      },
+      "validation_0400.json": {
+        "success_rate_pct": 85.0,
+        "pass_at_4_pct": 85.0,
+        "response_length": 26.58,
+        "turns": 6.645,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 22.152087663998827,
+        "generated_tokens": 10632
+      },
+      "supplemental500/summary.json": {
+        "n_tasks": 500,
+        "n_trajectories": 2000,
+        "success_rate": 0.793,
+        "pass_at_4": 0.798
+      },
+      "protocol": {
+        "seed": 42,
+        "method": "tree_random",
+        "environment": "sokoban",
+        "steps": 400,
+        "train_batch_size": 64,
+        "flat_group_size": 4,
+        "eval_every": 25,
+        "eval_samples": 4,
+        "max_response_tokens": 10240,
+        "max_turns": 10,
+        "ucf_beta": null,
+        "ucf_controller": null,
+        "initial_branches": 4,
+        "branch_interval": 2,
+        "top_k_branches": 2
+      },
+      "verified": {
+        "passed": true,
+        "steps": 400,
+        "metrics_rows": 400,
+        "duplicate_metric_rows": 0,
+        "evaluation": {
+          "main100": {
+            "n_tasks": 100,
+            "success_rate": 0.765,
+            "pass_at_4": 0.77
+          },
+          "supplemental500": {
+            "n_tasks": 500,
+            "success_rate": 0.793,
+            "pass_at_4": 0.798
+          }
+        }
+      },
+      "validation_mean_17_points": {
+        "success_rate_pct": 78.04411764705883,
+        "pass_at_4_pct": 79.82352941176471
+      },
+      "final_sets": {
+        "main100": {
+          "n_tasks": 100,
+          "success_rate_pct": 76.5,
+          "pass_at_4_pct": 77.0
+        },
+        "supplemental500": {
+          "n_tasks": 500,
+          "success_rate_pct": 79.3,
+          "pass_at_4_pct": 79.8
+        }
+      },
+      "run_report_numeric": {
+        "steps": 400,
+        "verified": true,
+        "selection_uses_test": false
+      },
+      "metrics_rows": 400,
+      "last_step": 400,
+      "training_complete": true,
+      "cost": {
+        "generated_tokens": 4834692,
+        "input_tokens": 927691085,
+        "step_seconds": 37843.13820620807,
+        "rollout_seconds": 9902.170663646975,
+        "elapsed_seconds_at_last_step": 40801.663496035995,
+        "peak_allocated_gib": 64.99552965164185
+      },
+      "windows": {
+        "all": {
+          "n": 400,
+          "step_range": [
+            1,
+            400
+          ],
+          "kl": {
+            "mean": 0.22712563882001027,
+            "min": 0.0020825596951397074,
+            "max": 16.68781454405689
+          },
+          "success_rate": {
+            "mean": 0.6856964843967293,
+            "min": 0.2631578947368421,
+            "max": 0.9040307101727447
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 5.755,
+            "min": 0,
+            "max": 44
+          }
+        },
+        "first50": {
+          "n": 50,
+          "step_range": [
+            1,
+            50
+          ],
+          "kl": {
+            "mean": 0.12021056243963074,
+            "min": 0.0020825596951397074,
+            "max": 0.24966206442331895
+          },
+          "success_rate": {
+            "mean": 0.5574807955478738,
+            "min": 0.2631578947368421,
+            "max": 0.7682333873581848
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 17.92,
+            "min": 4,
+            "max": 44
+          }
+        },
+        "first75": {
+          "n": 75,
+          "step_range": [
+            1,
+            75
+          ],
+          "kl": {
+            "mean": 0.1342920534837727,
+            "min": 0.0020825596951397074,
+            "max": 0.3102781547931954
+          },
+          "success_rate": {
+            "mean": 0.5927852952226541,
+            "min": 0.2631578947368421,
+            "max": 0.7973199329983249
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 13.773333333333333,
+            "min": 3,
+            "max": 44
+          }
+        },
+        "last20": {
+          "n": 20,
+          "step_range": [
+            381,
+            400
+          ],
+          "kl": {
+            "mean": 0.14131149670283777,
+            "min": 0.08036126638762653,
+            "max": 0.4016543826437555
+          },
+          "success_rate": {
+            "mean": 0.738952285633746,
+            "min": 0.5822147651006712,
+            "max": 0.9040307101727447
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 3.35,
+            "min": 1,
+            "max": 8
+          }
+        }
+      },
+      "source_sha256": {
+        "final_test.json": "48b47868a17674e1587935c25c8138fac484e891ad7bb547cb0311c337790adb",
+        "validation_0000.json": "4af28483d08bc14bd45bb74518192970537dc13d7ce69af5ac62aa23be78cb01",
+        "validation_0025.json": "ccbd78473fc24b0e1515ced815041e10173f7626b0c091262783551c4af6e1df",
+        "validation_0050.json": "436456595ab30e94e50cace3fb63b2af0aeecdefab17589fdde48807d8092a24",
+        "validation_0075.json": "a3e81113c25a162503f5fd3d12c29b1b22e6405c308b778122417b534f55a465",
+        "validation_0100.json": "8bd343290a0e7d24707bde0001eacfb25bafcdbd27e3cea4c6894bf1e58854d9",
+        "validation_0400.json": "c5d028563def15cc801b388f6a2bc5a4f0f0cac9f18589c1c23a9e0c79c991c9",
+        "supplemental500/summary.json": "99c3e6611f1cc97dc70655516989060130e12ce968f5eabee5a743fcf434c4b0",
+        "config.json": "3019274c5cc5f6578424939c0515950c4da007cbdf4b0ae0c4b0439e07b82716",
+        "verification.json": "9c28bca08af805212024fa8363d71fd63ab65e5498220f47ca462406dd219a66",
+        "additional_metrics.json": "8fcfbdad31c031429ba31ee428cde615c238c14bcc3acec81db1978f3551b9e4",
+        "run_report.json": "52217933ab0ab7d66dffdbb090d816b1e6b884e11350757a55a5f09d09952c3b",
+        "train_metrics.jsonl": "6b1bcc653042c4670b781e7ec453005fa761f711927703f5c85666cf066287a3"
+      }
+    },
+    "S05_ucf_seed42": {
+      "validation_0000.json": {
+        "success_rate_pct": 37.0,
+        "pass_at_4_pct": 56.00000000000001,
+        "response_length": 33.42,
+        "turns": 8.355,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 27.729280769010074,
+        "generated_tokens": 13368
+      },
+      "validation_0025.json": {
+        "success_rate_pct": 67.5,
+        "pass_at_4_pct": 73.0,
+        "response_length": 28.18,
+        "turns": 7.045,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 23.11798777000513,
+        "generated_tokens": 11272
+      },
+      "validation_0050.json": {
+        "success_rate_pct": 72.5,
+        "pass_at_4_pct": 77.0,
+        "response_length": 27.5,
+        "turns": 6.875,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 22.732472984003834,
+        "generated_tokens": 11000
+      },
+      "validation_0075.json": {
+        "success_rate_pct": 74.75,
+        "pass_at_4_pct": 77.0,
+        "response_length": 27.79,
+        "turns": 6.9475,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 23.072081267018802,
+        "generated_tokens": 11116
+      },
+      "protocol": {
+        "seed": 42,
+        "method": "ucf",
+        "environment": "sokoban",
+        "steps": 400,
+        "train_batch_size": 64,
+        "flat_group_size": 4,
+        "eval_every": 25,
+        "eval_samples": 4,
+        "max_response_tokens": 10240,
+        "max_turns": 10,
+        "ucf_beta": 0.25,
+        "ucf_controller": "v2",
+        "initial_branches": 4,
+        "branch_interval": 5,
+        "top_k_branches": 2
+      },
+      "metrics_rows": 78,
+      "last_step": 78,
+      "training_complete": false,
+      "cost": {
+        "generated_tokens": 748015,
+        "input_tokens": 204044402,
+        "step_seconds": 11121.94968031408,
+        "rollout_seconds": 3357.9530179039866,
+        "elapsed_seconds_at_last_step": 11685.11836496502,
+        "peak_allocated_gib": 65.04887342453003
+      },
+      "windows": {
+        "all": {
+          "n": 78,
+          "step_range": [
+            1,
+            78
+          ],
+          "kl": {
+            "mean": 0.8396721611448931,
+            "min": 0.0060365056340998535,
+            "max": 6.753142227069475
+          },
+          "success_rate": {
+            "mean": 0.643379407051282,
+            "min": 0.36328125,
+            "max": 0.83984375
+          },
+          "rescue_rate": {
+            "mean": 0.08930678961341024,
+            "min": 0.0,
+            "max": 0.3333333333333333
+          },
+          "mean_forks": {
+            "mean": 1.9911858974358974,
+            "min": 1.625,
+            "max": 2.34375
+          },
+          "mixed_groups": {
+            "mean": 17.96153846153846,
+            "min": 7,
+            "max": 35
+          },
+          "counterfactual_flip_rate": {
+            "mean": 0.22816132736951306,
+            "min": 0.13076923076923078,
+            "max": 0.352
+          },
+          "initial_group_counts_mixed": {
+            "mean": 17.96153846153846,
+            "min": 7,
+            "max": 35
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 27.012820512820515,
+            "min": 16,
+            "max": 44
+          },
+          "all_failure_group_fraction_mean": 0.22936698717948717
+        },
+        "first50": {
+          "n": 50,
+          "step_range": [
+            1,
+            50
+          ],
+          "kl": {
+            "mean": 0.7071398291008486,
+            "min": 0.0060365056340998535,
+            "max": 2.101035297731869
+          },
+          "success_rate": {
+            "mean": 0.601015625,
+            "min": 0.36328125,
+            "max": 0.76171875
+          },
+          "rescue_rate": {
+            "mean": 0.08280156556549745,
+            "min": 0.0,
+            "max": 0.3076923076923077
+          },
+          "mean_forks": {
+            "mean": 2.0078125,
+            "min": 1.625,
+            "max": 2.34375
+          },
+          "mixed_groups": {
+            "mean": 20.74,
+            "min": 8,
+            "max": 35
+          },
+          "counterfactual_flip_rate": {
+            "mean": 0.24188922537184412,
+            "min": 0.14285714285714285,
+            "max": 0.352
+          },
+          "initial_group_counts_mixed": {
+            "mean": 20.74,
+            "min": 8,
+            "max": 35
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 29.34,
+            "min": 18,
+            "max": 44
+          },
+          "all_failure_group_fraction_mean": 0.2490625
+        },
+        "first75": {
+          "n": 75,
+          "step_range": [
+            1,
+            75
+          ],
+          "kl": {
+            "mean": 0.8321555445307826,
+            "min": 0.0060365056340998535,
+            "max": 6.753142227069475
+          },
+          "success_rate": {
+            "mean": 0.6380208333333334,
+            "min": 0.36328125,
+            "max": 0.8125
+          },
+          "rescue_rate": {
+            "mean": 0.08670079501968046,
+            "min": 0.0,
+            "max": 0.3333333333333333
+          },
+          "mean_forks": {
+            "mean": 1.9902083333333334,
+            "min": 1.625,
+            "max": 2.34375
+          },
+          "mixed_groups": {
+            "mean": 18.133333333333333,
+            "min": 7,
+            "max": 35
+          },
+          "counterfactual_flip_rate": {
+            "mean": 0.2298855493576872,
+            "min": 0.13076923076923078,
+            "max": 0.352
+          },
+          "initial_group_counts_mixed": {
+            "mean": 18.133333333333333,
+            "min": 7,
+            "max": 35
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 27.16,
+            "min": 16,
+            "max": 44
+          },
+          "all_failure_group_fraction_mean": 0.233125
+        },
+        "last20": {
+          "n": 20,
+          "step_range": [
+            59,
+            78
+          ],
+          "kl": {
+            "mean": 1.0874378701191745,
+            "min": 0.39313978026621044,
+            "max": 6.753142227069475
+          },
+          "success_rate": {
+            "mean": 0.7140625,
+            "min": 0.6328125,
+            "max": 0.83984375
+          },
+          "rescue_rate": {
+            "mean": 0.11856439097538168,
+            "min": 0.0,
+            "max": 0.3333333333333333
+          },
+          "mean_forks": {
+            "mean": 1.9609375,
+            "min": 1.75,
+            "max": 2.21875
+          },
+          "mixed_groups": {
+            "mean": 13.85,
+            "min": 10,
+            "max": 21
+          },
+          "counterfactual_flip_rate": {
+            "mean": 0.21343531159819673,
+            "min": 0.13076923076923078,
+            "max": 0.2887323943661972
+          },
+          "initial_group_counts_mixed": {
+            "mean": 13.85,
+            "min": 10,
+            "max": 21
+          },
+          "leaf_group_counts_mixed": {
+            "mean": 23.75,
+            "min": 20,
+            "max": 34
+          },
+          "all_failure_group_fraction_mean": 0.19296875
+        }
+      },
+      "source_sha256": {
+        "validation_0000.json": "2f83adecbc0a491c77966119cba00404f58fde8e3f474c56400a42b5f7516cee",
+        "validation_0025.json": "3fcf9fb5511d8cda591f1a33b50c908f591f56786613d529bb1a489455d79d20",
+        "validation_0050.json": "3477f45575da24c6a27e8a60f415f09c1699b755104d7cb716f0c28c150a53bc",
+        "validation_0075.json": "de11c077057f0b16f3d3d4236c292f2c3caad5f14cb9d893ebe3d113a7e681fe",
+        "config.json": "ab0328dc11eb79cabe88318191262099bb500ded80af7ed34bfc7f314e597ae2",
+        "train_metrics.jsonl": "6825fca9f61a6e8d4cbbf2782a4c71c2d0864c4201dd2b79cc44eb604bfc7dca"
+      }
+    },
+    "F01_base_eval": {
+      "final_test.json": {
+        "success_rate_pct": 26.5,
+        "pass_at_4_pct": 53.0,
+        "response_length": 2332.9,
+        "turns": 2.99,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.14130434782608695,
+        "split": "test",
+        "seconds": 168.9372133820034,
+        "generated_tokens": 933160
+      },
+      "validation_0000.json": {
+        "success_rate_pct": 27.250000000000004,
+        "pass_at_4_pct": 53.0,
+        "response_length": 2526.4225,
+        "turns": 3.2125,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.17509727626459143,
+        "split": "validation",
+        "seconds": 211.7006835760003,
+        "generated_tokens": 1010569
+      },
+      "supplemental500/summary.json": {
+        "n_tasks": 500,
+        "n_trajectories": 2000,
+        "success_rate": 0.3,
+        "pass_at_4": 0.56
+      },
+      "map8.json": {
+        "success_rate_pct": 28.999999999999996,
+        "pass_at_4_pct": 59.0,
+        "response_length": 2412.565,
+        "turns": 2.8425,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.14072119613016712,
+        "split": "map8",
+        "seconds": 179.33913720599958,
+        "generated_tokens": 965026
+      },
+      "protocol": {
+        "seed": 42,
+        "method": "grpo",
+        "environment": null,
+        "steps": 400,
+        "train_batch_size": 64,
+        "flat_group_size": 4,
+        "eval_every": 40,
+        "eval_samples": 4,
+        "max_response_tokens": 4096,
+        "max_turns": 10,
+        "ucf_beta": null,
+        "ucf_controller": null,
+        "initial_branches": 4,
+        "branch_interval": 5,
+        "top_k_branches": 2
+      },
+      "verified": {
+        "passed": true,
+        "steps": null,
+        "metrics_rows": null,
+        "duplicate_metric_rows": null,
+        "evaluation": {
+          "main100": {
+            "n_tasks": 100,
+            "n_trajectories": 400,
+            "success_rate_pct": 26.5,
+            "pass_at_4_pct": 53.0
+          },
+          "map8": {
+            "n_tasks": 100,
+            "n_trajectories": 400,
+            "success_rate_pct": 28.999999999999996,
+            "pass_at_4_pct": 59.0
+          },
+          "validation100": {
+            "n_tasks": 100,
+            "n_trajectories": 400,
+            "success_rate_pct": 27.250000000000004,
+            "pass_at_4_pct": 53.0
+          },
+          "supplemental500": {
+            "n_tasks": 500,
+            "n_trajectories": 2000,
+            "success_rate_pct": 30.0,
+            "pass_at_4_pct": 56.00000000000001
+          },
+          "filtered409": {
+            "n_tasks": 409,
+            "n_trajectories": 1636,
+            "success_rate_pct": 26.71149144254279,
+            "pass_at_4_pct": 50.36674816625917
+          }
+        }
+      },
+      "run_report_numeric": {
+        "response_budget": 4096
+      },
+      "source_sha256": {
+        "final_test.json": "4131659ca86f7d26a007df31cb4c1f43548a261452120f294caa373901b93437",
+        "validation_0000.json": "952ab38aabd182a723f283f6078e2efd30f74938272139c3baa25063cf57f47e",
+        "supplemental500/summary.json": "acf4b8b2e264fb0459b9a19ccfbcc79366b2bf0e3d594051537704d6b3148469",
+        "map8.json": "3de70cb5ba9252b0d5c3771f7c86197f6ef38945366a8dc0f8afc5e49fab4387",
+        "config.json": "3b8352eda33bf1e1c30f8bfcdc27e19d23d6abdbb8f2ae2af566ef1228260e6d",
+        "verification.json": "9cb1a48b05dc901345009a5dd6f2a7107f8d4bdb17932db8a538edd2417900ff",
+        "run_report.json": "90a6d6c8aed24b75f30f3eba0e36e7638212e43b22eb22f2ede886e61eb05b09"
+      }
+    },
+    "F02_noSFT_GRPO4_seed42": {
+      "final_test.json": {
+        "success_rate_pct": 93.0,
+        "pass_at_4_pct": 97.0,
+        "response_length": 1609.51,
+        "turns": 3.625,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "test",
+        "seconds": 147.2992029490124,
+        "generated_tokens": 643804,
+        "terminal_counts": {
+          "success": 372,
+          "hole": 7,
+          "turn_limit": 5,
+          "token_limit": 16
+        }
+      },
+      "validation_0000.json": {
+        "success_rate_pct": 27.250000000000004,
+        "pass_at_4_pct": 53.0,
+        "response_length": 2526.4225,
+        "turns": 3.2125,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.17509727626459143,
+        "split": "validation",
+        "seconds": 209.33277327000178,
+        "generated_tokens": 1010569
+      },
+      "validation_0025.json": {
+        "success_rate_pct": 76.5,
+        "pass_at_4_pct": 92.0,
+        "response_length": 1597.115,
+        "turns": 2.795,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.017889087656529516,
+        "split": "validation",
+        "seconds": 129.84877703700113,
+        "generated_tokens": 638846
+      },
+      "validation_0050.json": {
+        "success_rate_pct": 86.25,
+        "pass_at_4_pct": 95.0,
+        "response_length": 1386.3975,
+        "turns": 3.045,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.003284072249589491,
+        "split": "validation",
+        "seconds": 117.65747188099704,
+        "generated_tokens": 554559
+      },
+      "validation_0075.json": {
+        "success_rate_pct": 85.5,
+        "pass_at_4_pct": 93.0,
+        "response_length": 1627.885,
+        "turns": 2.91,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.005154639175257732,
+        "split": "validation",
+        "seconds": 137.10170949800522,
+        "generated_tokens": 651154
+      },
+      "validation_0100.json": {
+        "success_rate_pct": 88.5,
+        "pass_at_4_pct": 98.0,
+        "response_length": 1358.775,
+        "turns": 3.335,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "validation",
+        "seconds": 120.47539302299992,
+        "generated_tokens": 543510
+      },
+      "validation_0400.json": {
+        "success_rate_pct": 95.75,
+        "pass_at_4_pct": 100.0,
+        "response_length": 1493.585,
+        "turns": 3.37,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.000741839762611276,
+        "split": "validation",
+        "seconds": 137.25718820199836,
+        "generated_tokens": 597434
+      },
+      "supplemental500/summary.json": {
+        "n_tasks": 500,
+        "n_trajectories": 2000,
+        "success_rate": 0.944,
+        "pass_at_4": 0.978
+      },
+      "map8.json": {
+        "success_rate_pct": 98.0,
+        "pass_at_4_pct": 100.0,
+        "response_length": 1504.86,
+        "turns": 3.455,
+        "n_tasks": 100,
+        "n_trajectories": 400,
+        "invalid_action_fraction": 0.0,
+        "split": "map8",
+        "seconds": 131.60824040599982,
+        "generated_tokens": 601944
+      },
+      "protocol": {
+        "seed": 42,
+        "method": "grpo",
+        "environment": null,
+        "steps": 400,
+        "train_batch_size": 64,
+        "flat_group_size": 4,
+        "eval_every": 25,
+        "eval_samples": 4,
+        "max_response_tokens": 4096,
+        "max_turns": 10,
+        "ucf_beta": null,
+        "ucf_controller": null,
+        "initial_branches": 4,
+        "branch_interval": 5,
+        "top_k_branches": 2
+      },
+      "verified": {
+        "passed": true,
+        "steps": 400,
+        "metrics_rows": 400,
+        "duplicate_metric_rows": 0,
+        "evaluation": {
+          "main100": {
+            "n_tasks": 100,
+            "success_rate": 0.93,
+            "pass_at_4": 0.97
+          },
+          "map8": {
+            "n_tasks": 100,
+            "success_rate": 0.98,
+            "pass_at_4": 1.0
+          },
+          "supplemental500": {
+            "n_tasks": 500,
+            "success_rate": 0.944,
+            "pass_at_4": 0.978
+          },
+          "filtered409": {
+            "n_tasks": 409,
+            "success_rate": 0.9333740831295844,
+            "pass_at_4": 0.9731051344743277
+          }
+        }
+      },
+      "validation_mean_17_points": {
+        "success_rate_pct": 86.52941176470588,
+        "pass_at_4_pct": 95.17647058823529
+      },
+      "final_sets": {
+        "main100": {
+          "n_tasks": 100,
+          "success_rate_pct": 93.0,
+          "pass_at_4_pct": 97.0
+        },
+        "supplemental500": {
+          "n_tasks": 500,
+          "success_rate_pct": 94.4,
+          "pass_at_4_pct": 97.8
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "success_rate_pct": 93.33740831295843,
+          "pass_at_4_pct": 97.31051344743277
+        },
+        "map8": {
+          "n_tasks": 100,
+          "success_rate_pct": 98.0,
+          "pass_at_4_pct": 100.0
+        }
+      },
+      "run_report_numeric": {
+        "steps": 400,
+        "verified": true,
+        "selection_uses_test": false
+      },
+      "metrics_rows": 400,
+      "last_step": 400,
+      "training_complete": true,
+      "cost": {
+        "generated_tokens": 193230906,
+        "input_tokens": 659863906,
+        "step_seconds": 79924.42236667394,
+        "rollout_seconds": 36612.830911205936,
+        "elapsed_seconds_at_last_step": 85365.847716057,
+        "peak_allocated_gib": 65.1407618522644
+      },
+      "windows": {
+        "all": {
+          "n": 400,
+          "step_range": [
+            1,
+            400
+          ],
+          "kl": {
+            "mean": 0.12235554574461503,
+            "min": 0.00059342785834815,
+            "max": 0.26006553292972967
+          },
+          "success_rate": {
+            "mean": 0.865498046875,
+            "min": 0.17578125,
+            "max": 0.98828125
+          }
+        },
+        "first50": {
+          "n": 50,
+          "step_range": [
+            1,
+            50
+          ],
+          "kl": {
+            "mean": 0.07436027212943372,
+            "min": 0.00059342785834815,
+            "max": 0.12227247015107423
+          },
+          "success_rate": {
+            "mean": 0.645703125,
+            "min": 0.17578125,
+            "max": 0.875
+          }
+        },
+        "first75": {
+          "n": 75,
+          "step_range": [
+            1,
+            75
+          ],
+          "kl": {
+            "mean": 0.08499810367726847,
+            "min": 0.00059342785834815,
+            "max": 0.12227247015107423
+          },
+          "success_rate": {
+            "mean": 0.69640625,
+            "min": 0.17578125,
+            "max": 0.875
+          }
+        },
+        "last20": {
+          "n": 20,
+          "step_range": [
+            381,
+            400
+          ],
+          "kl": {
+            "mean": 0.15544218989525688,
+            "min": 0.1478164936415851,
+            "max": 0.15963938797358423
+          },
+          "success_rate": {
+            "mean": 0.9275390625,
+            "min": 0.8515625,
+            "max": 0.98828125
+          }
+        }
+      },
+      "source_sha256": {
+        "final_test.json": "ee8da659fe7bd312eedb719ff523128208142d91e09895d2f8951f89b91b94cf",
+        "validation_0000.json": "2b676eead55df2930bb9bd5969d07bcd6ce5911b1541f6cf799b02d476a18b56",
+        "validation_0025.json": "ffb098f0d404e284f3c6c86d9ad2246b8e5833093ba1c5ee8036089c36f318d6",
+        "validation_0050.json": "c36638adb110ca83c4d560744ecdeeaa998c56956d663185eee189f7d1f1be74",
+        "validation_0075.json": "c32276c4ba65bf89bf0365e2405e5151b0da3c8c252ea42bca51ed8eafb2919d",
+        "validation_0100.json": "9173b33347ed1dda745b2bb38bca8be065c490cdbb6448884c34123760e92f4e",
+        "validation_0400.json": "a2742019c1c10dc304d9d6ac4332bf5d0ae6215e4620aecdb952012419726a2e",
+        "supplemental500/summary.json": "a5a5302ffa971a26e979a925ec53c3a0b6e9e278f214cddb14ab6765a11635a8",
+        "map8.json": "8d31f22cd32c1aff3731c2da6b370c868f9f432c05b52ecc3c369cd2fce5a85e",
+        "config.json": "7660fe3eec5aa5f12b6b8db43acbe1c912379d400f937ac1ac5cdf7c5f4b449f",
+        "verification.json": "bf890b6ee7de40fbcefe7029dafc46762c48f91300eff0f234d4cb4f6ed7ed6f",
+        "additional_metrics.json": "3d559f0719a000708bd644d3dda87d5de46089d9f3ee5d8c79fda073a74d58d0",
+        "run_report.json": "ae48f148352684677b09634eabd72e90c8e0832a0909e2f435734b640b6d1c2d",
+        "train_metrics.jsonl": "9e18eeadb3b1217d95f8cfa6be168c1824d257ce3051ae8d2ef6160471b98f91"
+      }
+    }
+  },
+  "source_commit": "e32ac58b8a857eb98023ec1f79bbe0cf855c95ac",
+  "historical_05b": {
+    "source_artifact": "ucf_seed44/report_at_completion.json",
+    "source_sha256": "3304a370ce35978aabda99f49ff910232f4bd8fa4718ae72914a19cf551854bb",
+    "per_run": {
+      "ucf_seed42": {
+        "family": "ucf",
+        "seed": 42,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 380,
+          "passed_tasks": 96,
+          "success_rate_pct": 95.0,
+          "pass_at_4_pct": 96.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1877,
+          "passed_tasks": 478,
+          "success_rate_pct": 93.85,
+          "pass_at_4_pct": 95.6
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 1513,
+          "passed_tasks": 387,
+          "success_rate_pct": 92.48166259168704,
+          "pass_at_4_pct": 94.62102689486552
+        }
+      },
+      "ucf_seed43": {
+        "family": "ucf",
+        "seed": 43,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 322,
+          "passed_tasks": 85,
+          "success_rate_pct": 80.5,
+          "pass_at_4_pct": 85.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1743,
+          "passed_tasks": 445,
+          "success_rate_pct": 87.15,
+          "pass_at_4_pct": 89.0
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 1383,
+          "passed_tasks": 355,
+          "success_rate_pct": 84.53545232273838,
+          "pass_at_4_pct": 86.79706601466992
+        }
+      },
+      "random_k2_seed42": {
+        "family": "random_k2",
+        "seed": 42,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 335,
+          "passed_tasks": 84,
+          "success_rate_pct": 83.75,
+          "pass_at_4_pct": 84.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1701,
+          "passed_tasks": 433,
+          "success_rate_pct": 85.05,
+          "pass_at_4_pct": 86.6
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 1341,
+          "passed_tasks": 343,
+          "success_rate_pct": 81.96821515892421,
+          "pass_at_4_pct": 83.86308068459658
+        }
+      },
+      "random_k2_seed43": {
+        "family": "random_k2",
+        "seed": 43,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 344,
+          "passed_tasks": 87,
+          "success_rate_pct": 86.0,
+          "pass_at_4_pct": 87.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1672,
+          "passed_tasks": 424,
+          "success_rate_pct": 83.6,
+          "pass_at_4_pct": 84.8
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 1308,
+          "passed_tasks": 333,
+          "success_rate_pct": 79.95110024449878,
+          "pass_at_4_pct": 81.41809290953545
+        }
+      },
+      "noIS_seed42": {
+        "family": "noIS",
+        "seed": 42,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 352,
+          "passed_tasks": 89,
+          "success_rate_pct": 88.0,
+          "pass_at_4_pct": 89.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1809,
+          "passed_tasks": 461,
+          "success_rate_pct": 90.45,
+          "pass_at_4_pct": 92.2
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 1446,
+          "passed_tasks": 370,
+          "success_rate_pct": 88.38630806845966,
+          "pass_at_4_pct": 90.46454767726162
+        }
+      },
+      "uniform_seed42": {
+        "family": "uniform",
+        "seed": 42,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 343,
+          "passed_tasks": 88,
+          "success_rate_pct": 85.75,
+          "pass_at_4_pct": 88.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1791,
+          "passed_tasks": 452,
+          "success_rate_pct": 89.55,
+          "pass_at_4_pct": 90.4
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 1427,
+          "passed_tasks": 361,
+          "success_rate_pct": 87.22493887530563,
+          "pass_at_4_pct": 88.26405867970661
+        }
+      },
+      "nosft_ucf_seed42": {
+        "family": "nosft_ucf",
+        "seed": 42,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 224,
+          "passed_tasks": 58,
+          "success_rate_pct": 56.0,
+          "pass_at_4_pct": 58.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1145,
+          "passed_tasks": 295,
+          "success_rate_pct": 57.25,
+          "pass_at_4_pct": 59.0
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 821,
+          "passed_tasks": 214,
+          "success_rate_pct": 50.183374083129586,
+          "pass_at_4_pct": 52.32273838630807
+        },
+        "map8": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 247,
+          "passed_tasks": 63,
+          "success_rate_pct": 61.75,
+          "pass_at_4_pct": 63.0
+        }
+      },
+      "nosft_random_k2_seed42": {
+        "family": "nosft_random_k2",
+        "seed": 42,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 228,
+          "passed_tasks": 62,
+          "success_rate_pct": 57.0,
+          "pass_at_4_pct": 62.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1253,
+          "passed_tasks": 330,
+          "success_rate_pct": 62.65,
+          "pass_at_4_pct": 66.0
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 935,
+          "passed_tasks": 247,
+          "success_rate_pct": 57.15158924205379,
+          "pass_at_4_pct": 60.391198044009776
+        },
+        "map8": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 238,
+          "passed_tasks": 64,
+          "success_rate_pct": 59.5,
+          "pass_at_4_pct": 64.0
+        }
+      },
+      "ucf_seed44": {
+        "family": "ucf",
+        "seed": 44,
+        "main100": {
+          "n_tasks": 100,
+          "n_trajectories": 400,
+          "successes": 341,
+          "passed_tasks": 88,
+          "success_rate_pct": 85.25,
+          "pass_at_4_pct": 88.0
+        },
+        "all500": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "successes": 1805,
+          "passed_tasks": 463,
+          "success_rate_pct": 90.25,
+          "pass_at_4_pct": 92.6
+        },
+        "filtered409": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "successes": 1441,
+          "passed_tasks": 372,
+          "success_rate_pct": 88.08068459657702,
+          "pass_at_4_pct": 90.95354523227384
+        }
+      }
+    },
+    "seed_mean_std": {
+      "ucf": {
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "n_seeds": 3,
+        "splits": {
+          "main100": {
+            "success_rate_pct": {
+              "n_seeds": 3,
+              "mean": 86.91666666666667,
+              "sample_std": 7.3922820112150305,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 3,
+              "mean": 89.66666666666667,
+              "sample_std": 5.686240703077327,
+              "ddof": 1
+            }
+          },
+          "all500": {
+            "success_rate_pct": {
+              "n_seeds": 3,
+              "mean": 90.41666666666667,
+              "sample_std": 3.3531080109852254,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 3,
+              "mean": 92.39999999999999,
+              "sample_std": 3.3045423283716584,
+              "ddof": 1
+            }
+          },
+          "filtered409": {
+            "success_rate_pct": {
+              "n_seeds": 3,
+              "mean": 88.36593317033415,
+              "sample_std": 3.980777495817764,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 3,
+              "mean": 90.79054604726976,
+              "sample_std": 3.914526473846073,
+              "ddof": 1
+            }
+          }
+        }
+      },
+      "random_k2": {
+        "seeds": [
+          42,
+          43
+        ],
+        "n_seeds": 2,
+        "splits": {
+          "main100": {
+            "success_rate_pct": {
+              "n_seeds": 2,
+              "mean": 84.875,
+              "sample_std": 1.590990257669732,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 2,
+              "mean": 85.5,
+              "sample_std": 2.1213203435596424,
+              "ddof": 1
+            }
+          },
+          "all500": {
+            "success_rate_pct": {
+              "n_seeds": 2,
+              "mean": 84.32499999999999,
+              "sample_std": 1.0253048327204959,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 2,
+              "mean": 85.69999999999999,
+              "sample_std": 1.2727922061357835,
+              "ddof": 1
+            }
+          },
+          "filtered409": {
+            "success_rate_pct": {
+              "n_seeds": 2,
+              "mean": 80.95965770171149,
+              "sample_std": 1.4263156344227472,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 2,
+              "mean": 82.64058679706602,
+              "sample_std": 1.7288674356639386,
+              "ddof": 1
+            }
+          }
+        }
+      },
+      "noIS": {
+        "seeds": [
+          42
+        ],
+        "n_seeds": 1,
+        "splits": {
+          "main100": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 88.0,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 89.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "all500": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 90.45,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 92.2,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "filtered409": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 88.38630806845966,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 90.46454767726162,
+              "sample_std": null,
+              "ddof": 1
+            }
+          }
+        }
+      },
+      "uniform": {
+        "seeds": [
+          42
+        ],
+        "n_seeds": 1,
+        "splits": {
+          "main100": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 85.75,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 88.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "all500": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 89.55,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 90.4,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "filtered409": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 87.22493887530563,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 88.26405867970661,
+              "sample_std": null,
+              "ddof": 1
+            }
+          }
+        }
+      },
+      "nosft_ucf": {
+        "seeds": [
+          42
+        ],
+        "n_seeds": 1,
+        "splits": {
+          "main100": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 56.0,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 58.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "all500": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 57.25,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 59.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "filtered409": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 50.183374083129586,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 52.32273838630807,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "map8": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 61.75,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 63.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          }
+        }
+      },
+      "nosft_random_k2": {
+        "seeds": [
+          42
+        ],
+        "n_seeds": 1,
+        "splits": {
+          "main100": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 57.0,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 62.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "all500": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 62.65,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 66.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "filtered409": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 57.15158924205379,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 60.391198044009776,
+              "sample_std": null,
+              "ddof": 1
+            }
+          },
+          "map8": {
+            "success_rate_pct": {
+              "n_seeds": 1,
+              "mean": 59.5,
+              "sample_std": null,
+              "ddof": 1
+            },
+            "pass_at_4_pct": {
+              "n_seeds": 1,
+              "mean": 64.0,
+              "sample_std": null,
+              "ddof": 1
+            }
+          }
+        }
+      }
+    },
+    "historical_october_nosft": {
+      "PaTR": {
+        "main100": 64.5,
+        "all500": 73.0,
+        "map8": 68.75
+      },
+      "GRPO": {
+        "main100": 61.0,
+        "all500": 63.6,
+        "map8": 65.25
+      },
+      "Random": {
+        "main100": 64.75,
+        "all500": 67.10000000000001,
+        "map8": 70.75
+      }
+    },
+    "pending_pairs": [
+      {
+        "comparison": "ucf_minus_random_k2",
+        "seed": 44,
+        "missing": [
+          "random_k2_seed44"
+        ]
+      },
+      {
+        "comparison": "noIS_minus_ucf",
+        "seed": 43,
+        "missing": [
+          "noIS_seed43"
+        ]
+      },
+      {
+        "comparison": "uniform_minus_ucf",
+        "seed": 43,
+        "missing": [
+          "uniform_seed43"
+        ]
+      },
+      {
+        "comparison": "starpo_s_minus_ucf",
+        "seed": 42,
+        "missing": [
+          "starpo_s_seed42"
+        ]
+      },
+      {
+        "comparison": "starpo_s_minus_ucf",
+        "seed": 43,
+        "missing": [
+          "starpo_s_seed43"
+        ]
+      },
+      {
+        "comparison": "starpo_s_minus_random_k2",
+        "seed": 42,
+        "missing": [
+          "starpo_s_seed42"
+        ]
+      },
+      {
+        "comparison": "starpo_s_minus_random_k2",
+        "seed": 43,
+        "missing": [
+          "starpo_s_seed43"
+        ]
+      },
+      {
+        "comparison": "gigpo_minus_ucf",
+        "seed": 42,
+        "missing": [
+          "gigpo_seed42"
+        ]
+      },
+      {
+        "comparison": "gigpo_minus_ucf",
+        "seed": 43,
+        "missing": [
+          "gigpo_seed43"
+        ]
+      },
+      {
+        "comparison": "gigpo_minus_random_k2",
+        "seed": 42,
+        "missing": [
+          "gigpo_seed42"
+        ]
+      },
+      {
+        "comparison": "gigpo_minus_random_k2",
+        "seed": 43,
+        "missing": [
+          "gigpo_seed43"
+        ]
+      }
+    ],
+    "limitations": [
+      "Task bootstrap: 10000 replicates, seed20261103, paired tasks with each model's four trajectories retained.",
+      "Every interval is conditional on the two trained models; it is not training-seed uncertainty.",
+      "filtered409 is a subset of supplemental500, not an independent test set; length_other retains length11 and undefined cases.",
+      "Means and sample SD use actual listed seed sets (ddof=1), with matched-seed summaries for every comparison.",
+      "Historical runs span older hardware/code periods; available hardware evidence is shown per run. New stages and card changes are logged.",
+      "October no-SFT PaTR/GRPO/Random K=5 benchmark batch, older code and hardware; Random reference is K=5, not this new K=2 comparator; not a paired comparison.",
+      "User amendment after seeing SFT12, GRPO40010 result files (9 summarized), Random4000, at Beijing2026-11-04 03:50:34; exclude undefined cosine pairwise for primary, zero sensitivity not used for beta selection",
+      "User cancelled tau_seed42 and tau_seed43 before GPU execution on 2026-11-07; all preparation and CPU evidence remains retained."
+    ],
+    "complete_requested_experiments": false,
+    "earlier_sft_baselines": {
+      "all500": {
+        "CERT-Uniform": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "success_rate_pct": 80.05,
+          "pass_at_4_pct": 80.4
+        },
+        "CERT-UCT": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "success_rate_pct": 80.55,
+          "pass_at_4_pct": 82.0
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "success_rate_pct": 85.05,
+          "pass_at_4_pct": 86.6
+        },
+        "PaTR-K2": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "success_rate_pct": 79.9,
+          "pass_at_4_pct": 81.0
+        },
+        "GRPO4": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "success_rate_pct": 80.9,
+          "pass_at_4_pct": 82.19999999999999
+        },
+        "UCF-ucf": {
+          "n_tasks": 500,
+          "n_trajectories": 2000,
+          "success_rate_pct": 93.85,
+          "pass_at_4_pct": 95.6
+        }
+      },
+      "filtered409": {
+        "CERT-Uniform": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "success_rate_pct": 75.85574572127139,
+          "pass_at_4_pct": 76.28361858190709
+        },
+        "CERT-UCT": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "success_rate_pct": 76.46699266503667,
+          "pass_at_4_pct": 78.239608801956
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "success_rate_pct": 81.96821515892421,
+          "pass_at_4_pct": 83.86308068459658
+        },
+        "PaTR-K2": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "success_rate_pct": 75.67237163814181,
+          "pass_at_4_pct": 77.01711491442543
+        },
+        "GRPO4": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "success_rate_pct": 76.89486552567237,
+          "pass_at_4_pct": 78.4841075794621
+        },
+        "UCF-ucf": {
+          "n_tasks": 409,
+          "n_trajectories": 1636,
+          "success_rate_pct": 92.48166259168704,
+          "pass_at_4_pct": 94.62102689486552
+        }
+      },
+      "length_le3": {
+        "CERT-Uniform": {
+          "n_tasks": 296,
+          "n_trajectories": 1184,
+          "success_rate_pct": 96.19932432432432,
+          "pass_at_4_pct": 96.28378378378379
+        },
+        "CERT-UCT": {
+          "n_tasks": 296,
+          "n_trajectories": 1184,
+          "success_rate_pct": 97.2972972972973,
+          "pass_at_4_pct": 97.63513513513513
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 296,
+          "n_trajectories": 1184,
+          "success_rate_pct": 98.47972972972973,
+          "pass_at_4_pct": 99.32432432432432
+        },
+        "PaTR-K2": {
+          "n_tasks": 296,
+          "n_trajectories": 1184,
+          "success_rate_pct": 95.69256756756756,
+          "pass_at_4_pct": 95.94594594594594
+        },
+        "GRPO4": {
+          "n_tasks": 296,
+          "n_trajectories": 1184,
+          "success_rate_pct": 97.80405405405406,
+          "pass_at_4_pct": 98.64864864864865
+        },
+        "UCF-ucf": {
+          "n_tasks": 296,
+          "n_trajectories": 1184,
+          "success_rate_pct": 99.83108108108108,
+          "pass_at_4_pct": 100.0
+        }
+      },
+      "length_4_5": {
+        "CERT-Uniform": {
+          "n_tasks": 90,
+          "n_trajectories": 360,
+          "success_rate_pct": 80.83333333333333,
+          "pass_at_4_pct": 81.11111111111111
+        },
+        "CERT-UCT": {
+          "n_tasks": 90,
+          "n_trajectories": 360,
+          "success_rate_pct": 75.55555555555556,
+          "pass_at_4_pct": 75.55555555555556
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 90,
+          "n_trajectories": 360,
+          "success_rate_pct": 82.5,
+          "pass_at_4_pct": 83.33333333333334
+        },
+        "PaTR-K2": {
+          "n_tasks": 90,
+          "n_trajectories": 360,
+          "success_rate_pct": 78.88888888888889,
+          "pass_at_4_pct": 80.0
+        },
+        "GRPO4": {
+          "n_tasks": 90,
+          "n_trajectories": 360,
+          "success_rate_pct": 77.77777777777779,
+          "pass_at_4_pct": 78.88888888888889
+        },
+        "UCF-ucf": {
+          "n_tasks": 90,
+          "n_trajectories": 360,
+          "success_rate_pct": 98.88888888888889,
+          "pass_at_4_pct": 100.0
+        }
+      },
+      "length_6_7": {
+        "CERT-Uniform": {
+          "n_tasks": 73,
+          "n_trajectories": 292,
+          "success_rate_pct": 47.94520547945205,
+          "pass_at_4_pct": 49.31506849315068
+        },
+        "CERT-UCT": {
+          "n_tasks": 73,
+          "n_trajectories": 292,
+          "success_rate_pct": 52.054794520547944,
+          "pass_at_4_pct": 60.273972602739725
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 73,
+          "n_trajectories": 292,
+          "success_rate_pct": 61.3013698630137,
+          "pass_at_4_pct": 67.12328767123287
+        },
+        "PaTR-K2": {
+          "n_tasks": 73,
+          "n_trajectories": 292,
+          "success_rate_pct": 46.917808219178085,
+          "pass_at_4_pct": 52.054794520547944
+        },
+        "GRPO4": {
+          "n_tasks": 73,
+          "n_trajectories": 292,
+          "success_rate_pct": 50.68493150684932,
+          "pass_at_4_pct": 52.054794520547944
+        },
+        "UCF-ucf": {
+          "n_tasks": 73,
+          "n_trajectories": 292,
+          "success_rate_pct": 86.3013698630137,
+          "pass_at_4_pct": 93.15068493150685
+        }
+      },
+      "length_8_10": {
+        "CERT-Uniform": {
+          "n_tasks": 33,
+          "n_trajectories": 132,
+          "success_rate_pct": 23.484848484848484,
+          "pass_at_4_pct": 24.242424242424242
+        },
+        "CERT-UCT": {
+          "n_tasks": 33,
+          "n_trajectories": 132,
+          "success_rate_pct": 26.515151515151516,
+          "pass_at_4_pct": 27.27272727272727
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 33,
+          "n_trajectories": 132,
+          "success_rate_pct": 44.696969696969695,
+          "pass_at_4_pct": 45.45454545454545
+        },
+        "PaTR-K2": {
+          "n_tasks": 33,
+          "n_trajectories": 132,
+          "success_rate_pct": 33.33333333333333,
+          "pass_at_4_pct": 33.33333333333333
+        },
+        "GRPO4": {
+          "n_tasks": 33,
+          "n_trajectories": 132,
+          "success_rate_pct": 24.242424242424242,
+          "pass_at_4_pct": 30.303030303030305
+        },
+        "UCF-ucf": {
+          "n_tasks": 33,
+          "n_trajectories": 132,
+          "success_rate_pct": 65.9090909090909,
+          "pass_at_4_pct": 72.72727272727273
+        }
+      },
+      "length_other": {
+        "CERT-Uniform": {
+          "n_tasks": 8,
+          "n_trajectories": 32,
+          "success_rate_pct": 0.0,
+          "pass_at_4_pct": 0.0
+        },
+        "CERT-UCT": {
+          "n_tasks": 8,
+          "n_trajectories": 32,
+          "success_rate_pct": 0.0,
+          "pass_at_4_pct": 0.0
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 8,
+          "n_trajectories": 32,
+          "success_rate_pct": 0.0,
+          "pass_at_4_pct": 0.0
+        },
+        "PaTR-K2": {
+          "n_tasks": 8,
+          "n_trajectories": 32,
+          "success_rate_pct": 0.0,
+          "pass_at_4_pct": 0.0
+        },
+        "GRPO4": {
+          "n_tasks": 8,
+          "n_trajectories": 32,
+          "success_rate_pct": 0.0,
+          "pass_at_4_pct": 0.0
+        },
+        "UCF-ucf": {
+          "n_tasks": 8,
+          "n_trajectories": 32,
+          "success_rate_pct": 0.0,
+          "pass_at_4_pct": 0.0
+        }
+      },
+      "detour_false": {
+        "CERT-Uniform": {
+          "n_tasks": 442,
+          "n_trajectories": 1768,
+          "success_rate_pct": 88.91402714932126,
+          "pass_at_4_pct": 89.14027149321268
+        },
+        "CERT-UCT": {
+          "n_tasks": 442,
+          "n_trajectories": 1768,
+          "success_rate_pct": 88.23529411764706,
+          "pass_at_4_pct": 89.59276018099548
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 442,
+          "n_trajectories": 1768,
+          "success_rate_pct": 91.9683257918552,
+          "pass_at_4_pct": 92.98642533936652
+        },
+        "PaTR-K2": {
+          "n_tasks": 442,
+          "n_trajectories": 1768,
+          "success_rate_pct": 87.55656108597285,
+          "pass_at_4_pct": 88.46153846153845
+        },
+        "GRPO4": {
+          "n_tasks": 442,
+          "n_trajectories": 1768,
+          "success_rate_pct": 89.47963800904978,
+          "pass_at_4_pct": 90.72398190045249
+        },
+        "UCF-ucf": {
+          "n_tasks": 442,
+          "n_trajectories": 1768,
+          "success_rate_pct": 97.62443438914026,
+          "pass_at_4_pct": 98.64253393665159
+        }
+      },
+      "detour_true": {
+        "CERT-Uniform": {
+          "n_tasks": 58,
+          "n_trajectories": 232,
+          "success_rate_pct": 12.5,
+          "pass_at_4_pct": 13.793103448275861
+        },
+        "CERT-UCT": {
+          "n_tasks": 58,
+          "n_trajectories": 232,
+          "success_rate_pct": 21.982758620689655,
+          "pass_at_4_pct": 24.137931034482758
+        },
+        "Random-K2-seed42": {
+          "n_tasks": 58,
+          "n_trajectories": 232,
+          "success_rate_pct": 32.327586206896555,
+          "pass_at_4_pct": 37.93103448275862
+        },
+        "PaTR-K2": {
+          "n_tasks": 58,
+          "n_trajectories": 232,
+          "success_rate_pct": 21.551724137931032,
+          "pass_at_4_pct": 24.137931034482758
+        },
+        "GRPO4": {
+          "n_tasks": 58,
+          "n_trajectories": 232,
+          "success_rate_pct": 15.517241379310345,
+          "pass_at_4_pct": 17.24137931034483
+        },
+        "UCF-ucf": {
+          "n_tasks": 58,
+          "n_trajectories": 232,
+          "success_rate_pct": 65.08620689655173,
+          "pass_at_4_pct": 72.41379310344827
+        }
+      }
+    },
+    "baseline_summary_sha256": "df6d766ca28b481ad546aa4c77c78cd9131cb8a7aa36fb2a65fc02fb3e707aaa"
+  },
+  "f02_offline_format_audit": {
+    "source": "read-only CPU audit of retained F02 GRPO rollout token IDs and execution traces",
+    "sampled_steps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      25,
+      100,
+      200,
+      300,
+      400
+    ],
+    "task_occurrences": 640,
+    "trajectories": 2560,
+    "responses": 7630,
+    "executed_nodes": 6841,
+    "eligible_nodes_current_ucf_v2": 182,
+    "excluded_nodes": 6659,
+    "excluded_fraction": 0.9733957023826926,
+    "valid_actions_with_nonempty_prefix_excluded": 6115,
+    "task_occurrences_zero_capacity": 601,
+    "capacity_upper_bound_per_task": 0.284375,
+    "not_actual_ucf_training": true,
+    "cannot_infer_sokoban_S15_rate": true,
+    "source_sha256": {
+      "rollouts_0001.jsonl.gz": "6fc55d6dcf8265e596f8989da77e70509ef202cffb7772f9e893017519834d97",
+      "rollouts_0002.jsonl.gz": "e4c3ccf6fc45c0d6002a40d033d7f218049aaed59666a053b05599ff1fa2fbb5",
+      "rollouts_0003.jsonl.gz": "dd8228919ea12436be42ac147b4474574db272abc51e3c3ded3da33c6589f5b2",
+      "rollouts_0004.jsonl.gz": "e35584592767f0f16706eac283c34bcd4a52531fe370d971cfa9928dd2044564",
+      "rollouts_0005.jsonl.gz": "6107eb94f052f6958059efffb6c2027e435a0a5a858d82c2d9aceb22b419f7d8",
+      "rollouts_0025.jsonl.gz": "a031fe291062009cb89a7b079fec705884c9aed11426dd7c605cab6b3dc596d3",
+      "rollouts_0100.jsonl.gz": "6552566d8a9264636dd6b0d317a51eda0825ad145cb99d6a928f6756d313cd16",
+      "rollouts_0200.jsonl.gz": "381be844cfc21c9388599bffe440e4cc2ebd394298d97fde574e76c1aea2e790",
+      "rollouts_0300.jsonl.gz": "f3223e1bf5fa25e92337cb9dca08abbb1791e4f99ab4239bf2ca79964c0cdd3e",
+      "rollouts_0400.jsonl.gz": "2ad21f59ff3dd144002c0b0b72fb21f0dc3b6c873fd40c227d87d1942eccf583"
+    }
+  },
+  "s05_format_audit_snapshot": {
+    "through_step": 58,
+    "candidate_nodes": 104482,
+    "excluded_nodes": 29,
+    "excluded_fraction": 0.000277559771061044,
+    "forks": 7430,
+    "task_occurrences": 3712,
+    "forks_per_task": 2.0016163793103448
+  },
+  "definitions": {
+    "success_rate": "successful trajectories / trajectories",
+    "pass_at_4": "tasks with >=1 successful rollout / tasks",
+    "initial_mixed": "among original 4 rollouts, both success and failure exist",
+    "leaf_mixed": "among initial plus actual counterfactual leaves, both success and failure exist",
+    "rescue_rate": "initial all-failure task groups with >=1 successful counterfactual / initial all-failure groups",
+    "counterfactual_flip_rate": "selected original/CF pairs with differing terminal reward / eligible evaluated CF pairs",
+    "training_cost": "sum of train_metrics fields only; evaluation cost excluded unless stated",
+    "KL": "training implementation aggregation, not a universal threshold or directly comparable across different response lengths"
+  },
+  "patch_receipt": {
+    "source_artifact": "vllm_mask_repair/receipt.json",
+    "sha256": "d7227571be758eb290bee138211c6b83a7b8ba46c2ebe678674c22886bc04926",
+    "target": "vllm/v1/worker/gpu_input_batch.py",
+    "before_sha256": "a1999137299440f6e8d42d5a8a1a1254edc3ef63e541b84c1b9a4ba7158698a1",
+    "after_sha256": "44319f1217eb83e38acdfe19d5e7013f8c329887d137ef10af5dc8707cda0c27",
+    "cpu_swap_checks": 57,
+    "algorithm_config_changed": false
+  },
+  "production_source_hashes": {
+    "patr_core.py": "e4440e1f4af3e6b2e38ce7facb6775cae971eebf8fc29a2f701c2639aa937ca8",
+    "train.py": "94f6f40332bd68bb654d7d0aaa09cac78edb9cb0e5bae9f6123549ca6fa8f2d0",
+    "task_envs.py": "cd0f135cfe8ee0ddaff2e582f7317a338b6331b34d857c63f0a72ed5f8e71538",
+    "external_baselines.py": "7bb1e7d5a94cf471aed69794f9d11d541d9a62e1c7411b0e9895c644a5fea4d0",
+    "sft.py": "d3efbe677bd3258574c988e983b6b457f421b7b443f3bb6ba241657b74f6e403",
+    "scripts/q35_engine_loader.py": "cdc2116a71af0fb6170940bb9625ae7f798c7984c257c85374b591f4560994f9",
+    "ucf/ucf_select.py": "fc495803b5754a35bec98a8ed24ed37a0ecb378154f76db9e2753205ad548de1",
+    "ucf/ucf_collect.py": "006c370c3a9c37a9b0a2d63b853e4f0c541e21988d4e59af48e27469298ee85d",
+    "ucf/ucf_probe.py": "650216d1be17ffb88dcfd4428503e56da435c7ee32d0a37e27b2d4d0f8cb561f",
+    "ucf/ucf_weights.py": "d21f880cd52c8e46798a81679fd7ecc58a3dde5c7d4764a0aac04b3d3a703895"
+  },
+  "v21_admission_audit": {
+    "source_artifact": "q35_ucf_v21_20261109.md",
+    "source_sha256": "1ec6ed88241813f9b7c6c1321bd4e593cbf12a8d77dcc4f7643418358d1cc522",
+    "observed_at_utc": "2026-11-08T22:28:29.798697+00:00",
+    "overall_cpu_acceptance": false,
+    "gpu_admission": "closed",
+    "gpu_smoke_launched": false,
+    "f02_full_offline": {
+      "files": 400,
+      "original_trajectories": 102400,
+      "turns": 334426,
+      "turns_with_fence": 322741,
+      "fence_coverage_percent": 96.505953,
+      "eligible_successor_budget_turns": 322721,
+      "eligible_turn_coverage_percent": 96.499973,
+      "eligible_trajectory_coverage_percent": 98.223633,
+      "budget_exhausted_at_fence": 20,
+      "first_token_final_parser_mismatch": 41328,
+      "mismatch_denominator": 322741,
+      "mismatch_percent": 12.805314,
+      "admission_threshold_percent": 2.0,
+      "expected_forks_per_task": 2.0,
+      "expected_forks_scope": "calibrated mathematical aggregate, not GPU measurement; full finite softmax positivity assumed"
+    },
+    "ht_simulation": {
+      "four_action_support_max_z": 1.4841,
+      "four_action_support_passed": true,
+      "residual_probability": 0.08,
+      "residual_support_max_z": 149.4415,
+      "residual_support_passed": false,
+      "monte_carlo_vs_analytic_biased_estimator_max_z": 1.931,
+      "scope": "synthetic mathematical counterexample, not measured F02 or S15 gradient bias"
+    },
+    "november_7_smoke_exclusive_reasons": [
+      {
+        "attempt": "ucf_protocol",
+        "turns": 47,
+        "length_truncated": 8,
+        "format_excluded_after_length": 39,
+        "eligible": 0
+      },
+      {
+        "attempt": "ucf_smoke_capacity",
+        "turns": 26,
+        "length_truncated": 14,
+        "format_excluded_after_length": 12,
+        "eligible": 0
+      }
+    ],
+    "earlier_smoke_missing_raw": [
+      "ucf",
+      "ucf_fullbudget"
+    ],
+    "comparison_warning": "noSFT v2.1 versus SFT v2 changes both initialization and implementation; not a strict SFT-only ablation"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "verified": 1000,
+  "unique_train_maps": 1000,
+  "heldout_overlap": 0,
+  "geometry_and_environment_agree": true
+}

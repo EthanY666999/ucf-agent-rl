@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "gpu_used": false,
+  "model_loaded": false,
+  "examples": 15857,
+  "episodes": 1000,
+  "total_input_tokens": 7003141,
+  "supervised_tokens": 148320,
+  "max_example_tokens": 1019,
+  "encoded_sha256": "c5dc9ec67af92836f1921fb487c6ee933f9e195a7f53a4d817de2cb267e8e4af",
+  "enable_thinking": false,
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+  "chat_template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "input_sha256": "689fdb9bdd38c3864712539ff59edcb9f47cb6214c6a40d5c9f0d02fb287e5ea"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "environment": "sokoban",
+    "independently_replayed": 1000,
+    "successful": 1000,
+    "train_only": true,
+    "heldout_uid_overlap": 0,
+    "action_count": 5230,
+    "all_observations_verified": true,
+    "source_sha256": "d66e9e243ee9f53e0a74b24590deb2aa3fd6d4d586191793353996a45f35b240",
+    "GPU_used": false
+  },
+  {
+    "environment": "flh",
+    "independently_replayed": 1000,
+    "successful": 1000,
+    "train_only": true,
+    "heldout_uid_overlap": 0,
+    "action_count": 10448,
+    "all_observations_verified": true,
+    "source_sha256": "06035f85a894d2af023f26b5b78bf9820bed554fe0a1561b4111b7eeaa5583d7",
+    "GPU_used": false
+  }
+]

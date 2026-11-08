@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "gpu_used": false,
+  "game": "train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+  "initial_expert_steps": 14,
+  "remaining_expert_steps": 1,
+  "process_score": 0.9285714285714286,
+  "admissible_actions": 33,
+  "class_counts": {
+    "GOAL": 1,
+    "STAY": 0
+  },
+  "parent_unchanged": true,
+  "elapsed_seconds": 69.95432567596436
+}

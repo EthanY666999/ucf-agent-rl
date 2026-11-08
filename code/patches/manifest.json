@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-09T02:47:33.772458+08:00",
+  "before_sha256": "a1999137299440f6e8d42d5a8a1a1254edc3ef63e541b84c1b9a4ba7158698a1",
+  "after_sha256": "44319f1217eb83e38acdfe19d5e7013f8c329887d137ef10af5dc8707cda0c27",
+  "change": "clone both RHS rows before allowed_token_ids mask swap to avoid torch view alias overwrite",
+  "cpu_tests": {
+    "original_bug_reproduced": true,
+    "patched_actual_method_swap_checks": 57,
+    "no_mask_case_passed": true,
+    "GPU_used": false
+  },
+  "experiment_code_changed": false,
+  "algorithm_config_changed": false,
+  "target_version": "0.19.1",
+  "publication_scope": "CPU verification from deployed fix; package patch only"
+}

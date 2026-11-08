@@ -1,0 +1,14 @@
+{
+  "python": "3.12.16",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "gpu_used": false,
+  "model_weights_loaded": false,
+  "packages": {
+    "alfworld": "0.4.2",
+    "textworld": "1.7.0",
+    "fast-downward-textworld": "20.6.4",
+    "numpy": "2.5.4",
+    "transformers": "5.5.4",
+    "tokenizers": "0.22.2"
+  }
+}

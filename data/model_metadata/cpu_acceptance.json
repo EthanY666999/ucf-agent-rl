@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "device": "meta_shapes_and_cpu_tokenizer",
+  "weights_downloaded": false,
+  "torch": "2.10.0",
+  "transformers": "5.5.4",
+  "models": {
+    "Qwen/Qwen3.5-2B": {
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "fence_id": 71093,
+      "actual_ucf_action_ids": {
+        "Left": 5247,
+        " Left": 13333,
+        "Down": 4308,
+        " Down": 6087,
+        "Right": 5791,
+        " Right": 9785,
+        "Up": 2248,
+        " Up": 3038
+      },
+      "actual_ucf_token_to_environment_action": {
+        "5247": 1,
+        "13333": 1,
+        "4308": 2,
+        "6087": 2,
+        "5791": 3,
+        "9785": 3,
+        "2248": 4,
+        "3038": 4
+      },
+      "parser_diagnostic_action_ids": {
+        "Left": 5247,
+        "Down": 4308,
+        "Right": 5791,
+        "Up": 2248,
+        "left": 2282,
+        "down": 2829,
+        "right": 1246,
+        "up": 446
+      },
+      "vocab_size": 248077,
+      "eos_token_id": 248046,
+      "tie_word_embeddings": true,
+      "text_parameter_count": 1881825088,
+      "original_checkpoint_total_bytes": 4548144832,
+      "historical_empty_think_preserved": true,
+      "official_rerender_historical_think_blocks": 0,
+      "default_thinking_enabled": false,
+      "nonthinking_template_sha256": "54445918062ccf014672c2ebd6e8e10e541ec54b03b32f599d3fa2390a1b4e6d",
+      "thinking_template_sha256": "0a46937d85980c2229bed296a7603ce420b39fcb12c40cd7d1a840cbc329f4ff",
+      "memory_gib": {
+        "actor_fp32": 7.010344743728638,
+        "grad_fp32": 7.010344743728638,
+        "adamw_m_v_fp32": 14.020689487457275,
+        "reference_bf16": 3.505172371864319,
+        "vllm_text_bf16": 3.505172371864319,
+        "static_text_only_total": 35.05172371864319,
+        "checkpoint_fp32_actor_plus_adam": 21.031034231185913
+      }
+    },
+    "Qwen/Qwen3.5-4B": {
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "fence_id": 71093,
+      "actual_ucf_action_ids": {
+        "Left": 5247,
+        " Left": 13333,
+        "Down": 4308,
+        " Down": 6087,
+        "Right": 5791,
+        " Right": 9785,
+        "Up": 2248,
+        " Up": 3038
+      },
+      "actual_ucf_token_to_environment_action": {
+        "5247": 1,
+        "13333": 1,
+        "4308": 2,
+        "6087": 2,
+        "5791": 3,
+        "9785": 3,
+        "2248": 4,
+        "3038": 4
+      },
+      "parser_diagnostic_action_ids": {
+        "Left": 5247,
+        "Down": 4308,
+        "Right": 5791,
+        "Up": 2248,
+        "left": 2282,
+        "down": 2829,
+        "right": 1246,
+        "up": 446
+      },
+      "vocab_size": 248077,
+      "eos_token_id": 248046,
+      "tie_word_embeddings": true,
+      "text_parameter_count": 4205751296,
+      "original_checkpoint_total_bytes": 9319737856,
+      "historical_empty_think_preserved": true,
+      "official_rerender_historical_think_blocks": 0,
+      "default_thinking_enabled": true,
+      "nonthinking_template_sha256": "54445918062ccf014672c2ebd6e8e10e541ec54b03b32f599d3fa2390a1b4e6d",
+      "thinking_template_sha256": "0a46937d85980c2229bed296a7603ce420b39fcb12c40cd7d1a840cbc329f4ff",
+      "memory_gib": {
+        "actor_fp32": 15.667644500732422,
+        "grad_fp32": 15.667644500732422,
+        "adamw_m_v_fp32": 31.335289001464844,
+        "reference_bf16": 7.833822250366211,
+        "vllm_text_bf16": 7.833822250366211,
+        "static_text_only_total": 78.33822250366211,
+        "checkpoint_fp32_actor_plus_adam": 47.002933502197266
+      }
+    },
+    "Qwen/Qwen3.5-9B": {
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "fence_id": 71093,
+      "actual_ucf_action_ids": {
+        "Left": 5247,
+        " Left": 13333,
+        "Down": 4308,
+        " Down": 6087,
+        "Right": 5791,
+        " Right": 9785,
+        "Up": 2248,
+        " Up": 3038
+      },
+      "actual_ucf_token_to_environment_action": {
+        "5247": 1,
+        "13333": 1,
+        "4308": 2,
+        "6087": 2,
+        "5791": 3,
+        "9785": 3,
+        "2248": 4,
+        "3038": 4
+      },
+      "parser_diagnostic_action_ids": {
+        "Left": 5247,
+        "Down": 4308,
+        "Right": 5791,
+        "Up": 2248,
+        "left": 2282,
+        "down": 2829,
+        "right": 1246,
+        "up": 446
+      },
+      "vocab_size": 248077,
+      "eos_token_id": 248046,
+      "tie_word_embeddings": false,
+      "text_parameter_count": 8953803264,
+      "original_checkpoint_total_bytes": 19306216416,
+      "historical_empty_think_preserved": true,
+      "official_rerender_historical_think_blocks": 0,
+      "default_thinking_enabled": true,
+      "nonthinking_template_sha256": "54445918062ccf014672c2ebd6e8e10e541ec54b03b32f599d3fa2390a1b4e6d",
+      "thinking_template_sha256": "0a46937d85980c2229bed296a7603ce420b39fcb12c40cd7d1a840cbc329f4ff",
+      "memory_gib": {
+        "actor_fp32": 33.35551643371582,
+        "grad_fp32": 33.35551643371582,
+        "adamw_m_v_fp32": 66.71103286743164,
+        "reference_bf16": 16.67775821685791,
+        "vllm_text_bf16": 16.67775821685791,
+        "static_text_only_total": 166.7775821685791,
+        "checkpoint_fp32_actor_plus_adam": 100.06654930114746
+      }
+    }
+  },
+  "family_contract_identical": true,
+  "contract_scope": "tokenizer core plus explicit enable_thinking=False/True fixtures; NOT implicit template defaults",
+  "tokenizer_core_files_identical": true
+}

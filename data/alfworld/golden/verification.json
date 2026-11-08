@@ -1,0 +1,37 @@
+{
+  "accepted": 1000,
+  "target": 1000,
+  "attempted": 1328,
+  "failures": 327,
+  "elapsed_seconds": 1463.3668389320374,
+  "verification": "fresh environment, exact observation/action/reward replay",
+  "completed": true,
+  "sft_examples": 15857,
+  "task_types": {
+    "pick_and_place_simple": 286,
+    "look_at_obj_in_light": 109,
+    "pick_clean_then_place_in_recep": 240,
+    "pick_heat_then_place_in_recep": 155,
+    "pick_cool_then_place_in_recep": 167,
+    "pick_two_obj_and_place": 43
+  },
+  "episode_steps": {
+    "min": 4,
+    "max": 50,
+    "mean": 15.857
+  },
+  "files": {
+    "sft_messages.jsonl.gz": {
+      "bytes": 912163,
+      "sha256": "689fdb9bdd38c3864712539ff59edcb9f47cb6214c6a40d5c9f0d02fb287e5ea"
+    },
+    "golden_traces.jsonl.gz": {
+      "bytes": 1602994,
+      "sha256": "9fde68c25deffa988eec2931e774305cd7cb034dbae07a59a2808ca3b3f81d44"
+    }
+  },
+  "successful_not_retained_after_target": 1,
+  "failure_counts": {
+    "expert_not_solved_within_50": 327
+  }
+}

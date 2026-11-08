@@ -1,0 +1,31 @@
+{
+  "cases": [
+    {
+      "N": 200000,
+      "seed": 20261109,
+      "residual_mass": 0.0,
+      "max_abs_z": 1.4840891884471443,
+      "passed": true,
+      "max_z_against_analytic_estimator": 1.4840891884471443,
+      "max_analytic_bias": 0.0,
+      "mean_forks": 0.99524,
+      "Part_B_reasoning_and_fence_gradient": 0,
+      "target": "exact conditional action-suffix gradient weighted by observed prefix/fence occupancy; F=2 common scale removed",
+      "prefix_probability_not_multiplied_again": true
+    },
+    {
+      "N": 200000,
+      "seed": 20261109,
+      "residual_mass": 0.08,
+      "max_abs_z": 149.441537636699,
+      "passed": false,
+      "max_z_against_analytic_estimator": 1.9309541267234487,
+      "max_analytic_bias": 0.009314549391360002,
+      "mean_forks": 0.9969,
+      "Part_B_reasoning_and_fence_gradient": 0,
+      "target": "exact conditional action-suffix gradient weighted by observed prefix/fence occupancy; F=2 common scale removed",
+      "prefix_probability_not_multiplied_again": true
+    }
+  ],
+  "passed": false
+}

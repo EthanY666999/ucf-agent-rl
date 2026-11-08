@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "execution": "manual serial; no automatic queue",
+  "main": [
+    {
+      "id": "4b_sokoban_base_eval_seed42",
+      "config": "configs/4b/sokoban/base_eval_seed42.json",
+      "stage": "evaluate",
+      "method": "grpo",
+      "gates": [],
+      "same_sft_start": null
+    },
+    {
+      "id": "4b_sokoban_sft_seed42",
+      "config": "configs/4b/sokoban/sft_seed42.json",
+      "stage": "sft",
+      "method": "sft",
+      "gates": [],
+      "same_sft_start": null
+    },
+    {
+      "id": "4b_sokoban_grpo4_seed42",
+      "config": "configs/4b/sokoban/grpo4_seed42.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_sokoban_tree_random_k2_seed42",
+      "config": "configs/4b/sokoban/tree_random_k2_seed42.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_sokoban_ucf_v2_seed42",
+      "config": "configs/4b/sokoban/ucf_v2_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_flh_base_eval_seed42",
+      "config": "configs/4b/flh/base_eval_seed42.json",
+      "stage": "evaluate",
+      "method": "grpo",
+      "gates": [],
+      "same_sft_start": null
+    },
+    {
+      "id": "4b_flh_sft_seed42",
+      "config": "configs/4b/flh/sft_seed42.json",
+      "stage": "sft",
+      "method": "sft",
+      "gates": [],
+      "same_sft_start": null
+    },
+    {
+      "id": "4b_flh_grpo4_seed42",
+      "config": "configs/4b/flh/grpo4_seed42.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "4b_flh_tree_random_k2_seed42",
+      "config": "configs/4b/flh/tree_random_k2_seed42.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "4b_flh_ucf_v2_seed42",
+      "config": "configs/4b/flh/ucf_v2_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "4b_sokoban_starpo_s_seed42",
+      "config": "configs/4b/sokoban/starpo_s_seed42.json",
+      "stage": "train",
+      "method": "starpo_s",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_sokoban_gigpo_seed42",
+      "config": "configs/4b/sokoban/gigpo_seed42.json",
+      "stage": "train",
+      "method": "gigpo",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_flh_starpo_s_seed42",
+      "config": "configs/4b/flh/starpo_s_seed42.json",
+      "stage": "train",
+      "method": "starpo_s",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "4b_flh_gigpo_seed42",
+      "config": "configs/4b/flh/gigpo_seed42.json",
+      "stage": "train",
+      "method": "gigpo",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "4b_sokoban_grpo4_seed43",
+      "config": "configs/4b/sokoban/grpo4_seed43.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_sokoban_tree_random_k2_seed43",
+      "config": "configs/4b/sokoban/tree_random_k2_seed43.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_sokoban_ucf_v2_seed43",
+      "config": "configs/4b/sokoban/ucf_v2_seed43.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [],
+      "same_sft_start": "runs/4b/sokoban/sft_seed42"
+    },
+    {
+      "id": "4b_flh_grpo4_seed43",
+      "config": "configs/4b/flh/grpo4_seed43.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "4b_flh_tree_random_k2_seed43",
+      "config": "configs/4b/flh/tree_random_k2_seed43.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "4b_flh_ucf_v2_seed43",
+      "config": "configs/4b/flh/ucf_v2_seed43.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [],
+      "same_sft_start": "runs/4b/flh/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_base_eval_seed42",
+      "config": "configs/9b/alfworld/base_eval_seed42.json",
+      "stage": "evaluate",
+      "method": "grpo",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": null
+    },
+    {
+      "id": "9b_alfworld_sft_seed42",
+      "config": "configs/9b/alfworld/sft_seed42.json",
+      "stage": "sft",
+      "method": "sft",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": null
+    },
+    {
+      "id": "9b_alfworld_grpo4_seed42",
+      "config": "configs/9b/alfworld/grpo4_seed42.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_gigpo_seed42",
+      "config": "configs/9b/alfworld/gigpo_seed42.json",
+      "stage": "train",
+      "method": "gigpo",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_tree_random_k2_seed42",
+      "config": "configs/9b/alfworld/tree_random_k2_seed42.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_ucf_v2.1_seed42",
+      "config": "configs/9b/alfworld/ucf_v2.1_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required",
+        "v2.1_2b_acceptance_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_sokoban_base_eval_seed42",
+      "config": "configs/9b/sokoban/base_eval_seed42.json",
+      "stage": "evaluate",
+      "method": "grpo",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": null
+    },
+    {
+      "id": "9b_sokoban_sft_seed42",
+      "config": "configs/9b/sokoban/sft_seed42.json",
+      "stage": "sft",
+      "method": "sft",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": null
+    },
+    {
+      "id": "9b_sokoban_grpo4_seed42",
+      "config": "configs/9b/sokoban/grpo4_seed42.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": "runs/9b/sokoban/sft_seed42"
+    },
+    {
+      "id": "9b_sokoban_tree_random_k2_seed42",
+      "config": "configs/9b/sokoban/tree_random_k2_seed42.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": "runs/9b/sokoban/sft_seed42"
+    },
+    {
+      "id": "9b_sokoban_ucf_v2_seed42",
+      "config": "configs/9b/sokoban/ucf_v2_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": "runs/9b/sokoban/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_grpo4_seed43",
+      "config": "configs/9b/alfworld/grpo4_seed43.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_gigpo_seed43",
+      "config": "configs/9b/alfworld/gigpo_seed43.json",
+      "stage": "train",
+      "method": "gigpo",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_tree_random_k2_seed43",
+      "config": "configs/9b/alfworld/tree_random_k2_seed43.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_alfworld_ucf_v2.1_seed43",
+      "config": "configs/9b/alfworld/ucf_v2.1_seed43.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "distributed_training_backend_required",
+        "alfworld_training_integration_required",
+        "v2.1_2b_acceptance_required"
+      ],
+      "same_sft_start": "runs/9b/alfworld/sft_seed42"
+    },
+    {
+      "id": "9b_sokoban_grpo4_seed43",
+      "config": "configs/9b/sokoban/grpo4_seed43.json",
+      "stage": "train",
+      "method": "grpo",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": "runs/9b/sokoban/sft_seed42"
+    },
+    {
+      "id": "9b_sokoban_tree_random_k2_seed43",
+      "config": "configs/9b/sokoban/tree_random_k2_seed43.json",
+      "stage": "train",
+      "method": "tree_random",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": "runs/9b/sokoban/sft_seed42"
+    },
+    {
+      "id": "9b_sokoban_ucf_v2_seed43",
+      "config": "configs/9b/sokoban/ucf_v2_seed43.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "distributed_training_backend_required"
+      ],
+      "same_sft_start": "runs/9b/sokoban/sft_seed42"
+    }
+  ],
+  "conditional": [
+    {
+      "id": "4b_sokoban_nosft_ucf_v2.1_seed42",
+      "config": "configs/4b/sokoban/nosft_ucf_v2.1_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "v2.1_2b_acceptance_required"
+      ],
+      "same_sft_start": null
+    },
+    {
+      "id": "4b_flh_nosft_ucf_v2.1_seed42",
+      "config": "configs/4b/flh/nosft_ucf_v2.1_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "v2.1_2b_acceptance_required"
+      ],
+      "same_sft_start": null
+    },
+    {
+      "id": "9b_sokoban_nosft_ucf_v2.1_seed42",
+      "config": "configs/9b/sokoban/nosft_ucf_v2.1_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "distributed_training_backend_required",
+        "v2.1_2b_acceptance_required"
+      ],
+      "same_sft_start": null
+    },
+    {
+      "id": "9b_flh_nosft_ucf_v2.1_seed42",
+      "config": "configs/9b/flh/nosft_ucf_v2.1_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "distributed_training_backend_required",
+        "v2.1_2b_acceptance_required"
+      ],
+      "same_sft_start": null
+    }
+  ],
+  "webshop": "future work"
+}

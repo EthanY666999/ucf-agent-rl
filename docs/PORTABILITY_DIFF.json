@@ -1,0 +1,37 @@
+{
+  "source_commit": "e32ac58b8a857eb98023ec1f79bbe0cf855c95ac",
+  "changed_existing_source_files": [
+    {
+      "file": "code/train.py",
+      "production_sha256": "94f6f40332bd68bb654d7d0aaa09cac78edb9cb0e5bae9f6123549ca6fa8f2d0",
+      "release_sha256": "0a915da0b574f94905d490fab84973fe7ec11e7847120331c8153d29ec8ae85e"
+    },
+    {
+      "file": "code/scripts/q35_engine_loader.py",
+      "production_sha256": "cdc2116a71af0fb6170940bb9625ae7f798c7984c257c85374b591f4560994f9",
+      "release_sha256": "5897dc683b57ecfec72f5a2d1433ba32564b116b8284378dc8a68286c5b49011"
+    },
+    {
+      "file": "code/ucf/run_ucf.py",
+      "production_sha256": "16e26a3a620dd4c7373003eb0e1d42c2bd34bb2ebc8a5daf07473e2eec3c8d04",
+      "release_sha256": "9bbc358fee15c9da8ab20e8e937b650d056ac5aaccc545042232189322cd266c"
+    },
+    {
+      "file": "code/ucf/tests/test_ucf.py",
+      "production_sha256": "6c88d6fb3bcdb589c6132e4770af0230fcf4b2c7b4e8aee47fe99ab5e33d09a7",
+      "release_sha256": "b2cf9892a8e74eb7e512586945a7251f8d559ca1c677d59e8846da0cd3c34ac2"
+    },
+    {
+      "file": "code/ucf/scripts/accept_ucf.py",
+      "production_sha256": "6a1d7fa819acfe1529994c73d2c4da05ba01a25a3742e99f579d61dfffbb4db3",
+      "release_sha256": "3dd015f01d996173c823f86b96f27a7f805d03882652dfcd63bbb0038d76dd99"
+    },
+    {
+      "file": "code/ucf/scripts/phase1_ucf.py",
+      "production_sha256": "47620506de45b57f8a3a86c908eab27f9f499663a264a80499813bcebbea0f2c",
+      "release_sha256": "7a4f38062c06a62e1b588b443e2a789920e99c496e0a7362b2e3d1419b46620b"
+    }
+  ],
+  "new_source": "ALFWorld adapter, first-fence experimental copy, release entry points/tests; see Git history",
+  "production_modified": false
+}

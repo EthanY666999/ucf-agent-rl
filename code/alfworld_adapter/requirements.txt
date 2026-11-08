@@ -1,0 +1,4 @@
+# Optional CPU-only ALFWorld environment, tested on Python 3.12.
+alfworld==0.4.2
+textworld[pddl]==1.7.0
+transformers==5.5.4

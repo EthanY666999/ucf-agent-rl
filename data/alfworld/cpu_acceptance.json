@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "gpu_used": false,
+  "model_loaded": false,
+  "episodes": [
+    {
+      "game": "train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+      "split": "train",
+      "steps": 14,
+      "won": true,
+      "fork_replay_passed": true,
+      "caller_rng_preserved": true
+    },
+    {
+      "game": "train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174142_375532/game.tw-pddl",
+      "split": "train",
+      "steps": 14,
+      "won": true,
+      "fork_replay_passed": true,
+      "caller_rng_preserved": true
+    },
+    {
+      "game": "valid_seen/look_at_obj_in_light-AlarmClock-None-DeskLamp-323/trial_T20190909_044715_250790/game.tw-pddl",
+      "split": "valid_seen",
+      "steps": 5,
+      "won": true,
+      "fork_replay_passed": true,
+      "caller_rng_preserved": true
+    },
+    {
+      "game": "valid_seen/look_at_obj_in_light-Bowl-None-DeskLamp-301/trial_T20190909_150719_492274/game.tw-pddl",
+      "split": "valid_seen",
+      "steps": 48,
+      "won": true,
+      "fork_replay_passed": true,
+      "caller_rng_preserved": true
+    },
+    {
+      "game": "valid_unseen/look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222917_366542/game.tw-pddl",
+      "split": "valid_unseen",
+      "steps": 12,
+      "won": true,
+      "fork_replay_passed": true,
+      "caller_rng_preserved": true
+    },
+    {
+      "game": "valid_unseen/look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222933_607649/game.tw-pddl",
+      "split": "valid_unseen",
+      "steps": 12,
+      "won": true,
+      "fork_replay_passed": true,
+      "caller_rng_preserved": true
+    }
+  ],
+  "expert_successes": 6,
+  "note": "Expert failures within 50 steps are retained; no success claim for every task."
+}

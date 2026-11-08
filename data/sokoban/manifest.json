@@ -1,0 +1,52 @@
+{
+  "environment": "sokoban",
+  "files": {
+    "sft_messages.jsonl": "d66e9e243ee9f53e0a74b24590deb2aa3fd6d4d586191793353996a45f35b240",
+    "maps.json": "53932236e5f528da5c6442586b2054561b8a510782f42943268cdf44eb53af27",
+    "data.json": "6584a8b35a19350459193cce7d1a868cd24eb28e407295f78ee4727a71555d87",
+    "supplemental500/tasks.json": "2563df6bba2241b32e262e560a0e2f524d6b6ee39959d28a102561d62a5912b0",
+    "supplemental500/protocol.json": "d7f97f009bf1967a238d47aa29691223c9547211bd71caddbdff2cf084145d6f"
+  },
+  "split_statistics": {
+    "train": {
+      "n": 10000,
+      "min": 1,
+      "max": 10,
+      "detours": 9415
+    },
+    "validation": {
+      "n": 100,
+      "min": 1,
+      "max": 10,
+      "detours": 95
+    },
+    "test": {
+      "n": 100,
+      "min": 1,
+      "max": 10,
+      "detours": 98
+    },
+    "supplemental": {
+      "n": 500,
+      "min": 1,
+      "max": 10,
+      "detours": 473
+    }
+  },
+  "seed_overlap_with_original": 0,
+  "map_overlap_with_original": 0,
+  "unique_maps": 10700,
+  "geometry_dedup": true,
+  "generator_sha256": "2d20251bc437b15ab41d0acc3864c9fb8a6aa7ef2f092bfe20bc292bc54bebe1",
+  "task_envs_sha256": "cd0f135cfe8ee0ddaff2e582f7317a338b6331b34d857c63f0a72ed5f8e71538",
+  "sokoban_generation": "6x6 border walls; independent internal walls p=.15; uniform distinct player/box/goal; BFS rejection to 1..10 solution steps",
+  "detour_definition": "shortest solution > initial box-goal Manhattan",
+  "new_eval_sets": [
+    "main100",
+    "supplemental500"
+  ],
+  "legacy_filtered409_map8": "not transplanted across environments",
+  "frozen_actual_maps": true,
+  "loaded_maps_equal_generated": true,
+  "release_note": "Original frozen data; historical internal schema evidence excluded from public package."
+}

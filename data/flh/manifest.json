@@ -1,0 +1,51 @@
+{
+  "environment": "flh",
+  "files": {
+    "maps.json": "9574a11237ce4d3433911319baa54755ca70c9abf0aa25f4cce7e80ad984b4df",
+    "data.json": "00ab9e70bef8acb57751facb6da6c9bd29e9b5bd3d5492e6f4b293d1034961d5",
+    "supplemental500/tasks.json": "95dc7afd8b24126835a9c3c05182698246500ef827ef5266bc01d4571892d349",
+    "supplemental500/protocol.json": "1c37546ad123edb5e056be5ad675102471d55ce00e95828e406a4701f77eaaad"
+  },
+  "split_statistics": {
+    "train": {
+      "n": 10000,
+      "min": 7,
+      "max": 16,
+      "detours": 5286
+    },
+    "validation": {
+      "n": 100,
+      "min": 7,
+      "max": 16,
+      "detours": 53
+    },
+    "test": {
+      "n": 100,
+      "min": 7,
+      "max": 16,
+      "detours": 51
+    },
+    "supplemental": {
+      "n": 500,
+      "min": 7,
+      "max": 16,
+      "detours": 275
+    }
+  },
+  "seed_overlap_with_original": 0,
+  "map_overlap_with_original": 0,
+  "unique_maps": 10700,
+  "geometry_dedup": true,
+  "generator_sha256": "2d20251bc437b15ab41d0acc3864c9fb8a6aa7ef2f092bfe20bc292bc54bebe1",
+  "task_envs_sha256": "cd0f135cfe8ee0ddaff2e582f7317a338b6331b34d857c63f0a72ed5f8e71538",
+  "sokoban_generation": null,
+  "detour_definition": "shortest path > start-goal Manhattan",
+  "new_eval_sets": [
+    "main100",
+    "supplemental500"
+  ],
+  "legacy_filtered409_map8": "not transplanted across environments",
+  "frozen_actual_maps": true,
+  "loaded_maps_equal_generated": true,
+  "release_note": "Original frozen data; historical internal schema evidence excluded from public package."
+}

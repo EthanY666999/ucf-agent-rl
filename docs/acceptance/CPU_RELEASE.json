@@ -1,0 +1,35 @@
+{
+  "status": "CPU checks passed; GPU training not validated",
+  "GPU_used": false,
+  "weights_downloaded": false,
+  "grid_demonstrations": {
+    "sokoban": 1000,
+    "flh": 1000,
+    "verification": "all actions and observations replayed"
+  },
+  "alfworld": {
+    "episodes": 1000,
+    "independent_replay_each_episode": true,
+    "sft_rows": 15857,
+    "epochs": 1,
+    "batch_size": 16,
+    "planned_sft_steps": 992,
+    "tokenizer_audit": [
+      "4B all 15857 rows",
+      "9B all 15857 rows"
+    ],
+    "additional_independent_replay_sample": 16
+  },
+  "functional_tests": {
+    "passed": 61,
+    "note": "Includes regression checks that detect known v2.1 bias; does not certify unbiasedness."
+  },
+  "config_cpu_dry_runs": 42,
+  "blocking_limitations": [
+    "v2.1 first-action/parser mismatch and residual-support mathematical acceptance failed",
+    "production v2 uses batch calibration, not intended leave-one-task-out",
+    "9B training state sharding not implemented",
+    "ALFWorld SFT/RL training adapter not integrated"
+  ],
+  "fresh_clone": "pending; separate receipt added after push"
+}

@@ -1,0 +1,7 @@
+# Linux NVIDIA only. See docs/INSTALL.md for matched wheel requirements.
+torch==2.10.0
+vllm==0.19.1
+transformers==5.5.4
+numpy==2.2.6
+gymnasium==1.1.1
+pytest>=8,<10
