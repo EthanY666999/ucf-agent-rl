@@ -7,9 +7,12 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'RELEASE_MANIFEST.json'
 TREES=('code','configs','scripts','tests','data')
+DEPENDENCIES=('requirements-cpu.txt','requirements-gpu.txt')
 
 
 def files():
+    for name in DEPENDENCIES:
+        yield ROOT/name
     for tree in TREES:
         for p in sorted((ROOT/tree).rglob('*')):
             if not p.is_file() or '__pycache__' in p.parts or '.pytest_cache' in p.parts:continue
@@ -43,7 +46,7 @@ def main():
     current=inventory()
     if a.build:
         MANIFEST.write_text(json.dumps(dict(schema_version=1,algorithm_origin_commit='e32ac58b8a857eb98023ec1f79bbe0cf855c95ac',
-            scope='code, configs, scripts, tests and published data; no weights or internal logs',files=current),indent=2)+'\n')
+            scope='root dependency pins, code, configs, scripts, tests and published data; no weights or internal logs',files=current),indent=2)+'\n')
         print(f'Created manifest for {len(current)} files');return
     expected=json.loads(MANIFEST.read_text())['files']
     changed=[k for k in sorted(set(expected)|set(current)) if expected.get(k)!=current.get(k)]

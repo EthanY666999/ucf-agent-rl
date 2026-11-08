@@ -4,7 +4,7 @@
     {
       "file": "code/train.py",
       "production_sha256": "94f6f40332bd68bb654d7d0aaa09cac78edb9cb0e5bae9f6123549ca6fa8f2d0",
-      "release_sha256": "0a915da0b574f94905d490fab84973fe7ec11e7847120331c8153d29ec8ae85e"
+      "release_sha256": "afb59c33b8af58ca389578cc251d1f9e49eec0dcfcd6f882ca637b296f00d7fd"
     },
     {
       "file": "code/scripts/q35_engine_loader.py",
@@ -33,5 +33,6 @@
     }
   ],
   "new_source": "ALFWorld adapter, first-fence experimental copy, release entry points/tests; see Git history",
-  "production_modified": false
+  "production_modified": false,
+  "release_revision_note": "5.22.2 review: train main and shared release_admission gate deny legacy or unaccepted UCF; no device deployment changes."
 }

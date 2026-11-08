@@ -1,5 +1,5 @@
 {
-  "seed": 42,
+  "seed": 43,
   "rollout_scheduler": "per_task_async",
   "sampling_seed_protocol": "sha256(base_seed,task_uid,lineage,turn)",
   "steps": 400,
@@ -42,7 +42,7 @@
   "bootstrap_model": "models/Qwen3.5-4B",
   "model_family": "Qwen3.5",
   "environment": "sokoban",
-  "run_label": "4b_sokoban_ucf_v2_seed42",
+  "run_label": "4b_sokoban_ucf_v2.2_seed43",
   "optimizer": "adamw",
   "dataset_path": "data/sokoban/data.json",
   "dataset_sha256": "6584a8b35a19350459193cce7d1a868cd24eb28e407295f78ee4727a71555d87",
@@ -53,18 +53,22 @@
   "ucf_beta": 0.25,
   "ucf_variant": "ucf",
   "ucf_c0": 1.0,
-  "ucf_controller": "v2",
-  "ucf_version": "v2",
+  "ucf_controller": "leave_one_task_out",
+  "ucf_version": "v2.2",
   "_release": {
-    "id": "4b_sokoban_ucf_v2_seed42",
+    "id": "4b_sokoban_ucf_v2.2_seed43",
     "stage": "train",
     "method": "ucf",
     "scale": "4b",
     "start": "sft",
-    "output": "runs/4b/sokoban/ucf_v2_seed42",
+    "output": "runs/4b/sokoban/ucf_v2.2_seed43",
     "sft_data": "data/sokoban/sft_messages.jsonl",
-    "gates": [],
+    "gates": [
+      "v2.2_2b_acceptance_and_source_import_required"
+    ],
     "gpu_status": "NOT GPU validated; 80GiB single GPU insufficient for RL",
-    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings"
+    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings",
+    "implementation_status": "planned; no verified v2.2 import yet",
+    "baseline_and_p_hat": "leave-one-trajectory-out, unchanged"
   }
 }

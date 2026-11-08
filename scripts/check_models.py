@@ -25,6 +25,7 @@ def audit(root: Path):
     from cert_entropy import token_map
     from tokens import fence_id
 
+    assert transformers.__version__ == '5.22.2', 'CPU acceptance requires the pinned transformers 5.22.2'
     torch.set_num_threads(1)
     manifest = json.loads((root / "manifest.json").read_text())
     results = {"schema": 1, "device": "meta_shapes_and_cpu_tokenizer", "weights_downloaded": False,

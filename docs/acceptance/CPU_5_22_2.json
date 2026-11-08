@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-11-08T23:47:16.451837+00:00",
+  "status": "CPU acceptance passed; v2.2/v2.2-ff source import, H01 SFT choice, and GPU deployment remain pending",
+  "gpu_used": false,
+  "weights_downloaded": false,
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "5.22.2",
+    "tokenizers": "0.23.3",
+    "numpy": "2.2.6",
+    "gymnasium": "1.1.1"
+  },
+  "vllm": "0.19.1 pinned for GPU; not installed or exercised in this CPU environment",
+  "dependency_check": "uv pip check: all installed packages compatible",
+  "command": "CUDA_VISIBLE_DEVICES= bash scripts/cpu_smoke.sh",
+  "functional_tests": {
+    "passed": 68,
+    "failed": 0,
+    "note": "Functional and release gate checks only; does not certify pending UCF algorithms."
+  },
+  "grid_demonstrations": [
+    {
+      "environment": "sokoban",
+      "independently_replayed": 1000,
+      "successful": 1000,
+      "train_only": true,
+      "heldout_uid_overlap": 0,
+      "action_count": 5230,
+      "all_observations_verified": true,
+      "source_sha256": "d66e9e243ee9f53e0a74b24590deb2aa3fd6d4d586191793353996a45f35b240",
+      "GPU_used": false
+    },
+    {
+      "environment": "flh",
+      "independently_replayed": 1000,
+      "successful": 1000,
+      "train_only": true,
+      "heldout_uid_overlap": 0,
+      "action_count": 10448,
+      "all_observations_verified": true,
+      "source_sha256": "06035f85a894d2af023f26b5b78bf9820bed554fe0a1561b4111b7eeaa5583d7",
+      "GPU_used": false
+    }
+  ],
+  "model_contract_receipt": "model_cpu_5_22_2.json",
+  "model_contract_receipt_sha256": "096dad163b5d6a92da42a745f8f739d9fb67257df55295569edef452463b36cf",
+  "release_manifest_sha256": "d51b091936b50ed0be89139feac60f7a0b8289b968aa30baf1d85e1189191b95",
+  "manifest_verified_files": 182,
+  "config_cpu_dry_runs": 22,
+  "scope_verification": {
+    "baseline_commit": "d777e704cc87af4f489b6423a58e3e2983fc799b",
+    "protected_files_unchanged": 49,
+    "device_configurations_unchanged": 22,
+    "config_generator_idempotent": true,
+    "train_top_level_functions_changed": [
+      "main"
+    ],
+    "changed_function_scope": "main release admission only; model placement and synchronization unchanged",
+    "gpu_used": false
+  },
+  "blocking_items": [
+    "verified 2B v2.2/v2.2-ff acceptance and matching source import",
+    "4B-07 SFT starting protocol pending 2B H01 result",
+    "collaborator GPU deployment and smoke acceptance; device implementation unchanged"
+  ],
+  "production_timeline_note": "User states transformers5.22.2 has been production since 2026-11-07 02:32; this local CPU run does not independently verify past installation time."
+}

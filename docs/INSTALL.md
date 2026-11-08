@@ -4,9 +4,11 @@
 
 ## 固定版本
 
-使用 Python 3.12、torch **2.10.0**、vLLM **0.19.1**、transformers **5.5.4**，numpy 2.2.6、gymnasium 1.1.1。官方 [vLLM 0.19.1 CUDA requirements](https://github.com/vllm-project/vllm/blob/v0.19.1/requirements/cuda.txt) 固定torch2.10.0；其 [common requirements](https://github.com/vllm-project/vllm/blob/v0.19.1/requirements/common.txt) 允许transformers5.5.4。不要升级到latest后还把结果归到本协议。
+使用 Python 3.12、torch **2.10.0**、vLLM **0.19.1**、transformers **5.22.2**，numpy 2.2.6、gymnasium 1.1.1。官方 [vLLM 0.19.1 CUDA requirements](https://github.com/vllm-project/vllm/blob/v0.19.1/requirements/cuda.txt) 固定torch2.10.0。依赖版本与本次指定的生产版本对齐，不升级到latest后仍把结果归到本协议。
 
-**生产环境与请求版本有差异。** 2026-11-09只读检查2B生产venv的当前已安装包：torch `2.10.0+cu128`（CUDA12.8）、vLLM `0.19.1`、transformers **`5.22.2`**；S05已有hardware收据记录驱动`550.127.05`。检查进程屏蔽CUDA且`torch.cuda.is_initialized()`为false，没有触及GPU。此处只证明venv检查时的安装状态，不反推正在运行进程启动时已导入的包版本。本发布按任务指定固定**5.5.4**，已通过CPU tokenizer/meta检查，**尚未验证5.5.4的完整GPU训练与生产一致**。不得把该版本差异隐去或在当前venv降级。
+**本轮与生产环境统一为transformers5.22.2。** 2026-11-09只读核查生产venv时安装的是torch `2.10.0+cu128`、vLLM `0.19.1`、transformers `5.22.2`。负责人补充的生产时间线：自2026-11-07 02:32起使用该版本，正式实验均在此后。时间线是负责人提供的信息，不伪称本次重新读取了历史安装日志。S05已有硬件收据记录驱动`550.127.05`。
+
+此次只升级独立发布的本地CPU验收环境，不改2B环境；新验收见`docs/acceptance/CPU_5_22_2.json`及`model_cpu_5_22_2.json`。旧5.5.4收据保留为历史记录，不能替代5.22.2结果。ALFWorld独立依赖和资料本轮冻结，不能当成本轮4B环境的安装入口。
 
 GPU安装应使用新venv。torch与vLLM的编译CUDA组合必须共同验收；不能随意替换其中一个wheel。vLLM文档中的CUDA12.9默认说明与torch2.10官方提供的cu126/cu128/cu130索引不完全同口径，**不要写不存在的torch2.10 cu129安装命令**。来源：[vLLM安装说明](https://docs.vllm.ai/en/v0.19.1/getting_started/installation/gpu/)、[PyTorch旧版本官方命令](https://pytorch.org/get-started/previous-versions/)。
 
@@ -39,7 +41,7 @@ CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 python -m pytest tests/test_model_cont
 python3.12 -m venv .venv-gpu
 source .venv-gpu/bin/activate
 python -m pip install --upgrade pip
-python -m pip install 'vllm==0.19.1' 'transformers==5.5.4' 'torch==2.10.0'
+python -m pip install 'vllm==0.19.1' 'transformers==5.22.2' 'torch==2.10.0'
 python -m pip install -r requirements-gpu.txt
 python -m pip check
 python -c "import torch,vllm,transformers; print(torch.__version__,torch.version.cuda,vllm.__version__,transformers.__version__)"
@@ -51,6 +53,6 @@ python -c "import torch,vllm,transformers; print(torch.__version__,torch.version
 
 ## 后端与放行条件
 
-当前训练是单进程、单训练设备、进程内vLLM同步。4B用大显存单卡仅是容量上可规划，9B常规80G集群需要尚未实现的训练分片，不会因为有两张卡就自动分片。硬件/加载/哈希失败时不要自行减β、改ρ、降精度或切优化器“凑合跑”。先报告具体错误及配置。v2.1和ALFWorld UCF还受2B算法验收gate约束。
+本轮不新增设备部署实现或配置：现有训练入口、模型加载、权重同步、显存检查和资源参数保持原状；不能称已实现双卡。合作者在自己的机器上决定部署方式并完成GPU验收。现有容量文档保留供其参考。发布的UCF门禁与设备无关：v2.2／v2.2-ff均须等2B验收通过且同步源码后放行，旧v2不可运行。难版SFT起点另待H01后的统一决定。
 
 每次正式run固定记录依赖版本、驱动、数据/源码SHA256、模型revision、配置和GPU拓扑。工作目录中的训练锁用于防止同时运行多个实验；一张卡同一时刻只允许一个实验占用。CPU环境验收可以并行。

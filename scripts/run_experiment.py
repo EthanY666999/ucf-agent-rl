@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'code'))
+from release_admission import ucf_release_gate
 PATH_KEYS=['model','bootstrap_model','dataset_path','frozen_maps_path','eval_sets_dir']
 
 
@@ -33,10 +35,13 @@ def main():
     p.add_argument('--sft-audit',action='store_true')
     a=p.parse_args();path=(ROOT/a.config).resolve()
     cfg,meta=load_config(path)
+    ucf_gate=ucf_release_gate(cfg,meta['method'])
     print(json.dumps(dict(experiment=meta['id'],stage=meta['stage'],gates=meta['gates'],
-        parameters=cfg,smoke=a.smoke,will_allocate_gpu=a.execute and not a.sft_audit),indent=2),flush=True)
+        ucf_release_gate=ucf_gate,parameters=cfg,smoke=a.smoke,
+        will_allocate_gpu=a.execute and not a.sft_audit and not meta['gates'] and not ucf_gate),indent=2),flush=True)
     if not a.execute:return
-    # Never silently bypass missing ports or the 2B v2.1 acceptance.
+    if ucf_gate:raise SystemExit(ucf_gate)
+    # Never silently bypass missing ports, the 2B UCF acceptance or the SFT decision.
     gates=[g for g in meta['gates'] if not (a.sft_audit and g=='distributed_training_backend_required')]
     if gates:
         raise SystemExit('Not runnable in this release: '+', '.join(gates)+'. See docs; stop and report.')

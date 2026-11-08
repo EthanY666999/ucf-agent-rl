@@ -1,5 +1,5 @@
 {
-  "seed": 43,
+  "seed": 42,
   "rollout_scheduler": "per_task_async",
   "sampling_seed_protocol": "sha256(base_seed,task_uid,lineage,turn)",
   "steps": 400,
@@ -15,7 +15,7 @@
   "max_grad_norm": 1.0,
   "temperature": 1.0,
   "max_turns": 10,
-  "max_response_tokens": 10240,
+  "max_response_tokens": 4096,
   "max_context_tokens": 32768,
   "initial_branches": 4,
   "flat_group_size": 4,
@@ -38,11 +38,11 @@
   "is_slippery": false,
   "scorer_reward_weight": 1.0,
   "scorer_progress_weight": 1.0,
-  "model": "runs/4b/sokoban/sft_seed42/final_model",
+  "model": "models/Qwen3.5-4B",
   "bootstrap_model": "models/Qwen3.5-4B",
   "model_family": "Qwen3.5",
   "environment": "sokoban",
-  "run_label": "4b_sokoban_ucf_v2_seed43",
+  "run_label": "4b_sokoban_nosft_ucf_v2.2-ff_seed42",
   "optimizer": "adamw",
   "dataset_path": "data/sokoban/data.json",
   "dataset_sha256": "6584a8b35a19350459193cce7d1a868cd24eb28e407295f78ee4727a71555d87",
@@ -53,18 +53,24 @@
   "ucf_beta": 0.25,
   "ucf_variant": "ucf",
   "ucf_c0": 1.0,
-  "ucf_controller": "v2",
-  "ucf_version": "v2",
+  "ucf_controller": "leave_one_task_out",
+  "ucf_version": "v2.2-ff",
+  "turn_stop_protocol": "first_complete_action_block_token_boundary",
+  "ucf_fork_point": "immediately_after_first_opening_fence",
   "_release": {
-    "id": "4b_sokoban_ucf_v2_seed43",
+    "id": "4b_sokoban_nosft_ucf_v2.2-ff_seed42",
     "stage": "train",
     "method": "ucf",
     "scale": "4b",
-    "start": "sft",
-    "output": "runs/4b/sokoban/ucf_v2_seed43",
+    "start": "base",
+    "output": "runs/4b/sokoban/nosft_ucf_v2.2-ff_seed42",
     "sft_data": "data/sokoban/sft_messages.jsonl",
-    "gates": [],
+    "gates": [
+      "v2.2-ff_2b_acceptance_and_source_import_required"
+    ],
     "gpu_status": "NOT GPU validated; 80GiB single GPU insufficient for RL",
-    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings"
+    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings",
+    "implementation_status": "planned; no verified v2.2 import yet",
+    "baseline_and_p_hat": "leave-one-trajectory-out, unchanged"
   }
 }

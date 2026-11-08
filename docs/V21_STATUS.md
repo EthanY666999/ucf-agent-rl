@@ -1,3 +1,5 @@
+> 历史v2.1审计保留。本轮4B目标版本为v2.2／v2.2-ff，尚待2B验收及源码同步；当前放行状态以[UCF_RELEASE_STATUS.md](UCF_RELEASE_STATUS.md)为准。
+
 # UCF v2 与 v2.1 的发布边界
 
 - `code/ucf/ucf_collect.py` 是 S05 当前的 v2 算法实现。

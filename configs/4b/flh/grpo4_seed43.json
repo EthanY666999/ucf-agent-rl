@@ -57,9 +57,13 @@
     "scale": "4b",
     "start": "sft",
     "output": "runs/4b/flh/grpo4_seed43",
-    "sft_data": "data/flh/golden_trace/sft_messages.jsonl.gz",
-    "gates": [],
+    "sft_data": null,
+    "gates": [
+      "flh_sft_start_pending_2b_H01_decision"
+    ],
     "gpu_status": "NOT GPU validated; 80GiB single GPU insufficient for RL",
-    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings"
+    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings",
+    "sft_start_status": "pending_2b_H01_decision",
+    "sft_start_note": "2B currently uses original FrozenLake F03; align 4B data/protocol after H01. No hard Golden Trace default; model/output paths are placeholders."
   }
 }

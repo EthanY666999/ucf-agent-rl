@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "execution": "manual serial; no automatic queue",
+  "active_scope": "4B only",
   "main": [
     {
       "id": "4b_sokoban_base_eval_seed42",
@@ -35,11 +36,13 @@
       "same_sft_start": "runs/4b/sokoban/sft_seed42"
     },
     {
-      "id": "4b_sokoban_ucf_v2_seed42",
-      "config": "configs/4b/sokoban/ucf_v2_seed42.json",
+      "id": "4b_sokoban_ucf_v2.2_seed42",
+      "config": "configs/4b/sokoban/ucf_v2.2_seed42.json",
       "stage": "train",
       "method": "ucf",
-      "gates": [],
+      "gates": [
+        "v2.2_2b_acceptance_and_source_import_required"
+      ],
       "same_sft_start": "runs/4b/sokoban/sft_seed42"
     },
     {
@@ -55,7 +58,9 @@
       "config": "configs/4b/flh/sft_seed42.json",
       "stage": "sft",
       "method": "sft",
-      "gates": [],
+      "gates": [
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": null
     },
     {
@@ -63,7 +68,9 @@
       "config": "configs/4b/flh/grpo4_seed42.json",
       "stage": "train",
       "method": "grpo",
-      "gates": [],
+      "gates": [
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
     },
     {
@@ -71,15 +78,20 @@
       "config": "configs/4b/flh/tree_random_k2_seed42.json",
       "stage": "train",
       "method": "tree_random",
-      "gates": [],
+      "gates": [
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
     },
     {
-      "id": "4b_flh_ucf_v2_seed42",
-      "config": "configs/4b/flh/ucf_v2_seed42.json",
+      "id": "4b_flh_ucf_v2.2_seed42",
+      "config": "configs/4b/flh/ucf_v2.2_seed42.json",
       "stage": "train",
       "method": "ucf",
-      "gates": [],
+      "gates": [
+        "v2.2_2b_acceptance_and_source_import_required",
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
     },
     {
@@ -103,7 +115,9 @@
       "config": "configs/4b/flh/starpo_s_seed42.json",
       "stage": "train",
       "method": "starpo_s",
-      "gates": [],
+      "gates": [
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
     },
     {
@@ -111,7 +125,9 @@
       "config": "configs/4b/flh/gigpo_seed42.json",
       "stage": "train",
       "method": "gigpo",
-      "gates": [],
+      "gates": [
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
     },
     {
@@ -131,11 +147,13 @@
       "same_sft_start": "runs/4b/sokoban/sft_seed42"
     },
     {
-      "id": "4b_sokoban_ucf_v2_seed43",
-      "config": "configs/4b/sokoban/ucf_v2_seed43.json",
+      "id": "4b_sokoban_ucf_v2.2_seed43",
+      "config": "configs/4b/sokoban/ucf_v2.2_seed43.json",
       "stage": "train",
       "method": "ucf",
-      "gates": [],
+      "gates": [
+        "v2.2_2b_acceptance_and_source_import_required"
+      ],
       "same_sft_start": "runs/4b/sokoban/sft_seed42"
     },
     {
@@ -143,7 +161,9 @@
       "config": "configs/4b/flh/grpo4_seed43.json",
       "stage": "train",
       "method": "grpo",
-      "gates": [],
+      "gates": [
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
     },
     {
@@ -151,17 +171,46 @@
       "config": "configs/4b/flh/tree_random_k2_seed43.json",
       "stage": "train",
       "method": "tree_random",
-      "gates": [],
+      "gates": [
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
     },
     {
-      "id": "4b_flh_ucf_v2_seed43",
-      "config": "configs/4b/flh/ucf_v2_seed43.json",
+      "id": "4b_flh_ucf_v2.2_seed43",
+      "config": "configs/4b/flh/ucf_v2.2_seed43.json",
       "stage": "train",
       "method": "ucf",
-      "gates": [],
+      "gates": [
+        "v2.2_2b_acceptance_and_source_import_required",
+        "flh_sft_start_pending_2b_H01_decision"
+      ],
       "same_sft_start": "runs/4b/flh/sft_seed42"
+    }
+  ],
+  "conditional": [
+    {
+      "id": "4b_sokoban_nosft_ucf_v2.2-ff_seed42",
+      "config": "configs/4b/sokoban/nosft_ucf_v2.2-ff_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "v2.2-ff_2b_acceptance_and_source_import_required"
+      ],
+      "same_sft_start": null
     },
+    {
+      "id": "4b_flh_nosft_ucf_v2.2-ff_seed42",
+      "config": "configs/4b/flh/nosft_ucf_v2.2-ff_seed42.json",
+      "stage": "train",
+      "method": "ucf",
+      "gates": [
+        "v2.2-ff_2b_acceptance_and_source_import_required"
+      ],
+      "same_sft_start": null
+    }
+  ],
+  "deferred_unchanged": [
     {
       "id": "9b_alfworld_base_eval_seed42",
       "config": "configs/9b/alfworld/base_eval_seed42.json",
@@ -353,28 +402,6 @@
         "distributed_training_backend_required"
       ],
       "same_sft_start": "runs/9b/sokoban/sft_seed42"
-    }
-  ],
-  "conditional": [
-    {
-      "id": "4b_sokoban_nosft_ucf_v2.1_seed42",
-      "config": "configs/4b/sokoban/nosft_ucf_v2.1_seed42.json",
-      "stage": "train",
-      "method": "ucf",
-      "gates": [
-        "v2.1_2b_acceptance_required"
-      ],
-      "same_sft_start": null
-    },
-    {
-      "id": "4b_flh_nosft_ucf_v2.1_seed42",
-      "config": "configs/4b/flh/nosft_ucf_v2.1_seed42.json",
-      "stage": "train",
-      "method": "ucf",
-      "gates": [
-        "v2.1_2b_acceptance_required"
-      ],
-      "same_sft_start": null
     },
     {
       "id": "9b_sokoban_nosft_ucf_v2.1_seed42",
@@ -399,5 +426,6 @@
       "same_sft_start": null
     }
   ],
+  "deferred_note": "9B arrangements are for the collaborator to decide after 4B; retained entries are not an active queue",
   "webshop": "future work"
 }

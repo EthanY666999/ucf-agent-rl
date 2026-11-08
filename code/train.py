@@ -261,8 +261,8 @@ def main():
     cfg=json.loads((ROOT/args.config).read_text())
     if cfg.get('environment')=='alfworld':
         raise RuntimeError('ALFWorld requires its separate training adapter; never use the four-action core')
-    if args.method=='ucf' and cfg.get('ucf_version','v2')!='v2':
-        raise RuntimeError('Experimental v2.1 is not accepted for production in this release; no silent v2 fallback')
+    from release_admission import require_ucf_release
+    require_ucf_release(cfg,args.method)
     override_path=ROOT/'artifacts/runtime_override.json'
     if override_path.exists():
         override=json.loads(override_path.read_text())

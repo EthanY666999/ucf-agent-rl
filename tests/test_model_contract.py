@@ -11,6 +11,7 @@ def test_model_tokenizer_templates_and_shapes():
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     report = module.audit(ROOT / "data/model_metadata")
+    assert report['transformers']=='5.22.2'
     assert report["family_contract_identical"]
     assert {"Qwen/Qwen3.5-4B", "Qwen/Qwen3.5-9B"} <= report["models"].keys()
     assert not report["weights_downloaded"]

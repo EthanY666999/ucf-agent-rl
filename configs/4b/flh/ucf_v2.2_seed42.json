@@ -1,5 +1,5 @@
 {
-  "seed": 43,
+  "seed": 42,
   "rollout_scheduler": "per_task_async",
   "sampling_seed_protocol": "sha256(base_seed,task_uid,lineage,turn)",
   "steps": 400,
@@ -42,7 +42,7 @@
   "bootstrap_model": "models/Qwen3.5-4B",
   "model_family": "Qwen3.5",
   "environment": "flh",
-  "run_label": "4b_flh_ucf_v2_seed43",
+  "run_label": "4b_flh_ucf_v2.2_seed42",
   "optimizer": "adamw",
   "dataset_path": "data/flh/data.json",
   "dataset_sha256": "00ab9e70bef8acb57751facb6da6c9bd29e9b5bd3d5492e6f4b293d1034961d5",
@@ -53,18 +53,25 @@
   "ucf_beta": 0.25,
   "ucf_variant": "ucf",
   "ucf_c0": 1.0,
-  "ucf_controller": "v2",
-  "ucf_version": "v2",
+  "ucf_controller": "leave_one_task_out",
+  "ucf_version": "v2.2",
   "_release": {
-    "id": "4b_flh_ucf_v2_seed43",
+    "id": "4b_flh_ucf_v2.2_seed42",
     "stage": "train",
     "method": "ucf",
     "scale": "4b",
     "start": "sft",
-    "output": "runs/4b/flh/ucf_v2_seed43",
-    "sft_data": "data/flh/golden_trace/sft_messages.jsonl.gz",
-    "gates": [],
+    "output": "runs/4b/flh/ucf_v2.2_seed42",
+    "sft_data": null,
+    "gates": [
+      "v2.2_2b_acceptance_and_source_import_required",
+      "flh_sft_start_pending_2b_H01_decision"
+    ],
     "gpu_status": "NOT GPU validated; 80GiB single GPU insufficient for RL",
-    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings"
+    "algorithm_source": "protocol_2b.json; only model/runtime/path fields change, plus declared environment and method settings",
+    "sft_start_status": "pending_2b_H01_decision",
+    "sft_start_note": "2B currently uses original FrozenLake F03; align 4B data/protocol after H01. No hard Golden Trace default; model/output paths are placeholders.",
+    "implementation_status": "planned; no verified v2.2 import yet",
+    "baseline_and_p_hat": "leave-one-trajectory-out, unchanged"
   }
 }
