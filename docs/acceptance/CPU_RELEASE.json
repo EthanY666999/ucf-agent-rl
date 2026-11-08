@@ -31,5 +31,5 @@
     "9B training state sharding not implemented",
     "ALFWorld SFT/RL training adapter not integrated"
   ],
-  "fresh_clone": "pending; separate receipt added after push"
+  "fresh_clone": "passed; see FRESH_CLONE.json"
 }

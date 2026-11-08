@@ -1,0 +1,93 @@
+{
+  "checked_commit": "c46bda8ba32e6c24c97e0e8938c360174b38823d",
+  "source": "fresh HTTPS clone from GitHub",
+  "release_manifest_sha256": "7f221b43fd6b8ec8d2e7d14000d372d8d370b52701b0e096b9f1fee615395026",
+  "gpu_used": false,
+  "weights_downloaded": false,
+  "cpu_tests": {
+    "passed": 61,
+    "failures": 0
+  },
+  "grid_demonstrations_replayed": {
+    "sokoban": 1000,
+    "flh": 1000
+  },
+  "model_tokenizer_and_template_checks": [
+    "Qwen3.5-2B",
+    "Qwen3.5-4B",
+    "Qwen3.5-9B"
+  ],
+  "alfworld_environment_smoke": {
+    "status": "passed",
+    "gpu_used": false,
+    "model_loaded": false,
+    "episodes": [
+      {
+        "game": "train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+        "split": "train",
+        "steps": 14,
+        "won": true,
+        "fork_replay_passed": true,
+        "caller_rng_preserved": true
+      },
+      {
+        "game": "train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174142_375532/game.tw-pddl",
+        "split": "train",
+        "steps": 14,
+        "won": true,
+        "fork_replay_passed": true,
+        "caller_rng_preserved": true
+      },
+      {
+        "game": "valid_seen/look_at_obj_in_light-AlarmClock-None-DeskLamp-323/trial_T20190909_044715_250790/game.tw-pddl",
+        "split": "valid_seen",
+        "steps": 5,
+        "won": true,
+        "fork_replay_passed": true,
+        "caller_rng_preserved": true
+      },
+      {
+        "game": "valid_seen/look_at_obj_in_light-Bowl-None-DeskLamp-301/trial_T20190909_150719_492274/game.tw-pddl",
+        "split": "valid_seen",
+        "steps": 48,
+        "won": true,
+        "fork_replay_passed": true,
+        "caller_rng_preserved": true
+      },
+      {
+        "game": "valid_unseen/look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222917_366542/game.tw-pddl",
+        "split": "valid_unseen",
+        "steps": 12,
+        "won": true,
+        "fork_replay_passed": true,
+        "caller_rng_preserved": true
+      },
+      {
+        "game": "valid_unseen/look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222933_607649/game.tw-pddl",
+        "split": "valid_unseen",
+        "steps": 12,
+        "won": true,
+        "fork_replay_passed": true,
+        "caller_rng_preserved": true
+      }
+    ],
+    "expert_successes": 6,
+    "note": "Expert failures within 50 steps are retained; no success claim for every task."
+  },
+  "alfworld_additional_trace_replay": {
+    "status": "passed",
+    "independently_replayed": 16,
+    "full_file": false,
+    "gpu_used": false,
+    "input_sha256": "9fde68c25deffa988eec2931e774305cd7cb034dbae07a59a2808ca3b3f81d44",
+    "source_sha256": {
+      "env.py": "155038f27fa925ee1182ee1242f42f53ff4da0a94620a6254ba4bb91570d1c15",
+      "actions.py": "9d7cc50e288806ffb88badc5c977c14aec73f9d17ab80e4e3ee4fde500b7fb93",
+      "__init__.py": "df761f732fa7e93eec141c22cf4d345217229ee19eefe3069e96b14d2cc1c77e",
+      "sft_data.py": "ae6c85d864777ecb7cc56cac1890b8bef8500f1692ce4c32b705f602cf7bcb5c"
+    }
+  },
+  "full_golden_verification": "Each of all 1000 ALFWorld episodes independently replayed during generation; fresh clone separately rechecked a 16-episode subset.",
+  "working_tree_clean_after_checks": true,
+  "scope_note": "CPU/data functionality only; documented estimator and training-backend gates remain closed."
+}

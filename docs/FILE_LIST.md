@@ -1,203 +1,202 @@
 # 发布文件清单
 
-本清单仅列本独立仓库内容。源码、配置、数据、脚本和测试逐文件 SHA256 见 [`RELEASE_MANIFEST.json`](../RELEASE_MANIFEST.json)。模型权重、checkpoint、rollouts、内部原始日志不在本仓库。
+源码、配置、数据、脚本和测试的大小与SHA256见 [`RELEASE_MANIFEST.json`](../RELEASE_MANIFEST.json)。本清单列出全部发布文件，含验收文档；不含权重、checkpoint、rollouts或内部原始日志。
 
-| 文件 | 字节 |
-| --- | ---: |
-| ["code/ucf/tests/UCF_\346\227\240\345\201\217\346\200\247\346\250\241\346\213\237_htsim.py"](../"code/ucf/tests/UCF_\346\227\240\345\201\217\346\200\247\346\250\241\346\213\237_htsim.py") | 0 |
-| [.gitignore](../.gitignore) | 329 |
-| [README.md](../README.md) | 9586 |
-| [RELEASE_MANIFEST.json](../RELEASE_MANIFEST.json) | 28019 |
-| [code/alfworld_adapter/__init__.py](../code/alfworld_adapter/__init__.py) | 276 |
-| [code/alfworld_adapter/actions.py](../code/alfworld_adapter/actions.py) | 4834 |
-| [code/alfworld_adapter/env.py](../code/alfworld_adapter/env.py) | 6345 |
-| [code/alfworld_adapter/requirements.txt](../code/alfworld_adapter/requirements.txt) | 124 |
-| [code/alfworld_adapter/sft_data.py](../code/alfworld_adapter/sft_data.py) | 1594 |
-| [code/collaborator_support.py](../code/collaborator_support.py) | 1639 |
-| [code/external_baselines.py](../code/external_baselines.py) | 3585 |
-| [code/patches/LICENSE](../code/patches/LICENSE) | 11357 |
-| [code/patches/NOTICE.md](../code/patches/NOTICE.md) | 563 |
-| [code/patches/allowed_token_ids_swap.patch](../code/patches/allowed_token_ids_swap.patch) | 581 |
-| [code/patches/manifest.json](../code/patches/manifest.json) | 677 |
-| [code/patr_core.py](../code/patr_core.py) | 25266 |
-| [code/scripts/eval_q35.py](../code/scripts/eval_q35.py) | 2241 |
-| [code/scripts/hard_metrics.py](../code/scripts/hard_metrics.py) | 4995 |
-| [code/scripts/q35_engine_loader.py](../code/scripts/q35_engine_loader.py) | 1297 |
-| [code/scripts/sft_checkpoint.py](../code/scripts/sft_checkpoint.py) | 1106 |
-| [code/scripts/signal_stats.py](../code/scripts/signal_stats.py) | 1989 |
-| [code/scripts/ucf_recovery.py](../code/scripts/ucf_recovery.py) | 2107 |
-| [code/scripts/validation_recovery.py](../code/scripts/validation_recovery.py) | 2210 |
-| [code/sft.py](../code/sft.py) | 6929 |
-| [code/task_envs.py](../code/task_envs.py) | 6695 |
-| [code/train.py](../code/train.py) | 24512 |
-| [code/ucf/cert_collect.py](../code/ucf/cert_collect.py) | 11122 |
-| [code/ucf/cert_entropy.py](../code/ucf/cert_entropy.py) | 3062 |
-| [code/ucf/cert_probe.py](../code/ucf/cert_probe.py) | 4226 |
-| [code/ucf/cert_select.py](../code/ucf/cert_select.py) | 1170 |
-| [code/ucf/first_fence.py](../code/ucf/first_fence.py) | 907 |
-| [code/ucf/run_ucf.py](../code/ucf/run_ucf.py) | 325 |
-| [code/ucf/scripts/accept_ucf.py](../code/ucf/scripts/accept_ucf.py) | 1844 |
-| [code/ucf/scripts/phase1_ucf.py](../code/ucf/scripts/phase1_ucf.py) | 1171 |
-| [code/ucf/tests/htsim_original.py](../code/ucf/tests/htsim_original.py) | 4799 |
-| [code/ucf/tests/htsim_regression.py](../code/ucf/tests/htsim_regression.py) | 2956 |
-| [code/ucf/tests/test_first_fence.py](../code/ucf/tests/test_first_fence.py) | 7078 |
-| [code/ucf/tests/test_ucf.py](../code/ucf/tests/test_ucf.py) | 11009 |
-| [code/ucf/tokens.py](../code/ucf/tokens.py) | 156 |
-| [code/ucf/ucf_collect.py](../code/ucf/ucf_collect.py) | 12699 |
-| [code/ucf/ucf_first_fence.py](../code/ucf/ucf_first_fence.py) | 15574 |
-| [code/ucf/ucf_probe.py](../code/ucf/ucf_probe.py) | 5169 |
-| [code/ucf/ucf_recovery.py](../code/ucf/ucf_recovery.py) | 2132 |
-| [code/ucf/ucf_runtime.py](../code/ucf/ucf_runtime.py) | 436 |
-| [code/ucf/ucf_select.py](../code/ucf/ucf_select.py) | 3248 |
-| [code/ucf/ucf_weights.py](../code/ucf/ucf_weights.py) | 1846 |
-| [code/vendor/rllm_source/LICENSE](../code/vendor/rllm_source/LICENSE) | 11357 |
-| [code/vendor/rllm_source/examples/frozenlake/prepare_frozenlake_data.py](../code/vendor/rllm_source/examples/frozenlake/prepare_frozenlake_data.py) | 2016 |
-| [code/vendor/rllm_source/rllm/agents/agent.py](../code/vendor/rllm_source/rllm/agents/agent.py) | 2949 |
-| [code/vendor/rllm_source/rllm/agents/frozenlake_agent.py](../code/vendor/rllm_source/rllm/agents/frozenlake_agent.py) | 9900 |
-| [code/vendor/rllm_source/rllm/agents/system_prompts.py](../code/vendor/rllm_source/rllm/agents/system_prompts.py) | 28235 |
-| [code/vendor/rllm_source/rllm/environments/base/base_env.py](../code/vendor/rllm_source/rllm/environments/base/base_env.py) | 2522 |
-| [code/vendor/rllm_source/rllm/environments/frozenlake/frozenlake.py](../code/vendor/rllm_source/rllm/environments/frozenlake/frozenlake.py) | 9777 |
-| [configs/4b/flh/base_eval_seed42.json](../configs/4b/flh/base_eval_seed42.json) | 2036 |
-| [configs/4b/flh/gigpo_seed42.json](../configs/4b/flh/gigpo_seed42.json) | 2084 |
-| [configs/4b/flh/grpo4_seed42.json](../configs/4b/flh/grpo4_seed42.json) | 2038 |
-| [configs/4b/flh/grpo4_seed43.json](../configs/4b/flh/grpo4_seed43.json) | 2038 |
-| [configs/4b/flh/nosft_ucf_v2.1_seed42.json](../configs/4b/flh/nosft_ucf_v2.1_seed42.json) | 2200 |
-| [configs/4b/flh/sft_seed42.json](../configs/4b/flh/sft_seed42.json) | 2013 |
-| [configs/4b/flh/starpo_s_seed42.json](../configs/4b/flh/starpo_s_seed42.json) | 2079 |
-| [configs/4b/flh/tree_random_k2_seed42.json](../configs/4b/flh/tree_random_k2_seed42.json) | 2072 |
-| [configs/4b/flh/tree_random_k2_seed43.json](../configs/4b/flh/tree_random_k2_seed43.json) | 2072 |
-| [configs/4b/flh/ucf_v2_seed42.json](../configs/4b/flh/ucf_v2_seed42.json) | 2150 |
-| [configs/4b/flh/ucf_v2_seed43.json](../configs/4b/flh/ucf_v2_seed43.json) | 2150 |
-| [configs/4b/sokoban/base_eval_seed42.json](../configs/4b/sokoban/base_eval_seed42.json) | 2052 |
-| [configs/4b/sokoban/gigpo_seed42.json](../configs/4b/sokoban/gigpo_seed42.json) | 2104 |
-| [configs/4b/sokoban/grpo4_seed42.json](../configs/4b/sokoban/grpo4_seed42.json) | 2058 |
-| [configs/4b/sokoban/grpo4_seed43.json](../configs/4b/sokoban/grpo4_seed43.json) | 2058 |
-| [configs/4b/sokoban/nosft_ucf_v2.1_seed42.json](../configs/4b/sokoban/nosft_ucf_v2.1_seed42.json) | 2216 |
-| [configs/4b/sokoban/sft_seed42.json](../configs/4b/sokoban/sft_seed42.json) | 2029 |
-| [configs/4b/sokoban/starpo_s_seed42.json](../configs/4b/sokoban/starpo_s_seed42.json) | 2099 |
-| [configs/4b/sokoban/tree_random_k2_seed42.json](../configs/4b/sokoban/tree_random_k2_seed42.json) | 2092 |
-| [configs/4b/sokoban/tree_random_k2_seed43.json](../configs/4b/sokoban/tree_random_k2_seed43.json) | 2092 |
-| [configs/4b/sokoban/ucf_v2_seed42.json](../configs/4b/sokoban/ucf_v2_seed42.json) | 2170 |
-| [configs/4b/sokoban/ucf_v2_seed43.json](../configs/4b/sokoban/ucf_v2_seed43.json) | 2170 |
-| [configs/9b/alfworld/base_eval_seed42.json](../configs/9b/alfworld/base_eval_seed42.json) | 1968 |
-| [configs/9b/alfworld/gigpo_seed42.json](../configs/9b/alfworld/gigpo_seed42.json) | 2021 |
-| [configs/9b/alfworld/gigpo_seed43.json](../configs/9b/alfworld/gigpo_seed43.json) | 2021 |
-| [configs/9b/alfworld/grpo4_seed42.json](../configs/9b/alfworld/grpo4_seed42.json) | 1975 |
-| [configs/9b/alfworld/grpo4_seed43.json](../configs/9b/alfworld/grpo4_seed43.json) | 1975 |
-| [configs/9b/alfworld/sft_seed42.json](../configs/9b/alfworld/sft_seed42.json) | 1945 |
-| [configs/9b/alfworld/tree_random_k2_seed42.json](../configs/9b/alfworld/tree_random_k2_seed42.json) | 2009 |
-| [configs/9b/alfworld/tree_random_k2_seed43.json](../configs/9b/alfworld/tree_random_k2_seed43.json) | 2009 |
-| [configs/9b/alfworld/ucf_v2.1_seed42.json](../configs/9b/alfworld/ucf_v2.1_seed42.json) | 2132 |
-| [configs/9b/alfworld/ucf_v2.1_seed43.json](../configs/9b/alfworld/ucf_v2.1_seed43.json) | 2132 |
-| [configs/9b/flh/nosft_ucf_v2.1_seed42.json](../configs/9b/flh/nosft_ucf_v2.1_seed42.json) | 2247 |
-| [configs/9b/sokoban/base_eval_seed42.json](../configs/9b/sokoban/base_eval_seed42.json) | 2103 |
-| [configs/9b/sokoban/grpo4_seed42.json](../configs/9b/sokoban/grpo4_seed42.json) | 2109 |
-| [configs/9b/sokoban/grpo4_seed43.json](../configs/9b/sokoban/grpo4_seed43.json) | 2109 |
-| [configs/9b/sokoban/nosft_ucf_v2.1_seed42.json](../configs/9b/sokoban/nosft_ucf_v2.1_seed42.json) | 2263 |
-| [configs/9b/sokoban/sft_seed42.json](../configs/9b/sokoban/sft_seed42.json) | 2080 |
-| [configs/9b/sokoban/tree_random_k2_seed42.json](../configs/9b/sokoban/tree_random_k2_seed42.json) | 2143 |
-| [configs/9b/sokoban/tree_random_k2_seed43.json](../configs/9b/sokoban/tree_random_k2_seed43.json) | 2143 |
-| [configs/9b/sokoban/ucf_v2_seed42.json](../configs/9b/sokoban/ucf_v2_seed42.json) | 2221 |
-| [configs/9b/sokoban/ucf_v2_seed43.json](../configs/9b/sokoban/ucf_v2_seed43.json) | 2221 |
-| [configs/plan.json](../configs/plan.json) | 11503 |
-| [configs/protocol_2b.json](../configs/protocol_2b.json) | 1043 |
-| [data/alfworld/LICENSE.alfred](../data/alfworld/LICENSE.alfred) | 1063 |
-| [data/alfworld/LICENSE.upstream](../data/alfworld/LICENSE.upstream) | 1082 |
-| [data/alfworld/compact_metadata_acceptance.json](../data/alfworld/compact_metadata_acceptance.json) | 1011 |
-| [data/alfworld/cpu_acceptance.json](../data/alfworld/cpu_acceptance.json) | 1809 |
-| [data/alfworld/cpu_runtime.json](../data/alfworld/cpu_runtime.json) | 317 |
-| [data/alfworld/fresh_replay_sample.json](../data/alfworld/fresh_replay_sample.json) | 553 |
-| [data/alfworld/golden/golden_traces.jsonl.gz](../data/alfworld/golden/golden_traces.jsonl.gz) | 1602994 |
-| [data/alfworld/golden/sft_messages.jsonl.gz](../data/alfworld/golden/sft_messages.jsonl.gz) | 912163 |
-| [data/alfworld/golden/verification.json](../data/alfworld/golden/verification.json) | 989 |
-| [data/alfworld/sft_encoding_4b.json](../data/alfworld/sft_encoding_4b.json) | 592 |
-| [data/alfworld/sft_encoding_9b.json](../data/alfworld/sft_encoding_9b.json) | 592 |
-| [data/alfworld/source_manifest.json](../data/alfworld/source_manifest.json) | 419007 |
-| [data/alfworld/task_metadata.json](../data/alfworld/task_metadata.json) | 1093172 |
-| [data/alfworld/text_games.zip](../data/alfworld/text_games.zip) | 36507267 |
-| [data/alfworld/tokenizer_cpu_acceptance.json](../data/alfworld/tokenizer_cpu_acceptance.json) | 3359 |
-| [data/alfworld/ucf_environment_cpu_acceptance.json](../data/alfworld/ucf_environment_cpu_acceptance.json) | 408 |
-| [data/evidence/summary.json](../data/evidence/summary.json) | 76386 |
-| [data/evidence/v21_math_audit.json](../data/evidence/v21_math_audit.json) | 1055 |
-| [data/flh/data.json](../data/flh/data.json) | 3392260 |
-| [data/flh/golden_trace/golden_traces.jsonl.gz](../data/flh/golden_trace/golden_traces.jsonl.gz) | 1334938 |
-| [data/flh/golden_trace/heldout_map_hashes.json](../data/flh/golden_trace/heldout_map_hashes.json) | 63740 |
-| [data/flh/golden_trace/independent_validation.json](../data/flh/golden_trace/independent_validation.json) | 118 |
-| [data/flh/golden_trace/sft_messages.jsonl.gz](../data/flh/golden_trace/sft_messages.jsonl.gz) | 238551 |
-| [data/flh/golden_trace/train_map_hashes.json](../data/flh/golden_trace/train_map_hashes.json) | 850003 |
-| [data/flh/manifest.json](../data/flh/manifest.json) | 1531 |
-| [data/flh/maps.json](../data/flh/maps.json) | 2341324 |
-| [data/flh/supplemental500/protocol.json](../data/flh/supplemental500/protocol.json) | 122 |
-| [data/flh/supplemental500/tasks.json](../data/flh/supplemental500/tasks.json) | 150865 |
-| [data/model_metadata/Qwen3.5-2B/LICENSE](../data/model_metadata/Qwen3.5-2B/LICENSE) | 11544 |
-| [data/model_metadata/Qwen3.5-2B/chat_template.jinja](../data/model_metadata/Qwen3.5-2B/chat_template.jinja) | 7755 |
-| [data/model_metadata/Qwen3.5-2B/config.json](../data/model_metadata/Qwen3.5-2B/config.json) | 2908 |
-| [data/model_metadata/Qwen3.5-2B/model.safetensors.index.json](../data/model_metadata/Qwen3.5-2B/model.safetensors.index.json) | 64460 |
-| [data/model_metadata/Qwen3.5-2B/tokenizer.json](../data/model_metadata/Qwen3.5-2B/tokenizer.json) | 12807982 |
-| [data/model_metadata/Qwen3.5-2B/tokenizer_config.json](../data/model_metadata/Qwen3.5-2B/tokenizer_config.json) | 16709 |
-| [data/model_metadata/Qwen3.5-4B/LICENSE](../data/model_metadata/Qwen3.5-4B/LICENSE) | 11544 |
-| [data/model_metadata/Qwen3.5-4B/chat_template.jinja](../data/model_metadata/Qwen3.5-4B/chat_template.jinja) | 7756 |
-| [data/model_metadata/Qwen3.5-4B/config.json](../data/model_metadata/Qwen3.5-4B/config.json) | 3161 |
-| [data/model_metadata/Qwen3.5-4B/model.safetensors.index.json](../data/model_metadata/Qwen3.5-4B/model.safetensors.index.json) | 76196 |
-| [data/model_metadata/Qwen3.5-4B/tokenizer.json](../data/model_metadata/Qwen3.5-4B/tokenizer.json) | 12807982 |
-| [data/model_metadata/Qwen3.5-4B/tokenizer_config.json](../data/model_metadata/Qwen3.5-4B/tokenizer_config.json) | 16710 |
-| [data/model_metadata/Qwen3.5-9B/LICENSE](../data/model_metadata/Qwen3.5-9B/LICENSE) | 11544 |
-| [data/model_metadata/Qwen3.5-9B/chat_template.jinja](../data/model_metadata/Qwen3.5-9B/chat_template.jinja) | 7756 |
-| [data/model_metadata/Qwen3.5-9B/config.json](../data/model_metadata/Qwen3.5-9B/config.json) | 3126 |
-| [data/model_metadata/Qwen3.5-9B/model.safetensors.index.json](../data/model_metadata/Qwen3.5-9B/model.safetensors.index.json) | 79657 |
-| [data/model_metadata/Qwen3.5-9B/tokenizer.json](../data/model_metadata/Qwen3.5-9B/tokenizer.json) | 12807982 |
-| [data/model_metadata/Qwen3.5-9B/tokenizer_config.json](../data/model_metadata/Qwen3.5-9B/tokenizer_config.json) | 16710 |
-| [data/model_metadata/cpu_acceptance.json](../data/model_metadata/cpu_acceptance.json) | 5373 |
-| [data/model_metadata/manifest.json](../data/model_metadata/manifest.json) | 3520 |
-| [data/sokoban/data.json](../data/sokoban/data.json) | 15717211 |
-| [data/sokoban/manifest.json](../data/sokoban/manifest.json) | 1760 |
-| [data/sokoban/maps.json](../data/sokoban/maps.json) | 10693027 |
-| [data/sokoban/sft_messages.jsonl](../data/sokoban/sft_messages.jsonl) | 2434793 |
-| [data/sokoban/supplemental500/protocol.json](../data/sokoban/supplemental500/protocol.json) | 122 |
-| [data/sokoban/supplemental500/tasks.json](../data/sokoban/supplemental500/tasks.json) | 627871 |
-| [docs/ALFWORLD.md](../docs/ALFWORLD.md) | 8957 |
-| [docs/EVIDENCE.md](../docs/EVIDENCE.md) | 12434 |
-| [docs/EXPERIMENT_PLAN.md](../docs/EXPERIMENT_PLAN.md) | 12242 |
-| [docs/FILE_LIST.md](../docs/FILE_LIST.md) | 本文件 |
-| [docs/INSTALL.md](../docs/INSTALL.md) | 6318 |
-| [docs/MEMORY_AND_RUNTIME.md](../docs/MEMORY_AND_RUNTIME.md) | 8144 |
-| [docs/PORTABILITY_DIFF.json](../docs/PORTABILITY_DIFF.json) | 1704 |
-| [docs/PROTOCOL_REVIEW.md](../docs/PROTOCOL_REVIEW.md) | 3739 |
-| [docs/SOURCE_PROVENANCE.md](../docs/SOURCE_PROVENANCE.md) | 4337 |
-| [docs/V21_STATUS.md](../docs/V21_STATUS.md) | 2226 |
-| [docs/acceptance/CPU_RELEASE.json](../docs/acceptance/CPU_RELEASE.json) | 1105 |
-| [docs/acceptance/grid_data_replay.json](../docs/acceptance/grid_data_replay.json) | 658 |
-| [requirements-cpu.txt](../requirements-cpu.txt) | 171 |
-| [requirements-gpu.txt](../requirements-gpu.txt) | 164 |
-| [results/.gitkeep](../results/.gitkeep) | 0 |
-| [scripts/alfworld_encode_sft.py](../scripts/alfworld_encode_sft.py) | 2330 |
-| [scripts/alfworld_evaluate.py](../scripts/alfworld_evaluate.py) | 5040 |
-| [scripts/alfworld_generate.py](../scripts/alfworld_generate.py) | 6574 |
-| [scripts/alfworld_prepare.py](../scripts/alfworld_prepare.py) | 1363 |
-| [scripts/alfworld_smoke.py](../scripts/alfworld_smoke.py) | 1935 |
-| [scripts/alfworld_verify.py](../scripts/alfworld_verify.py) | 2709 |
-| [scripts/check_models.py](../scripts/check_models.py) | 7157 |
-| [scripts/cpu_smoke.sh](../scripts/cpu_smoke.sh) | 426 |
-| [scripts/download_model_metadata.py](../scripts/download_model_metadata.py) | 2302 |
-| [scripts/evaluate_sft.py](../scripts/evaluate_sft.py) | 2390 |
-| [scripts/export_results.py](../scripts/export_results.py) | 2198 |
-| [scripts/make_configs.py](../scripts/make_configs.py) | 4747 |
-| [scripts/model_identity.py](../scripts/model_identity.py) | 1716 |
-| [scripts/patch_vllm.py](../scripts/patch_vllm.py) | 2064 |
-| [scripts/run_experiment.py](../scripts/run_experiment.py) | 5905 |
-| [scripts/verify_data.py](../scripts/verify_data.py) | 3512 |
-| [scripts/verify_release.py](../scripts/verify_release.py) | 2305 |
-| [tests/conftest.py](../tests/conftest.py) | 418 |
-| [tests/fixtures/vllm_swap_after.py](../tests/fixtures/vllm_swap_after.py) | 3530 |
-| [tests/fixtures/vllm_swap_before.py](../tests/fixtures/vllm_swap_before.py) | 3514 |
-| [tests/test_alfworld_contracts.py](../tests/test_alfworld_contracts.py) | 3633 |
-| [tests/test_external_baselines.py](../tests/test_external_baselines.py) | 2385 |
-| [tests/test_hard_envs.py](../tests/test_hard_envs.py) | 4923 |
-| [tests/test_model_contract.py](../tests/test_model_contract.py) | 2281 |
-| [tests/test_q35_engine_loader.py](../tests/test_q35_engine_loader.py) | 2122 |
-| [tests/test_release_gates.py](../tests/test_release_gates.py) | 3060 |
-| [tests/test_sft.py](../tests/test_sft.py) | 1415 |
-| [tests/test_sft_recovery.py](../tests/test_sft_recovery.py) | 1465 |
-| [tests/test_ucf_budget.py](../tests/test_ucf_budget.py) | 1037 |
-| [tests/test_v21_known_blocker.py](../tests/test_v21_known_blocker.py) | 730 |
-| [tests/test_vllm_mask_swap.py](../tests/test_vllm_mask_swap.py) | 2131 |
+- ["code/ucf/tests/UCF_\346\227\240\345\201\217\346\200\247\346\250\241\346\213\237_htsim.py"](../"code/ucf/tests/UCF_\346\227\240\345\201\217\346\200\247\346\250\241\346\213\237_htsim.py")
+- [.gitignore](../.gitignore)
+- [README.md](../README.md)
+- [RELEASE_MANIFEST.json](../RELEASE_MANIFEST.json)
+- [code/alfworld_adapter/__init__.py](../code/alfworld_adapter/__init__.py)
+- [code/alfworld_adapter/actions.py](../code/alfworld_adapter/actions.py)
+- [code/alfworld_adapter/env.py](../code/alfworld_adapter/env.py)
+- [code/alfworld_adapter/requirements.txt](../code/alfworld_adapter/requirements.txt)
+- [code/alfworld_adapter/sft_data.py](../code/alfworld_adapter/sft_data.py)
+- [code/collaborator_support.py](../code/collaborator_support.py)
+- [code/external_baselines.py](../code/external_baselines.py)
+- [code/patches/LICENSE](../code/patches/LICENSE)
+- [code/patches/NOTICE.md](../code/patches/NOTICE.md)
+- [code/patches/allowed_token_ids_swap.patch](../code/patches/allowed_token_ids_swap.patch)
+- [code/patches/manifest.json](../code/patches/manifest.json)
+- [code/patr_core.py](../code/patr_core.py)
+- [code/scripts/eval_q35.py](../code/scripts/eval_q35.py)
+- [code/scripts/hard_metrics.py](../code/scripts/hard_metrics.py)
+- [code/scripts/q35_engine_loader.py](../code/scripts/q35_engine_loader.py)
+- [code/scripts/sft_checkpoint.py](../code/scripts/sft_checkpoint.py)
+- [code/scripts/signal_stats.py](../code/scripts/signal_stats.py)
+- [code/scripts/ucf_recovery.py](../code/scripts/ucf_recovery.py)
+- [code/scripts/validation_recovery.py](../code/scripts/validation_recovery.py)
+- [code/sft.py](../code/sft.py)
+- [code/task_envs.py](../code/task_envs.py)
+- [code/train.py](../code/train.py)
+- [code/ucf/cert_collect.py](../code/ucf/cert_collect.py)
+- [code/ucf/cert_entropy.py](../code/ucf/cert_entropy.py)
+- [code/ucf/cert_probe.py](../code/ucf/cert_probe.py)
+- [code/ucf/cert_select.py](../code/ucf/cert_select.py)
+- [code/ucf/first_fence.py](../code/ucf/first_fence.py)
+- [code/ucf/run_ucf.py](../code/ucf/run_ucf.py)
+- [code/ucf/scripts/accept_ucf.py](../code/ucf/scripts/accept_ucf.py)
+- [code/ucf/scripts/phase1_ucf.py](../code/ucf/scripts/phase1_ucf.py)
+- [code/ucf/tests/htsim_original.py](../code/ucf/tests/htsim_original.py)
+- [code/ucf/tests/htsim_regression.py](../code/ucf/tests/htsim_regression.py)
+- [code/ucf/tests/test_first_fence.py](../code/ucf/tests/test_first_fence.py)
+- [code/ucf/tests/test_ucf.py](../code/ucf/tests/test_ucf.py)
+- [code/ucf/tokens.py](../code/ucf/tokens.py)
+- [code/ucf/ucf_collect.py](../code/ucf/ucf_collect.py)
+- [code/ucf/ucf_first_fence.py](../code/ucf/ucf_first_fence.py)
+- [code/ucf/ucf_probe.py](../code/ucf/ucf_probe.py)
+- [code/ucf/ucf_recovery.py](../code/ucf/ucf_recovery.py)
+- [code/ucf/ucf_runtime.py](../code/ucf/ucf_runtime.py)
+- [code/ucf/ucf_select.py](../code/ucf/ucf_select.py)
+- [code/ucf/ucf_weights.py](../code/ucf/ucf_weights.py)
+- [code/vendor/rllm_source/LICENSE](../code/vendor/rllm_source/LICENSE)
+- [code/vendor/rllm_source/examples/frozenlake/prepare_frozenlake_data.py](../code/vendor/rllm_source/examples/frozenlake/prepare_frozenlake_data.py)
+- [code/vendor/rllm_source/rllm/agents/agent.py](../code/vendor/rllm_source/rllm/agents/agent.py)
+- [code/vendor/rllm_source/rllm/agents/frozenlake_agent.py](../code/vendor/rllm_source/rllm/agents/frozenlake_agent.py)
+- [code/vendor/rllm_source/rllm/agents/system_prompts.py](../code/vendor/rllm_source/rllm/agents/system_prompts.py)
+- [code/vendor/rllm_source/rllm/environments/base/base_env.py](../code/vendor/rllm_source/rllm/environments/base/base_env.py)
+- [code/vendor/rllm_source/rllm/environments/frozenlake/frozenlake.py](../code/vendor/rllm_source/rllm/environments/frozenlake/frozenlake.py)
+- [configs/4b/flh/base_eval_seed42.json](../configs/4b/flh/base_eval_seed42.json)
+- [configs/4b/flh/gigpo_seed42.json](../configs/4b/flh/gigpo_seed42.json)
+- [configs/4b/flh/grpo4_seed42.json](../configs/4b/flh/grpo4_seed42.json)
+- [configs/4b/flh/grpo4_seed43.json](../configs/4b/flh/grpo4_seed43.json)
+- [configs/4b/flh/nosft_ucf_v2.1_seed42.json](../configs/4b/flh/nosft_ucf_v2.1_seed42.json)
+- [configs/4b/flh/sft_seed42.json](../configs/4b/flh/sft_seed42.json)
+- [configs/4b/flh/starpo_s_seed42.json](../configs/4b/flh/starpo_s_seed42.json)
+- [configs/4b/flh/tree_random_k2_seed42.json](../configs/4b/flh/tree_random_k2_seed42.json)
+- [configs/4b/flh/tree_random_k2_seed43.json](../configs/4b/flh/tree_random_k2_seed43.json)
+- [configs/4b/flh/ucf_v2_seed42.json](../configs/4b/flh/ucf_v2_seed42.json)
+- [configs/4b/flh/ucf_v2_seed43.json](../configs/4b/flh/ucf_v2_seed43.json)
+- [configs/4b/sokoban/base_eval_seed42.json](../configs/4b/sokoban/base_eval_seed42.json)
+- [configs/4b/sokoban/gigpo_seed42.json](../configs/4b/sokoban/gigpo_seed42.json)
+- [configs/4b/sokoban/grpo4_seed42.json](../configs/4b/sokoban/grpo4_seed42.json)
+- [configs/4b/sokoban/grpo4_seed43.json](../configs/4b/sokoban/grpo4_seed43.json)
+- [configs/4b/sokoban/nosft_ucf_v2.1_seed42.json](../configs/4b/sokoban/nosft_ucf_v2.1_seed42.json)
+- [configs/4b/sokoban/sft_seed42.json](../configs/4b/sokoban/sft_seed42.json)
+- [configs/4b/sokoban/starpo_s_seed42.json](../configs/4b/sokoban/starpo_s_seed42.json)
+- [configs/4b/sokoban/tree_random_k2_seed42.json](../configs/4b/sokoban/tree_random_k2_seed42.json)
+- [configs/4b/sokoban/tree_random_k2_seed43.json](../configs/4b/sokoban/tree_random_k2_seed43.json)
+- [configs/4b/sokoban/ucf_v2_seed42.json](../configs/4b/sokoban/ucf_v2_seed42.json)
+- [configs/4b/sokoban/ucf_v2_seed43.json](../configs/4b/sokoban/ucf_v2_seed43.json)
+- [configs/9b/alfworld/base_eval_seed42.json](../configs/9b/alfworld/base_eval_seed42.json)
+- [configs/9b/alfworld/gigpo_seed42.json](../configs/9b/alfworld/gigpo_seed42.json)
+- [configs/9b/alfworld/gigpo_seed43.json](../configs/9b/alfworld/gigpo_seed43.json)
+- [configs/9b/alfworld/grpo4_seed42.json](../configs/9b/alfworld/grpo4_seed42.json)
+- [configs/9b/alfworld/grpo4_seed43.json](../configs/9b/alfworld/grpo4_seed43.json)
+- [configs/9b/alfworld/sft_seed42.json](../configs/9b/alfworld/sft_seed42.json)
+- [configs/9b/alfworld/tree_random_k2_seed42.json](../configs/9b/alfworld/tree_random_k2_seed42.json)
+- [configs/9b/alfworld/tree_random_k2_seed43.json](../configs/9b/alfworld/tree_random_k2_seed43.json)
+- [configs/9b/alfworld/ucf_v2.1_seed42.json](../configs/9b/alfworld/ucf_v2.1_seed42.json)
+- [configs/9b/alfworld/ucf_v2.1_seed43.json](../configs/9b/alfworld/ucf_v2.1_seed43.json)
+- [configs/9b/flh/nosft_ucf_v2.1_seed42.json](../configs/9b/flh/nosft_ucf_v2.1_seed42.json)
+- [configs/9b/sokoban/base_eval_seed42.json](../configs/9b/sokoban/base_eval_seed42.json)
+- [configs/9b/sokoban/grpo4_seed42.json](../configs/9b/sokoban/grpo4_seed42.json)
+- [configs/9b/sokoban/grpo4_seed43.json](../configs/9b/sokoban/grpo4_seed43.json)
+- [configs/9b/sokoban/nosft_ucf_v2.1_seed42.json](../configs/9b/sokoban/nosft_ucf_v2.1_seed42.json)
+- [configs/9b/sokoban/sft_seed42.json](../configs/9b/sokoban/sft_seed42.json)
+- [configs/9b/sokoban/tree_random_k2_seed42.json](../configs/9b/sokoban/tree_random_k2_seed42.json)
+- [configs/9b/sokoban/tree_random_k2_seed43.json](../configs/9b/sokoban/tree_random_k2_seed43.json)
+- [configs/9b/sokoban/ucf_v2_seed42.json](../configs/9b/sokoban/ucf_v2_seed42.json)
+- [configs/9b/sokoban/ucf_v2_seed43.json](../configs/9b/sokoban/ucf_v2_seed43.json)
+- [configs/plan.json](../configs/plan.json)
+- [configs/protocol_2b.json](../configs/protocol_2b.json)
+- [data/alfworld/LICENSE.alfred](../data/alfworld/LICENSE.alfred)
+- [data/alfworld/LICENSE.upstream](../data/alfworld/LICENSE.upstream)
+- [data/alfworld/compact_metadata_acceptance.json](../data/alfworld/compact_metadata_acceptance.json)
+- [data/alfworld/cpu_acceptance.json](../data/alfworld/cpu_acceptance.json)
+- [data/alfworld/cpu_runtime.json](../data/alfworld/cpu_runtime.json)
+- [data/alfworld/fresh_replay_sample.json](../data/alfworld/fresh_replay_sample.json)
+- [data/alfworld/golden/golden_traces.jsonl.gz](../data/alfworld/golden/golden_traces.jsonl.gz)
+- [data/alfworld/golden/sft_messages.jsonl.gz](../data/alfworld/golden/sft_messages.jsonl.gz)
+- [data/alfworld/golden/verification.json](../data/alfworld/golden/verification.json)
+- [data/alfworld/sft_encoding_4b.json](../data/alfworld/sft_encoding_4b.json)
+- [data/alfworld/sft_encoding_9b.json](../data/alfworld/sft_encoding_9b.json)
+- [data/alfworld/source_manifest.json](../data/alfworld/source_manifest.json)
+- [data/alfworld/task_metadata.json](../data/alfworld/task_metadata.json)
+- [data/alfworld/text_games.zip](../data/alfworld/text_games.zip)
+- [data/alfworld/tokenizer_cpu_acceptance.json](../data/alfworld/tokenizer_cpu_acceptance.json)
+- [data/alfworld/ucf_environment_cpu_acceptance.json](../data/alfworld/ucf_environment_cpu_acceptance.json)
+- [data/evidence/summary.json](../data/evidence/summary.json)
+- [data/evidence/v21_math_audit.json](../data/evidence/v21_math_audit.json)
+- [data/flh/data.json](../data/flh/data.json)
+- [data/flh/golden_trace/golden_traces.jsonl.gz](../data/flh/golden_trace/golden_traces.jsonl.gz)
+- [data/flh/golden_trace/heldout_map_hashes.json](../data/flh/golden_trace/heldout_map_hashes.json)
+- [data/flh/golden_trace/independent_validation.json](../data/flh/golden_trace/independent_validation.json)
+- [data/flh/golden_trace/sft_messages.jsonl.gz](../data/flh/golden_trace/sft_messages.jsonl.gz)
+- [data/flh/golden_trace/train_map_hashes.json](../data/flh/golden_trace/train_map_hashes.json)
+- [data/flh/manifest.json](../data/flh/manifest.json)
+- [data/flh/maps.json](../data/flh/maps.json)
+- [data/flh/supplemental500/protocol.json](../data/flh/supplemental500/protocol.json)
+- [data/flh/supplemental500/tasks.json](../data/flh/supplemental500/tasks.json)
+- [data/model_metadata/Qwen3.5-2B/LICENSE](../data/model_metadata/Qwen3.5-2B/LICENSE)
+- [data/model_metadata/Qwen3.5-2B/chat_template.jinja](../data/model_metadata/Qwen3.5-2B/chat_template.jinja)
+- [data/model_metadata/Qwen3.5-2B/config.json](../data/model_metadata/Qwen3.5-2B/config.json)
+- [data/model_metadata/Qwen3.5-2B/model.safetensors.index.json](../data/model_metadata/Qwen3.5-2B/model.safetensors.index.json)
+- [data/model_metadata/Qwen3.5-2B/tokenizer.json](../data/model_metadata/Qwen3.5-2B/tokenizer.json)
+- [data/model_metadata/Qwen3.5-2B/tokenizer_config.json](../data/model_metadata/Qwen3.5-2B/tokenizer_config.json)
+- [data/model_metadata/Qwen3.5-4B/LICENSE](../data/model_metadata/Qwen3.5-4B/LICENSE)
+- [data/model_metadata/Qwen3.5-4B/chat_template.jinja](../data/model_metadata/Qwen3.5-4B/chat_template.jinja)
+- [data/model_metadata/Qwen3.5-4B/config.json](../data/model_metadata/Qwen3.5-4B/config.json)
+- [data/model_metadata/Qwen3.5-4B/model.safetensors.index.json](../data/model_metadata/Qwen3.5-4B/model.safetensors.index.json)
+- [data/model_metadata/Qwen3.5-4B/tokenizer.json](../data/model_metadata/Qwen3.5-4B/tokenizer.json)
+- [data/model_metadata/Qwen3.5-4B/tokenizer_config.json](../data/model_metadata/Qwen3.5-4B/tokenizer_config.json)
+- [data/model_metadata/Qwen3.5-9B/LICENSE](../data/model_metadata/Qwen3.5-9B/LICENSE)
+- [data/model_metadata/Qwen3.5-9B/chat_template.jinja](../data/model_metadata/Qwen3.5-9B/chat_template.jinja)
+- [data/model_metadata/Qwen3.5-9B/config.json](../data/model_metadata/Qwen3.5-9B/config.json)
+- [data/model_metadata/Qwen3.5-9B/model.safetensors.index.json](../data/model_metadata/Qwen3.5-9B/model.safetensors.index.json)
+- [data/model_metadata/Qwen3.5-9B/tokenizer.json](../data/model_metadata/Qwen3.5-9B/tokenizer.json)
+- [data/model_metadata/Qwen3.5-9B/tokenizer_config.json](../data/model_metadata/Qwen3.5-9B/tokenizer_config.json)
+- [data/model_metadata/cpu_acceptance.json](../data/model_metadata/cpu_acceptance.json)
+- [data/model_metadata/manifest.json](../data/model_metadata/manifest.json)
+- [data/sokoban/data.json](../data/sokoban/data.json)
+- [data/sokoban/manifest.json](../data/sokoban/manifest.json)
+- [data/sokoban/maps.json](../data/sokoban/maps.json)
+- [data/sokoban/sft_messages.jsonl](../data/sokoban/sft_messages.jsonl)
+- [data/sokoban/supplemental500/protocol.json](../data/sokoban/supplemental500/protocol.json)
+- [data/sokoban/supplemental500/tasks.json](../data/sokoban/supplemental500/tasks.json)
+- [docs/ALFWORLD.md](../docs/ALFWORLD.md)
+- [docs/EVIDENCE.md](../docs/EVIDENCE.md)
+- [docs/EXPERIMENT_PLAN.md](../docs/EXPERIMENT_PLAN.md)
+- [docs/FILE_LIST.md](../docs/FILE_LIST.md)
+- [docs/INSTALL.md](../docs/INSTALL.md)
+- [docs/MEMORY_AND_RUNTIME.md](../docs/MEMORY_AND_RUNTIME.md)
+- [docs/PORTABILITY_DIFF.json](../docs/PORTABILITY_DIFF.json)
+- [docs/PROTOCOL_REVIEW.md](../docs/PROTOCOL_REVIEW.md)
+- [docs/SOURCE_PROVENANCE.md](../docs/SOURCE_PROVENANCE.md)
+- [docs/V21_STATUS.md](../docs/V21_STATUS.md)
+- [docs/acceptance/CPU_RELEASE.json](../docs/acceptance/CPU_RELEASE.json)
+- [docs/acceptance/FRESH_CLONE.json](../docs/acceptance/FRESH_CLONE.json)
+- [docs/acceptance/grid_data_replay.json](../docs/acceptance/grid_data_replay.json)
+- [requirements-cpu.txt](../requirements-cpu.txt)
+- [requirements-gpu.txt](../requirements-gpu.txt)
+- [results/.gitkeep](../results/.gitkeep)
+- [scripts/alfworld_encode_sft.py](../scripts/alfworld_encode_sft.py)
+- [scripts/alfworld_evaluate.py](../scripts/alfworld_evaluate.py)
+- [scripts/alfworld_generate.py](../scripts/alfworld_generate.py)
+- [scripts/alfworld_prepare.py](../scripts/alfworld_prepare.py)
+- [scripts/alfworld_smoke.py](../scripts/alfworld_smoke.py)
+- [scripts/alfworld_verify.py](../scripts/alfworld_verify.py)
+- [scripts/check_models.py](../scripts/check_models.py)
+- [scripts/cpu_smoke.sh](../scripts/cpu_smoke.sh)
+- [scripts/download_model_metadata.py](../scripts/download_model_metadata.py)
+- [scripts/evaluate_sft.py](../scripts/evaluate_sft.py)
+- [scripts/export_results.py](../scripts/export_results.py)
+- [scripts/make_configs.py](../scripts/make_configs.py)
+- [scripts/model_identity.py](../scripts/model_identity.py)
+- [scripts/patch_vllm.py](../scripts/patch_vllm.py)
+- [scripts/run_experiment.py](../scripts/run_experiment.py)
+- [scripts/verify_data.py](../scripts/verify_data.py)
+- [scripts/verify_release.py](../scripts/verify_release.py)
+- [tests/conftest.py](../tests/conftest.py)
+- [tests/fixtures/vllm_swap_after.py](../tests/fixtures/vllm_swap_after.py)
+- [tests/fixtures/vllm_swap_before.py](../tests/fixtures/vllm_swap_before.py)
+- [tests/test_alfworld_contracts.py](../tests/test_alfworld_contracts.py)
+- [tests/test_external_baselines.py](../tests/test_external_baselines.py)
+- [tests/test_hard_envs.py](../tests/test_hard_envs.py)
+- [tests/test_model_contract.py](../tests/test_model_contract.py)
+- [tests/test_q35_engine_loader.py](../tests/test_q35_engine_loader.py)
+- [tests/test_release_gates.py](../tests/test_release_gates.py)
+- [tests/test_sft.py](../tests/test_sft.py)
+- [tests/test_sft_recovery.py](../tests/test_sft_recovery.py)
+- [tests/test_ucf_budget.py](../tests/test_ucf_budget.py)
+- [tests/test_v21_known_blocker.py](../tests/test_v21_known_blocker.py)
+- [tests/test_vllm_mask_swap.py](../tests/test_vllm_mask_swap.py)
