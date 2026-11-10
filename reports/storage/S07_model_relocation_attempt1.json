@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_mutation",
+  "reason": "PermissionError creating /data/retained-models",
+  "original_intact": true,
+  "bytes": 7527341904,
+  "remediation": "Use /data/runs/retained_models; no sudo or broader permissions needed"
+}

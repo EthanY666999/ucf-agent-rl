@@ -1,0 +1,20 @@
+{
+  "status": "planned_not_executed",
+  "created_unix": 1794308438.144091,
+  "reason": "Balance remote mounts for fresh paired no-SFT checkpoints and their atomic replacement; preserve the completed S07 final model.",
+  "source": "/home/vipuser/q35-final-models/S07_starpo_s_seed42/model.safetensors",
+  "destination": "/data/runs/retained_models/S07_starpo_s_seed42/model.safetensors",
+  "bytes": 7527341904,
+  "sha256": "9a345e9b616acdbcb8d9ddf733f66a9c0e0cef67e9c5c8678a554488420baca8",
+  "old_path_after": "symlink to verified destination",
+  "model_deleted": false,
+  "evidence_deleted": false,
+  "local_mac_copy": false,
+  "conditions": [
+    "Destination SHA256 must match the preserved original receipt before replacing the source with a symlink.",
+    "Keep source intact on copy or verification failure.",
+    "Write an execution receipt with both disk free spaces."
+  ],
+  "supersedes_plan_commit": "153ef2c5fdd331f97a0091dac19a33b5f46e4a91",
+  "revision_reason": "The original destination parent was not writable; attempt failed before any copy or source change. Use existing writable /data/runs."
+}
