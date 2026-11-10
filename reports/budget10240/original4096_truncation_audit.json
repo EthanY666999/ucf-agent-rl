@@ -1,0 +1,214 @@
+{
+  "source": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+  "definition": "original initial four only; terminal token/context_limit; actually executed actions=len(actions)",
+  "steps": [
+    {
+      "step": 1,
+      "original_trajectories": 256,
+      "success_rate": 0.046875,
+      "terminal_counts": {
+        "token_limit": 242,
+        "success": 12,
+        "turn_limit": 2
+      },
+      "truncation_fraction": 0.9453125,
+      "mean_executed_actions": 0.44921875,
+      "mean_generated_tokens": 4012.5546875
+    },
+    {
+      "step": 2,
+      "original_trajectories": 256,
+      "success_rate": 0.0390625,
+      "terminal_counts": {
+        "token_limit": 243,
+        "turn_limit": 3,
+        "success": 10
+      },
+      "truncation_fraction": 0.94921875,
+      "mean_executed_actions": 0.5234375,
+      "mean_generated_tokens": 4001.5234375
+    },
+    {
+      "step": 3,
+      "original_trajectories": 256,
+      "success_rate": 0.01171875,
+      "terminal_counts": {
+        "token_limit": 249,
+        "turn_limit": 4,
+        "success": 3
+      },
+      "truncation_fraction": 0.97265625,
+      "mean_executed_actions": 0.78515625,
+      "mean_generated_tokens": 4048.24609375
+    },
+    {
+      "step": 4,
+      "original_trajectories": 256,
+      "success_rate": 0.0703125,
+      "terminal_counts": {
+        "token_limit": 234,
+        "turn_limit": 4,
+        "success": 18
+      },
+      "truncation_fraction": 0.9140625,
+      "mean_executed_actions": 0.99609375,
+      "mean_generated_tokens": 3901.87109375
+    },
+    {
+      "step": 5,
+      "original_trajectories": 256,
+      "success_rate": 0.109375,
+      "terminal_counts": {
+        "token_limit": 223,
+        "success": 28,
+        "turn_limit": 5
+      },
+      "truncation_fraction": 0.87109375,
+      "mean_executed_actions": 1.3515625,
+      "mean_generated_tokens": 3735.44140625
+    },
+    {
+      "step": 6,
+      "original_trajectories": 256,
+      "success_rate": 0.1015625,
+      "terminal_counts": {
+        "token_limit": 222,
+        "turn_limit": 8,
+        "success": 26
+      },
+      "truncation_fraction": 0.8671875,
+      "mean_executed_actions": 2.00390625,
+      "mean_generated_tokens": 3779.66796875
+    },
+    {
+      "step": 7,
+      "original_trajectories": 256,
+      "success_rate": 0.19921875,
+      "terminal_counts": {
+        "token_limit": 192,
+        "success": 51,
+        "turn_limit": 13
+      },
+      "truncation_fraction": 0.75,
+      "mean_executed_actions": 2.3125,
+      "mean_generated_tokens": 3464.81640625
+    },
+    {
+      "step": 8,
+      "original_trajectories": 256,
+      "success_rate": 0.109375,
+      "terminal_counts": {
+        "token_limit": 215,
+        "success": 28,
+        "turn_limit": 13
+      },
+      "truncation_fraction": 0.83984375,
+      "mean_executed_actions": 2.84375,
+      "mean_generated_tokens": 3694.17578125
+    },
+    {
+      "step": 9,
+      "original_trajectories": 256,
+      "success_rate": 0.09765625,
+      "terminal_counts": {
+        "token_limit": 223,
+        "success": 25,
+        "turn_limit": 8
+      },
+      "truncation_fraction": 0.87109375,
+      "mean_executed_actions": 2.43359375,
+      "mean_generated_tokens": 3823.703125
+    },
+    {
+      "step": 10,
+      "original_trajectories": 256,
+      "success_rate": 0.1015625,
+      "terminal_counts": {
+        "token_limit": 219,
+        "success": 26,
+        "turn_limit": 11
+      },
+      "truncation_fraction": 0.85546875,
+      "mean_executed_actions": 2.765625,
+      "mean_generated_tokens": 3769.51171875
+    },
+    {
+      "step": 11,
+      "original_trajectories": 256,
+      "success_rate": 0.10546875,
+      "terminal_counts": {
+        "token_limit": 217,
+        "turn_limit": 12,
+        "success": 27
+      },
+      "truncation_fraction": 0.84765625,
+      "mean_executed_actions": 3.1796875,
+      "mean_generated_tokens": 3704.078125
+    },
+    {
+      "step": 12,
+      "original_trajectories": 256,
+      "success_rate": 0.13671875,
+      "terminal_counts": {
+        "turn_limit": 18,
+        "token_limit": 203,
+        "success": 35
+      },
+      "truncation_fraction": 0.79296875,
+      "mean_executed_actions": 3.515625,
+      "mean_generated_tokens": 3614.7578125
+    },
+    {
+      "step": 13,
+      "original_trajectories": 256,
+      "success_rate": 0.109375,
+      "terminal_counts": {
+        "success": 28,
+        "token_limit": 204,
+        "turn_limit": 24
+      },
+      "truncation_fraction": 0.796875,
+      "mean_executed_actions": 4.234375,
+      "mean_generated_tokens": 3678.51953125
+    },
+    {
+      "step": 14,
+      "original_trajectories": 256,
+      "success_rate": 0.14453125,
+      "terminal_counts": {
+        "token_limit": 185,
+        "turn_limit": 34,
+        "success": 37
+      },
+      "truncation_fraction": 0.72265625,
+      "mean_executed_actions": 4.4140625,
+      "mean_generated_tokens": 3600.6484375
+    },
+    {
+      "step": 15,
+      "original_trajectories": 256,
+      "success_rate": 0.15234375,
+      "terminal_counts": {
+        "token_limit": 187,
+        "success": 39,
+        "turn_limit": 30
+      },
+      "truncation_fraction": 0.73046875,
+      "mean_executed_actions": 4.51171875,
+      "mean_generated_tokens": 3522.15234375
+    },
+    {
+      "step": 16,
+      "original_trajectories": 256,
+      "success_rate": 0.14453125,
+      "terminal_counts": {
+        "token_limit": 189,
+        "turn_limit": 30,
+        "success": 37
+      },
+      "truncation_fraction": 0.73828125,
+      "mean_executed_actions": 4.7109375,
+      "mean_generated_tokens": 3500.6484375
+    }
+  ]
+}

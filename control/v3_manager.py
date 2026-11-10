@@ -21,9 +21,18 @@ def checkpoint_step(p,python):
  cmd=[python,'-c','import torch,sys;d=torch.load(sys.argv[1],map_location="cpu",weights_only=False,mmap=True);print(int(d["step"]))',str(p)]
  return int(subprocess.check_output(cmd,env=cpu_env(),text=True).strip())
 
+def initial_step(out):
+ p=Path(out)/'initialization.json'
+ if not p.exists():return 0
+ d=read(p)
+ assert d['kind']=='shared_rl_warmstart_budget_exploration' and d['task_sft'] is False
+ assert d['not_a_fresh_raw_start_comparison'] and d['initial_step']>0
+ return d['initial_step']
+
 def reconcile(out,step):
  """Archive post-checkpoint evidence before restoring the durable metric prefix."""
- out=Path(out);archive=out/'recovery_archive'/str(time.time_ns())
+ out=Path(out);archive=out/'recovery_archive'/str(time.time_ns());base=initial_step(out)
+ assert step>=base
  records=[];moves=[];rewrites={}
  for name in ('train_metrics.jsonl','branch_events.jsonl'):
   p=out/name
@@ -35,9 +44,9 @@ def reconcile(out,step):
    (keep if r['step']<=step else later).append(line)
   if name=='train_metrics.jsonl':
    records=[json.loads(x)['step'] for x in keep]
-   assert records==list(range(1,step+1)), 'Incomplete/duplicate checkpoint metric prefix'
+   assert records==list(range(base+1,step+1)), 'Incomplete/duplicate checkpoint metric prefix'
   if later:moves.append(p);rewrites[p]='\n'.join(keep)+('\n' if keep else '')
- if step:assert records,'Missing checkpoint metric prefix'
+ if step>base:assert records,'Missing checkpoint metric prefix'
  pattern=re.compile(r'(?:rollouts|validation)_(\d+)\.(?:json|jsonl|jsonl.gz)$')
  for p in out.iterdir():
   m=pattern.fullmatch(p.name)
@@ -55,17 +64,19 @@ def validate_stage(out,step,python,runtime):
  out=Path(out);s=read(out/'status.json')
  assert s['status']=='paused_checkpointed' and s['step']==step
  assert not (out/'final_test.json').exists(),'Pilot entered final test'
+ base=initial_step(out)
  metrics=[json.loads(x) for x in (out/'train_metrics.jsonl').read_text().splitlines()]
- assert [r['step'] for r in metrics]==list(range(1,step+1))
+ assert [r['step'] for r in metrics]==list(range(base+1,step+1))
  assert checkpoint_step(out/'checkpoint.pt',python)==step
  for r in metrics:assert all(math.isfinite(r[k]) for k in ('loss','kl','grad_norm','step_seconds'))
  cfg=read(out/'config.json');assert sha(cfg['dataset_path'])==cfg['dataset_sha256']
  tasks=read(cfg['dataset_path'])['validation']
  sys.path.insert(0,str(Path(runtime)/'scripts'))
  from validation_recovery import validation_complete
- for k in range(0,step+1,25):assert validation_complete(out/f'validation_{k:04d}.json',tasks),f'Incomplete validation{k}'
- return dict(passed=True,steps=step,final_test_used=False,checkpoint_retained=True,
-  metrics_sha256=sha(out/'train_metrics.jsonl'),validation_sha256={str(k):sha(out/f'validation_{k:04d}.json') for k in range(0,step+1,25)})
+ validations=[base]+[k for k in range(base+1,step+1) if k%cfg['eval_every']==0]
+ for k in validations:assert validation_complete(out/f'validation_{k:04d}.json',tasks),f'Incomplete validation{k}'
+ return dict(passed=True,steps=step,continuation_updates=step-base,initial_step=base,final_test_used=False,checkpoint_retained=True,
+  metrics_sha256=sha(out/'train_metrics.jsonl'),validation_sha256={str(k):sha(out/f'validation_{k:04d}.json') for k in validations})
 
 def write_progress(state,entry,child=None):
  out=Path(entry['output']);val=[]

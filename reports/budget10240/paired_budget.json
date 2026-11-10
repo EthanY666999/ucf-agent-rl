@@ -1,0 +1,61 @@
+{
+  "train_only": true,
+  "task_ids": [
+    "sokoban_2004772",
+    "sokoban_2004531",
+    "sokoban_2004921",
+    "sokoban_2009878",
+    "sokoban_2010249",
+    "sokoban_2009126",
+    "sokoban_2009574",
+    "sokoban_2006550"
+  ],
+  "checkpoint_step": 16,
+  "checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+  "seed": 191664963,
+  "budget4096": {
+    "trajectories": 32,
+    "success_rate": 0.03125,
+    "terminal_counts": {
+      "token_limit": 25,
+      "turn_limit": 6,
+      "success": 1
+    },
+    "truncation_fraction": 0.78125,
+    "mean_response_tokens": 3712.625,
+    "mean_executed_actions": 5.4375,
+    "mean_turns": 5.4375,
+    "cost": {
+      "generated_tokens": 119693,
+      "input_tokens": 416681,
+      "executed_actions": 174,
+      "invalid_actions": 1,
+      "seconds": 70.98976049304474,
+      "request_seconds": 0.0,
+      "request_seconds_unavailable_for_frozen_initial": true
+    }
+  },
+  "budget10240": {
+    "trajectories": 32,
+    "success_rate": 0.09375,
+    "terminal_counts": {
+      "turn_limit": 27,
+      "token_limit": 2,
+      "success": 3
+    },
+    "truncation_fraction": 0.0625,
+    "mean_response_tokens": 6302.21875,
+    "mean_executed_actions": 9.34375,
+    "mean_turns": 9.34375,
+    "cost": {
+      "generated_tokens": 203217,
+      "input_tokens": 1165069,
+      "executed_actions": 299,
+      "invalid_actions": 2,
+      "seconds": 169.99659307894763,
+      "request_seconds": 0.0,
+      "request_seconds_unavailable_for_frozen_initial": true
+    }
+  },
+  "interpretation": "Same checkpoint and training questions; small diagnostic sample, not a final-test result"
+}

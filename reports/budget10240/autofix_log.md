@@ -1,0 +1,2 @@
+
+- Diagnostic attempt 1: paired 4096/10240 sampling completed. The diagnostic wrapper then omitted `current_step` in phase status, causing KeyError before capture collection. Added the required field, preserved all evidence, and reuse the same completed paired sampling after checking checkpoint, config, question and seed identity. No training code or algorithm parameter changed in this repair. No optimizer update occurred.
