@@ -45,3 +45,25 @@ The deletion manifest was published in commit `40c0e9870b3644eb70a7f2ad2af9ea02e
 ## Read-only check of the Part B regularizer
 
 The implemented loss applies KL to Part B rows even when their PG advantage is zero. On the old4096 samples, the normalized KL token-weight mass from B was0.13494 atstep1 and0.03777 atstep16, relative to A's1.0. Atstep16,86.0% of B's KL coefficient mass was on zero-PG-advantage rows. These are exact coefficient/token counts, **not measured KL magnitudes or gradients**, and do not establish why truncation learned slowly. The loss was not changed during the budget trial. This also limits the claim that a zero PG advantage makes a numerically discrepant node entirely irrelevant.
+
+## First full 10240 training update
+
+The continuation completed total step17 (the first new update) on2026-11-11 Beijing time. Read-only raw-rollout accounting excludes pseudo training rows and counterfactual leaves and reproduces the collector success/group counts. See `updates_0017.json`, `ucf_train_metrics_through0017.jsonl` and `diagnostics/audit_budget_updates.py`.
+
+| Original-four training samples | Step17 |
+|---|---:|
+| Successes |57/256 (22.27%)|
+| Token-limit termination |25/256 (9.77%)|
+| Turn-limit termination |174/256|
+| Mean executed turns |8.496|
+| All-failure / mixed / all-success questions |38 /22 /4|
+| All-failure questions rescued by counterfactual |3/38 (7.89%)|
+| Counterfactual reward flip fraction |13.22%|
+| Mean realized forks per question |1.891|
+| KL / gradient norm |0.04731 /0.40763|
+| Maximum parameter change |1.116e-6|
+| Maximum captured-original logprob difference |3.454e-6|
+| Peak allocated GPU memory |64.94GiB|
+| Rollout / whole-step time |997.3 /1443.4seconds|
+
+This is a single training batch, with a different question sample from4096 step16. It establishes successful execution and substantially less truncation in the observed batch, **not learning improvement or superiority over GRPO**. The full same-initialization, same-budget GRPO arm is still pending. Counterfactual token-partition/parser disagreement is14.88%; the residual token class is not an assertion that the executed action is STAY. No new threshold or algorithm change was made after viewing these values.

@@ -1,0 +1,77 @@
+{
+  "unix": 1794328498.3472335,
+  "run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42",
+  "through_step": 17,
+  "initialization": {
+    "kind": "shared_rl_warmstart_budget_exploration",
+    "initial_step": 16,
+    "source_run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+    "source_checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+    "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73",
+    "reference_model": "/data/models/Qwen3.5-2B",
+    "task_sft": false,
+    "prior_training_method": "ucf",
+    "prior_training_steps": 16,
+    "prior_max_response_tokens": 4096,
+    "continuation_max_response_tokens": 10240,
+    "method": "ucf",
+    "not_a_fresh_raw_start_comparison": true,
+    "unix": 1794325948.304225,
+    "imported_controller_sha256": "25fe6381dcd17d7addfb44d39ec7118da5ca985906faaec2827fe78348c61e8c",
+    "controller_note": "Historical uniform-selector boundary receipt; next selection is freshly calibrated from the new batch"
+  },
+  "config_sha256": "3f33951689e0feb8c3e5fa3f87d073ab92b3cf5b1cca3a5f8714f8fb956d54c3",
+  "observed_metrics_sha256": "0f45aca37a849b3e4474280d7615a37539f20315ef728f80e300d364970b517e",
+  "original_filter": "lineage exactly 0, 1, 2 or 3; pseudo rows and CF leaves excluded",
+  "caveat": "Training samples from different steps are different batches. This audit does not establish fixed-validation improvement or UCF advantage over GRPO.",
+  "rows": [
+    {
+      "step": 17,
+      "original_count": 256,
+      "original_successes": 57,
+      "original_success_pct": 22.265625,
+      "original_terminals": {
+        "turn_limit": 174,
+        "success": 57,
+        "token_limit": 25
+      },
+      "original_token_limit_pct": 9.765625,
+      "original_mean_trace_records": 8.59375,
+      "original_mean_executed_turns": 8.49609375,
+      "original_mean_response_tokens": 5316.77734375,
+      "original_group_counts": {
+        "all_failure": 38,
+        "mixed": 22,
+        "all_success": 4
+      },
+      "total_saved_records_including_pseudo_rows": 498,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.4541274261182253e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0017.jsonl.gz",
+        "bytes": 23350991,
+        "sha256": "6a6280910561ac0446a666b130d13b2aa226594052920d0124d14962e0e615d4"
+      },
+      "rollout_seconds": 997.3041037810035,
+      "step_seconds": 1443.356303788023,
+      "peak_allocated_gib": 64.94029235839844,
+      "mean_forks": 1.890625,
+      "rescue_rate": 0.07894736842105263,
+      "counterfactual_flip_rate": 0.1322314049586777,
+      "kl": 0.04730645884086471,
+      "grad_norm": 0.4076276421546936,
+      "max_parameter_change": 1.1157244443893433e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2173,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2158397440,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.1487603305785124
+    }
+  ]
+}
