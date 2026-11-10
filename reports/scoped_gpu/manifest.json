@@ -1,0 +1,12 @@
+{
+  "parent_pid": 352987,
+  "paused_baseline_step": 25,
+  "script_sha256": {
+    "/home/vipuser/decision-point-ucf-v3-20261110/storage/scoped_inference.py": "9d09e966315378986ae370908b886993e61e791f9d9ce61ee5077fa083fb5b98",
+    "/home/vipuser/decision-point-ucf-v3-20261110/storage/numerical_contract_scoped.py": "e3c9187939bb7039d4d91b4d0d9f9c8ef1fb67e0535ec99c3b1da9bc1fe88970",
+    "/home/vipuser/decision-point-ucf-v3-20261110/storage/run_scoped_queue.py": "3da1b6a8b054015df65b62864de93361cf8f41d3f56c6f2916be0789aafaf5c4"
+  },
+  "installed_files_modified": false,
+  "final_test_used": false,
+  "baseline_checkpoint_retained": true
+}

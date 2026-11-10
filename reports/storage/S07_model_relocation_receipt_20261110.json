@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "unix": 1794308589.2899344,
+  "source": "/home/vipuser/q35-final-models/S07_starpo_s_seed42/model.safetensors",
+  "destination": "/data/runs/retained_models/S07_starpo_s_seed42/model.safetensors",
+  "bytes": 7527341904,
+  "sha256": "9a345e9b616acdbcb8d9ddf733f66a9c0e0cef67e9c5c8678a554488420baca8",
+  "plan_sha256": "7e7a63e156a374833c9f1b70a891c652aed1b58e0cb470532932a0ee349d7ef8",
+  "published_plan_commit": "7b69d2e0e6df91cabd4f69bc16e8907166bc1f70",
+  "source_now_symlink": true,
+  "model_retained": true,
+  "evidence_deleted": false,
+  "mac_copy": false,
+  "disk_free_bytes_before": {
+    "/home/vipuser": 56278052864,
+    "/data": 68825309184
+  },
+  "disk_free_bytes_after": {
+    "/home/vipuser": 63805374464,
+    "/data": 61297954816
+  },
+  "total_storage_reduced": false
+}

@@ -1,0 +1,20 @@
+{
+  "target": 2.0,
+  "candidate_counts": {
+    "0": 2,
+    "1": 1,
+    "2": 14,
+    "3": 6
+  },
+  "rho_by_task": {
+    "0": 0.2857142857142857,
+    "1": 0.27272727272727276,
+    "2": 0.6666666666666666,
+    "3": 0.3529411764705882
+  },
+  "expected_forks": 3.0737840590781764,
+  "realized_forks": 3.75,
+  "rho_floor": null,
+  "manual_score": false,
+  "exact_batch_budget_guaranteed": false
+}

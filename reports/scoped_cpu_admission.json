@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "CPU-only candidate source/config; GPU admission pending",
+  "tests": 85,
+  "production_python": "/data/venvs/qwen35/bin/python",
+  "cuda_visible_devices": "",
+  "runtime": "/home/vipuser/decision-point-ucf-v3-scoped-20261110",
+  "plan_sha256": "112f105351544eb3847ffc724ccf240b2edc8754e2510ed35cc27638346518c2",
+  "unix": 1794309017.671961
+}

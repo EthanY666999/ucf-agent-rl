@@ -1,0 +1,9 @@
+{
+  "pid": 358948,
+  "started": 1794309588.295963,
+  "plan_sha256": "112f105351544eb3847ffc724ccf240b2edc8754e2510ed35cc27638346518c2",
+  "start_policy": "fresh raw model for both arms",
+  "old_baseline_checkpoint_retained": true,
+  "cpu_admission_passed": true,
+  "gpu_admission_passed": true
+}

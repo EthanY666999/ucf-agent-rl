@@ -1,0 +1,19 @@
+{
+  "experiment": "V3_S_ucf_nosft_scoped_seed42",
+  "stage": 25,
+  "pid": 358949,
+  "child_alive": true,
+  "run_status": {
+    "status": "initializing",
+    "method": "ucf",
+    "step": 0,
+    "total_steps": 400,
+    "pid": 358949
+  },
+  "validation": [],
+  "disk_free_gib": {
+    "/home": 59.38750457763672,
+    "/data": 57.0831298828125
+  },
+  "unix": 1794309788.4432812
+}

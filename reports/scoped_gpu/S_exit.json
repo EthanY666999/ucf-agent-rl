@@ -1,0 +1,17 @@
+{
+  "status": "ended",
+  "job": "S",
+  "pid": 357522,
+  "command": [
+    "/data/venvs/qwen35/bin/python",
+    "-u",
+    "/home/vipuser/decision-point-ucf-v3-20261110/storage/numerical_contract_scoped.py",
+    "--config",
+    "/home/vipuser/decision-point-ucf-v3-20261110/v3_configs/V3_S_ucf_nosft_seed42.json",
+    "--output",
+    "/data/runs/ucf_v3_numerical_scoped_20261110/S"
+  ],
+  "unix": 1794308878.867048,
+  "returncode": 0,
+  "ended": 1794309206.8382945
+}

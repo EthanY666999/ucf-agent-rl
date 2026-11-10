@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "unix": 1794309547.619957,
+  "software": {
+    "torch": "2.10.0+cu128",
+    "vllm": "0.19.1"
+  },
+  "helper_sha256": "9d09e966315378986ae370908b886993e61e791f9d9ce61ee5077fa083fb5b98",
+  "wrapper_sha256": "e3c9187939bb7039d4d91b4d0d9f9c8ef1fb67e0535ec99c3b1da9bc1fe88970",
+  "native_gradient_checks": [
+    {
+      "cycle": 0,
+      "gradient_max_difference": 0.0
+    },
+    {
+      "cycle": 1,
+      "gradient_max_difference": 0.0
+    },
+    {
+      "cycle": 2,
+      "gradient_max_difference": 0.0
+    }
+  ],
+  "native_fp32_and_bf16_autocast_checked": true,
+  "post_update_inference_then_backward": true,
+  "transitions": [
+    "inference",
+    "training",
+    "inference",
+    "training",
+    "inference",
+    "training",
+    "training",
+    "inference",
+    "training",
+    "inference",
+    "training"
+  ],
+  "installed_files_modified": false,
+  "interpretation": "Engineering-only admission; requires a separately recorded matched numerical protocol for training"
+}
