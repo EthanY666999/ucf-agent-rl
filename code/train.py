@@ -70,6 +70,10 @@ def build_models(cfg,seed):
                    attn_implementation='sdpa',local_files_only=True).to('cuda').eval()
     ref.requires_grad_(False)
     from scripts.q35_engine_loader import build_engine
+    observer_options = {}
+    if cfg.get('ucf_probability_source') == 'original_sampling_logits':
+        from original_logits import OriginalLogitsObserver
+        observer_options['logits_processors'] = [OriginalLogitsObserver]
     engine=build_engine(actor,model_path,LLM,sync_weights,dtype='bfloat16',
                tensor_parallel_size=1,distributed_executor_backend='uni',
                gpu_memory_utilization=cfg['vllm_memory_fraction'],
@@ -77,7 +81,7 @@ def build_models(cfg,seed):
                max_num_batched_tokens=4096,enable_chunked_prefill=True,
                enable_prefix_caching=True,limit_mm_per_prompt={'image':0,'video':0},
                seed=seed,enforce_eager=cfg.get('vllm_enforce_eager',False),disable_log_stats=True,
-               max_logprobs=-1 if cfg.get('ucf_v3',False) else 20)
+               max_logprobs=-1 if cfg.get('ucf_v3',False) else 20, **observer_options)
     return actor,ref,engine,tokenizer
 
 

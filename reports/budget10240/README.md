@@ -17,6 +17,10 @@ Eight training questions, four trajectories each, identical checkpoint and sampl
 
 The larger cap reduces mechanical truncation in this sample. Most remaining failures end at the10-turn horizon. It does not by itself establish improved learning, planning, or UCF advantage. Cost increased2.39x for this paired sample.
 
+The common step16 fixed validation at10240 completed100 questions x4:43/400 successes (10.75%),17% pass@4,25 token-limit terminations (6.25%),332 turn-limit terminations, mean response length2535.71 tokens. Evaluation temperature/top-p differs from training as already frozen in the protocol; do not compare training and evaluation truncation as though sampling settings were identical.
+
+Original-logits GPU admission then passed:32 original trajectories were bitwise unchanged;298 nodes were checked; maximum original-capture logprob difference was3.413e-6; A/B backward, a disposable AdamW update, weight sync, subsequent inference and restoration of native FP32/BF16 backward all passed. Peak allocated GPU memory was61.25GiB. The checkpoint used for continuation remains the pre-contract step16 checkpoint.
+
 ## Short continuation, not a fresh-start benchmark
 
 - Preserve the original4096 run and source checkpoint identity.
@@ -29,5 +33,7 @@ The larger cap reduces mechanical truncation in this sample. Most remaining fail
 ## Storage and repairs
 
 Weights/checkpoints stay on the remote server. Two independently verified continuation copies can replace the redundant old boundary checkpoint only after a deletion manifest containing paths, sizes and SHA256 is published. Preserve all logs, raw trajectories, failures, source, configs and evaluation results. The11 new/manager CPU checks passed; the previous observer suite passed97 checks separately.
+
+Retiring the redundant step16 source checkpoint does not archive that exact early weight state indefinitely: once both continuation checkpoints advance, recreating step16 would require replaying its original training. Its hashes, source, configuration, trajectories and validation remain preserved. The active checkpoints for both continuations remain resumable.
 
 The first diagnostic wrapper omitted `current_step` when changing its phase status; collection stopped with KeyError before any optimizer update. Paired sampling had already completed. That attempt is preserved, the status field was fixed, and its paired samples are reused only after checkpoint/config/question/seed identity checks. See `autofix_log.md`. This wrapper error is not a failed training run.

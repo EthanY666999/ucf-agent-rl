@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "helper_sha256": "9d09e966315378986ae370908b886993e61e791f9d9ce61ee5077fa083fb5b98",
+  "post_update_inference_then_backward": true,
+  "native_fp32_and_bf16_autocast_checked": true,
+  "installed_files_modified": false,
+  "transitions": [
+    "training",
+    "inference",
+    "training",
+    "inference",
+    "training"
+  ]
+}

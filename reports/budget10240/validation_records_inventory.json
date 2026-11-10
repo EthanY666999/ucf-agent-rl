@@ -1,0 +1,8 @@
+{
+  "raw_path": "/data/runs/ucf_v3_budget10240_20261110/admission/validation_0016.jsonl",
+  "raw_bytes": 5180756,
+  "raw_sha256": "b328b507a57dcdf0d21972f63cdc14ded623d960573187f8b14f413d665460f5",
+  "compressed_file": "validation_0016.jsonl.gz",
+  "compressed_bytes": 404431,
+  "compressed_sha256": "48e3f92ef31983b3e865deb5e9760f86e459f0eae6d462da8009eb14f5ea93f1"
+}

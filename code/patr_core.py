@@ -452,6 +452,11 @@ def collect(tasks, engine, tokenizer, cfg, method, rng, evaluation=False):
             max_tokens=remaining,logprobs=10 if method=='arpo' and not evaluation else 1,
             seed=seed_for(tasks[b.task_id]['uid'],b.lineage,b.turns),
             stop_token_ids=[tokenizer.eos_token_id],output_kind=RequestOutputKind.FINAL_ONLY)
+        if cfg.get('_ucf_capture_session') is not None:
+            assert not evaluation and method == 'grpo'
+            from original_logits import request_metadata
+            params.extra_args = request_metadata(cfg['_ucf_capture_session'],
+                                                 b.task_id, b.lineage, b.turns)
         rid=f'patr-stream-{serial}';serial+=1
         backend.add_request(rid,{'prompt_token_ids':list(b.ids)},params)
         pending[rid]=b;inflight[b.task_id]+=1;input_tokens+=len(b.ids)

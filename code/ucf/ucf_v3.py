@@ -105,7 +105,20 @@ def selected_probes(picked, engine, seed, step, pcost):
         assert not outputs
 
 
-def counterfactual(core, picked, first, tasks, engine, tokenizer, cfg, seed, step):
+def selected_vectors(picked, engine, seed, step, pcost, vocab_size, originals, capture):
+    if capture is None:
+        for ti, n, output in selected_probes(picked, engine, seed, step, pcost):
+            lp, log_z = full_vector_from_output(output, vocab_size)
+            yield ti, n, lp, log_z
+    else:
+        for ti, ns in picked.items():
+            for n in ns:
+                lp, log_z = capture.take(ti, n, originals[(ti,n['j'])])
+                yield ti, n, lp, log_z
+        assert not capture.records
+
+
+def counterfactual(core, picked, first, tasks, engine, tokenizer, cfg, seed, step, capture=None):
     from vllm import SamplingParams
     originals = {(b.task_id, int(b.lineage)):b for b in first}
     mapping, _ = token_map(tokenizer)
@@ -113,11 +126,11 @@ def counterfactual(core, picked, first, tasks, engine, tokenizer, cfg, seed, ste
     children, nodes, audit, jobs = {}, {}, [], []
     pcost = dict(input_tokens=0, generated_tokens=0, request_seconds=0., seconds=0.)
     # At most eight full vectors are live; none are retained in evidence files.
-    for ti, n, probe in selected_probes(picked, engine, seed, step, pcost):
+    for ti, n, lp, log_z in selected_vectors(picked, engine, seed, step, pcost,
+                                             vocab_size, originals, capture):
         key = (ti, n['j'], n['turn'])
         nodes[key] = n
         parent = n['branch']
-        lp, log_z = full_vector_from_output(probe, vocab_size)
         original_token = originals[(ti,n['j'])].ids[n['boundary']]
         classes = consequence_classes(parent.env)
         x, s = complement_sample(lp, original_token, mapping, classes,
@@ -130,7 +143,9 @@ def counterfactual(core, picked, first, tasks, engine, tokenizer, cfg, seed, ste
         n['original_parse_mismatch'] = mapping.get(original_token,0) != int(originals[(ti,n['j'])].trace[n['turn']-1].get('action') or 0)
         audit.append(dict(key=key, **s, log_normalizer=log_z,
                           original_logprob_difference=n['probe_original_logprob_difference']))
-        del probe, lp
+        n['probability_source'] = ('original_sampling_logits' if capture is not None
+                                   else 'prefix_replay_probe')
+        del lp
         if x is None:
             continue
         b = replay(core, n, tasks[ti], cfg)
@@ -194,12 +209,24 @@ def make_collect(core, original):
         if state.exists():
             assert step>json.loads(state.read_text())['last_step'],'Reconcile checkpoint before resume'
         seed=int(rng.integers(0,2**31-1))
-        first,candidates,icost,coverage=candidates_from_initial(core,tasks,engine,tokenizer,cfg,seed)
+        capture = None
+        if cfg.get('ucf_probability_source') == 'original_sampling_logits':
+            from original_logits import CaptureSession
+            capture = CaptureSession(tokenizer, len(tasks)*4*cfg['max_turns'],
+                                     engine.llm_engine.model_config.get_vocab_size())
+            with capture:
+                first,candidates,icost,coverage=candidates_from_initial(
+                    core,tasks,engine,tokenizer,
+                    dict(cfg, _ucf_capture_session=capture.serial),seed)
+        else:
+            first,candidates,icost,coverage=candidates_from_initial(core,tasks,engine,tokenizer,cfg,seed)
         picked,selection,budget=select(candidates,first,tasks,seed,step,cfg.get('ucf_target_forks',2.))
+        if capture is not None:
+            capture.retain(picked)
         core.atomic_json(out/f'budget_{step:04d}.json',budget)
         with (out/f'select_{step:04d}.jsonl').open('x') as f:
             for row in selection: f.write(json.dumps(row)+'\n')
-        pseudo,children,ccost=counterfactual(core,picked,first,tasks,engine,tokenizer,cfg,seed,step)
+        pseudo,children,ccost=counterfactual(core,picked,first,tasks,engine,tokenizer,cfg,seed,step,capture)
         with gzip.open(out/f'raw_leaves_{step:04d}.jsonl.gz','xt') as f:
             for kind,bs in [('initial',first),('counterfactual',list(children.values()))]:
                 for b in bs:
@@ -235,6 +262,8 @@ def make_collect(core, original):
             counterfactual_token_partition_parser_disagreement=sum(n.get('cf_parse_mismatch',False) for n in cfns)/max(1,len(cfns)),
             selected_turn_histogram=dict(Counter(n['turn'] for n in ns)),
             rho_values=[r['rho'] for r in selection],probe_cost=ccost['probe'])
+        if capture is not None:
+            stats['original_logits_capture'] = capture.summary()
         for k in ('input_tokens','generated_tokens'):
             stats[k]=icost[k]+sum(ccost[a][k] for a in ('probe','tail','continuation'))
         stats['generated_tokens']+=ccost['forced_tokens']

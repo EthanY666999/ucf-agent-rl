@@ -11,6 +11,7 @@ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
     proof=read(STATE/'admission/acceptance.json');assert proof['passed']
     assert proof['original_sampling_bitwise_unchanged'] and proof['max_original_capture_logprob_delta']<=1e-4
+    assert proof['update']['max_parameter_change']>0
     assert read(STATE/'continuation_cpu_tests.json')['returncode']==0
     fork=read(STATE/'checkpoint_forks.json');assert fork['tensor_optimizer_rng_equal']
     outputs={x['method']:x for x in fork['outputs']}

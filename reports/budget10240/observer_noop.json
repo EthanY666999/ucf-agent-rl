@@ -1,0 +1,4019 @@
+{
+  "original_trajectories": [
+    {
+      "task_id": 0,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 0,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 0,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 0,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 1,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 1,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 1,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 1,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 2,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 2,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 2,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 2,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 3,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 3,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 3,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 3,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 4,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 4,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 4,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 4,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 5,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 5,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 5,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 5,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 6,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 6,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 6,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 6,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 7,
+      "lineage": "0",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 7,
+      "lineage": "1",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 7,
+      "lineage": "2",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    },
+    {
+      "task_id": 7,
+      "lineage": "3",
+      "ids_equal": true,
+      "masks_equal": true,
+      "logprobs_equal": true,
+      "reward_equal": true,
+      "terminal_equal": true
+    }
+  ],
+  "all_captured_nodes": [
+    {
+      "key": [
+        7,
+        "2",
+        0
+      ],
+      "boundary": 345,
+      "same_prefix": true,
+      "original_logprob_delta": -1.064688948108905e-06,
+      "normalizer": 1.064688948108905e-06
+    },
+    {
+      "key": [
+        4,
+        "2",
+        0
+      ],
+      "boundary": 366,
+      "same_prefix": true,
+      "original_logprob_delta": -1.435133314721393e-06,
+      "normalizer": 1.435133314721393e-06
+    },
+    {
+      "key": [
+        4,
+        "1",
+        0
+      ],
+      "boundary": 371,
+      "same_prefix": true,
+      "original_logprob_delta": -9.130331157457781e-07,
+      "normalizer": 9.130331157457781e-07
+    },
+    {
+      "key": [
+        1,
+        "0",
+        0
+      ],
+      "boundary": 373,
+      "same_prefix": true,
+      "original_logprob_delta": -6.401150821405341e-07,
+      "normalizer": 6.401150821405341e-07
+    },
+    {
+      "key": [
+        7,
+        "0",
+        0
+      ],
+      "boundary": 374,
+      "same_prefix": true,
+      "original_logprob_delta": -1.5490987117575128e-06,
+      "normalizer": 1.5490987117575128e-06
+    },
+    {
+      "key": [
+        7,
+        "1",
+        0
+      ],
+      "boundary": 388,
+      "same_prefix": true,
+      "original_logprob_delta": -2.8121454978269345e-06,
+      "normalizer": 2.8121454978269345e-06
+    },
+    {
+      "key": [
+        6,
+        "3",
+        0
+      ],
+      "boundary": 393,
+      "same_prefix": true,
+      "original_logprob_delta": -1.357495878460263e-06,
+      "normalizer": 1.357495878460263e-06
+    },
+    {
+      "key": [
+        2,
+        "2",
+        0
+      ],
+      "boundary": 396,
+      "same_prefix": true,
+      "original_logprob_delta": -1.624623490650151e-06,
+      "normalizer": 1.624623490650151e-06
+    },
+    {
+      "key": [
+        7,
+        "3",
+        0
+      ],
+      "boundary": 396,
+      "same_prefix": true,
+      "original_logprob_delta": -1.5124301073598384e-06,
+      "normalizer": 1.5124301073598384e-06
+    },
+    {
+      "key": [
+        5,
+        "3",
+        0
+      ],
+      "boundary": 401,
+      "same_prefix": true,
+      "original_logprob_delta": -1.7463581370542533e-06,
+      "normalizer": 1.7463581370542533e-06
+    },
+    {
+      "key": [
+        6,
+        "1",
+        0
+      ],
+      "boundary": 405,
+      "same_prefix": true,
+      "original_logprob_delta": -2.1573036951248476e-06,
+      "normalizer": 2.1573036951248476e-06
+    },
+    {
+      "key": [
+        3,
+        "0",
+        0
+      ],
+      "boundary": 410,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6059918184407537e-06,
+      "normalizer": 1.6059918184407537e-06
+    },
+    {
+      "key": [
+        3,
+        "3",
+        0
+      ],
+      "boundary": 409,
+      "same_prefix": true,
+      "original_logprob_delta": -2.9812590162086455e-06,
+      "normalizer": 2.9812590162086455e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        0
+      ],
+      "boundary": 414,
+      "same_prefix": true,
+      "original_logprob_delta": -9.449252778531529e-07,
+      "normalizer": 9.449252778531529e-07
+    },
+    {
+      "key": [
+        3,
+        "1",
+        0
+      ],
+      "boundary": 419,
+      "same_prefix": true,
+      "original_logprob_delta": -1.5386790559804298e-06,
+      "normalizer": 1.5386790559804298e-06
+    },
+    {
+      "key": [
+        2,
+        "0",
+        0
+      ],
+      "boundary": 432,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6271903112898695e-06,
+      "normalizer": 1.6271903112898695e-06
+    },
+    {
+      "key": [
+        5,
+        "2",
+        0
+      ],
+      "boundary": 434,
+      "same_prefix": true,
+      "original_logprob_delta": -2.0109481391368533e-06,
+      "normalizer": 2.0109481391368533e-06
+    },
+    {
+      "key": [
+        3,
+        "2",
+        0
+      ],
+      "boundary": 436,
+      "same_prefix": true,
+      "original_logprob_delta": -2.1286520857448886e-06,
+      "normalizer": 2.1286520857448886e-06
+    },
+    {
+      "key": [
+        4,
+        "1",
+        1
+      ],
+      "boundary": 545,
+      "same_prefix": true,
+      "original_logprob_delta": 7.528607458284764e-07,
+      "normalizer": -7.528607458284764e-07
+    },
+    {
+      "key": [
+        4,
+        "2",
+        1
+      ],
+      "boundary": 546,
+      "same_prefix": true,
+      "original_logprob_delta": -7.901530139770019e-07,
+      "normalizer": 7.901530139770019e-07
+    },
+    {
+      "key": [
+        1,
+        "0",
+        1
+      ],
+      "boundary": 566,
+      "same_prefix": true,
+      "original_logprob_delta": -8.393996340653521e-07,
+      "normalizer": 8.393996340653521e-07
+    },
+    {
+      "key": [
+        5,
+        "3",
+        1
+      ],
+      "boundary": 570,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1564258059058754e-06,
+      "normalizer": 1.1564258059058754e-06
+    },
+    {
+      "key": [
+        4,
+        "1",
+        2
+      ],
+      "boundary": 681,
+      "same_prefix": true,
+      "original_logprob_delta": 5.5326193210136765e-08,
+      "normalizer": -5.5326193210136765e-08
+    },
+    {
+      "key": [
+        6,
+        "2",
+        0
+      ],
+      "boundary": 503,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6577955725908394e-06,
+      "normalizer": 1.6577955725908394e-06
+    },
+    {
+      "key": [
+        6,
+        "0",
+        0
+      ],
+      "boundary": 513,
+      "same_prefix": true,
+      "original_logprob_delta": -1.768484687585288e-06,
+      "normalizer": 1.768484687585288e-06
+    },
+    {
+      "key": [
+        6,
+        "3",
+        1
+      ],
+      "boundary": 613,
+      "same_prefix": true,
+      "original_logprob_delta": -9.872001325084143e-07,
+      "normalizer": 9.872001325084143e-07
+    },
+    {
+      "key": [
+        3,
+        "0",
+        1
+      ],
+      "boundary": 616,
+      "same_prefix": true,
+      "original_logprob_delta": -1.208934972870765e-06,
+      "normalizer": 1.208934972870765e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        0
+      ],
+      "boundary": 546,
+      "same_prefix": true,
+      "original_logprob_delta": -2.054091165348739e-06,
+      "normalizer": 2.054091165348739e-06
+    },
+    {
+      "key": [
+        3,
+        "2",
+        1
+      ],
+      "boundary": 639,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0836159384101148e-06,
+      "normalizer": 1.0836159384101148e-06
+    },
+    {
+      "key": [
+        3,
+        "3",
+        1
+      ],
+      "boundary": 644,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0344554550361707e-06,
+      "normalizer": 1.0344554550361707e-06
+    },
+    {
+      "key": [
+        5,
+        "3",
+        2
+      ],
+      "boundary": 740,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1191879299632856e-06,
+      "normalizer": 1.1191879299632856e-06
+    },
+    {
+      "key": [
+        6,
+        "1",
+        1
+      ],
+      "boundary": 655,
+      "same_prefix": true,
+      "original_logprob_delta": -7.735488571535476e-07,
+      "normalizer": 7.735488571535476e-07
+    },
+    {
+      "key": [
+        1,
+        "0",
+        2
+      ],
+      "boundary": 753,
+      "same_prefix": true,
+      "original_logprob_delta": -3.5141919174266195e-07,
+      "normalizer": 3.5141919174266195e-07
+    },
+    {
+      "key": [
+        7,
+        "1",
+        1
+      ],
+      "boundary": 732,
+      "same_prefix": true,
+      "original_logprob_delta": -1.263676633703973e-06,
+      "normalizer": 1.263676633703973e-06
+    },
+    {
+      "key": [
+        7,
+        "3",
+        1
+      ],
+      "boundary": 671,
+      "same_prefix": true,
+      "original_logprob_delta": -9.639373921235968e-07,
+      "normalizer": 9.639373921235968e-07
+    },
+    {
+      "key": [
+        0,
+        "3",
+        0
+      ],
+      "boundary": 607,
+      "same_prefix": true,
+      "original_logprob_delta": -1.8427700118235635e-06,
+      "normalizer": 1.8427700118235635e-06
+    },
+    {
+      "key": [
+        2,
+        "2",
+        1
+      ],
+      "boundary": 772,
+      "same_prefix": true,
+      "original_logprob_delta": -4.211680713385457e-07,
+      "normalizer": 4.211680713385457e-07
+    },
+    {
+      "key": [
+        4,
+        "2",
+        2
+      ],
+      "boundary": 865,
+      "same_prefix": true,
+      "original_logprob_delta": -2.104744754320015e-06,
+      "normalizer": 2.104744754320015e-06
+    },
+    {
+      "key": [
+        6,
+        "2",
+        1
+      ],
+      "boundary": 763,
+      "same_prefix": true,
+      "original_logprob_delta": -1.121661544449678e-06,
+      "normalizer": 1.121661544449678e-06
+    },
+    {
+      "key": [
+        5,
+        "2",
+        1
+      ],
+      "boundary": 800,
+      "same_prefix": true,
+      "original_logprob_delta": -1.161019399754045e-06,
+      "normalizer": 1.161019399754045e-06
+    },
+    {
+      "key": [
+        6,
+        "1",
+        2
+      ],
+      "boundary": 900,
+      "same_prefix": true,
+      "original_logprob_delta": -7.228788586548959e-07,
+      "normalizer": 7.228788586548959e-07
+    },
+    {
+      "key": [
+        1,
+        "2",
+        1
+      ],
+      "boundary": 816,
+      "same_prefix": true,
+      "original_logprob_delta": -9.795446007140993e-07,
+      "normalizer": 9.795446007140993e-07
+    },
+    {
+      "key": [
+        1,
+        "3",
+        0
+      ],
+      "boundary": 760,
+      "same_prefix": true,
+      "original_logprob_delta": -2.782854304174062e-06,
+      "normalizer": 2.782854304174062e-06
+    },
+    {
+      "key": [
+        3,
+        "1",
+        1
+      ],
+      "boundary": 854,
+      "same_prefix": true,
+      "original_logprob_delta": -7.283879319227205e-07,
+      "normalizer": 7.283879319227205e-07
+    },
+    {
+      "key": [
+        0,
+        "3",
+        1
+      ],
+      "boundary": 863,
+      "same_prefix": true,
+      "original_logprob_delta": -9.330056564837443e-07,
+      "normalizer": 9.330056564837443e-07
+    },
+    {
+      "key": [
+        2,
+        "2",
+        2
+      ],
+      "boundary": 1102,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2830650273203012e-06,
+      "normalizer": 1.2830650273203012e-06
+    },
+    {
+      "key": [
+        2,
+        "1",
+        0
+      ],
+      "boundary": 804,
+      "same_prefix": true,
+      "original_logprob_delta": -2.113635678513935e-06,
+      "normalizer": 2.113635678513935e-06
+    },
+    {
+      "key": [
+        2,
+        "2",
+        3
+      ],
+      "boundary": 1317,
+      "same_prefix": true,
+      "original_logprob_delta": -8.64982755468967e-07,
+      "normalizer": 8.64982755468967e-07
+    },
+    {
+      "key": [
+        6,
+        "1",
+        3
+      ],
+      "boundary": 1144,
+      "same_prefix": true,
+      "original_logprob_delta": -5.185049252504797e-07,
+      "normalizer": 5.185049252504797e-07
+    },
+    {
+      "key": [
+        0,
+        "3",
+        2
+      ],
+      "boundary": 1058,
+      "same_prefix": true,
+      "original_logprob_delta": -6.358579505582704e-07,
+      "normalizer": 6.358579505582704e-07
+    },
+    {
+      "key": [
+        2,
+        "0",
+        1
+      ],
+      "boundary": 1038,
+      "same_prefix": true,
+      "original_logprob_delta": -9.451499749990253e-07,
+      "normalizer": 9.451499749990253e-07
+    },
+    {
+      "key": [
+        2,
+        "2",
+        4
+      ],
+      "boundary": 1548,
+      "same_prefix": true,
+      "original_logprob_delta": -8.218351681723831e-07,
+      "normalizer": 8.218351681723831e-07
+    },
+    {
+      "key": [
+        2,
+        "3",
+        0
+      ],
+      "boundary": 906,
+      "same_prefix": true,
+      "original_logprob_delta": -3.413042173504993e-06,
+      "normalizer": 3.413042173504993e-06
+    },
+    {
+      "key": [
+        6,
+        "0",
+        1
+      ],
+      "boundary": 998,
+      "same_prefix": true,
+      "original_logprob_delta": -1.038387669195952e-06,
+      "normalizer": 1.038387669195952e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        2
+      ],
+      "boundary": 1106,
+      "same_prefix": true,
+      "original_logprob_delta": -8.036988768960272e-07,
+      "normalizer": 8.036988768960272e-07
+    },
+    {
+      "key": [
+        2,
+        "2",
+        5
+      ],
+      "boundary": 1759,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2732390335557387e-06,
+      "normalizer": 1.2732390335557387e-06
+    },
+    {
+      "key": [
+        2,
+        "2",
+        6
+      ],
+      "boundary": 1970,
+      "same_prefix": true,
+      "original_logprob_delta": -7.317450165145352e-07,
+      "normalizer": 7.317450165145352e-07
+    },
+    {
+      "key": [
+        1,
+        "2",
+        3
+      ],
+      "boundary": 1280,
+      "same_prefix": true,
+      "original_logprob_delta": -5.939778771167235e-07,
+      "normalizer": 5.939778771167235e-07
+    },
+    {
+      "key": [
+        6,
+        "1",
+        4
+      ],
+      "boundary": 1396,
+      "same_prefix": true,
+      "original_logprob_delta": -9.256014747497624e-07,
+      "normalizer": 9.256014747497624e-07
+    },
+    {
+      "key": [
+        2,
+        "2",
+        7
+      ],
+      "boundary": 2181,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0967101665123116e-06,
+      "normalizer": 1.0967101665123116e-06
+    },
+    {
+      "key": [
+        6,
+        "0",
+        2
+      ],
+      "boundary": 1240,
+      "same_prefix": true,
+      "original_logprob_delta": -7.735252337181796e-07,
+      "normalizer": 7.735252337181796e-07
+    },
+    {
+      "key": [
+        1,
+        "0",
+        3
+      ],
+      "boundary": 1440,
+      "same_prefix": true,
+      "original_logprob_delta": -7.807643295018737e-07,
+      "normalizer": 7.807643295018737e-07
+    },
+    {
+      "key": [
+        2,
+        "2",
+        8
+      ],
+      "boundary": 2392,
+      "same_prefix": true,
+      "original_logprob_delta": -5.068371323677101e-07,
+      "normalizer": 5.068371323677101e-07
+    },
+    {
+      "key": [
+        6,
+        "2",
+        2
+      ],
+      "boundary": 1356,
+      "same_prefix": true,
+      "original_logprob_delta": -2.1568196508564216e-06,
+      "normalizer": 2.1568196508564216e-06
+    },
+    {
+      "key": [
+        0,
+        "2",
+        0
+      ],
+      "boundary": 1109,
+      "same_prefix": true,
+      "original_logprob_delta": -2.593662709968886e-06,
+      "normalizer": 2.593662709968886e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        1
+      ],
+      "boundary": 1298,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6526827081518288e-06,
+      "normalizer": 1.6526827081518288e-06
+    },
+    {
+      "key": [
+        3,
+        "1",
+        2
+      ],
+      "boundary": 1398,
+      "same_prefix": true,
+      "original_logprob_delta": -9.420565367155003e-07,
+      "normalizer": 9.420565367155003e-07
+    },
+    {
+      "key": [
+        2,
+        "2",
+        9
+      ],
+      "boundary": 2603,
+      "same_prefix": true,
+      "original_logprob_delta": -1.045574830868751e-06,
+      "normalizer": 1.045574830868751e-06
+    },
+    {
+      "key": [
+        3,
+        "1",
+        3
+      ],
+      "boundary": 1626,
+      "same_prefix": true,
+      "original_logprob_delta": -1.7253482987732334e-06,
+      "normalizer": 1.7253482987732334e-06
+    },
+    {
+      "key": [
+        3,
+        "3",
+        2
+      ],
+      "boundary": 1478,
+      "same_prefix": true,
+      "original_logprob_delta": -5.204693216591741e-07,
+      "normalizer": 5.204693216591741e-07
+    },
+    {
+      "key": [
+        2,
+        "0",
+        2
+      ],
+      "boundary": 1573,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0972279051280444e-06,
+      "normalizer": 1.0972279051280444e-06
+    },
+    {
+      "key": [
+        6,
+        "0",
+        3
+      ],
+      "boundary": 1534,
+      "same_prefix": true,
+      "original_logprob_delta": -3.4140803856517126e-07,
+      "normalizer": 3.4140803856517126e-07
+    },
+    {
+      "key": [
+        6,
+        "3",
+        2
+      ],
+      "boundary": 1593,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4002034128661071e-06,
+      "normalizer": 1.4002034128661071e-06
+    },
+    {
+      "key": [
+        3,
+        "0",
+        2
+      ],
+      "boundary": 1624,
+      "same_prefix": true,
+      "original_logprob_delta": -8.55458712071038e-07,
+      "normalizer": 8.55458712071038e-07
+    },
+    {
+      "key": [
+        5,
+        "2",
+        2
+      ],
+      "boundary": 1559,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6427330609305839e-06,
+      "normalizer": 1.6427330609305839e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        4
+      ],
+      "boundary": 1777,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3320960648283131e-06,
+      "normalizer": 1.3320960648283131e-06
+    },
+    {
+      "key": [
+        6,
+        "1",
+        5
+      ],
+      "boundary": 1959,
+      "same_prefix": true,
+      "original_logprob_delta": 3.65970637378199e-07,
+      "normalizer": -3.65970637378199e-07
+    },
+    {
+      "key": [
+        3,
+        "2",
+        2
+      ],
+      "boundary": 1697,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0134337032808205e-06,
+      "normalizer": 1.0134337032808205e-06
+    },
+    {
+      "key": [
+        3,
+        "0",
+        3
+      ],
+      "boundary": 1963,
+      "same_prefix": true,
+      "original_logprob_delta": -8.742428214135116e-07,
+      "normalizer": 8.742428214135116e-07
+    },
+    {
+      "key": [
+        1,
+        "0",
+        4
+      ],
+      "boundary": 2075,
+      "same_prefix": true,
+      "original_logprob_delta": -8.01131463614376e-07,
+      "normalizer": 8.01131463614376e-07
+    },
+    {
+      "key": [
+        3,
+        "3",
+        3
+      ],
+      "boundary": 2089,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4834434740129774e-06,
+      "normalizer": 1.4834434740129774e-06
+    },
+    {
+      "key": [
+        3,
+        "2",
+        3
+      ],
+      "boundary": 2063,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4063050922820787e-06,
+      "normalizer": 1.4063050922820787e-06
+    },
+    {
+      "key": [
+        3,
+        "0",
+        4
+      ],
+      "boundary": 2298,
+      "same_prefix": true,
+      "original_logprob_delta": -6.732970570972349e-07,
+      "normalizer": 6.732970570972349e-07
+    },
+    {
+      "key": [
+        2,
+        "3",
+        1
+      ],
+      "boundary": 1824,
+      "same_prefix": true,
+      "original_logprob_delta": -5.59928494280233e-07,
+      "normalizer": 5.59928494280233e-07
+    },
+    {
+      "key": [
+        1,
+        "3",
+        1
+      ],
+      "boundary": 1897,
+      "same_prefix": true,
+      "original_logprob_delta": -2.4588743540426145e-06,
+      "normalizer": 2.4588743540426145e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        5
+      ],
+      "boundary": 2269,
+      "same_prefix": true,
+      "original_logprob_delta": -2.698933107295621e-06,
+      "normalizer": 2.698933107295621e-06
+    },
+    {
+      "key": [
+        0,
+        "0",
+        0
+      ],
+      "boundary": 1756,
+      "same_prefix": true,
+      "original_logprob_delta": -2.779166128100488e-06,
+      "normalizer": 2.779166128100488e-06
+    },
+    {
+      "key": [
+        1,
+        "0",
+        5
+      ],
+      "boundary": 2377,
+      "same_prefix": true,
+      "original_logprob_delta": -6.069655716601241e-07,
+      "normalizer": 6.069655716601241e-07
+    },
+    {
+      "key": [
+        6,
+        "3",
+        3
+      ],
+      "boundary": 2232,
+      "same_prefix": true,
+      "original_logprob_delta": -8.553500933351146e-07,
+      "normalizer": 8.553500933351146e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        0
+      ],
+      "boundary": 1827,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3576693269970463e-06,
+      "normalizer": 1.3576693269970463e-06
+    },
+    {
+      "key": [
+        3,
+        "0",
+        5
+      ],
+      "boundary": 2584,
+      "same_prefix": true,
+      "original_logprob_delta": -9.381630263459665e-07,
+      "normalizer": 9.381630263459665e-07
+    },
+    {
+      "key": [
+        2,
+        "3",
+        2
+      ],
+      "boundary": 2039,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3394621052444187e-06,
+      "normalizer": 1.3394621052444187e-06
+    },
+    {
+      "key": [
+        4,
+        "1",
+        3
+      ],
+      "boundary": 2233,
+      "same_prefix": true,
+      "original_logprob_delta": -8.830835256056196e-07,
+      "normalizer": 8.830835256056196e-07
+    },
+    {
+      "key": [
+        6,
+        "3",
+        4
+      ],
+      "boundary": 2528,
+      "same_prefix": true,
+      "original_logprob_delta": -7.121773633986424e-07,
+      "normalizer": 7.121773633986424e-07
+    },
+    {
+      "key": [
+        4,
+        "2",
+        3
+      ],
+      "boundary": 2307,
+      "same_prefix": true,
+      "original_logprob_delta": -1.529436645847414e-06,
+      "normalizer": 1.529436645847414e-06
+    },
+    {
+      "key": [
+        3,
+        "0",
+        6
+      ],
+      "boundary": 2883,
+      "same_prefix": true,
+      "original_logprob_delta": -9.440225200445414e-07,
+      "normalizer": 9.440225200445414e-07
+    },
+    {
+      "key": [
+        3,
+        "3",
+        4
+      ],
+      "boundary": 2571,
+      "same_prefix": true,
+      "original_logprob_delta": -1.196832553332773e-06,
+      "normalizer": 1.196832553332773e-06
+    },
+    {
+      "key": [
+        4,
+        "1",
+        4
+      ],
+      "boundary": 2484,
+      "same_prefix": true,
+      "original_logprob_delta": -7.969765659682931e-07,
+      "normalizer": 7.969765659682931e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        1
+      ],
+      "boundary": 2145,
+      "same_prefix": true,
+      "original_logprob_delta": -9.55084775309731e-07,
+      "normalizer": 9.55084775309731e-07
+    },
+    {
+      "key": [
+        3,
+        "0",
+        7
+      ],
+      "boundary": 3139,
+      "same_prefix": true,
+      "original_logprob_delta": -7.333175898824334e-07,
+      "normalizer": 7.333175898824334e-07
+    },
+    {
+      "key": [
+        7,
+        "0",
+        1
+      ],
+      "boundary": 2240,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2436644631304066e-06,
+      "normalizer": 1.2436644631304066e-06
+    },
+    {
+      "key": [
+        6,
+        "3",
+        5
+      ],
+      "boundary": 2886,
+      "same_prefix": true,
+      "original_logprob_delta": -8.094223475543078e-07,
+      "normalizer": 8.094223475543078e-07
+    },
+    {
+      "key": [
+        3,
+        "0",
+        8
+      ],
+      "boundary": 3372,
+      "same_prefix": true,
+      "original_logprob_delta": -7.27849401617559e-07,
+      "normalizer": 7.27849401617559e-07
+    },
+    {
+      "key": [
+        3,
+        "3",
+        5
+      ],
+      "boundary": 2895,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1425548211804097e-06,
+      "normalizer": 1.1425548211804097e-06
+    },
+    {
+      "key": [
+        1,
+        "0",
+        6
+      ],
+      "boundary": 2852,
+      "same_prefix": true,
+      "original_logprob_delta": -5.65963372965825e-07,
+      "normalizer": 5.65963372965825e-07
+    },
+    {
+      "key": [
+        5,
+        "1",
+        0
+      ],
+      "boundary": 2208,
+      "same_prefix": true,
+      "original_logprob_delta": -1.432529335496438e-06,
+      "normalizer": 1.432529335496438e-06
+    },
+    {
+      "key": [
+        3,
+        "0",
+        9
+      ],
+      "boundary": 3600,
+      "same_prefix": true,
+      "original_logprob_delta": -6.960906827927041e-07,
+      "normalizer": 6.960906827927041e-07
+    },
+    {
+      "key": [
+        2,
+        "0",
+        3
+      ],
+      "boundary": 2811,
+      "same_prefix": true,
+      "original_logprob_delta": -7.861587344014934e-07,
+      "normalizer": 7.861587344014934e-07
+    },
+    {
+      "key": [
+        6,
+        "3",
+        6
+      ],
+      "boundary": 3228,
+      "same_prefix": true,
+      "original_logprob_delta": -7.458331330074314e-07,
+      "normalizer": 7.458331330074314e-07
+    },
+    {
+      "key": [
+        0,
+        "3",
+        3
+      ],
+      "boundary": 2656,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0373507423628442e-06,
+      "normalizer": 1.0373507423628442e-06
+    },
+    {
+      "key": [
+        6,
+        "2",
+        3
+      ],
+      "boundary": 2801,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3382784609975665e-06,
+      "normalizer": 1.3382784609975665e-06
+    },
+    {
+      "key": [
+        7,
+        "1",
+        2
+      ],
+      "boundary": 2759,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4340763488646492e-06,
+      "normalizer": 1.4340763488646492e-06
+    },
+    {
+      "key": [
+        6,
+        "3",
+        7
+      ],
+      "boundary": 3505,
+      "same_prefix": true,
+      "original_logprob_delta": -6.1653285650671e-07,
+      "normalizer": 6.1653285650671e-07
+    },
+    {
+      "key": [
+        7,
+        "2",
+        1
+      ],
+      "boundary": 2615,
+      "same_prefix": true,
+      "original_logprob_delta": -4.798589310751975e-07,
+      "normalizer": 4.798589310751975e-07
+    },
+    {
+      "key": [
+        1,
+        "0",
+        7
+      ],
+      "boundary": 3381,
+      "same_prefix": true,
+      "original_logprob_delta": -3.676541928143152e-07,
+      "normalizer": 3.676541928143152e-07
+    },
+    {
+      "key": [
+        6,
+        "3",
+        8
+      ],
+      "boundary": 3780,
+      "same_prefix": true,
+      "original_logprob_delta": -5.331849422454372e-07,
+      "normalizer": 5.331849422454372e-07
+    },
+    {
+      "key": [
+        7,
+        "0",
+        2
+      ],
+      "boundary": 2833,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2143579837133977e-06,
+      "normalizer": 1.2143579837133977e-06
+    },
+    {
+      "key": [
+        5,
+        "0",
+        0
+      ],
+      "boundary": 2603,
+      "same_prefix": true,
+      "original_logprob_delta": -2.1656445484833156e-06,
+      "normalizer": 2.1656445484833156e-06
+    },
+    {
+      "key": [
+        4,
+        "2",
+        4
+      ],
+      "boundary": 3122,
+      "same_prefix": true,
+      "original_logprob_delta": -9.656678005764627e-07,
+      "normalizer": 9.656678005764627e-07
+    },
+    {
+      "key": [
+        6,
+        "2",
+        4
+      ],
+      "boundary": 3226,
+      "same_prefix": true,
+      "original_logprob_delta": -4.6067049632543197e-07,
+      "normalizer": 4.6067049632543197e-07
+    },
+    {
+      "key": [
+        1,
+        "3",
+        2
+      ],
+      "boundary": 2986,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0326539693637283e-06,
+      "normalizer": 1.0326539693637283e-06
+    },
+    {
+      "key": [
+        6,
+        "2",
+        5
+      ],
+      "boundary": 3429,
+      "same_prefix": true,
+      "original_logprob_delta": -1.460561526083772e-06,
+      "normalizer": 1.460561526083772e-06
+    },
+    {
+      "key": [
+        5,
+        "1",
+        1
+      ],
+      "boundary": 2544,
+      "same_prefix": true,
+      "original_logprob_delta": -1.8347177106964666e-06,
+      "normalizer": 1.8347177106964666e-06
+    },
+    {
+      "key": [
+        0,
+        "1",
+        0
+      ],
+      "boundary": 2762,
+      "same_prefix": true,
+      "original_logprob_delta": -1.28482301093788e-06,
+      "normalizer": 1.28482301093788e-06
+    },
+    {
+      "key": [
+        2,
+        "0",
+        4
+      ],
+      "boundary": 3424,
+      "same_prefix": true,
+      "original_logprob_delta": -8.603502216917303e-07,
+      "normalizer": 8.603502216917303e-07
+    },
+    {
+      "key": [
+        3,
+        "3",
+        6
+      ],
+      "boundary": 3681,
+      "same_prefix": true,
+      "original_logprob_delta": -8.51623334917383e-07,
+      "normalizer": 8.51623334917383e-07
+    },
+    {
+      "key": [
+        0,
+        "3",
+        4
+      ],
+      "boundary": 3232,
+      "same_prefix": true,
+      "original_logprob_delta": -1.120675527650761e-06,
+      "normalizer": 1.120675527650761e-06
+    },
+    {
+      "key": [
+        4,
+        "1",
+        5
+      ],
+      "boundary": 3335,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1998854510771105e-06,
+      "normalizer": 1.1998854510771105e-06
+    },
+    {
+      "key": [
+        1,
+        "3",
+        3
+      ],
+      "boundary": 3386,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4841406126077134e-06,
+      "normalizer": 1.4841406126077134e-06
+    },
+    {
+      "key": [
+        6,
+        "3",
+        9
+      ],
+      "boundary": 4294,
+      "same_prefix": true,
+      "original_logprob_delta": -8.423015390675358e-07,
+      "normalizer": 8.423015390675358e-07
+    },
+    {
+      "key": [
+        5,
+        "0",
+        1
+      ],
+      "boundary": 3008,
+      "same_prefix": true,
+      "original_logprob_delta": -7.296885324592235e-07,
+      "normalizer": 7.296885324592235e-07
+    },
+    {
+      "key": [
+        2,
+        "0",
+        5
+      ],
+      "boundary": 3772,
+      "same_prefix": true,
+      "original_logprob_delta": -6.753316988630678e-07,
+      "normalizer": 6.753316988630678e-07
+    },
+    {
+      "key": [
+        4,
+        "1",
+        6
+      ],
+      "boundary": 3591,
+      "same_prefix": true,
+      "original_logprob_delta": -5.747116085417711e-07,
+      "normalizer": 5.747116085417711e-07
+    },
+    {
+      "key": [
+        3,
+        "3",
+        7
+      ],
+      "boundary": 4045,
+      "same_prefix": true,
+      "original_logprob_delta": -1.7629755927893757e-06,
+      "normalizer": 1.7629755927893757e-06
+    },
+    {
+      "key": [
+        1,
+        "3",
+        4
+      ],
+      "boundary": 3664,
+      "same_prefix": true,
+      "original_logprob_delta": -9.74063571918286e-07,
+      "normalizer": 9.74063571918286e-07
+    },
+    {
+      "key": [
+        6,
+        "0",
+        4
+      ],
+      "boundary": 3467,
+      "same_prefix": true,
+      "original_logprob_delta": -2.6013752573131495e-06,
+      "normalizer": 2.6013752573131495e-06
+    },
+    {
+      "key": [
+        4,
+        "1",
+        7
+      ],
+      "boundary": 3771,
+      "same_prefix": true,
+      "original_logprob_delta": -5.123807555630492e-07,
+      "normalizer": 5.123807555630492e-07
+    },
+    {
+      "key": [
+        0,
+        "1",
+        1
+      ],
+      "boundary": 3192,
+      "same_prefix": true,
+      "original_logprob_delta": -7.059492048276271e-07,
+      "normalizer": 7.059492048276271e-07
+    },
+    {
+      "key": [
+        6,
+        "1",
+        6
+      ],
+      "boundary": 3752,
+      "same_prefix": true,
+      "original_logprob_delta": -8.86245667802417e-07,
+      "normalizer": 8.86245667802417e-07
+    },
+    {
+      "key": [
+        2,
+        "3",
+        3
+      ],
+      "boundary": 3423,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1790209905433117e-06,
+      "normalizer": 1.1790209905433117e-06
+    },
+    {
+      "key": [
+        2,
+        "0",
+        6
+      ],
+      "boundary": 4134,
+      "same_prefix": true,
+      "original_logprob_delta": -1.319923641544059e-06,
+      "normalizer": 1.319923641544059e-06
+    },
+    {
+      "key": [
+        5,
+        "0",
+        2
+      ],
+      "boundary": 3384,
+      "same_prefix": true,
+      "original_logprob_delta": -8.205812335377899e-07,
+      "normalizer": 8.205812335377899e-07
+    },
+    {
+      "key": [
+        3,
+        "3",
+        8
+      ],
+      "boundary": 4457,
+      "same_prefix": true,
+      "original_logprob_delta": -3.611503949628057e-07,
+      "normalizer": 3.611503949628057e-07
+    },
+    {
+      "key": [
+        4,
+        "2",
+        5
+      ],
+      "boundary": 3837,
+      "same_prefix": true,
+      "original_logprob_delta": -1.5055995447922914e-06,
+      "normalizer": 1.5055995447922914e-06
+    },
+    {
+      "key": [
+        0,
+        "3",
+        5
+      ],
+      "boundary": 3907,
+      "same_prefix": true,
+      "original_logprob_delta": -1.483415772701301e-06,
+      "normalizer": 1.483415772701301e-06
+    },
+    {
+      "key": [
+        2,
+        "0",
+        7
+      ],
+      "boundary": 4445,
+      "same_prefix": true,
+      "original_logprob_delta": -1.094434686931239e-06,
+      "normalizer": 1.094434686931239e-06
+    },
+    {
+      "key": [
+        3,
+        "2",
+        4
+      ],
+      "boundary": 3873,
+      "same_prefix": true,
+      "original_logprob_delta": -4.6054401614406895e-07,
+      "normalizer": 4.6054401614406895e-07
+    },
+    {
+      "key": [
+        5,
+        "2",
+        3
+      ],
+      "boundary": 3714,
+      "same_prefix": true,
+      "original_logprob_delta": -3.31745303927492e-07,
+      "normalizer": 3.31745303927492e-07
+    },
+    {
+      "key": [
+        4,
+        "2",
+        6
+      ],
+      "boundary": 4143,
+      "same_prefix": true,
+      "original_logprob_delta": -1.175239414710511e-06,
+      "normalizer": 1.175239414710511e-06
+    },
+    {
+      "key": [
+        6,
+        "1",
+        7
+      ],
+      "boundary": 4238,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2886502422743232e-06,
+      "normalizer": 1.2886502422743232e-06
+    },
+    {
+      "key": [
+        1,
+        "3",
+        5
+      ],
+      "boundary": 4212,
+      "same_prefix": true,
+      "original_logprob_delta": -9.103165967087117e-07,
+      "normalizer": 9.103165967087117e-07
+    },
+    {
+      "key": [
+        0,
+        "2",
+        1
+      ],
+      "boundary": 3575,
+      "same_prefix": true,
+      "original_logprob_delta": -6.723780925074941e-07,
+      "normalizer": 6.723780925074941e-07
+    },
+    {
+      "key": [
+        7,
+        "1",
+        3
+      ],
+      "boundary": 3921,
+      "same_prefix": true,
+      "original_logprob_delta": -1.103480982971028e-06,
+      "normalizer": 1.103480982971028e-06
+    },
+    {
+      "key": [
+        1,
+        "1",
+        0
+      ],
+      "boundary": 3518,
+      "same_prefix": true,
+      "original_logprob_delta": -3.2211423572521547e-06,
+      "normalizer": 3.2211423572521547e-06
+    },
+    {
+      "key": [
+        2,
+        "0",
+        8
+      ],
+      "boundary": 4688,
+      "same_prefix": true,
+      "original_logprob_delta": -8.707207582457472e-07,
+      "normalizer": 8.707207582457472e-07
+    },
+    {
+      "key": [
+        3,
+        "3",
+        9
+      ],
+      "boundary": 4951,
+      "same_prefix": true,
+      "original_logprob_delta": -9.568040161556102e-07,
+      "normalizer": 9.568040161556102e-07
+    },
+    {
+      "key": [
+        0,
+        "3",
+        6
+      ],
+      "boundary": 4379,
+      "same_prefix": true,
+      "original_logprob_delta": -1.5125073677491139e-06,
+      "normalizer": 1.5125073677491139e-06
+    },
+    {
+      "key": [
+        2,
+        "0",
+        9
+      ],
+      "boundary": 4955,
+      "same_prefix": true,
+      "original_logprob_delta": -8.778795447964431e-07,
+      "normalizer": 8.778795447964431e-07
+    },
+    {
+      "key": [
+        0,
+        "1",
+        2
+      ],
+      "boundary": 3915,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2022019861639664e-06,
+      "normalizer": 1.2022019861639664e-06
+    },
+    {
+      "key": [
+        0,
+        "3",
+        7
+      ],
+      "boundary": 4672,
+      "same_prefix": true,
+      "original_logprob_delta": -7.024066462758846e-07,
+      "normalizer": 7.024066462758846e-07
+    },
+    {
+      "key": [
+        7,
+        "3",
+        2
+      ],
+      "boundary": 4042,
+      "same_prefix": true,
+      "original_logprob_delta": -1.5262101185479663e-06,
+      "normalizer": 1.5262101185479663e-06
+    },
+    {
+      "key": [
+        7,
+        "0",
+        3
+      ],
+      "boundary": 4164,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0176673826778966e-06,
+      "normalizer": 1.0176673826778966e-06
+    },
+    {
+      "key": [
+        5,
+        "0",
+        3
+      ],
+      "boundary": 4097,
+      "same_prefix": true,
+      "original_logprob_delta": -1.9233438811223913e-06,
+      "normalizer": 1.9233438811223913e-06
+    },
+    {
+      "key": [
+        7,
+        "2",
+        2
+      ],
+      "boundary": 4100,
+      "same_prefix": true,
+      "original_logprob_delta": -9.439966387696079e-07,
+      "normalizer": 9.439966387696079e-07
+    },
+    {
+      "key": [
+        3,
+        "1",
+        4
+      ],
+      "boundary": 4520,
+      "same_prefix": true,
+      "original_logprob_delta": -4.6680010865438493e-07,
+      "normalizer": 4.6680010865438493e-07
+    },
+    {
+      "key": [
+        6,
+        "1",
+        8
+      ],
+      "boundary": 4846,
+      "same_prefix": true,
+      "original_logprob_delta": -2.673996337885479e-07,
+      "normalizer": 2.673996337885479e-07
+    },
+    {
+      "key": [
+        4,
+        "2",
+        7
+      ],
+      "boundary": 4842,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1462193743429563e-06,
+      "normalizer": 1.1462193743429563e-06
+    },
+    {
+      "key": [
+        2,
+        "3",
+        4
+      ],
+      "boundary": 4382,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1589330296380253e-06,
+      "normalizer": 1.1589330296380253e-06
+    },
+    {
+      "key": [
+        7,
+        "3",
+        3
+      ],
+      "boundary": 4426,
+      "same_prefix": true,
+      "original_logprob_delta": -6.893721696435255e-07,
+      "normalizer": 6.893721696435255e-07
+    },
+    {
+      "key": [
+        3,
+        "1",
+        5
+      ],
+      "boundary": 4844,
+      "same_prefix": true,
+      "original_logprob_delta": -9.374831501081593e-07,
+      "normalizer": 9.374831501081593e-07
+    },
+    {
+      "key": [
+        0,
+        "3",
+        8
+      ],
+      "boundary": 5198,
+      "same_prefix": true,
+      "original_logprob_delta": -9.391835228980764e-07,
+      "normalizer": 9.391835228980764e-07
+    },
+    {
+      "key": [
+        4,
+        "2",
+        8
+      ],
+      "boundary": 5201,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1580991231119992e-06,
+      "normalizer": 1.1580991231119992e-06
+    },
+    {
+      "key": [
+        0,
+        "2",
+        2
+      ],
+      "boundary": 4134,
+      "same_prefix": true,
+      "original_logprob_delta": -6.943384807047044e-07,
+      "normalizer": 6.943384807047044e-07
+    },
+    {
+      "key": [
+        7,
+        "2",
+        3
+      ],
+      "boundary": 4582,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1559005470303507e-06,
+      "normalizer": 1.1559005470303507e-06
+    },
+    {
+      "key": [
+        0,
+        "3",
+        9
+      ],
+      "boundary": 5586,
+      "same_prefix": true,
+      "original_logprob_delta": -5.528586530618038e-07,
+      "normalizer": 5.528586530618038e-07
+    },
+    {
+      "key": [
+        1,
+        "0",
+        8
+      ],
+      "boundary": 5298,
+      "same_prefix": true,
+      "original_logprob_delta": -3.1828545371427117e-07,
+      "normalizer": 3.1828545371427117e-07
+    },
+    {
+      "key": [
+        2,
+        "3",
+        5
+      ],
+      "boundary": 4874,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1742409956855921e-06,
+      "normalizer": 1.1742409956855921e-06
+    },
+    {
+      "key": [
+        0,
+        "1",
+        3
+      ],
+      "boundary": 4730,
+      "same_prefix": true,
+      "original_logprob_delta": -1.302473027539673e-06,
+      "normalizer": 1.302473027539673e-06
+    },
+    {
+      "key": [
+        7,
+        "2",
+        4
+      ],
+      "boundary": 4975,
+      "same_prefix": true,
+      "original_logprob_delta": -9.222250885272464e-07,
+      "normalizer": 9.222250885272464e-07
+    },
+    {
+      "key": [
+        5,
+        "2",
+        4
+      ],
+      "boundary": 4843,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6088612910709715e-07,
+      "normalizer": 1.6088612910709715e-07
+    },
+    {
+      "key": [
+        6,
+        "1",
+        9
+      ],
+      "boundary": 5513,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3761741007606992e-06,
+      "normalizer": 1.3761741007606992e-06
+    },
+    {
+      "key": [
+        1,
+        "0",
+        9
+      ],
+      "boundary": 5518,
+      "same_prefix": true,
+      "original_logprob_delta": -4.888080322613535e-07,
+      "normalizer": 4.888080322613535e-07
+    },
+    {
+      "key": [
+        4,
+        "1",
+        8
+      ],
+      "boundary": 5334,
+      "same_prefix": true,
+      "original_logprob_delta": -8.879545618023575e-07,
+      "normalizer": 8.879545618023575e-07
+    },
+    {
+      "key": [
+        7,
+        "2",
+        5
+      ],
+      "boundary": 5219,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0878240667105792e-06,
+      "normalizer": 1.0878240667105792e-06
+    },
+    {
+      "key": [
+        3,
+        "1",
+        6
+      ],
+      "boundary": 5465,
+      "same_prefix": true,
+      "original_logprob_delta": -8.82074689083168e-07,
+      "normalizer": 8.82074689083168e-07
+    },
+    {
+      "key": [
+        0,
+        "2",
+        3
+      ],
+      "boundary": 4677,
+      "same_prefix": true,
+      "original_logprob_delta": -9.257436057267263e-07,
+      "normalizer": 9.257436057267263e-07
+    },
+    {
+      "key": [
+        3,
+        "1",
+        7
+      ],
+      "boundary": 5770,
+      "same_prefix": true,
+      "original_logprob_delta": -9.306484604263973e-07,
+      "normalizer": 9.306484604263973e-07
+    },
+    {
+      "key": [
+        7,
+        "1",
+        4
+      ],
+      "boundary": 5123,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1011244650521853e-06,
+      "normalizer": 1.1011244650521853e-06
+    },
+    {
+      "key": [
+        7,
+        "3",
+        4
+      ],
+      "boundary": 5293,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1851918406562449e-06,
+      "normalizer": 1.1851918406562449e-06
+    },
+    {
+      "key": [
+        3,
+        "1",
+        8
+      ],
+      "boundary": 6048,
+      "same_prefix": true,
+      "original_logprob_delta": -7.944208656516345e-07,
+      "normalizer": 7.944208656516345e-07
+    },
+    {
+      "key": [
+        7,
+        "2",
+        6
+      ],
+      "boundary": 5664,
+      "same_prefix": true,
+      "original_logprob_delta": -7.761247482070653e-07,
+      "normalizer": 7.761247482070653e-07
+    },
+    {
+      "key": [
+        6,
+        "2",
+        6
+      ],
+      "boundary": 5759,
+      "same_prefix": true,
+      "original_logprob_delta": -4.764198008002556e-07,
+      "normalizer": 4.764198008002556e-07
+    },
+    {
+      "key": [
+        5,
+        "1",
+        2
+      ],
+      "boundary": 4872,
+      "same_prefix": true,
+      "original_logprob_delta": -5.260450959377683e-07,
+      "normalizer": 5.260450959377683e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        2
+      ],
+      "boundary": 5132,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2329176008464256e-06,
+      "normalizer": 1.2329176008464256e-06
+    },
+    {
+      "key": [
+        1,
+        "3",
+        6
+      ],
+      "boundary": 5792,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1852110085814265e-06,
+      "normalizer": 1.1852110085814265e-06
+    },
+    {
+      "key": [
+        0,
+        "1",
+        4
+      ],
+      "boundary": 5397,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1149414331325987e-06,
+      "normalizer": 1.1149414331325987e-06
+    },
+    {
+      "key": [
+        4,
+        "2",
+        9
+      ],
+      "boundary": 6159,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3664449194310908e-06,
+      "normalizer": 1.3664449194310908e-06
+    },
+    {
+      "key": [
+        7,
+        "1",
+        5
+      ],
+      "boundary": 5596,
+      "same_prefix": true,
+      "original_logprob_delta": -2.2462263281246633e-06,
+      "normalizer": 2.2462263281246633e-06
+    },
+    {
+      "key": [
+        3,
+        "1",
+        9
+      ],
+      "boundary": 6533,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0871956945388732e-06,
+      "normalizer": 1.0871956945388732e-06
+    },
+    {
+      "key": [
+        0,
+        "2",
+        4
+      ],
+      "boundary": 5353,
+      "same_prefix": true,
+      "original_logprob_delta": -2.0518404030096457e-06,
+      "normalizer": 2.0518404030096457e-06
+    },
+    {
+      "key": [
+        5,
+        "1",
+        3
+      ],
+      "boundary": 5326,
+      "same_prefix": true,
+      "original_logprob_delta": -9.657702556357104e-07,
+      "normalizer": 9.657702556357104e-07
+    },
+    {
+      "key": [
+        6,
+        "2",
+        7
+      ],
+      "boundary": 6280,
+      "same_prefix": true,
+      "original_logprob_delta": -7.320910010923283e-07,
+      "normalizer": 7.320910010923283e-07
+    },
+    {
+      "key": [
+        2,
+        "1",
+        2
+      ],
+      "boundary": 5490,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1568525105196841e-06,
+      "normalizer": 1.1568525105196841e-06
+    },
+    {
+      "key": [
+        7,
+        "2",
+        7
+      ],
+      "boundary": 6190,
+      "same_prefix": true,
+      "original_logprob_delta": -8.751002447677896e-07,
+      "normalizer": 8.751002447677896e-07
+    },
+    {
+      "key": [
+        4,
+        "1",
+        9
+      ],
+      "boundary": 6209,
+      "same_prefix": true,
+      "original_logprob_delta": -9.059539504880938e-07,
+      "normalizer": 9.059539504880938e-07
+    },
+    {
+      "key": [
+        4,
+        "0",
+        2
+      ],
+      "boundary": 5576,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0449315560956754e-06,
+      "normalizer": 1.0449315560956754e-06
+    },
+    {
+      "key": [
+        7,
+        "2",
+        8
+      ],
+      "boundary": 6344,
+      "same_prefix": true,
+      "original_logprob_delta": -7.308033713152474e-07,
+      "normalizer": 7.308033713152474e-07
+    },
+    {
+      "key": [
+        2,
+        "1",
+        3
+      ],
+      "boundary": 5731,
+      "same_prefix": true,
+      "original_logprob_delta": -7.561397197366731e-07,
+      "normalizer": 7.561397197366731e-07
+    },
+    {
+      "key": [
+        7,
+        "3",
+        5
+      ],
+      "boundary": 6018,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0468446296758009e-06,
+      "normalizer": 1.0468446296758009e-06
+    },
+    {
+      "key": [
+        7,
+        "1",
+        6
+      ],
+      "boundary": 6008,
+      "same_prefix": true,
+      "original_logprob_delta": -6.166152606749227e-07,
+      "normalizer": 6.166152606749227e-07
+    },
+    {
+      "key": [
+        7,
+        "2",
+        9
+      ],
+      "boundary": 6630,
+      "same_prefix": true,
+      "original_logprob_delta": -8.876635126017887e-07,
+      "normalizer": 8.876635126017887e-07
+    },
+    {
+      "key": [
+        0,
+        "0",
+        1
+      ],
+      "boundary": 5590,
+      "same_prefix": true,
+      "original_logprob_delta": -1.8637981866707898e-06,
+      "normalizer": 1.8637981866707898e-06
+    },
+    {
+      "key": [
+        6,
+        "2",
+        8
+      ],
+      "boundary": 6772,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1885474873323822e-06,
+      "normalizer": 1.1885474873323822e-06
+    },
+    {
+      "key": [
+        4,
+        "3",
+        3
+      ],
+      "boundary": 5890,
+      "same_prefix": true,
+      "original_logprob_delta": -9.692777957217256e-07,
+      "normalizer": 9.692777957217256e-07
+    },
+    {
+      "key": [
+        0,
+        "0",
+        2
+      ],
+      "boundary": 6016,
+      "same_prefix": true,
+      "original_logprob_delta": 6.451202094748254e-07,
+      "normalizer": -6.451202094748254e-07
+    },
+    {
+      "key": [
+        5,
+        "1",
+        4
+      ],
+      "boundary": 6079,
+      "same_prefix": true,
+      "original_logprob_delta": -9.65707909363631e-07,
+      "normalizer": 9.65707909363631e-07
+    },
+    {
+      "key": [
+        5,
+        "2",
+        5
+      ],
+      "boundary": 6263,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0265081360246852e-06,
+      "normalizer": 1.0265081360246852e-06
+    },
+    {
+      "key": [
+        3,
+        "2",
+        5
+      ],
+      "boundary": 6384,
+      "same_prefix": true,
+      "original_logprob_delta": -9.352003427446492e-07,
+      "normalizer": 9.352003427446492e-07
+    },
+    {
+      "key": [
+        1,
+        "3",
+        7
+      ],
+      "boundary": 6903,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0649791661602103e-06,
+      "normalizer": 1.0649791661602103e-06
+    },
+    {
+      "key": [
+        3,
+        "2",
+        6
+      ],
+      "boundary": 6672,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4282975570862168e-06,
+      "normalizer": 1.4282975570862168e-06
+    },
+    {
+      "key": [
+        1,
+        "1",
+        1
+      ],
+      "boundary": 6114,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4003151524329658e-06,
+      "normalizer": 1.4003151524329658e-06
+    },
+    {
+      "key": [
+        6,
+        "2",
+        9
+      ],
+      "boundary": 7443,
+      "same_prefix": true,
+      "original_logprob_delta": -5.27241056752037e-07,
+      "normalizer": 5.27241056752037e-07
+    },
+    {
+      "key": [
+        0,
+        "0",
+        3
+      ],
+      "boundary": 6410,
+      "same_prefix": true,
+      "original_logprob_delta": -1.8711282278569311e-06,
+      "normalizer": 1.8711282278569311e-06
+    },
+    {
+      "key": [
+        7,
+        "3",
+        6
+      ],
+      "boundary": 6827,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0111558978649106e-06,
+      "normalizer": 1.0111558978649106e-06
+    },
+    {
+      "key": [
+        0,
+        "1",
+        5
+      ],
+      "boundary": 6624,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2574852506503018e-06,
+      "normalizer": 1.2574852506503018e-06
+    },
+    {
+      "key": [
+        4,
+        "3",
+        4
+      ],
+      "boundary": 6559,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3881712399261501e-06,
+      "normalizer": 1.3881712399261501e-06
+    },
+    {
+      "key": [
+        2,
+        "3",
+        6
+      ],
+      "boundary": 6753,
+      "same_prefix": true,
+      "original_logprob_delta": -5.6822625360076e-07,
+      "normalizer": 5.6822625360076e-07
+    },
+    {
+      "key": [
+        0,
+        "0",
+        4
+      ],
+      "boundary": 6682,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3002668056236871e-06,
+      "normalizer": 1.3002668056236871e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        3
+      ],
+      "boundary": 6628,
+      "same_prefix": true,
+      "original_logprob_delta": -6.042675432794649e-07,
+      "normalizer": 6.042675432794649e-07
+    },
+    {
+      "key": [
+        1,
+        "3",
+        8
+      ],
+      "boundary": 7329,
+      "same_prefix": true,
+      "original_logprob_delta": -7.658996595196762e-07,
+      "normalizer": 7.658996595196762e-07
+    },
+    {
+      "key": [
+        0,
+        "0",
+        5
+      ],
+      "boundary": 6889,
+      "same_prefix": true,
+      "original_logprob_delta": -8.641828847795764e-07,
+      "normalizer": 8.641828847795764e-07
+    },
+    {
+      "key": [
+        7,
+        "0",
+        4
+      ],
+      "boundary": 6835,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2564343516835837e-06,
+      "normalizer": 1.2564343516835837e-06
+    },
+    {
+      "key": [
+        7,
+        "1",
+        7
+      ],
+      "boundary": 7034,
+      "same_prefix": true,
+      "original_logprob_delta": -9.530474578115953e-07,
+      "normalizer": 9.530474578115953e-07
+    },
+    {
+      "key": [
+        2,
+        "3",
+        7
+      ],
+      "boundary": 7179,
+      "same_prefix": true,
+      "original_logprob_delta": -2.2713040475101295e-07,
+      "normalizer": 2.2713040475101295e-07
+    },
+    {
+      "key": [
+        5,
+        "2",
+        6
+      ],
+      "boundary": 7140,
+      "same_prefix": true,
+      "original_logprob_delta": -1.018404850500925e-06,
+      "normalizer": 1.018404850500925e-06
+    },
+    {
+      "key": [
+        2,
+        "3",
+        8
+      ],
+      "boundary": 7402,
+      "same_prefix": true,
+      "original_logprob_delta": -5.450539558667273e-07,
+      "normalizer": 5.450539558667273e-07
+    },
+    {
+      "key": [
+        3,
+        "2",
+        7
+      ],
+      "boundary": 7384,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4759735701240636e-06,
+      "normalizer": 1.4759735701240636e-06
+    },
+    {
+      "key": [
+        0,
+        "2",
+        5
+      ],
+      "boundary": 6961,
+      "same_prefix": true,
+      "original_logprob_delta": -5.7831165951220514e-08,
+      "normalizer": 5.7831165951220514e-08
+    },
+    {
+      "key": [
+        6,
+        "0",
+        5
+      ],
+      "boundary": 7206,
+      "same_prefix": true,
+      "original_logprob_delta": -7.757603600610453e-07,
+      "normalizer": 7.757603600610453e-07
+    },
+    {
+      "key": [
+        7,
+        "0",
+        5
+      ],
+      "boundary": 7271,
+      "same_prefix": true,
+      "original_logprob_delta": -7.146335569356132e-07,
+      "normalizer": 7.146335569356132e-07
+    },
+    {
+      "key": [
+        1,
+        "3",
+        9
+      ],
+      "boundary": 7868,
+      "same_prefix": true,
+      "original_logprob_delta": -6.227342657097663e-07,
+      "normalizer": 6.227342657097663e-07
+    },
+    {
+      "key": [
+        5,
+        "1",
+        5
+      ],
+      "boundary": 6859,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6550828901579911e-07,
+      "normalizer": 1.6550828901579911e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        5
+      ],
+      "boundary": 7368,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0465555671896275e-06,
+      "normalizer": 1.0465555671896275e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        6
+      ],
+      "boundary": 7580,
+      "same_prefix": true,
+      "original_logprob_delta": -3.141409711110432e-07,
+      "normalizer": 3.141409711110432e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        6
+      ],
+      "boundary": 7551,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6834025335399111e-06,
+      "normalizer": 1.6834025335399111e-06
+    },
+    {
+      "key": [
+        7,
+        "1",
+        8
+      ],
+      "boundary": 7714,
+      "same_prefix": true,
+      "original_logprob_delta": -7.242042442675645e-07,
+      "normalizer": 7.242042442675645e-07
+    },
+    {
+      "key": [
+        5,
+        "2",
+        7
+      ],
+      "boundary": 7811,
+      "same_prefix": true,
+      "original_logprob_delta": -7.946110950013494e-07,
+      "normalizer": 7.946110950013494e-07
+    },
+    {
+      "key": [
+        0,
+        "1",
+        6
+      ],
+      "boundary": 7718,
+      "same_prefix": true,
+      "original_logprob_delta": -9.451257903288625e-07,
+      "normalizer": 9.451257903288625e-07
+    },
+    {
+      "key": [
+        3,
+        "2",
+        8
+      ],
+      "boundary": 8064,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4126250084400827e-06,
+      "normalizer": 1.4126250084400827e-06
+    },
+    {
+      "key": [
+        0,
+        "0",
+        6
+      ],
+      "boundary": 7826,
+      "same_prefix": true,
+      "original_logprob_delta": -7.562516645048594e-07,
+      "normalizer": 7.562516645048594e-07
+    },
+    {
+      "key": [
+        2,
+        "3",
+        9
+      ],
+      "boundary": 8035,
+      "same_prefix": true,
+      "original_logprob_delta": -3.7059540215241124e-07,
+      "normalizer": 3.7059540215241124e-07
+    },
+    {
+      "key": [
+        0,
+        "0",
+        7
+      ],
+      "boundary": 8071,
+      "same_prefix": true,
+      "original_logprob_delta": -8.847629775313881e-07,
+      "normalizer": 8.847629775313881e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        7
+      ],
+      "boundary": 7950,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2799717982403752e-06,
+      "normalizer": 1.2799717982403752e-06
+    },
+    {
+      "key": [
+        7,
+        "3",
+        7
+      ],
+      "boundary": 8121,
+      "same_prefix": true,
+      "original_logprob_delta": -8.838231284305671e-07,
+      "normalizer": 8.838231284305671e-07
+    },
+    {
+      "key": [
+        0,
+        "0",
+        8
+      ],
+      "boundary": 8326,
+      "same_prefix": true,
+      "original_logprob_delta": -6.767056508615602e-07,
+      "normalizer": 6.767056508615602e-07
+    },
+    {
+      "key": [
+        3,
+        "2",
+        9
+      ],
+      "boundary": 8450,
+      "same_prefix": true,
+      "original_logprob_delta": -7.38903074757165e-07,
+      "normalizer": 7.38903074757165e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        8
+      ],
+      "boundary": 8179,
+      "same_prefix": true,
+      "original_logprob_delta": -3.8199349387466053e-07,
+      "normalizer": 3.8199349387466053e-07
+    },
+    {
+      "key": [
+        6,
+        "0",
+        6
+      ],
+      "boundary": 8002,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4822138458988037e-06,
+      "normalizer": 1.4822138458988037e-06
+    },
+    {
+      "key": [
+        7,
+        "0",
+        6
+      ],
+      "boundary": 8075,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2934046485162625e-06,
+      "normalizer": 1.2934046485162625e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        7
+      ],
+      "boundary": 8321,
+      "same_prefix": true,
+      "original_logprob_delta": -6.519644719362935e-07,
+      "normalizer": 6.519644719362935e-07
+    },
+    {
+      "key": [
+        4,
+        "0",
+        4
+      ],
+      "boundary": 7848,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3682229279936829e-06,
+      "normalizer": 1.3682229279936829e-06
+    },
+    {
+      "key": [
+        0,
+        "0",
+        9
+      ],
+      "boundary": 8798,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2604538716937531e-06,
+      "normalizer": 1.2604538716937531e-06
+    },
+    {
+      "key": [
+        7,
+        "3",
+        8
+      ],
+      "boundary": 8586,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4271821168182876e-06,
+      "normalizer": 1.4271821168182876e-06
+    },
+    {
+      "key": [
+        0,
+        "1",
+        7
+      ],
+      "boundary": 8376,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1234755290665454e-06,
+      "normalizer": 1.1234755290665454e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        8
+      ],
+      "boundary": 8718,
+      "same_prefix": true,
+      "original_logprob_delta": -4.47266460567035e-07,
+      "normalizer": 4.47266460567035e-07
+    },
+    {
+      "key": [
+        4,
+        "3",
+        9
+      ],
+      "boundary": 8691,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4087232698318814e-06,
+      "normalizer": 1.4087232698318814e-06
+    },
+    {
+      "key": [
+        7,
+        "1",
+        9
+      ],
+      "boundary": 8673,
+      "same_prefix": true,
+      "original_logprob_delta": -4.45365542962612e-07,
+      "normalizer": 4.45365542962612e-07
+    },
+    {
+      "key": [
+        6,
+        "0",
+        7
+      ],
+      "boundary": 8503,
+      "same_prefix": true,
+      "original_logprob_delta": -9.073634075209506e-07,
+      "normalizer": 9.073634075209506e-07
+    },
+    {
+      "key": [
+        7,
+        "0",
+        7
+      ],
+      "boundary": 8550,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2952995475442198e-06,
+      "normalizer": 1.2952995475442198e-06
+    },
+    {
+      "key": [
+        5,
+        "2",
+        8
+      ],
+      "boundary": 8690,
+      "same_prefix": true,
+      "original_logprob_delta": -9.93353303651765e-07,
+      "normalizer": 9.93353303651765e-07
+    },
+    {
+      "key": [
+        7,
+        "3",
+        9
+      ],
+      "boundary": 8924,
+      "same_prefix": true,
+      "original_logprob_delta": -1.4637392387092506e-06,
+      "normalizer": 1.4637392387092506e-06
+    },
+    {
+      "key": [
+        1,
+        "2",
+        9
+      ],
+      "boundary": 9113,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1411713741909016e-06,
+      "normalizer": 1.1411713741909016e-06
+    },
+    {
+      "key": [
+        0,
+        "2",
+        6
+      ],
+      "boundary": 8397,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3358912178554726e-07,
+      "normalizer": 1.3358912178554726e-07
+    },
+    {
+      "key": [
+        5,
+        "0",
+        4
+      ],
+      "boundary": 8526,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0114098555548032e-06,
+      "normalizer": 1.0114098555548032e-06
+    },
+    {
+      "key": [
+        5,
+        "1",
+        6
+      ],
+      "boundary": 8421,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2284525549861706e-06,
+      "normalizer": 1.2284525549861706e-06
+    },
+    {
+      "key": [
+        5,
+        "2",
+        9
+      ],
+      "boundary": 9242,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0935349666909254e-06,
+      "normalizer": 1.0935349666909254e-06
+    },
+    {
+      "key": [
+        6,
+        "0",
+        8
+      ],
+      "boundary": 9084,
+      "same_prefix": true,
+      "original_logprob_delta": -3.9377243813212837e-07,
+      "normalizer": 3.9377243813212837e-07
+    },
+    {
+      "key": [
+        5,
+        "0",
+        5
+      ],
+      "boundary": 8804,
+      "same_prefix": true,
+      "original_logprob_delta": -1.040482422160437e-06,
+      "normalizer": 1.040482422160437e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        5
+      ],
+      "boundary": 8873,
+      "same_prefix": true,
+      "original_logprob_delta": -3.2351498517879662e-06,
+      "normalizer": 3.2351498517879662e-06
+    },
+    {
+      "key": [
+        7,
+        "0",
+        8
+      ],
+      "boundary": 9336,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0325557218968714e-06,
+      "normalizer": 1.0325557218968714e-06
+    },
+    {
+      "key": [
+        5,
+        "0",
+        6
+      ],
+      "boundary": 9192,
+      "same_prefix": true,
+      "original_logprob_delta": -3.6170288552126286e-07,
+      "normalizer": 3.6170288552126286e-07
+    },
+    {
+      "key": [
+        0,
+        "1",
+        8
+      ],
+      "boundary": 9732,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0162834859315118e-06,
+      "normalizer": 1.0162834859315118e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        6
+      ],
+      "boundary": 9669,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0719372174131103e-06,
+      "normalizer": 1.0719372174131103e-06
+    },
+    {
+      "key": [
+        7,
+        "0",
+        9
+      ],
+      "boundary": 10028,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2493414352419784e-06,
+      "normalizer": 1.2493414352419784e-06
+    },
+    {
+      "key": [
+        5,
+        "1",
+        7
+      ],
+      "boundary": 9432,
+      "same_prefix": true,
+      "original_logprob_delta": -1.3033434937114179e-06,
+      "normalizer": 1.3033434937114179e-06
+    },
+    {
+      "key": [
+        1,
+        "1",
+        2
+      ],
+      "boundary": 9389,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0802329812048409e-06,
+      "normalizer": 1.0802329812048409e-06
+    },
+    {
+      "key": [
+        0,
+        "1",
+        9
+      ],
+      "boundary": 10236,
+      "same_prefix": true,
+      "original_logprob_delta": -7.935939552395423e-07,
+      "normalizer": 7.935939552395423e-07
+    },
+    {
+      "key": [
+        2,
+        "1",
+        4
+      ],
+      "boundary": 9800,
+      "same_prefix": true,
+      "original_logprob_delta": -6.888296551378484e-07,
+      "normalizer": 6.888296551378484e-07
+    },
+    {
+      "key": [
+        1,
+        "1",
+        3
+      ],
+      "boundary": 9770,
+      "same_prefix": true,
+      "original_logprob_delta": -1.2414174239356104e-06,
+      "normalizer": 1.2414174239356104e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        7
+      ],
+      "boundary": 10152,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1481900670006276e-06,
+      "normalizer": 1.1481900670006276e-06
+    },
+    {
+      "key": [
+        0,
+        "2",
+        7
+      ],
+      "boundary": 10061,
+      "same_prefix": true,
+      "original_logprob_delta": -7.940337776980521e-07,
+      "normalizer": 7.940337776980521e-07
+    },
+    {
+      "key": [
+        1,
+        "1",
+        4
+      ],
+      "boundary": 10109,
+      "same_prefix": true,
+      "original_logprob_delta": -1.6028585430771965e-06,
+      "normalizer": 1.6028585430771965e-06
+    },
+    {
+      "key": [
+        6,
+        "0",
+        9
+      ],
+      "boundary": 10729,
+      "same_prefix": true,
+      "original_logprob_delta": -8.508285722828542e-07,
+      "normalizer": 8.508285722828542e-07
+    },
+    {
+      "key": [
+        5,
+        "1",
+        8
+      ],
+      "boundary": 10333,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1961092790037267e-06,
+      "normalizer": 1.1961092790037267e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        8
+      ],
+      "boundary": 10794,
+      "same_prefix": true,
+      "original_logprob_delta": -1.1156426226351102e-06,
+      "normalizer": 1.1156426226351102e-06
+    },
+    {
+      "key": [
+        0,
+        "2",
+        8
+      ],
+      "boundary": 10824,
+      "same_prefix": true,
+      "original_logprob_delta": -1.0005969590810414e-06,
+      "normalizer": 1.0005969590810414e-06
+    },
+    {
+      "key": [
+        4,
+        "0",
+        9
+      ],
+      "boundary": 11189,
+      "same_prefix": true,
+      "original_logprob_delta": -5.425897924157212e-07,
+      "normalizer": 5.425897924157212e-07
+    },
+    {
+      "key": [
+        5,
+        "1",
+        9
+      ],
+      "boundary": 10852,
+      "same_prefix": true,
+      "original_logprob_delta": -9.143193922394612e-07,
+      "normalizer": 9.143193922394612e-07
+    }
+  ],
+  "observer_off_cost": {
+    "generated_tokens": 203217,
+    "input_tokens": 1165069,
+    "executed_actions": 299,
+    "invalid_actions": 2,
+    "seconds": 169.99659307894763,
+    "request_seconds": 0.0,
+    "request_seconds_unavailable_for_frozen_initial": true
+  },
+  "statistics": {
+    "ucf_version": "V3-uniform-full-complement",
+    "episodes": 45,
+    "success_rate": 0.09375,
+    "mean_response_tokens": 6302.21875,
+    "mean_turns": 9.34375,
+    "terminal_counts": {
+      "turn_limit": 37,
+      "token_limit": 3,
+      "success": 5
+    },
+    "branch_events": 13,
+    "mean_forks": 1.625,
+    "fork_budget": {
+      "target": 2.0,
+      "candidate_counts": {
+        "0": 39,
+        "1": 35,
+        "2": 34,
+        "3": 40,
+        "4": 40,
+        "5": 30,
+        "6": 40,
+        "7": 40
+      },
+      "rho_by_task": {
+        "0": 0.05405405405405406,
+        "1": 0.0532319391634981,
+        "2": 0.05303030303030303,
+        "3": 0.054263565891472874,
+        "4": 0.054263565891472874,
+        "5": 0.05223880597014925,
+        "6": 0.054263565891472874,
+        "7": 0.054263565891472874
+      },
+      "expected_forks": 2.002948875450123,
+      "realized_forks": 1.625,
+      "rho_floor": null,
+      "manual_score": false,
+      "exact_batch_budget_guaranteed": false
+    },
+    "first_fence_coverage": {
+      "turns": 301,
+      "turns_with_fence": 298,
+      "candidates": 298,
+      "prefix_budget_exhausted": 0,
+      "prefix_already_closed": 0
+    },
+    "candidate_coverage": 0.9900332225913622,
+    "response_protocol": "first_complete_action_block",
+    "initial_group_counts": {
+      "all_failure": 6,
+      "mixed": 2,
+      "all_success": 0
+    },
+    "initial_group_fractions": {
+      "all_failure": 0.75,
+      "mixed": 0.25,
+      "all_success": 0.0
+    },
+    "mixed_group_fraction": 0.25,
+    "rescue_rate": 0.0,
+    "counterfactual_flip_rate": 0.07692307692307693,
+    "cf_fallback_fraction": 0.0,
+    "full_vocabulary_log_normalizers": [
+      5.7831165951220514e-08,
+      9.103165967087117e-07,
+      3.1828545371427117e-07,
+      5.59928494280233e-07,
+      1.1742409956855921e-06,
+      9.381630263459665e-07,
+      8.51623334917383e-07,
+      8.830835256056196e-07,
+      7.969765659682931e-07,
+      1.7463581370542533e-06,
+      9.657702556357104e-07,
+      2.6013752573131495e-06,
+      1.2436644631304066e-06
+    ],
+    "probe_original_logprob_differences": [
+      -5.7831165951220514e-08,
+      -9.103165967087117e-07,
+      -3.1828545371427117e-07,
+      -5.59928494280233e-07,
+      -1.1742409956855921e-06,
+      -9.381630263459665e-07,
+      -8.51623334917383e-07,
+      -8.830835256056196e-07,
+      -7.969765659682931e-07,
+      -1.7463581370542533e-06,
+      -9.657702556357104e-07,
+      -2.6013752573131495e-06,
+      -1.2436644631304066e-06
+    ],
+    "original_token_partition_parser_disagreement": 0.15384615384615385,
+    "counterfactual_token_partition_parser_disagreement": 0.5384615384615384,
+    "selected_turn_histogram": {
+      "6": 4,
+      "9": 1,
+      "2": 2,
+      "7": 1,
+      "4": 2,
+      "5": 2,
+      "1": 1
+    },
+    "rho_values": [
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.05405405405405406,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.0532319391634981,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.05303030303030303,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.05223880597014925,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874,
+      0.054263565891472874
+    ],
+    "probe_cost": {
+      "input_tokens": 0,
+      "generated_tokens": 0,
+      "request_seconds": 0.0,
+      "seconds": 0.0
+    },
+    "original_logits_capture": {
+      "source": "original_sampling_logits",
+      "captured_nodes": 298,
+      "closed_at_fence": 0,
+      "peak_vector_bytes": 295997440,
+      "capacity_vector_bytes": 317849600,
+      "pending_vectors": 0,
+      "model_forward_probes": 0
+    },
+    "input_tokens": 1515535,
+    "generated_tokens": 247487,
+    "executed_actions": 368,
+    "invalid_actions": 3,
+    "invalid_action_fraction": 0.008152173913043478,
+    "leaf_group_counts": {
+      "all_success": 0,
+      "all_failure": 6,
+      "mixed": 2
+    },
+    "leaf_group_fractions": {
+      "all_success": 0.0,
+      "all_failure": 0.75,
+      "mixed": 0.25
+    },
+    "leaf_group_source": "initial four plus actual counterfactual leaves",
+    "leaf_group_total": 45
+  }
+}
