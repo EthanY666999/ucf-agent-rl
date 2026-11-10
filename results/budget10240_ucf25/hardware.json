@@ -1,0 +1,16 @@
+{
+  "model_family": "Qwen3.5",
+  "model": "/data/models/Qwen3.5-2B",
+  "software_versions": {
+    "torch": "2.10.0",
+    "vllm": "0.19.1",
+    "transformers": "5.22.2"
+  },
+  "software_versions_provenance": {
+    "recorded_at": "2026-11-11T06:11:32.860263+08:00",
+    "python": "/data/venvs/qwen35/bin/python",
+    "source": "importlib.metadata of actual production interpreter",
+    "backfilled": false,
+    "historical_loaded_versions_proven": true
+  }
+}

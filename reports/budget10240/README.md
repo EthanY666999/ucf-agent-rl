@@ -89,3 +89,7 @@ There were2907 ineffective actions among8858 executed actions (32.82%), includin
 The UCF25 checkpoint and all expected validation records passed stage verification. On the same100 x4 fixed validation set, success rose10.75% →15.75% and pass@4 rose17% →32%. Validation length grew2535.71 →4201.51 retained response tokens and token-limit terminations grew6.25% →13.5%, so the long-output issue is still active. The matched GRPO arm has now started from the identical16-step RL checkpoint. See [the full boundary export](../../results/budget10240_ucf25/README.md).
 
 Budget terminology:10240 is the cumulative **retained response-token** cap per trajectory, excluding observations/prompt text. Existing first-block truncation can discard a suffix the engine already generated; that is extra sampling work and stays charged in `generated_tokens`. It is not executed or trained. The paired control has the same behavior. The new audit records this overhead rather than treating the cap as an exact limit on GPU-generated token count.
+
+## Matched step 25 result
+
+Both verification receipts passed. On the same 100 questions, UCF scored 15.75% success versus matched GRPO 22.00%, with fewer token-limit endings but higher training cost. [Paired data, intervals and next boundary](../../results/budget10240_paired25/README.md).

@@ -1,0 +1,95 @@
+{
+  "step": 25,
+  "initial_step": 16,
+  "task_n": 100,
+  "replicates": 10000,
+  "direction": "UCF minus matched GRPO; repeated-look one-training-seed fixed validation",
+  "difference": {
+    "success_pp": {
+      "estimate": -6.25,
+      "task_bootstrap_95": [
+        -9.75,
+        -2.75
+      ]
+    },
+    "pass_at_4_pp": {
+      "estimate": -13.0,
+      "task_bootstrap_95": [
+        -23.0,
+        -3.0
+      ]
+    },
+    "token_limit_pp": {
+      "estimate": -4.75,
+      "task_bootstrap_95": [
+        -10.0,
+        0.5
+      ]
+    },
+    "mean_retained_tokens": {
+      "estimate": -765.405,
+      "task_bootstrap_95": [
+        -1166.160625,
+        -358.7173750000001
+      ]
+    },
+    "mean_executed_turns": {
+      "estimate": 0.4025,
+      "task_bootstrap_95": [
+        0.05,
+        0.7425
+      ]
+    }
+  },
+  "questions_by_at_least_one_success": {
+    "both": 25,
+    "neither": 48,
+    "ucf_only": 7,
+    "grpo_only": 20
+  },
+  "questions_by_number_of_successes": {
+    "same": 59,
+    "more_grpo": 31,
+    "more_ucf": 10
+  },
+  "validation_raw_sha256": {
+    "ucf": "1eda24d4f0edda01ab83802c830b1caaabb24fc41988a1b0995d5d9ad1f5454f",
+    "grpo": "4f13b367e9485e10b8ab330adeb286027b58a476e210e35275835186f9ea64e6"
+  },
+  "training_cost": {
+    "ucf": {
+      "updates": 9,
+      "step_seconds": 13057.122769948968,
+      "rollout_seconds": 8550.78984223801,
+      "component_diagnostic_seconds": 500.99934881500667,
+      "seconds_excluding_component_diagnostic": 12556.123421133962,
+      "generated_tokens": 15159633,
+      "input_tokens": 95039381,
+      "peak_allocated_gib": 65.03910398483276,
+      "metrics_prefix_sha256": "3dc7e26890c46d69b821db6e11dedfc5b2719505e02ada8e726ff1fc19523d0a",
+      "finite_updates": true,
+      "nonzero_parameter_updates": 9
+    },
+    "grpo": {
+      "updates": 9,
+      "step_seconds": 6902.5590057860245,
+      "rollout_seconds": 3908.6463277939474,
+      "component_diagnostic_seconds": 0.0,
+      "seconds_excluding_component_diagnostic": 6902.5590057860245,
+      "generated_tokens": 13067480,
+      "input_tokens": 69136681,
+      "peak_allocated_gib": 64.9856367111206,
+      "metrics_prefix_sha256": "c61e4e9faa7862d0e6a03abad4ccaa6ac9c6813f2a8883854fa419942e44c4bf",
+      "finite_updates": true,
+      "nonzero_parameter_updates": 9
+    }
+  },
+  "ucf_over_grpo": {
+    "step_seconds": 1.8916350818593397,
+    "seconds_excluding_component_diagnostic": 1.8190533989798383,
+    "generated_tokens": 1.1601037843562798,
+    "input_tokens": 1.3746592926553707
+  },
+  "cost_scope": "Training metrics for matched completed updates only; excludes validation, engine initialization and checkpoint IO outside step timing. Physical generated tokens include discarded suffixes. This is not an equal-compute comparison.",
+  "final_test_used": false
+}

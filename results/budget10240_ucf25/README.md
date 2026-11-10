@@ -1,5 +1,7 @@
 # First 10240-token fixed-validation boundary
 
+This is the UCF-only snapshot taken before the matched control finished. [Subsequent step-25 GRPO comparison](../budget10240_paired25/README.md).
+
 UCF completed total step25, comprising nine new updates after the shared RL checkpoint16. There is no task SFT. This is an exploratory continuation, not an independent fresh-model benchmark. The paired GRPO arm has started from the same step16 model, optimizer and RNG state; its result is pending. The current UCF checkpoint remains on the server. No model weights or optimizer state are in this export.
 
 | Same100 validation questions, four samples each | Shared start16 | UCF25 |

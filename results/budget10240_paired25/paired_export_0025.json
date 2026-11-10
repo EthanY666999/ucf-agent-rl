@@ -1,0 +1,35 @@
+{
+  "step": 25,
+  "passed": true,
+  "final_test_used": false,
+  "files": {
+    "paired_review_0025.json": {
+      "bytes": 17601,
+      "sha256": "8a84d820b322df7842f93fbea38a3c612b833eb2af4daaca68fbe8b349ad0d2e"
+    },
+    "grpo_review_0025.json": {
+      "bytes": 10041,
+      "sha256": "8d84a3768d4c3e12925556fbe6042830cd7b221b5ac65355341c82681d6a9181"
+    },
+    "paired_accounting_0025.json": {
+      "bytes": 2809,
+      "sha256": "da5493567c43c17e2ae643866ab7ae9348a54a87b04a18f27c148e204f56c67e"
+    },
+    "ucf_updates_0025.json": {
+      "bytes": 19362,
+      "sha256": "051aca72917fa83f355cfffd57fd826fe994f633481d8a92715f4d9462d8c094"
+    },
+    "grpo_updates_0025.json": {
+      "bytes": 16253,
+      "sha256": "77d8b7d571026c6c0b7e1579570f542d86524db086d3eafa870943bbb739aeeb"
+    },
+    "ucf_boundary_0025.tar.gz": {
+      "bytes": 1180765,
+      "sha256": "d94518b628bcfc7db0bff2518f9dbc661d0fdffddeb8bbc4dfb90ad5671992a5"
+    },
+    "grpo_boundary_0025.tar.gz": {
+      "bytes": 889344,
+      "sha256": "726bd761321c74d7464a02ecdf8b4ade75cfe2c17b6d725fcfe4182e92d1d593"
+    }
+  }
+}

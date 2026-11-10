@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "enable_thinking": false,
+  "initial_empty_think": true,
+  "subsequent_empty_think": true,
+  "initial_prompt_sha256": "35472f5b5223853aed85afed7fc98a860cd3a21de530c329da6d0f2ced0df186",
+  "subsequent_prompt_sha256": "e475bdca638ee1dcd592a5c4876d41c3d87c21d2564899ca17b57ca58f5f039c"
+}
