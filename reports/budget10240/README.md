@@ -67,3 +67,19 @@ The continuation completed total step17 (the first new update) on2026-11-11 Beij
 | Rollout / whole-step time |997.3 /1443.4seconds|
 
 This is a single training batch, with a different question sample from4096 step16. It establishes successful execution and substantially less truncation in the observed batch, **not learning improvement or superiority over GRPO**. The full same-initialization, same-budget GRPO arm is still pending. Counterfactual token-partition/parser disagreement is14.88%; the residual token class is not an assertion that the executed action is STAY. No new threshold or algorithm change was made after viewing these values.
+
+## Four completed updates and failure audit (through step20)
+
+The new continuation completed and checkpointed total step20 before proceeding to21. The four completed updates17–20 are finite, with nonzero parameter changes. Original-four token-limit fractions were9.77%,8.59%,10.16%,3.91%; training successes were22.27%,20.31%,12.11%,21.48%. These are varying training batches, not a fixed-validation curve.
+
+A read-only CPU audit replayed every executed action against the frozen production environment and classified the first transition after which success within the remaining horizon was impossible. In1024 originals there were195 successes and829 failures:
+
+| First irrecoverable cause | Failed trajectories |
+|---|---:|
+| Still structurally solvable, but shortest remaining path exceeds remaining turns |686 (82.75%)|
+| Structural box deadlock |130 (15.68%)|
+| Length ending while still solvable within remaining turns |13 (1.57%)|
+
+There were2907 ineffective actions among8858 executed actions (32.82%), including208 invalid actions (2.35% of actions). Thus length truncation is no longer the sole diagnostic target: a large fraction of moves fail to change the state, and many trajectories become unrecoverable through wasted moves before their terminal reason is recorded. This does **not** establish a causal UCF defect or a comparison with GRPO. The10240 matched GRPO arm and fixed validation at25 remain necessary.
+
+`failures_0020.json` records per-step difficulty strata, earliest irreversible turns and frozen source hashes. `failure_audit_validation.json` cross-checks reverse BFS against an independent capped forward BFS using production transitions for one original trajectory of every sampled question. All training rewards, prompts, selectors, masks and queue entries remain unchanged. The exact BFS is used only for this offline diagnosis.

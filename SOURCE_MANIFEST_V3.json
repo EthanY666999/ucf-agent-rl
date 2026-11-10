@@ -4,8 +4,8 @@
     "sha256": "c38b07fe10f2da98d9e8ac81f94c46901096cc9a9ff0270cc8056b18d6812cca"
   },
   "README.md": {
-    "bytes": 10975,
-    "sha256": "b3c0a287fee0ecc06c15fa0ed071e2c22c5dc1de0f17f3be0f54083b42155e21"
+    "bytes": 11356,
+    "sha256": "f4e920e713a9c21f4f5d860930e4514bec1c48461e59d53b5f031659a6a4ab06"
   },
   "WORKLOG.md": {
     "bytes": 22934,
@@ -848,8 +848,8 @@
     "sha256": "f4c9d499c65c3d255590f0c0860df0d553e4d0cb1fd244ac57ae894bd42eea7e"
   },
   "reports/budget10240/README.md": {
-    "bytes": 7926,
-    "sha256": "f724dbf2fbea532fa2799c4fd968aabb0a63ab55763c056ffdc4b12f00dda984"
+    "bytes": 9790,
+    "sha256": "853bc237a7248475bf4db20dfe2ca89b88f6af74e9f4a56586edc477699f9085"
   },
   "reports/budget10240/acceptance.json": {
     "bytes": 14242,
@@ -1694,5 +1694,25 @@
   "reports/budget10240/updates_0017.json": {
     "bytes": 3319,
     "sha256": "79966776f9a0efbc6acf005297681e4fc9790c3f687c981e9e0c7e033f131b3c"
+  },
+  "diagnostics/audit_sokoban_budget_failures.py": {
+    "bytes": 6162,
+    "sha256": "6738e23daf70a1a20421cb50b4ba1abb191d7a7a3a2140f13f06b61e1227936d"
+  },
+  "reports/budget10240/ucf_train_metrics_through0020.jsonl": {
+    "bytes": 234867,
+    "sha256": "d76e1f2f0bd9d839d38f9a8522b81122e882e0799c291671c4ce29b5ef87b9db"
+  },
+  "reports/budget10240/failures_0020.json": {
+    "bytes": 8092,
+    "sha256": "1de220da519f812a3ebdc96627d53cf8a1e3282c1834301d39aa7625f4e0a1b7"
+  },
+  "reports/budget10240/updates_0020.json": {
+    "bytes": 8650,
+    "sha256": "9303eaf7fe051fafa72ab4bbd6296b9158136c937ba45222737a6a607a86a962"
+  },
+  "reports/budget10240/failure_audit_validation.json": {
+    "bytes": 249,
+    "sha256": "616c14fec976719074900cc508961aa32a11ab7fe1b54eb9250caca030baa850"
   }
 }

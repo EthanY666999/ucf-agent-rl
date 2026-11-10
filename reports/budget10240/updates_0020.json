@@ -1,0 +1,221 @@
+{
+  "unix": 1794332789.1500819,
+  "run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42",
+  "through_step": 20,
+  "initialization": {
+    "kind": "shared_rl_warmstart_budget_exploration",
+    "initial_step": 16,
+    "source_run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+    "source_checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+    "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73",
+    "reference_model": "/data/models/Qwen3.5-2B",
+    "task_sft": false,
+    "prior_training_method": "ucf",
+    "prior_training_steps": 16,
+    "prior_max_response_tokens": 4096,
+    "continuation_max_response_tokens": 10240,
+    "method": "ucf",
+    "not_a_fresh_raw_start_comparison": true,
+    "unix": 1794325948.304225,
+    "imported_controller_sha256": "25fe6381dcd17d7addfb44d39ec7118da5ca985906faaec2827fe78348c61e8c",
+    "controller_note": "Historical uniform-selector boundary receipt; next selection is freshly calibrated from the new batch"
+  },
+  "config_sha256": "3f33951689e0feb8c3e5fa3f87d073ab92b3cf5b1cca3a5f8714f8fb956d54c3",
+  "observed_metrics_sha256": "d76e1f2f0bd9d839d38f9a8522b81122e882e0799c291671c4ce29b5ef87b9db",
+  "original_filter": "lineage exactly 0, 1, 2 or 3; pseudo rows and CF leaves excluded",
+  "caveat": "Training samples from different steps are different batches. This audit does not establish fixed-validation improvement or UCF advantage over GRPO.",
+  "rows": [
+    {
+      "step": 17,
+      "original_count": 256,
+      "original_successes": 57,
+      "original_success_pct": 22.265625,
+      "original_terminals": {
+        "turn_limit": 174,
+        "success": 57,
+        "token_limit": 25
+      },
+      "original_token_limit_pct": 9.765625,
+      "original_mean_trace_records": 8.59375,
+      "original_mean_executed_turns": 8.49609375,
+      "original_mean_response_tokens": 5316.77734375,
+      "original_group_counts": {
+        "all_failure": 38,
+        "mixed": 22,
+        "all_success": 4
+      },
+      "total_saved_records_including_pseudo_rows": 498,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.4541274261182253e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0017.jsonl.gz",
+        "bytes": 23350991,
+        "sha256": "6a6280910561ac0446a666b130d13b2aa226594052920d0124d14962e0e615d4"
+      },
+      "rollout_seconds": 997.3041037810035,
+      "step_seconds": 1443.356303788023,
+      "peak_allocated_gib": 64.94029235839844,
+      "mean_forks": 1.890625,
+      "rescue_rate": 0.07894736842105263,
+      "counterfactual_flip_rate": 0.1322314049586777,
+      "kl": 0.04730645884086471,
+      "grad_norm": 0.4076276421546936,
+      "max_parameter_change": 1.1157244443893433e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2173,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2158397440,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.1487603305785124
+    },
+    {
+      "step": 18,
+      "original_count": 256,
+      "original_successes": 52,
+      "original_success_pct": 20.3125,
+      "original_terminals": {
+        "turn_limit": 182,
+        "success": 52,
+        "token_limit": 22
+      },
+      "original_token_limit_pct": 8.59375,
+      "original_mean_trace_records": 8.51953125,
+      "original_mean_executed_turns": 8.43359375,
+      "original_mean_response_tokens": 5168.4765625,
+      "original_group_counts": {
+        "all_failure": 42,
+        "mixed": 18,
+        "all_success": 4
+      },
+      "total_saved_records_including_pseudo_rows": 534,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 2.646494129344458e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0018.jsonl.gz",
+        "bytes": 24813145,
+        "sha256": "7ba0b2434e8124bf4ff388eea91e2ae989ce46d892da1b04a051c77af710e10d"
+      },
+      "rollout_seconds": 918.2255599520286,
+      "step_seconds": 1380.16894889198,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 2.171875,
+      "rescue_rate": 0.047619047619047616,
+      "counterfactual_flip_rate": 0.07194244604316546,
+      "kl": 0.05728106422107293,
+      "grad_norm": 0.4146983325481415,
+      "max_parameter_change": 1.1208467185497284e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2159,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2144491520,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.18705035971223022
+    },
+    {
+      "step": 19,
+      "original_count": 256,
+      "original_successes": 31,
+      "original_success_pct": 12.109375,
+      "original_terminals": {
+        "turn_limit": 199,
+        "token_limit": 26,
+        "success": 31
+      },
+      "original_token_limit_pct": 10.15625,
+      "original_mean_trace_records": 9.22265625,
+      "original_mean_executed_turns": 9.12109375,
+      "original_mean_response_tokens": 5492.875,
+      "original_group_counts": {
+        "all_failure": 45,
+        "mixed": 18,
+        "all_success": 1
+      },
+      "total_saved_records_including_pseudo_rows": 510,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 4.155260117726014e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0019.jsonl.gz",
+        "bytes": 24058953,
+        "sha256": "1571432bbabfdd51f50924df5ff8543a55528f77837fa5b3e78f220874debfdc"
+      },
+      "rollout_seconds": 1081.8004552420462,
+      "step_seconds": 1534.694959631015,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 1.984375,
+      "rescue_rate": 0.022222222222222223,
+      "counterfactual_flip_rate": 0.047244094488188976,
+      "kl": 0.04173671879577512,
+      "grad_norm": 0.3965780884027481,
+      "max_parameter_change": 1.1436641216278076e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2334,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2318315520,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.18110236220472442
+    },
+    {
+      "step": 20,
+      "original_count": 256,
+      "original_successes": 55,
+      "original_success_pct": 21.484375,
+      "original_terminals": {
+        "success": 55,
+        "token_limit": 10,
+        "turn_limit": 191
+      },
+      "original_token_limit_pct": 3.90625,
+      "original_mean_trace_records": 8.58984375,
+      "original_mean_executed_turns": 8.55078125,
+      "original_mean_response_tokens": 4903.4453125,
+      "original_group_counts": {
+        "all_failure": 39,
+        "mixed": 20,
+        "all_success": 5
+      },
+      "total_saved_records_including_pseudo_rows": 512,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.6454162783989413e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0020.jsonl.gz",
+        "bytes": 22177419,
+        "sha256": "62dc9a0f118752d57614f9c39958ae1e75046aace3959aeb8a29ecca7a0d87da"
+      },
+      "rollout_seconds": 1056.9400428659865,
+      "step_seconds": 1472.786176089954,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 2.0,
+      "rescue_rate": 0.02564102564102564,
+      "counterfactual_flip_rate": 0.0859375,
+      "kl": 0.05858397964347262,
+      "grad_norm": 0.38911953568458557,
+      "max_parameter_change": 1.1194497346878052e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2186,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2171310080,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.1953125
+    }
+  ]
+}
