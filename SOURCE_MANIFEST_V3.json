@@ -1792,8 +1792,8 @@
     "sha256": "e48eb460926c913f76d509e810d23289539f23da0f835c1291d7b5b2043909ac"
   },
   "results/budget10240_paired25/README.md": {
-    "bytes": 3624,
-    "sha256": "3c48d9423ada125a8271883c404182f6e94d395a8fe1c574be04df4681989ed7"
+    "bytes": 5626,
+    "sha256": "45d4ff69068fa05b25c54dd2fc1eddada1c5733037b3c6bf847b8da8398f2ff8"
   },
   "results/budget10240_paired25/grpo/config.json": {
     "bytes": 1987,
@@ -1982,5 +1982,13 @@
   "results/budget10240_ucf25/ucf_logs/select_0025.jsonl.gz": {
     "bytes": 37113,
     "sha256": "d5e64ba06ba577736c7de4ebe33821f45c6c6f9d37eece99b32ab5ee2a16c3ac"
+  },
+  "diagnostics/audit_budget_forks.py": {
+    "bytes": 6058,
+    "sha256": "ebe13a3177855e9950a7fa544e5e012da565ba0c433c1d7afbcfa43484c4add1"
+  },
+  "results/budget10240_paired25/fork_effects_0025.json": {
+    "bytes": 6273,
+    "sha256": "5eaf126308af9f3399c375b84104ffcd44c493a01ed3f1a6b5ece22cc9a90cad"
   }
 }

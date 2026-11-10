@@ -1,0 +1,205 @@
+{
+  "through": 25,
+  "run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42",
+  "counts": {
+    "selected": 1158,
+    "feasible_pre_action": 603,
+    "all_originals_failed": 782,
+    "all_failed_and_infeasible": 461,
+    "with_cf": 1158,
+    "outcome_flip": 108,
+    "original_failure_cf_success": 48,
+    "zero_advantage_on_both_rows": 771,
+    "cf_token_partition_parser_disagreement": 233,
+    "both_execute": 1155,
+    "same_next_board": 220,
+    "different_next_board": 935,
+    "flip_despite_same_next_board": 30,
+    "at_least_one_action_not_executed": 3
+  },
+  "by_step": [
+    {
+      "step": 17,
+      "counts": {
+        "selected": 121,
+        "feasible_pre_action": 67,
+        "all_originals_failed": 81,
+        "all_failed_and_infeasible": 44,
+        "with_cf": 121,
+        "outcome_flip": 16,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 79,
+        "cf_token_partition_parser_disagreement": 18,
+        "both_execute": 121,
+        "same_next_board": 17,
+        "different_next_board": 104,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 18,
+      "counts": {
+        "selected": 139,
+        "feasible_pre_action": 70,
+        "all_originals_failed": 109,
+        "all_failed_and_infeasible": 62,
+        "with_cf": 139,
+        "outcome_flip": 10,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 108,
+        "cf_token_partition_parser_disagreement": 26,
+        "both_execute": 138,
+        "same_next_board": 27,
+        "different_next_board": 111,
+        "flip_despite_same_next_board": 3,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 19,
+      "counts": {
+        "selected": 127,
+        "feasible_pre_action": 52,
+        "all_originals_failed": 98,
+        "all_failed_and_infeasible": 68,
+        "with_cf": 127,
+        "outcome_flip": 6,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 97,
+        "cf_token_partition_parser_disagreement": 23,
+        "both_execute": 126,
+        "same_next_board": 21,
+        "different_next_board": 105,
+        "flip_despite_same_next_board": 0,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 20,
+      "counts": {
+        "selected": 128,
+        "feasible_pre_action": 66,
+        "all_originals_failed": 87,
+        "all_failed_and_infeasible": 47,
+        "with_cf": 128,
+        "outcome_flip": 11,
+        "original_failure_cf_success": 4,
+        "zero_advantage_on_both_rows": 85,
+        "cf_token_partition_parser_disagreement": 25,
+        "both_execute": 128,
+        "same_next_board": 23,
+        "different_next_board": 105,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 21,
+      "counts": {
+        "selected": 125,
+        "feasible_pre_action": 53,
+        "all_originals_failed": 95,
+        "all_failed_and_infeasible": 64,
+        "with_cf": 125,
+        "outcome_flip": 5,
+        "original_failure_cf_success": 2,
+        "zero_advantage_on_both_rows": 96,
+        "cf_token_partition_parser_disagreement": 23,
+        "both_execute": 125,
+        "same_next_board": 22,
+        "different_next_board": 103,
+        "flip_despite_same_next_board": 0
+      }
+    },
+    {
+      "step": 22,
+      "counts": {
+        "selected": 124,
+        "feasible_pre_action": 71,
+        "all_originals_failed": 74,
+        "all_failed_and_infeasible": 42,
+        "with_cf": 124,
+        "outcome_flip": 14,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 73,
+        "cf_token_partition_parser_disagreement": 25,
+        "both_execute": 124,
+        "same_next_board": 19,
+        "different_next_board": 105,
+        "flip_despite_same_next_board": 7
+      }
+    },
+    {
+      "step": 23,
+      "counts": {
+        "selected": 121,
+        "feasible_pre_action": 73,
+        "all_originals_failed": 59,
+        "all_failed_and_infeasible": 34,
+        "with_cf": 121,
+        "outcome_flip": 20,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 56,
+        "cf_token_partition_parser_disagreement": 26,
+        "both_execute": 120,
+        "same_next_board": 25,
+        "different_next_board": 95,
+        "flip_despite_same_next_board": 4,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 24,
+      "counts": {
+        "selected": 118,
+        "feasible_pre_action": 69,
+        "all_originals_failed": 85,
+        "all_failed_and_infeasible": 46,
+        "with_cf": 118,
+        "outcome_flip": 11,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 84,
+        "cf_token_partition_parser_disagreement": 27,
+        "both_execute": 118,
+        "same_next_board": 28,
+        "different_next_board": 90,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 25,
+      "counts": {
+        "selected": 155,
+        "feasible_pre_action": 82,
+        "all_originals_failed": 94,
+        "all_failed_and_infeasible": 54,
+        "with_cf": 155,
+        "outcome_flip": 15,
+        "original_failure_cf_success": 8,
+        "zero_advantage_on_both_rows": 93,
+        "cf_token_partition_parser_disagreement": 40,
+        "both_execute": 155,
+        "same_next_board": 38,
+        "different_next_board": 117,
+        "flip_despite_same_next_board": 4
+      }
+    }
+  ],
+  "pi_cf": {
+    "all": {
+      "n": 1158,
+      "mean": 0.015034529432773211,
+      "median": 0.00032922943811984314
+    },
+    "original_failure_cf_success": {
+      "n": 48,
+      "mean": 0.010339850915380831,
+      "median": 0.0004927796525849617
+    }
+  },
+  "scope": "Actual sampled forks, not all candidate nodes. A change in the first environment transition and an eventual reward flip are distinct. Stochastic tails can differ even after identical next boards. No final test or model weights were used.",
+  "sha256": {
+    "audit_budget_forks.py": "ebe13a3177855e9950a7fa544e5e012da565ba0c433c1d7afbcfa43484c4add1",
+    "sokoban_exact.py": "ff13b3d523bed182821a424df30187c1ea06d631fc3625db3e74419e777108ce",
+    "config.json": "3f33951689e0feb8c3e5fa3f87d073ab92b3cf5b1cca3a5f8714f8fb956d54c3"
+  }
+}
