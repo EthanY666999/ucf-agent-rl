@@ -1,0 +1,18 @@
+{
+  "status": "planned_only_after_final_evaluation_verification",
+  "path": "/data/runs/hard_queue/S07_starpo_s_seed42/checkpoint.pt",
+  "bytes": 22582327657,
+  "sha256": "6271b3253c4485b6b7773495f9be1f1eb4a2b1d1943fa5ff19c5209994954f9b",
+  "step": 400,
+  "unix": 1794295368.139958,
+  "deletion_owner": "existing_S07_completion_verifier",
+  "observer_does_not_delete": true,
+  "retained": [
+    "final_model",
+    "all_rollouts",
+    "logs",
+    "evaluations",
+    "config",
+    "source"
+  ]
+}
