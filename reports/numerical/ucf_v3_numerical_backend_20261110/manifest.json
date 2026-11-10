@@ -1,0 +1,46 @@
+{
+  "parent_pid": 351265,
+  "paused_baseline_step": 11,
+  "jobs": [
+    [
+      "probe_replay",
+      [
+        "/home/vipuser/decision-point-ucf-v3-20261110/storage/probe_replay.py",
+        "--config",
+        "/home/vipuser/decision-point-ucf-v3-20261110/v3_configs/V3_S_ucf_nosft_seed42.json",
+        "--cases",
+        "/home/vipuser/decision-point-ucf-v3-20261110/storage/probe_cases.json",
+        "--output",
+        "/data/runs/ucf_v3_numerical_backend_20261110/probe_replay"
+      ]
+    ],
+    [
+      "batch_invariant_S",
+      [
+        "/home/vipuser/decision-point-ucf-v3-20261110/storage/numerical_contract.py",
+        "--batch-invariant",
+        "--config",
+        "/home/vipuser/decision-point-ucf-v3-20261110/v3_configs/V3_S_ucf_nosft_seed42.json",
+        "--output",
+        "/data/runs/ucf_v3_numerical_backend_20261110/batch_invariant_S"
+      ]
+    ],
+    [
+      "batch_invariant_F",
+      [
+        "/home/vipuser/decision-point-ucf-v3-20261110/storage/numerical_contract.py",
+        "--batch-invariant",
+        "--config",
+        "/home/vipuser/decision-point-ucf-v3-20261110/v3_configs/V3_F_ucf_nosft_seed42.json",
+        "--output",
+        "/data/runs/ucf_v3_numerical_backend_20261110/batch_invariant_F"
+      ]
+    ]
+  ],
+  "files_sha256": {
+    "/home/vipuser/decision-point-ucf-v3-20261110/storage/probe_replay.py": "da0a3fe78cabff78db16a7dad9bf7fd88067cabbcd16769f106b602c97413d8f",
+    "/home/vipuser/decision-point-ucf-v3-20261110/storage/numerical_contract.py": "531efa339c27af487a182a0373a65b569ee914c2c38c89869e5040f0d4416ab0",
+    "/home/vipuser/decision-point-ucf-v3-20261110/storage/probe_cases.json": "48a86c80e7304e06a7ce3149affe07b33acf2089300acffede74739f4bac1169"
+  },
+  "final_test_used": false
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "scope": "CPU source/config admission; new GPU acceptance required",
+  "plan_sha256": "b29b14332419a5b6a3c4701573747afe02436857292655dfb679673a8a680e5a",
+  "created_unix": 1794302491.0558012
+}

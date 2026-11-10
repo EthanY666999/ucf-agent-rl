@@ -1,0 +1,7 @@
+{
+  "status": "paused_checkpointed",
+  "step": 11,
+  "total_steps": 400,
+  "method": "grpo",
+  "final_evaluation_pending": false
+}

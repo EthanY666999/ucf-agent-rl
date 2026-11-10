@@ -1,0 +1,15 @@
+{
+  "unix": 1794301549.8230524,
+  "batch_invariant": true,
+  "script_sha256": "531efa339c27af487a182a0373a65b569ee914c2c38c89869e5040f0d4416ab0",
+  "cache_config": {
+    "cache_dtype": "auto",
+    "mamba_cache_dtype": "auto",
+    "mamba_ssm_cache_dtype": "float32",
+    "mamba_cache_mode": "align",
+    "enable_prefix_caching": "True",
+    "gpu_memory_utilization": "0.3"
+  },
+  "vllm_config_model_dtype": "torch.bfloat16",
+  "source": "isolated diagnostic; active runtime unmodified"
+}

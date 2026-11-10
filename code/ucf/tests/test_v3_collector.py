@@ -56,3 +56,23 @@ def test_selected_counterfactual_preserves_ids_and_unrestricted_lp(monkeypatch):
  assert rows[1].mask[:4]==[0]*4 and all(rows[1].mask[4:])
  assert len(calls)==2 and calls[0][1].logprobs==-1
  assert 'allowed_token_ids' not in vars(calls[0][1])
+
+
+def test_probe_batches_preserve_request_identity_and_charge_all_work(monkeypatch):
+ nodes={0:[dict(j=i,turn=1,branch=NS(ids=[1,i])) for i in range(19)]}
+ calls=[]
+ monkeypatch.setitem(sys.modules,'vllm',NS(SamplingParams=lambda **kw:NS(**kw)))
+ def requests(engine,jobs):
+  calls.append(jobs)
+  # Deliberately return reverse completion order.
+  return {k:NS(outputs=[NS(identity=k)]) for k,ids,p in reversed(jobs)},dict(input_tokens=2*len(jobs),generated_tokens=len(jobs),request_seconds=1.,seconds=1.)
+ cost=dict(input_tokens=0,generated_tokens=0,request_seconds=0.,seconds=0.)
+ with patch.object(v3,'requests',side_effect=requests):
+  rows=list(v3.selected_probes(nodes,None,42,7,cost))
+ assert [len(c) for c in calls]==[8,8,3]
+ assert [p.identity for _,_,p in rows]==[(0,i,1) for i in range(19)]
+ assert cost==dict(input_tokens=38,generated_tokens=19,request_seconds=3.,seconds=3.)
+ for call in calls:
+  for key,ids,p in call:
+   assert p.seed==v3.stable_seed(42,*key,7,'v3-probe')
+   assert p.logprobs==-1 and p.temperature==1. and p.top_p==1. and p.top_k==-1

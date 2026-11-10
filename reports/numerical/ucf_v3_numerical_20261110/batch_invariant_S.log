@@ -1,0 +1,70 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:01<07:57,  1.50s/it]Loading weights:  69%|██████▉   | 220/320 [00:01<00:00, 187.60it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 154.43it/s]
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 3807.53it/s]
+INFO 11-10 16:52:52 [utils.py:233] non-default args: {'tokenizer': '/data/models/Qwen3.5-2B', 'dtype': 'bfloat16', 'seed': 42, 'max_model_len': 32768, 'distributed_executor_backend': 'uni', 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.3, 'max_num_batched_tokens': 4096, 'max_num_seqs': 256, 'max_logprobs': -1, 'disable_log_stats': True, 'limit_mm_per_prompt': {'image': 0, 'video': 0}, 'enable_chunked_prefill': True, 'model': '/data/models/Qwen3.5-2B'}
+WARNING 11-10 16:52:52 [arg_utils.py:1390] The global random seed is set to 42. Since VLLM_ENABLE_V1_MULTIPROCESSING is set to False, this may affect the random state of the Python process that launched vLLM.
+INFO 11-10 16:52:52 [model.py:549] Resolved architecture: Qwen3_5ForConditionalGeneration
+INFO 11-10 16:52:52 [model.py:1678] Using max model len 32768
+INFO 11-10 16:52:52 [scheduler.py:238] Chunked prefill is enabled with max_num_batched_tokens=4096.
+WARNING 11-10 16:52:52 [config.py:441] Mamba cache mode is set to 'align' for Qwen3_5ForConditionalGeneration by default when prefix caching is enabled
+INFO 11-10 16:52:52 [config.py:461] Warning: Prefix caching in Mamba cache 'align' mode is currently enabled. Its support for Mamba layers is experimental. Please report any issues you may observe.
+[transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+INFO 11-10 16:52:53 [config.py:281] Setting attention block size to 544 tokens to ensure that attention page size is >= mamba page size.
+INFO 11-10 16:52:53 [config.py:312] Padding mamba page size by 2.64% to ensure that mamba page size and attention page size are exactly equal.
+INFO 11-10 16:52:53 [vllm.py:790] Asynchronous scheduling is enabled.
+INFO 11-10 16:52:54 [registry.py:126] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 11-10 16:52:56 [core.py:105] Initializing a V1 LLM engine (v0.19.1) with config: model='/data/models/Qwen3.5-2B', speculative_config=None, tokenizer='/data/models/Qwen3.5-2B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=True, quantization=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=42, served_model_name=/data/models/Qwen3.5-2B, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'splitting_ops': ['vllm::unified_attention', 'vllm::unified_attention_with_output', 'vllm::unified_mla_attention', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::gdn_attention_core', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_images_per_batch': 0, 'compile_sizes': [], 'compile_ranges_endpoints': [4096], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+Traceback (most recent call last):
+  File "/home/vipuser/decision-point-ucf-v3-20261110/storage/numerical_contract.py", line 18, in <module>
+    v3_gpu_acceptance.main()
+  File "/home/vipuser/decision-point-ucf-v3-20261110/code/scripts/v3_gpu_acceptance.py", line 38, in main
+    actor,ref,engine,tok=train.build_models(cfg,42)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vipuser/decision-point-ucf-v3-20261110/storage/numerical_contract.py", line 13, in build
+    result=original(cfg,seed);engine=result[2];ec=engine.llm_engine.vllm_config
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/vipuser/decision-point-ucf-v3-20261110/code/train.py", line 73, in build_models
+    engine=build_engine(actor,model_path,LLM,sync_weights,dtype='bfloat16',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vipuser/decision-point-ucf-v3-20261110/code/scripts/q35_engine_loader.py", line 21, in build_engine
+    engine=factory(model=str(source),tokenizer=str(model_path),**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 382, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/engine/llm_engine.py", line 177, in from_engine_args
+    return cls(
+           ^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/engine/llm_engine.py", line 111, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 103, in make_client
+    return InprocClient(vllm_config, executor_class, log_stats)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 285, in __init__
+    self.engine_core = EngineCore(*args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 114, in __init__
+    self.model_executor = executor_class(vllm_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 103, in __init__
+    self._init_executor()
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/executor/uniproc_executor.py", line 47, in _init_executor
+    self.driver_worker.init_device()
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/worker/worker_base.py", line 312, in init_device
+    self.worker.init_device()  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 263, in init_device
+    init_worker_distributed_environment(
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 1024, in init_worker_distributed_environment
+    init_batch_invariance(attention_config.backend)
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/model_executor/layers/batch_invariant.py", line 1049, in init_batch_invariance
+    override_envs_for_invariance(attention_backend)
+  File "/data/venvs/qwen35/lib/python3.12/site-packages/vllm/model_executor/layers/batch_invariant.py", line 1017, in override_envs_for_invariance
+    raise RuntimeError(error)
+RuntimeError: VLLM batch_invariant mode requires an attention backend in ['FLASH_ATTN', 'TRITON_ATTN', 'FLASH_ATTN_MLA', 'TRITON_MLA'], but got 'None'. Please use --attention-backend or attention_config to set one of the supported backends before enabling batch_invariant.

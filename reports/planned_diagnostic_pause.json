@@ -1,0 +1,17 @@
+{
+  "reason": "Checkpointed temporary pause to diagnose UCF GPU probability consistency; not a failed-learning decision",
+  "requested_unix": 1794300339.890237,
+  "pid": 349123,
+  "start_ticks": "31115060",
+  "observed_status": {
+    "status": "training",
+    "method": "grpo",
+    "step": 10,
+    "current_step": 11,
+    "total_steps": 400,
+    "pid": 349123
+  },
+  "signal": "SIGTERM handled by train.request_stop",
+  "resume_required": true,
+  "source_or_config_changed": false
+}

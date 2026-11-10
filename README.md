@@ -4,7 +4,7 @@ Development branch, 2026-11-10. This branch does not replace the collaborator re
 
 ## Current status
 
-CPU sampling/adapter/controller tests: 21 passed. Existing token/protocol/environment/recovery regression suite: 63 passed on the production interpreter with CUDA disabled. GPU acceptance and learning results are pending. Do not describe this as a successful UCF result yet.
+The original CPU suite passed63 checks; after bounded probe batching,66 relevant sampling/protocol/environment/recovery checks pass on the production interpreter with CUDA disabled. FrozenLake's initial train-only GPU contract passed. Sokoban's initial contract failed numerical consistency; the bounded-batch contract also failed. No UCF learning improvement is established yet.
 
 ## Scope and hypothesis
 
@@ -36,6 +36,8 @@ Only small code/configuration/results are published here. Remote weights/checkpo
 
 S07 completed before this branch took over the GPU. The independently checked raw-record results are in `results/S07_starpo_s_seed42` and `reports/S07_independent_completion_audit.json`. S07 is a historical SFT StarPO-S run, not V3 evidence.
 
-FrozenLake's train-only V3 GPU contract passed (one update). Sokoban's first contract failed the preset prefill/decode logprob consistency mean threshold; it is not admitted to UCF training. The first paired-protocol GRPO4 diagnostic is running while this numerical issue is investigated. Neither smoke nor the GRPO run is evidence of UCF improvement. Both failed and passed receipts are retained under `reports/gpu_acceptance`.
+FrozenLake's train-only V3 GPU contract passed (one update). Sokoban's first contract failed the preset prefill/decode logprob consistency mean threshold. The paired-protocol GRPO4 diagnostic reachedstep11 and was deliberately paused with a complete optimizer/RNG checkpoint for numerical diagnosis. It is scheduled to resume unchanged. Neither smoke nor the GRPO run is evidence of UCF improvement. Both failed and passed receipts are retained under `reports/gpu_acceptance`.
+
+`reports/numerical` retains45-prefix replay and two failed batch-invariant backend attempts. The latter mode is not enabled: it reduced numerical differences but broke actor backward. `reports/v3_plan_batched.json` is the current plan. It records a bounded8-prefix probe execution change and requires newGPU acceptance beforeUCF. The newS contract also failed (mean absolute logprob difference0.032457);F passed again. GRPO resumes fromstep11; noS UCF training is admitted. The previous plan and failures remain available for audit. See `WORKLOG.md` for exact interruptions, model provenance and boundaries.
 
 Frozen Sokoban tasks/maps are provided as lossless `.json.gz` files in `data/sokoban`. Unpack them on the experiment server; if paths differ, update only file locations in the configuration and verify the original content SHA256. `reports/evidence_export_manifest.json` records both original and compressed hashes. No weights or checkpoint are included.

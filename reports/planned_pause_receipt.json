@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "step": 11,
+  "unix": 1794300681.1275294,
+  "all_rng_and_optimizer_states_present": true,
+  "checkpoint_bytes": 22582327721,
+  "planned_pause": true,
+  "computation_failure": false,
+  "staged_25_verification_expected_to_be_incomplete": true
+}

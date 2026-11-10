@@ -79,6 +79,32 @@ def select(candidates, first, tasks, seed, step, target):
     return picked, records, budget
 
 
+def selected_probes(picked, engine, seed, step, pcost):
+    """Bound full-vocabulary output memory while avoiding one-row GEMV probes.
+
+    Eight is an execution batch size, not a selection or probability parameter.
+    Selection and every request seed are fixed before any probe is evaluated.
+    """
+    from vllm import SamplingParams
+    nodes = [(ti, n) for ti, ns in picked.items() for n in ns]
+    for start in range(0, len(nodes), 8):
+        chunk = nodes[start:start+8]
+        jobs = []
+        for ti, n in chunk:
+            key = (ti, n['j'], n['turn'])
+            params = SamplingParams(temperature=1., top_p=1., top_k=-1,
+                max_tokens=1, logprobs=-1, flat_logprobs=True,
+                seed=stable_seed(seed, *key, step, 'v3-probe'))
+            jobs.append((key, list(n['branch'].ids), params))
+        outputs, cost = requests(engine, jobs)
+        for k in pcost:
+            pcost[k] += cost[k]
+        for ti, n in chunk:
+            key = (ti, n['j'], n['turn'])
+            yield ti, n, outputs.pop(key).outputs[0]
+        assert not outputs
+
+
 def counterfactual(core, picked, first, tasks, engine, tokenizer, cfg, seed, step):
     from vllm import SamplingParams
     originals = {(b.task_id, int(b.lineage)):b for b in first}
@@ -86,47 +112,39 @@ def counterfactual(core, picked, first, tasks, engine, tokenizer, cfg, seed, ste
     vocab_size = engine.llm_engine.model_config.get_vocab_size()
     children, nodes, audit, jobs = {}, {}, [], []
     pcost = dict(input_tokens=0, generated_tokens=0, request_seconds=0., seconds=0.)
-    # One bounded vocabulary vector at a time; do not accumulate vocab-sized
-    # dicts or save them to disk. A probe generates one discarded token, charged.
-    for ti, ns in picked.items():
-        for n in ns:
-            key = (ti, n['j'], n['turn'])
-            nodes[key] = n
-            parent = n['branch']
-            params = SamplingParams(temperature=1., top_p=1., top_k=-1,
-                                    max_tokens=1, logprobs=-1, flat_logprobs=True,
-                                    seed=stable_seed(seed, *key, step, 'v3-probe'))
-            outputs, cost = requests(engine, [(key, list(parent.ids), params)])
-            for k in pcost:
-                pcost[k] += cost[k]
-            lp, log_z = full_vector_from_output(outputs[key].outputs[0], vocab_size)
-            original_token = originals[(ti,n['j'])].ids[n['boundary']]
-            classes = consequence_classes(parent.env)
-            x, s = complement_sample(lp, original_token, mapping, classes,
-                                     stable_seed(seed, tasks[ti]['uid'], *key, step, 'v3-cf'))
-            n['stratum'] = s
-            observed = originals[(ti,n['j'])].old_logprobs[n['boundary']]
-            n['probe_original_logprob_difference'] = float(lp[original_token]-observed)
-            n['full_vocabulary_log_normalizer'] = log_z
-            # Partition labels only; residual token is not called actual STAY.
-            n['original_parse_mismatch'] = mapping.get(original_token,0) != int(originals[(ti,n['j'])].trace[n['turn']-1].get('action') or 0)
-            audit.append(dict(key=key, **s, log_normalizer=log_z,
-                              original_logprob_difference=n['probe_original_logprob_difference']))
-            del outputs, lp
-            if x is None:
-                continue
-            b = replay(core, n, tasks[ti], cfg)
-            b.lineage = f"{n['j']}@{n['turn']}.cf"
-            children[key] = b
-            n['forced_token'] = x
-            n['forced_raw_lp'] = s['forced_old_logprob_unrestricted']
-            ids = b.ids+[x]
-            rem = min(cfg['max_response_tokens']-b.ntokens-1, cfg['max_context_tokens']-len(ids))
-            assert rem >= 0
-            if rem and x != tokenizer.eos_token_id:
-                jobs.append((key, ids, SamplingParams(temperature=1., top_p=1., top_k=-1,
-                    max_tokens=rem, logprobs=1, seed=stable_seed(seed,tasks[ti]['uid'],b.lineage,b.turns),
-                    stop_token_ids=[tokenizer.eos_token_id])))
+    # At most eight full vectors are live; none are retained in evidence files.
+    for ti, n, probe in selected_probes(picked, engine, seed, step, pcost):
+        key = (ti, n['j'], n['turn'])
+        nodes[key] = n
+        parent = n['branch']
+        lp, log_z = full_vector_from_output(probe, vocab_size)
+        original_token = originals[(ti,n['j'])].ids[n['boundary']]
+        classes = consequence_classes(parent.env)
+        x, s = complement_sample(lp, original_token, mapping, classes,
+                                 stable_seed(seed, tasks[ti]['uid'], *key, step, 'v3-cf'))
+        n['stratum'] = s
+        observed = originals[(ti,n['j'])].old_logprobs[n['boundary']]
+        n['probe_original_logprob_difference'] = float(lp[original_token]-observed)
+        n['full_vocabulary_log_normalizer'] = log_z
+        # Partition labels only; residual token is not called actual STAY.
+        n['original_parse_mismatch'] = mapping.get(original_token,0) != int(originals[(ti,n['j'])].trace[n['turn']-1].get('action') or 0)
+        audit.append(dict(key=key, **s, log_normalizer=log_z,
+                          original_logprob_difference=n['probe_original_logprob_difference']))
+        del probe, lp
+        if x is None:
+            continue
+        b = replay(core, n, tasks[ti], cfg)
+        b.lineage = f"{n['j']}@{n['turn']}.cf"
+        children[key] = b
+        n['forced_token'] = x
+        n['forced_raw_lp'] = s['forced_old_logprob_unrestricted']
+        ids = b.ids+[x]
+        rem = min(cfg['max_response_tokens']-b.ntokens-1, cfg['max_context_tokens']-len(ids))
+        assert rem >= 0
+        if rem and x != tokenizer.eos_token_id:
+            jobs.append((key, ids, SamplingParams(temperature=1., top_p=1., top_k=-1,
+                max_tokens=rem, logprobs=1, seed=stable_seed(seed,tasks[ti]['uid'],b.lineage,b.turns),
+                stop_token_ids=[tokenizer.eos_token_id])))
     tails, tcost = requests(engine, jobs)
     active, done = [], {}
     for key,b in children.items():
