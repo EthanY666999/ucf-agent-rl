@@ -1,0 +1,73 @@
+{
+  "unix": 1794336221.031812,
+  "budget": 10240,
+  "meaning": "Configured response budget counts retained trajectory tokens; actual engine work also includes generated suffixes discarded after the first complete action block. Both are charged in generated_tokens.",
+  "rows": [
+    {
+      "step": 17,
+      "n": 256,
+      "max_retained": 10240,
+      "max_generated_including_discarded": 11957,
+      "over10240_including_discarded": 28,
+      "mean_discarded": 94.921875,
+      "mean_retained": 5316.77734375,
+      "sum_retained": 1361095,
+      "sum_discarded": 24300
+    },
+    {
+      "step": 18,
+      "n": 256,
+      "max_retained": 10240,
+      "max_generated_including_discarded": 12308,
+      "over10240_including_discarded": 22,
+      "mean_discarded": 49.234375,
+      "mean_retained": 5168.4765625,
+      "sum_retained": 1323130,
+      "sum_discarded": 12604
+    },
+    {
+      "step": 19,
+      "n": 256,
+      "max_retained": 10240,
+      "max_generated_including_discarded": 10515,
+      "over10240_including_discarded": 26,
+      "mean_discarded": 87.15234375,
+      "mean_retained": 5492.875,
+      "sum_retained": 1406176,
+      "sum_discarded": 22311
+    },
+    {
+      "step": 20,
+      "n": 256,
+      "max_retained": 10240,
+      "max_generated_including_discarded": 12808,
+      "over10240_including_discarded": 12,
+      "mean_discarded": 73.12109375,
+      "mean_retained": 4903.4453125,
+      "sum_retained": 1255282,
+      "sum_discarded": 18719
+    },
+    {
+      "step": 21,
+      "n": 256,
+      "max_retained": 10240,
+      "max_generated_including_discarded": 12124,
+      "over10240_including_discarded": 23,
+      "mean_discarded": 135.7109375,
+      "mean_retained": 5159.45703125,
+      "sum_retained": 1320821,
+      "sum_discarded": 34742
+    },
+    {
+      "step": 22,
+      "n": 256,
+      "max_retained": 10240,
+      "max_generated_including_discarded": 14185,
+      "over10240_including_discarded": 18,
+      "mean_discarded": 161.140625,
+      "mean_retained": 4958.390625,
+      "sum_retained": 1269348,
+      "sum_discarded": 41252
+    }
+  ]
+}

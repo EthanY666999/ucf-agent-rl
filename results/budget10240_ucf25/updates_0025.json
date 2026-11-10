@@ -1,0 +1,490 @@
+{
+  "unix": 1794340796.1962023,
+  "run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42",
+  "through_step": 25,
+  "initialization": {
+    "kind": "shared_rl_warmstart_budget_exploration",
+    "initial_step": 16,
+    "source_run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+    "source_checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+    "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73",
+    "reference_model": "/data/models/Qwen3.5-2B",
+    "task_sft": false,
+    "prior_training_method": "ucf",
+    "prior_training_steps": 16,
+    "prior_max_response_tokens": 4096,
+    "continuation_max_response_tokens": 10240,
+    "method": "ucf",
+    "not_a_fresh_raw_start_comparison": true,
+    "unix": 1794325948.304225,
+    "imported_controller_sha256": "25fe6381dcd17d7addfb44d39ec7118da5ca985906faaec2827fe78348c61e8c",
+    "controller_note": "Historical uniform-selector boundary receipt; next selection is freshly calibrated from the new batch"
+  },
+  "config_sha256": "3f33951689e0feb8c3e5fa3f87d073ab92b3cf5b1cca3a5f8714f8fb956d54c3",
+  "audit_script_sha256": "184e34c5d655b14053fcc5ef7695a686c39712e67a7ed9880180ea48e05c3771",
+  "observed_metrics_sha256": "3dc7e26890c46d69b821db6e11dedfc5b2719505e02ada8e726ff1fc19523d0a",
+  "original_filter": "lineage exactly 0, 1, 2 or 3; pseudo rows and CF leaves excluded",
+  "budget_meaning": "The configured cap is cumulative retained response tokens per trajectory, excluding prompts/observations. Engine-generated suffixes discarded after the first complete action block are separate computational overhead, included in generated_tokens; they are not executed or trained.",
+  "caveat": "Training samples from different steps are different batches. This audit does not establish fixed-validation improvement or UCF advantage over GRPO.",
+  "rows": [
+    {
+      "step": 17,
+      "original_count": 256,
+      "original_successes": 57,
+      "original_success_pct": 22.265625,
+      "original_terminals": {
+        "turn_limit": 174,
+        "success": 57,
+        "token_limit": 25
+      },
+      "original_token_limit_pct": 9.765625,
+      "original_mean_trace_records": 8.59375,
+      "original_mean_executed_turns": 8.49609375,
+      "original_mean_response_tokens": 5316.77734375,
+      "original_discarded_suffix_tokens": 24300,
+      "original_max_generated_including_discarded": 11957,
+      "original_over_budget_including_discarded": 28,
+      "original_group_counts": {
+        "all_failure": 38,
+        "mixed": 22,
+        "all_success": 4
+      },
+      "total_saved_records_including_pseudo_rows": 498,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.4541274261182253e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0017.jsonl.gz",
+        "bytes": 23350991,
+        "sha256": "6a6280910561ac0446a666b130d13b2aa226594052920d0124d14962e0e615d4"
+      },
+      "rollout_seconds": 997.3041037810035,
+      "step_seconds": 1443.356303788023,
+      "peak_allocated_gib": 64.94029235839844,
+      "mean_forks": 1.890625,
+      "rescue_rate": 0.07894736842105263,
+      "counterfactual_flip_rate": 0.1322314049586777,
+      "kl": 0.04730645884086471,
+      "grad_norm": 0.4076276421546936,
+      "max_parameter_change": 1.1157244443893433e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2173,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2158397440,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.1487603305785124
+    },
+    {
+      "step": 18,
+      "original_count": 256,
+      "original_successes": 52,
+      "original_success_pct": 20.3125,
+      "original_terminals": {
+        "turn_limit": 182,
+        "success": 52,
+        "token_limit": 22
+      },
+      "original_token_limit_pct": 8.59375,
+      "original_mean_trace_records": 8.51953125,
+      "original_mean_executed_turns": 8.43359375,
+      "original_mean_response_tokens": 5168.4765625,
+      "original_discarded_suffix_tokens": 12604,
+      "original_max_generated_including_discarded": 12308,
+      "original_over_budget_including_discarded": 22,
+      "original_group_counts": {
+        "all_failure": 42,
+        "mixed": 18,
+        "all_success": 4
+      },
+      "total_saved_records_including_pseudo_rows": 534,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 2.646494129344458e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0018.jsonl.gz",
+        "bytes": 24813145,
+        "sha256": "7ba0b2434e8124bf4ff388eea91e2ae989ce46d892da1b04a051c77af710e10d"
+      },
+      "rollout_seconds": 918.2255599520286,
+      "step_seconds": 1380.16894889198,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 2.171875,
+      "rescue_rate": 0.047619047619047616,
+      "counterfactual_flip_rate": 0.07194244604316546,
+      "kl": 0.05728106422107293,
+      "grad_norm": 0.4146983325481415,
+      "max_parameter_change": 1.1208467185497284e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2159,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2144491520,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.18705035971223022
+    },
+    {
+      "step": 19,
+      "original_count": 256,
+      "original_successes": 31,
+      "original_success_pct": 12.109375,
+      "original_terminals": {
+        "turn_limit": 199,
+        "token_limit": 26,
+        "success": 31
+      },
+      "original_token_limit_pct": 10.15625,
+      "original_mean_trace_records": 9.22265625,
+      "original_mean_executed_turns": 9.12109375,
+      "original_mean_response_tokens": 5492.875,
+      "original_discarded_suffix_tokens": 22311,
+      "original_max_generated_including_discarded": 10515,
+      "original_over_budget_including_discarded": 26,
+      "original_group_counts": {
+        "all_failure": 45,
+        "mixed": 18,
+        "all_success": 1
+      },
+      "total_saved_records_including_pseudo_rows": 510,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 4.155260117726014e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0019.jsonl.gz",
+        "bytes": 24058953,
+        "sha256": "1571432bbabfdd51f50924df5ff8543a55528f77837fa5b3e78f220874debfdc"
+      },
+      "rollout_seconds": 1081.8004552420462,
+      "step_seconds": 1534.694959631015,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 1.984375,
+      "rescue_rate": 0.022222222222222223,
+      "counterfactual_flip_rate": 0.047244094488188976,
+      "kl": 0.04173671879577512,
+      "grad_norm": 0.3965780884027481,
+      "max_parameter_change": 1.1436641216278076e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2334,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2318315520,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.18110236220472442
+    },
+    {
+      "step": 20,
+      "original_count": 256,
+      "original_successes": 55,
+      "original_success_pct": 21.484375,
+      "original_terminals": {
+        "success": 55,
+        "token_limit": 10,
+        "turn_limit": 191
+      },
+      "original_token_limit_pct": 3.90625,
+      "original_mean_trace_records": 8.58984375,
+      "original_mean_executed_turns": 8.55078125,
+      "original_mean_response_tokens": 4903.4453125,
+      "original_discarded_suffix_tokens": 18719,
+      "original_max_generated_including_discarded": 12808,
+      "original_over_budget_including_discarded": 12,
+      "original_group_counts": {
+        "all_failure": 39,
+        "mixed": 20,
+        "all_success": 5
+      },
+      "total_saved_records_including_pseudo_rows": 512,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.6454162783989413e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0020.jsonl.gz",
+        "bytes": 22177419,
+        "sha256": "62dc9a0f118752d57614f9c39958ae1e75046aace3959aeb8a29ecca7a0d87da"
+      },
+      "rollout_seconds": 1056.9400428659865,
+      "step_seconds": 1472.786176089954,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 2.0,
+      "rescue_rate": 0.02564102564102564,
+      "counterfactual_flip_rate": 0.0859375,
+      "kl": 0.05858397964347262,
+      "grad_norm": 0.38911953568458557,
+      "max_parameter_change": 1.1194497346878052e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2186,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2171310080,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.1953125
+    },
+    {
+      "step": 21,
+      "original_count": 256,
+      "original_successes": 58,
+      "original_success_pct": 22.65625,
+      "original_terminals": {
+        "success": 58,
+        "turn_limit": 178,
+        "token_limit": 20
+      },
+      "original_token_limit_pct": 7.8125,
+      "original_mean_trace_records": 8.4765625,
+      "original_mean_executed_turns": 8.3984375,
+      "original_mean_response_tokens": 5159.45703125,
+      "original_discarded_suffix_tokens": 34742,
+      "original_max_generated_including_discarded": 12124,
+      "original_over_budget_including_discarded": 23,
+      "original_group_counts": {
+        "all_failure": 38,
+        "mixed": 20,
+        "all_success": 6
+      },
+      "total_saved_records_including_pseudo_rows": 506,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.7730186632821752e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0021.jsonl.gz",
+        "bytes": 24459982,
+        "sha256": "11d1c4b4cac551fccb521ee867d20687aa4f76c08604ac8f076536c5a347de0a"
+      },
+      "rollout_seconds": 828.1958034320269,
+      "step_seconds": 1281.2056974670268,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 1.953125,
+      "rescue_rate": 0.0,
+      "counterfactual_flip_rate": 0.04,
+      "kl": 0.06419358108314502,
+      "grad_norm": 0.46720512211322784,
+      "max_parameter_change": 1.1599622666835785e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2143,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2128599040,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.184
+    },
+    {
+      "step": 22,
+      "original_count": 256,
+      "original_successes": 54,
+      "original_success_pct": 21.09375,
+      "original_terminals": {
+        "success": 54,
+        "turn_limit": 186,
+        "token_limit": 16
+      },
+      "original_token_limit_pct": 6.25,
+      "original_mean_trace_records": 8.6953125,
+      "original_mean_executed_turns": 8.6328125,
+      "original_mean_response_tokens": 4958.390625,
+      "original_discarded_suffix_tokens": 41252,
+      "original_max_generated_including_discarded": 14185,
+      "original_over_budget_including_discarded": 18,
+      "original_group_counts": {
+        "all_failure": 37,
+        "mixed": 23,
+        "all_success": 4
+      },
+      "total_saved_records_including_pseudo_rows": 504,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.6692264188927307e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0022.jsonl.gz",
+        "bytes": 22423763,
+        "sha256": "a432ff024f1a778c1be52378700c17c0c25748d9e29d8bf9c395274687772ec0"
+      },
+      "rollout_seconds": 960.6443187639816,
+      "step_seconds": 1377.8689838559949,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 1.9375,
+      "rescue_rate": 0.08108108108108109,
+      "counterfactual_flip_rate": 0.11290322580645161,
+      "kl": 0.05914831841357804,
+      "grad_norm": 0.4239080548286438,
+      "max_parameter_change": 1.1748634278774261e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2208,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2193162240,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.20161290322580644
+    },
+    {
+      "step": 23,
+      "original_count": 256,
+      "original_successes": 77,
+      "original_success_pct": 30.078125,
+      "original_terminals": {
+        "success": 77,
+        "turn_limit": 165,
+        "token_limit": 14
+      },
+      "original_token_limit_pct": 5.46875,
+      "original_mean_trace_records": 8.39453125,
+      "original_mean_executed_turns": 8.33984375,
+      "original_mean_response_tokens": 4857.61328125,
+      "original_discarded_suffix_tokens": 25884,
+      "original_max_generated_including_discarded": 10601,
+      "original_over_budget_including_discarded": 14,
+      "original_group_counts": {
+        "all_failure": 27,
+        "mixed": 32,
+        "all_success": 5
+      },
+      "total_saved_records_including_pseudo_rows": 498,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.876109535894123e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0023.jsonl.gz",
+        "bytes": 22982620,
+        "sha256": "109db61764d439d49485274cb97f02bda0e94ebb55e5b7d66381cc21e10f9225"
+      },
+      "rollout_seconds": 965.5655375010101,
+      "step_seconds": 1388.8423787429929,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 1.890625,
+      "rescue_rate": 0.1111111111111111,
+      "counterfactual_flip_rate": 0.1652892561983471,
+      "kl": 0.06992948144538502,
+      "grad_norm": 0.5142113864421844,
+      "max_parameter_change": 1.2244563549757004e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2134,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2119659520,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.21487603305785125
+    },
+    {
+      "step": 24,
+      "original_count": 256,
+      "original_successes": 54,
+      "original_success_pct": 21.09375,
+      "original_terminals": {
+        "turn_limit": 185,
+        "success": 54,
+        "token_limit": 17
+      },
+      "original_token_limit_pct": 6.640625,
+      "original_mean_trace_records": 8.6015625,
+      "original_mean_executed_turns": 8.53515625,
+      "original_mean_response_tokens": 5187.74609375,
+      "original_discarded_suffix_tokens": 19618,
+      "original_max_generated_including_discarded": 11736,
+      "original_over_budget_including_discarded": 19,
+      "original_group_counts": {
+        "all_failure": 40,
+        "mixed": 19,
+        "all_success": 5
+      },
+      "total_saved_records_including_pseudo_rows": 492,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 3.7806429069638797e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0024.jsonl.gz",
+        "bytes": 23285210,
+        "sha256": "8a7b7174ad3eed0b30fa71cd8b27c8622436de8f20ac9321bd15bdbb4db8088a"
+      },
+      "rollout_seconds": 805.0839399139513,
+      "step_seconds": 1237.0057936979574,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 1.84375,
+      "rescue_rate": 0.075,
+      "counterfactual_flip_rate": 0.09322033898305085,
+      "kl": 0.06124965915317082,
+      "grad_norm": 0.41303032636642456,
+      "max_parameter_change": 1.2135133147239685e-06,
+      "ucf_component_diagnostics_computed": false,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2183,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2168330240,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.2288135593220339
+    },
+    {
+      "step": 25,
+      "original_count": 256,
+      "original_successes": 62,
+      "original_success_pct": 24.21875,
+      "original_terminals": {
+        "turn_limit": 166,
+        "success": 62,
+        "token_limit": 28
+      },
+      "original_token_limit_pct": 10.9375,
+      "original_mean_trace_records": 8.34765625,
+      "original_mean_executed_turns": 8.23828125,
+      "original_mean_response_tokens": 5616.50390625,
+      "original_discarded_suffix_tokens": 33678,
+      "original_max_generated_including_discarded": 12777,
+      "original_over_budget_including_discarded": 28,
+      "original_group_counts": {
+        "all_failure": 35,
+        "mixed": 22,
+        "all_success": 7
+      },
+      "total_saved_records_including_pseudo_rows": 566,
+      "finite_update": true,
+      "max_abs_capture_logprob_difference": 4.177380885754534e-06,
+      "rollout_file": {
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/rollouts_0025.jsonl.gz",
+        "bytes": 27709315,
+        "sha256": "51ca3f310910a8c4a808935f7a29a6d2410ba2f103dc3f3ad1300f49a0899d27"
+      },
+      "rollout_seconds": 937.0300807859749,
+      "step_seconds": 1941.193527784024,
+      "peak_allocated_gib": 65.03910398483276,
+      "mean_forks": 2.421875,
+      "rescue_rate": 0.11428571428571428,
+      "counterfactual_flip_rate": 0.0967741935483871,
+      "kl": 0.07992534796290274,
+      "grad_norm": 0.38058191537857056,
+      "max_parameter_change": 1.1986121535301208e-06,
+      "ucf_component_diagnostics_computed": true,
+      "original_logits_capture": {
+        "source": "original_sampling_logits",
+        "captured_nodes": 2107,
+        "closed_at_fence": 0,
+        "peak_vector_bytes": 2092840960,
+        "capacity_vector_bytes": 2542796800,
+        "pending_vectors": 0,
+        "model_forward_probes": 0
+      },
+      "counterfactual_token_partition_parser_disagreement": 0.25806451612903225
+    }
+  ]
+}

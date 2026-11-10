@@ -1,0 +1,13 @@
+{
+  "raw": {
+    "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/validation_0025.jsonl",
+    "bytes": 6617542,
+    "sha256": "1eda24d4f0edda01ab83802c830b1caaabb24fc41988a1b0995d5d9ad1f5454f"
+  },
+  "compressed": {
+    "file": "validation_0025.jsonl.gz",
+    "bytes": 769607,
+    "sha256": "3eb77471dc9041c1fbb727918c6c421db61249778b956e24e202c9bcd7b06c61"
+  },
+  "checkpoints_not_downloaded": true
+}

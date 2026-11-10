@@ -30,6 +30,8 @@ def audit(run, through):
         path = run / f'rollouts_{step:04d}.jsonl.gz'
         terminals = collections.Counter()
         n = successes = actions = response_tokens = records = 0
+        discarded_tokens = 0
+        actual_generated_counts = []
         task_rewards = collections.defaultdict(list)
         with gzip.open(path, 'rt') as handle:
             for line in handle:
@@ -43,7 +45,13 @@ def audit(run, through):
                 # Trace records can include invalid actions, so they are reported
                 # separately from the collector's executed-turn metric.
                 actions += len(trajectory['trace'])
-                response_tokens += sum(trajectory['mask'])
+                retained = sum(trajectory['mask'])
+                discarded = sum(turn.get('protocol_cutoff', {}).get('discarded_sampled_tokens', 0)
+                                for turn in trajectory['trace'])
+                assert retained <= config['max_response_tokens']
+                response_tokens += retained
+                discarded_tokens += discarded
+                actual_generated_counts.append(retained + discarded)
                 task_rewards[json.dumps(trajectory['task'], sort_keys=True)].append(trajectory['reward'])
         assert n == config['train_batch_size'] * config['initial_branches']
         assert len(task_rewards) == config['train_batch_size']
@@ -66,6 +74,10 @@ def audit(run, through):
             original_mean_trace_records=actions / n,
             original_mean_executed_turns=row['mean_turns'],
             original_mean_response_tokens=response_tokens / n,
+            original_discarded_suffix_tokens=discarded_tokens,
+            original_max_generated_including_discarded=max(actual_generated_counts),
+            original_over_budget_including_discarded=sum(value > config['max_response_tokens']
+                                                         for value in actual_generated_counts),
             original_group_counts=dict(groups),
             total_saved_records_including_pseudo_rows=records,
             finite_update=all(math.isfinite(row[k]) for k in finite_keys),
@@ -79,8 +91,10 @@ def audit(run, through):
         ))
     return dict(unix=time.time(), run=str(run), through_step=through,
                 initialization=origin, config_sha256=digest(run / 'config.json'),
+                audit_script_sha256=digest(Path(__file__)),
                 observed_metrics_sha256=hashlib.sha256(metrics_bytes).hexdigest(),
                 original_filter='lineage exactly 0, 1, 2 or 3; pseudo rows and CF leaves excluded',
+                budget_meaning='The configured cap is cumulative retained response tokens per trajectory, excluding prompts/observations. Engine-generated suffixes discarded after the first complete action block are separate computational overhead, included in generated_tokens; they are not executed or trained.',
                 caveat='Training samples from different steps are different batches. This audit does not establish fixed-validation improvement or UCF advantage over GRPO.',
                 rows=result)
 

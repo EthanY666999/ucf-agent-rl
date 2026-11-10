@@ -1,0 +1,18 @@
+{
+  "kind": "shared_rl_warmstart_budget_exploration",
+  "initial_step": 16,
+  "source_run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+  "source_checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+  "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73",
+  "reference_model": "/data/models/Qwen3.5-2B",
+  "task_sft": false,
+  "prior_training_method": "ucf",
+  "prior_training_steps": 16,
+  "prior_max_response_tokens": 4096,
+  "continuation_max_response_tokens": 10240,
+  "method": "ucf",
+  "not_a_fresh_raw_start_comparison": true,
+  "unix": 1794325948.304225,
+  "imported_controller_sha256": "25fe6381dcd17d7addfb44d39ec7118da5ca985906faaec2827fe78348c61e8c",
+  "controller_note": "Historical uniform-selector boundary receipt; next selection is freshly calibrated from the new batch"
+}
