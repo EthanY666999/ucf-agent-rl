@@ -4,6 +4,8 @@ Development branch, 2026-11-10. This branch does not replace the collaborator re
 
 ## Current status
 
+**Live numerical qualification:** the first nine full UCF batches contain8/1197 nodes above the initial maximum replay-probe logprob gate, despite passing the small GPU smoke. No threshold was relaxed. All8 have zero observed Part B PG advantages, which does not prove no distributional effect. An original-sampling-logits observer is isolated and CPU-tested, **not GPU-admitted or deployed**. See [the audit and planned boundary handoff](reports/LIVE_PROBABILITY_AUDIT.md).
+
 The production-interpreter CPU suite passes85 relevant tests. The scoped numerical GPU contract passes in Sokoban and FrozenLake, including real A/B backward, optimizer update, weight synchronization, subsequent inference and restoration of native FP32/BF16 gradients. These are technical checks, not evidence of UCF learning improvement.
 
 Fresh no-task-SFT Sokoban UCF training has started from Qwen3.5-2B. GRPO4 independently starts from the same raw model under the same numerical protocol. Stages alternate UCF/GRPO at25/50/100/150/200 steps. Fixed validation runs every25 steps; there is no automatic400-step promotion and no final-test use during this diagnostic queue.

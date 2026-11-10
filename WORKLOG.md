@@ -112,3 +112,10 @@ System free38.31GiB/data57.08GiB after checkpoint save; atomic replacement reser
 ## Lossless inactive-checkpoint archive (20:47 Beijing)
 
 The old default-kernel GRPO25 checkpoint is outside the current paired queue. It was compressed with one low-priority CPU worker. The entire decompressed stream matched the original22,582,328,681bytes/SHA d3fdd5fd96aba34bbf9c2b0a61fb87c25424c8c70170e2a6ec44a08635517e3d before original replacement; model, optimizer and RNG are preserved. The archive manifest was published in1f71df96ec555b3adc520d2dec836d6d62825c58 first. Final server archive is checkpoint.pt.zst in the same old run directory,20,430,581,501bytes; actual net release2,151,747,180bytes (2.00GiB). Staging copy was removed only after destination hash verification. System40.19GiB/data57.08GiB free. Restore the original bytes before resuming this historical diagnostic. Active scoped training/checkpoint and all raw evidence are unchanged. Pip cache is only~2MiB, so it was not described as a12GiB cleanup opportunity.
+
+
+## 2026-11-10 — live probability audit and isolated candidate
+
+Read-only audit of completed scoped UCF steps1–9 found8/1197 selected nodes exceeding the unchanged initial max logprob-difference gate0.125 (maximum0.222751); all per-step means remain below0.02. All8 recorded original/CF rewards and leave-one-trajectory baselines are0, so their direct PG advantages are0; this is not proof of no sampling/KL impact. No post-init fixed validation is available yet. No threshold relaxation.
+
+Prepared an isolated read-only original-sampling-logits observer.97 CPU tests passed and72 actual token-history replays matched boundary placement (49 eligible). This is not GPU admission. Current runtime/source and active checkpoint are untouched. A lock-bound runner PID369485 waits for completed/verified UCF25, runs bounded S/F technical gates, then launches unchanged matched GRPO25 even if the candidate is rejected. Candidate source, CPU proofs, scheduling receipt and probability audit are published separately; no model/vector/checkpoint download or export.

@@ -4,12 +4,12 @@
     "sha256": "c38b07fe10f2da98d9e8ac81f94c46901096cc9a9ff0270cc8056b18d6812cca"
   },
   "README.md": {
-    "bytes": 8163,
-    "sha256": "29b5d72b1ec10f0c8d8b2a21fbeaa9c1adc27e1145503895277037f8edb3eb6f"
+    "bytes": 8639,
+    "sha256": "4e5be9d1ebdab4b95309530b137adfebafb9cc1e5ed055f3faa7b10ee833dc06"
   },
   "WORKLOG.md": {
-    "bytes": 21872,
-    "sha256": "46323bb05dfffdae647c742cf7a3939b6aaf4888716884ade318449b37761877"
+    "bytes": 22934,
+    "sha256": "0e893af08af101f48d322391b7902e91ed4275a93645d815c7e563eee35a0ecb"
   },
   "autofix_log.md": {
     "bytes": 2921,
@@ -723,6 +723,42 @@
     "bytes": 31760,
     "sha256": "a9425e4777fe31d9ead0501a0e7890b534534490df67e8f867a2309bcb42262e"
   },
+  "diagnostics/audit_live_probability_drift.py": {
+    "bytes": 2678,
+    "sha256": "08b2272cc2732c196f89dd7ca3bb60a52651a64173ed59c1e26fe7ae9a0ca796"
+  },
+  "diagnostics/capture_candidate/check_gpu.py": {
+    "bytes": 6739,
+    "sha256": "b236cbd9f6918a52b31201e191be22547d18f52b4a8edc0db25c8abf921cd610"
+  },
+  "diagnostics/capture_candidate/check_recorded_prefixes.py": {
+    "bytes": 3307,
+    "sha256": "4c54ce627e0b717df61b1aa0dec5442abd8fc56327dc41437387d1e3b7aa3639"
+  },
+  "diagnostics/capture_candidate/code/patr_core.py": {
+    "bytes": 26196,
+    "sha256": "d26a0929807df03a6f22904f741b27aa7ac9970ab3767cb0105fe6cde67c92c9"
+  },
+  "diagnostics/capture_candidate/code/train.py": {
+    "bytes": 27930,
+    "sha256": "e1dc095966a71ae97ca9aacaeaf848d52c69dffe01b2caffa1d58fc69f4c37d0"
+  },
+  "diagnostics/capture_candidate/code/ucf/original_logits.py": {
+    "bytes": 7853,
+    "sha256": "12b397420434588e8d153a81c07ce8ade456097b61509a02eb046c05c5666583"
+  },
+  "diagnostics/capture_candidate/code/ucf/ucf_v3.py": {
+    "bytes": 15713,
+    "sha256": "0e753bd605aa777637898d146b71866be05f98845cece446a2dc86821004de35"
+  },
+  "diagnostics/capture_candidate/run_boundary.py": {
+    "bytes": 3906,
+    "sha256": "afe970222ec8a4b85a2d05b60c5539c0df77bbd516bb6213d7c58ab7d2a124b0"
+  },
+  "diagnostics/capture_candidate/tests/test_original_logits.py": {
+    "bytes": 7190,
+    "sha256": "206f42914ce399b8d2468c302b4833bb07dea207eb1ae191598c42a47f5affd1"
+  },
   "diagnostics/check_prefix_scan.py": {
     "bytes": 4552,
     "sha256": "27f22bc78a4f612b1296aa665b4fb259aa11cf5256fade50c547f86b08e3b9c9"
@@ -759,6 +795,10 @@
     "bytes": 1598,
     "sha256": "ae1dba00dad811472e47a26103c305dc694b49dc852904eafd5d077b15652e7f"
   },
+  "reports/LIVE_PROBABILITY_AUDIT.md": {
+    "bytes": 3753,
+    "sha256": "a1b3f11cd819f7d8a363f9157588616c06756877b0d3552ce99b5772e8284a7e"
+  },
   "reports/S07_checkpoint_deletion_manifest.json": {
     "bytes": 494,
     "sha256": "a552e0d0028dd3edc62bd4d2131cd99a8774e7ecd773f10bf68e26ef36408b1b"
@@ -770,6 +810,30 @@
   "reports/S07_training_validation_audit.json": {
     "bytes": 1652,
     "sha256": "f4c9d499c65c3d255590f0c0860df0d553e4d0cb1fd244ac57ae894bd42eea7e"
+  },
+  "reports/capture_boundary/baseline_plan.json": {
+    "bytes": 28061,
+    "sha256": "5a67731342a0dac1c9ce62bdfd98e1cdb6316230468904942c4e468d7c2f0351"
+  },
+  "reports/capture_boundary/launch.json": {
+    "bytes": 177,
+    "sha256": "0857ad91d5f817790fcd42967e2c575618cc9d88e0d3ce8f75de32a8226cf017"
+  },
+  "reports/capture_candidate/candidate_manifest.json": {
+    "bytes": 23317,
+    "sha256": "8457abed845141877e61138ecb00c29c71478251a3db9d44266731451d1dd987"
+  },
+  "reports/capture_candidate/cpu_test_receipt.json": {
+    "bytes": 572,
+    "sha256": "1857c94ccb80ab48fc414328e442cff81bf7c4835462ffa70f130d9c692624b5"
+  },
+  "reports/capture_candidate/cpu_tests.log": {
+    "bytes": 180,
+    "sha256": "539d342b9a6db9233d2098f1732feebd892d867c7ddea45497a807ba8ccdc20b"
+  },
+  "reports/capture_candidate/recorded_prefix_receipt.json": {
+    "bytes": 13901,
+    "sha256": "276068ed63fd5bf590eaf6b18d313ba8e4f84a69b89c6a4d0e3ece736996634f"
   },
   "reports/cpu_regression_20261110.txt": {
     "bytes": 100,
@@ -926,6 +990,10 @@
   "reports/handoff_launched.json": {
     "bytes": 283,
     "sha256": "f7f66a3047fa23034fe7edd06757d2a4154ff6fbf74ee038cc2c336f440155e4"
+  },
+  "reports/live_probability_drift_audit_complete.json": {
+    "bytes": 6309,
+    "sha256": "4377416d551f47c1e82f2f4337a5ae49048ab908e63625bc50ef063c455c0c9c"
   },
   "reports/numerical/ucf_v3_numerical_20261110/batch_invariant_S/config.json": {
     "bytes": 1908,

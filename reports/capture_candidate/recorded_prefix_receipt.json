@@ -1,0 +1,729 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "cases": [
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 3539,
+      "boundary": 3537,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 557,
+      "boundary": 19,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 3052,
+      "boundary": 3050,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "1",
+      "turn": 2,
+      "response_tokens": 1044,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 2253,
+      "boundary": 2094,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "2",
+      "turn": 2,
+      "response_tokens": 1196,
+      "boundary": 1192,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 1406,
+      "boundary": 1404,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 0,
+      "lineage": "3",
+      "turn": 2,
+      "response_tokens": 1090,
+      "boundary": 1088,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 1,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 1,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": 960,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 1,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 102,
+      "boundary": 100,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 179,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 383,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 3,
+      "response_tokens": 3534,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 2,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 2,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": 755,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 2,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": 155,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 3,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 1459,
+      "boundary": 1456,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 3,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 2637,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 3,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": 79,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 3,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 2330,
+      "boundary": 621,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 3,
+      "lineage": "2",
+      "turn": 2,
+      "response_tokens": 1766,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 1,
+      "task_id": 3,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 1079,
+      "boundary": 1077,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 538,
+      "boundary": 534,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "2",
+      "turn": 2,
+      "response_tokens": 3558,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 98,
+      "boundary": 94,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "3",
+      "turn": 2,
+      "response_tokens": 64,
+      "boundary": 60,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "3",
+      "turn": 3,
+      "response_tokens": 70,
+      "boundary": 66,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 0,
+      "lineage": "3",
+      "turn": 4,
+      "response_tokens": 3864,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 114,
+      "boundary": 110,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 254,
+      "boundary": 250,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 1454,
+      "boundary": 1450,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 2,
+      "response_tokens": 305,
+      "boundary": 301,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 3399,
+      "boundary": 2801,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "2",
+      "turn": 2,
+      "response_tokens": 691,
+      "boundary": 114,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "2",
+      "turn": 3,
+      "response_tokens": 6,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 455,
+      "boundary": 453,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 1,
+      "lineage": "3",
+      "turn": 2,
+      "response_tokens": 549,
+      "boundary": 547,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 807,
+      "boundary": 803,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 1718,
+      "boundary": 1714,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 3,
+      "response_tokens": 832,
+      "boundary": 828,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 4,
+      "response_tokens": 565,
+      "boundary": 561,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 5,
+      "response_tokens": 174,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 2,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 94,
+      "boundary": 92,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "task_id": 2,
+      "lineage": "1",
+      "turn": 2,
+      "response_tokens": 4002,
+      "boundary": 82,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 0,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 227,
+      "boundary": 223,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 0,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 3869,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 0,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 0,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 0,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 4096,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 128,
+      "boundary": 124,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 464,
+      "boundary": 460,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "0",
+      "turn": 3,
+      "response_tokens": 690,
+      "boundary": 686,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "0",
+      "turn": 4,
+      "response_tokens": 2814,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 1,
+      "response_tokens": 140,
+      "boundary": 136,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 2,
+      "response_tokens": 1815,
+      "boundary": 1811,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 3,
+      "response_tokens": 606,
+      "boundary": 602,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 4,
+      "response_tokens": 1310,
+      "boundary": 1306,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "1",
+      "turn": 5,
+      "response_tokens": 225,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "2",
+      "turn": 1,
+      "response_tokens": 1811,
+      "boundary": 1808,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "2",
+      "turn": 2,
+      "response_tokens": 1330,
+      "boundary": 1326,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "2",
+      "turn": 3,
+      "response_tokens": 955,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "3",
+      "turn": 1,
+      "response_tokens": 640,
+      "boundary": 636,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "3",
+      "turn": 2,
+      "response_tokens": 379,
+      "boundary": 375,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "3",
+      "turn": 3,
+      "response_tokens": 2286,
+      "boundary": 2282,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 1,
+      "lineage": "3",
+      "turn": 4,
+      "response_tokens": 791,
+      "boundary": null,
+      "candidate": false,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 1,
+      "response_tokens": 473,
+      "boundary": 469,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 2,
+      "response_tokens": 399,
+      "boundary": 395,
+      "candidate": true,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "task_id": 2,
+      "lineage": "0",
+      "turn": 3,
+      "response_tokens": 148,
+      "boundary": 144,
+      "candidate": true,
+      "passed": true
+    }
+  ],
+  "seconds": 64.5962878690334,
+  "observer_sha256": "12b397420434588e8d153a81c07ce8ade456097b61509a02eb046c05c5666583",
+  "interpretation": "Recorded token boundary equality only; GPU sampling admission still required"
+}
