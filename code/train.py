@@ -309,9 +309,21 @@ def main():
         from accept_ucf import component_grad
         original_update=sys.modules[__name__].update
         def ucf_update(actor,ref,optimizer,branches,cfg,method,tokenizer,rng,n_tasks):
-            diagnostics={part:component_grad(actor,ref,branches,cfg,tokenizer,part) for part in ['A','B']}
+            # Exact component measurements cost two additional backward passes.
+            # V3 measures them on its existing validation cadence; the actual
+            # optimizer still checks finite loss/gradient and updates every step.
+            measured=True
+            if cfg.get('ucf_v3',False):
+                status=json.loads((Path(os.environ['PATR_PROGRESS_PATH']).parent/'status.json').read_text())
+                step=status['current_step']
+                measured=step==1 or step%cfg['eval_every']==0
+            diagnostic_start=time.monotonic()
+            diagnostics={part:component_grad(actor,ref,branches,cfg,tokenizer,part) for part in ['A','B']} if measured else None
+            diagnostic_seconds=time.monotonic()-diagnostic_start
             result=original_update(actor,ref,optimizer,branches,cfg,method,tokenizer,rng,n_tasks)
             result['ucf_preupdate_fullbatch_components']=diagnostics
+            result['ucf_component_diagnostics_computed']=measured
+            result['ucf_component_diagnostic_seconds']=diagnostic_seconds
             return result
         sys.modules[__name__].update=ucf_update
         cfg['ucf_log_dir']=str(out/'ucf_logs')

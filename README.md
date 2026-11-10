@@ -4,6 +4,8 @@ Development branch, 2026-11-10. This branch does not replace the collaborator re
 
 ## Current status
 
+Latest preparation:85 CPU checks pass in a new isolated runtime. Scoped batch-invariant inference with native actor autograd is awaiting real GPU acceptance at the natural GRPO25-step boundary. `configs_scoped/` and the prepared plan are **not admitted training runs**. The new helper must pass both the numerical contract and post-update inference/backward checks. If admitted, both arms start fresh under the same numerical protocol. V3 component-gradient diagnostics then run atstep1/every25; real loss/gradient/update checks remain every step.
+
 The original CPU suite passed63 checks; after bounded probe batching,66 relevant sampling/protocol/environment/recovery checks pass on the production interpreter with CUDA disabled. FrozenLake's initial train-only GPU contract passed. Sokoban's initial contract failed numerical consistency; the bounded-batch contract also failed. No UCF learning improvement is established yet.
 
 ## Scope and hypothesis

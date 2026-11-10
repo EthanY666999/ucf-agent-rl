@@ -79,6 +79,19 @@ def write_progress(state,entry,child=None):
   disk_free_gib={p:shutil.disk_usage(p).free/2**30 for p in ('/home','/data')},unix=time.time())
  atomic(state/'status.json',r);atomic(state/'reports'/f"{entry['id']}.json",r)
 
+def numerical_admission(plan,e,cfg):
+ if not cfg.get('vllm_batch_invariant_scoped',False):return
+ assert e['kind']=='train','Use the separate isolated numerical-contract runner'
+ root=Path(e['requires_scoped_gpu_acceptance'])
+ scope=read(root/'scope_acceptance.json');contract=read(root/'acceptance.json')
+ assert scope['passed'] and contract['passed']
+ assert scope['post_update_inference_then_backward']
+ assert scope['native_fp32_and_bf16_autocast_checked']
+ helper=Path(plan['scoped_helper'])
+ assert sha(helper)==scope['helper_sha256']==plan['source_sha256'][str(helper)]
+ assert plan['train_entrypoint'] in plan['source_sha256']
+ assert cfg['environment']==read(root/'config.json')['environment']
+
 def run_entry(plan,state,e,fd):
  out=Path(e['output']);out.mkdir(parents=True,exist_ok=True)
  receipt=out/('acceptance.json' if e['kind']=='smoke' else f"stage_{e['stop_step']:04d}.json")
@@ -93,6 +106,7 @@ def run_entry(plan,state,e,fd):
   atomic(state/'failures'/f"{e['id']}_space.json",dict(reason='Insufficient atomic-checkpoint reserve',required_bytes=required,free_bytes=shutil.disk_usage(out).free));return False
  for path,digest in plan['source_sha256'].items():assert sha(path)==digest,'Runtime changed: '+path
  cfg=read(e['config']);assert sha(e['config'])==e['config_sha256']
+ numerical_admission(plan,e,cfg)
  assert cfg['model']=='/data/models/Qwen3.5-2B' and cfg['response_protocol']=='first_complete_action_block'
  assert sha(cfg['dataset_path'])==cfg['dataset_sha256']
  if cfg.get('frozen_maps_path'):assert sha(cfg['frozen_maps_path'])==cfg['frozen_maps_sha256']
@@ -100,7 +114,8 @@ def run_entry(plan,state,e,fd):
  if e['kind']=='smoke':
   cmd=[plan['python'],'-u',str(runtime/'scripts/v3_gpu_acceptance.py'),'--config',e['config'],'--output',str(out)]
  else:
-  cmd=[plan['python'],'-u',str(runtime/'train.py'),'--method',e['method'],'--config',e['config'],'--output-dir',str(out),'--stop-after-step',str(e['stop_step'])]
+  entrypoint=plan['train_entrypoint'] if cfg.get('vllm_batch_invariant_scoped',False) else str(runtime/'train.py')
+  cmd=[plan['python'],'-u',entrypoint,'--method',e['method'],'--config',e['config'],'--output-dir',str(out),'--stop-after-step',str(e['stop_step'])]
   if existing:
    step=checkpoint_step(out/'checkpoint.pt',plan['python']);assert step<=e['stop_step']
    reconcile(out,step);cmd.append('--resume')

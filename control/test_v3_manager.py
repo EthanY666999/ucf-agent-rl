@@ -52,3 +52,20 @@ def test_disk_guard_preserves_prior_checkpoint(tmp_path,monkeypatch):
  with pytest.raises(OSError,match='Checkpoint disk reserve'):
   namespace['save_checkpoint'](cp,actor,NS(state={}),1,None,{'ucf_v3':True},0)
  assert cp.read_bytes()==b'previous valid checkpoint' and not cp.with_suffix('.tmp').exists()
+
+def test_scoped_admission_requires_backward_receipt_and_exact_helper(tmp_path):
+ from v3_manager import numerical_admission,sha
+ root=tmp_path/'acceptance';root.mkdir()
+ helper=tmp_path/'scope.py';helper.write_text('verified helper')
+ entry=tmp_path/'entry.py';entry.write_text('verified entrypoint')
+ plan=dict(scoped_helper=str(helper),train_entrypoint=str(entry),source_sha256={str(helper):sha(helper),str(entry):sha(entry)})
+ e=dict(kind='train',requires_scoped_gpu_acceptance=str(root))
+ cfg=dict(vllm_batch_invariant_scoped=True,environment='sokoban')
+ (root/'acceptance.json').write_text('{"passed":true}')
+ (root/'config.json').write_text('{"environment":"sokoban"}')
+ with pytest.raises(FileNotFoundError):numerical_admission(plan,e,cfg)
+ scope=dict(passed=True,post_update_inference_then_backward=True,native_fp32_and_bf16_autocast_checked=True,helper_sha256=sha(helper))
+ (root/'scope_acceptance.json').write_text(json.dumps(scope))
+ numerical_admission(plan,e,cfg)
+ helper.write_text('changed after GPU acceptance')
+ with pytest.raises(AssertionError):numerical_admission(plan,e,cfg)

@@ -1,0 +1,15 @@
+{
+  "first_attempt": {
+    "passed": 46,
+    "errors": 5,
+    "reason": "Historical git fixture 95b78572 unavailable from source-only candidate runtime"
+  },
+  "second_attempt": {
+    "passed": 85,
+    "errors": 0,
+    "seconds": 12.48,
+    "historical_fixture_source": "/home/vipuser/decision-point-ucf-v3-20261110/.git",
+    "cuda_visible_devices": ""
+  },
+  "runtime_dispatched": false
+}
