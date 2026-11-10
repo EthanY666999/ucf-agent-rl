@@ -667,6 +667,10 @@
     "bytes": 3955,
     "sha256": "3910fda508cfaa451e881b6e0e2f26caa220092bdc01eb78f69bd65812a5023d"
   },
+  "control/compress_inactive_checkpoint.py": {
+    "bytes": 5478,
+    "sha256": "9b77355ece63b346b4942b70838e72d28fd416e0afc84be3ee6f107de3bf26e8"
+  },
   "control/export_fastscan_snapshot.py": {
     "bytes": 3157,
     "sha256": "c395ad2a264b2476b2d19b7b825afa34aa2ffcc1cdb3a8bd1bdad9bf6dbe3421"
@@ -1171,6 +1175,10 @@
     "bytes": 375,
     "sha256": "fe0a9f5f8548562c410d826866e0d0328c77e894dfc72ff378979a728012aa2a"
   },
+  "reports/storage/CHECKPOINT_ARCHIVE.md": {
+    "bytes": 1450,
+    "sha256": "d1e18f9b3bdb1d2b37ca9d98c12b3d07e09e6531f8ed4cab0ca2e75e38762cd3"
+  },
   "reports/storage/S07_model_relocation_attempt1.json": {
     "bytes": 243,
     "sha256": "a1c67833cd47a8dc8c33500d10265c5f530168084c31eb43f28b520beb30f759"
@@ -1186,6 +1194,10 @@
   "reports/storage/S07_model_relocation_receipt_20261110.json": {
     "bytes": 806,
     "sha256": "3c5cbe6aedf337483c8ca75a3bab985c805d7ea70f199f41a54e840ba57b908d"
+  },
+  "reports/storage/default_grpo25_compression_manifest.json": {
+    "bytes": 999,
+    "sha256": "aac1639d85380ea45b78d8ad67f3d714117947bfbe9d7cf86615d02e88944662"
   },
   "reports/v3_batched_admission.json": {
     "bytes": 215,
