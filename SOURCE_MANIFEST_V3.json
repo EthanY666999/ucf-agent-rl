@@ -4,8 +4,8 @@
     "sha256": "6eeb68f9bb5e70dc845b13341799081e2e08a95ad173d11e6a76c5d4882cfef2"
   },
   "WORKLOG.md": {
-    "bytes": 5129,
-    "sha256": "3aff5b77b23da0dbfd40eaa6c684ad7fae3156338ef680bda1bdd0fb5bf1515d"
+    "bytes": 6457,
+    "sha256": "6cb51793e1825c4b0656e56c0eb94aef5ad3926d36bb00d7b202bf4fb83d1851"
   },
   ".gitignore": {
     "bytes": 65,
@@ -658,6 +658,10 @@
   "reports/deletion_manifest_smoke_20261110.json": {
     "bytes": 4103,
     "sha256": "55f026adca48889f917614e8065394aaeb2d537ae1df99474eac103b06ab30c6"
+  },
+  "reports/deletion_receipt_smoke_20261110.json": {
+    "bytes": 946,
+    "sha256": "d40f97793b2cde7a9163d524447571eeb3b75ef7ca2f0cbe3cb804ab92d580dd"
   },
   "reports/cpu_regression_20261110.txt": {
     "bytes": 100,

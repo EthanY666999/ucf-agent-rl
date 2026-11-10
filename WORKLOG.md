@@ -34,3 +34,11 @@ At13:51 Beijing: system74GiB free, data44GiB free. Checkpoint ~22GiB; atomic rep
 ## Published references checked
 
 GiGPO NeurIPS2025 (state-group credit without extra task SFT); RAGEN-2 ICML2026 (signal starvation/input-agnostic collapse; different reward protocol); VinePPO ICML2025 (MC prefix credit, shared task SFT is used); TRACE EMNLP2026 (learned prefix success and tree budgeting, close prior art to a learned score); Re-ReST EMNLP2024 (self-generated SFT precedent). These motivate the simpler experiment, not direct numeric comparisons across different environments/budgets.
+
+## Implemented and admitted at 15:10 Beijing
+
+V3 source and staged manager are now implemented. Production-interpreter CPU suite: 63 passed, including 21 V3-specific sampler/adapter/recovery checks; CUDA was disabled. GPU acceptance remains pending and is not a learning result. Hash-bound plan and next-dispatch are installed; paired Sokoban stages stop at25/50/100/150/200 with fixed validation. The observer still protects the original S07 source/config and inherits both queue/GPU locks.
+
+The user-authorized handoff from UCF2B is received. UCF2B stopped its recurring reports and will not dispatch. This review chat owns subsequent diagnostics/recovery. The 14:58:50 handoff snapshot is preserved remotely under `ucf2b_to_review_handoff_20261110`; its SHA256 is f8aaa92fb4f7369d3c8e792a8939b0bd188e4ed727dd242d7511e91a2f2dc9ab.
+
+Published as Ethan on `ucf-agent-rl/experiments/ucf-v3-no-sft`, commit32a21bdc814a7e23aca5a2e92a0040023979a3da, without changing main. Source, configuration, CPU receipts and deletion manifest are public; no model weights. After the manifest was verified on GitHub, one7.01GiB disposable FLH smoke weight was deleted; all20 hashed evidence files remained intact. System free space rose to80.98GiB. Data free space varies while S07 atomically replaces its checkpoint; atstep377 it was43.09GiB.

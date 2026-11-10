@@ -1,0 +1,39 @@
+{
+  "status": "deleted_verified_smoke_weights",
+  "unix": 1794294138.316512,
+  "deleted": [
+    {
+      "path": "/home/vipuser/q35-smoke-models/flh_f03/grpo/model.safetensors",
+      "bytes": 7527341904,
+      "sha256": "2093c14e4b245e71ffc8ef0944b590f20e32b075a979abc2572a6a5a1293e561"
+    }
+  ],
+  "released_file_bytes": 7527341904,
+  "before": {
+    "/home/vipuser": {
+      "total": 210246524928,
+      "used": 121164890112,
+      "free": 79428513792
+    },
+    "/data": {
+      "total": 105089261568,
+      "used": 60814835712,
+      "free": 38888939520
+    }
+  },
+  "after": {
+    "/home/vipuser": {
+      "total": 210246524928,
+      "used": 113637543936,
+      "free": 86955859968
+    },
+    "/data": {
+      "total": 105089261568,
+      "used": 60965855232,
+      "free": 38737920000
+    }
+  },
+  "manifest_public_commit": "32a21bdc814a7e23aca5a2e92a0040023979a3da",
+  "retained_evidence_count": 20,
+  "active_training_touched": false
+}
