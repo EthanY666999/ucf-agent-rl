@@ -1,0 +1,26 @@
+{
+  "success_rate_pct": 6.75,
+  "pass_at_4_pct": 15.0,
+  "response_length": 3792.3975,
+  "turns": 2.31,
+  "n_tasks": 100,
+  "n_trajectories": 400,
+  "invalid_action_fraction": 0.1958874458874459,
+  "terminal_counts": {
+    "token_limit": 334,
+    "turn_limit": 39,
+    "success": 27
+  },
+  "response_protocol_metrics": {
+    "turns": 1256,
+    "complete_action_blocks": 743,
+    "boundary_token_extra_characters": 3,
+    "boundary_token_extra_fraction": 0.004037685060565276,
+    "first_fence_not_first_complete_block_start": 23,
+    "first_fence_not_first_complete_block_fraction": 0.03095558546433378,
+    "denominator": "turns with a complete action block; pseudo training rows excluded"
+  },
+  "split": "validation",
+  "seconds": 418.3788449319545,
+  "generated_tokens": 1535061
+}

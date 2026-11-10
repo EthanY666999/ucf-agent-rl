@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "plan_sha256": "970034ab47a2e6633114cf3e51d2e548948e73f5fecc1aebefb8e09b7b7ea3a1",
+  "cpu_log_sha256": "8b4e0bd983aae232e759e5629d474de06a13fb9236c60140bbd2e7cf09f616b6",
+  "equivalence_sha256": "6ba0632beeaf0d32e55a86d8fd526535cf9a1770db4060020cca34dace312b3e",
+  "algorithm_changed": false,
+  "checkpoint_resumed_from": 1,
+  "unix": 1794311803.906148
+}

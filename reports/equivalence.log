@@ -1,0 +1,19 @@
+{"checked": 10, "total": 180, "timings": {"old_fence": 5.276717971952166, "new_fence": 0.3444553480949253, "old_cutoff": 2.7093981060315855, "new_cutoff": 0.07819527387619019}}
+{"checked": 20, "total": 180, "timings": {"old_fence": 15.675009403086733, "new_fence": 0.7715751370997168, "old_cutoff": 2.737491804000456, "new_cutoff": 0.08583350497065112}}
+{"checked": 30, "total": 180, "timings": {"old_fence": 22.009175676037557, "new_fence": 1.0723490651580505, "old_cutoff": 2.9073502209503204, "new_cutoff": 0.09736385295400396}}
+{"checked": 40, "total": 180, "timings": {"old_fence": 23.511229578056373, "new_fence": 1.1068184602772817, "old_cutoff": 3.981003136956133, "new_cutoff": 0.12066809891257435}}
+{"checked": 50, "total": 180, "timings": {"old_fence": 30.011737880122382, "new_fence": 1.6351920613087714, "old_cutoff": 3.9886015888187103, "new_cutoff": 0.126939942012541}}
+{"checked": 60, "total": 180, "timings": {"old_fence": 39.4478142480948, "new_fence": 2.3847538462723605, "old_cutoff": 5.873065434803721, "new_cutoff": 0.21686947101261467}}
+{"checked": 70, "total": 180, "timings": {"old_fence": 39.597962211002596, "new_fence": 2.4075276884250343, "old_cutoff": 6.011091820721049, "new_cutoff": 0.24015948589658365}}
+{"checked": 80, "total": 180, "timings": {"old_fence": 43.230333526211325, "new_fence": 2.7621713033877313, "old_cutoff": 6.22634452074999, "new_cutoff": 0.25927561498247087}}
+{"checked": 90, "total": 180, "timings": {"old_fence": 43.545199649001006, "new_fence": 2.8110339454724453, "old_cutoff": 6.577845506719314, "new_cutoff": 0.312088354898151}}
+{"checked": 100, "total": 180, "timings": {"old_fence": 43.72054146201117, "new_fence": 2.8369428354199044, "old_cutoff": 6.751106639683712, "new_cutoff": 0.33886961406096816}}
+{"checked": 110, "total": 180, "timings": {"old_fence": 47.203724357066676, "new_fence": 3.026460778375622, "old_cutoff": 7.1922761286841705, "new_cutoff": 0.3534782979404554}}
+{"checked": 120, "total": 180, "timings": {"old_fence": 47.22543150105048, "new_fence": 3.027187221450731, "old_cutoff": 7.192962177563459, "new_cutoff": 0.35398144490318373}}
+{"checked": 130, "total": 180, "timings": {"old_fence": 47.29139555094298, "new_fence": 3.0318713044398464, "old_cutoff": 7.193371040513739, "new_cutoff": 0.3543890548753552}}
+{"checked": 140, "total": 180, "timings": {"old_fence": 49.063054942991585, "new_fence": 3.238752934441436, "old_cutoff": 7.70581553253578, "new_cutoff": 0.4372669709264301}}
+{"checked": 150, "total": 180, "timings": {"old_fence": 49.38674499699846, "new_fence": 3.29194797744276, "old_cutoff": 8.018565268605016, "new_cutoff": 0.4901617328869179}}
+{"checked": 160, "total": 180, "timings": {"old_fence": 49.559542423987295, "new_fence": 3.3176160134607926, "old_cutoff": 8.192682481487282, "new_cutoff": 0.5168786849826574}}
+{"checked": 170, "total": 180, "timings": {"old_fence": 49.59084661788074, "new_fence": 3.31934803747572, "old_cutoff": 9.176023521402385, "new_cutoff": 0.5790638850303367}}
+{"checked": 180, "total": 180, "timings": {"old_fence": 49.59231935982825, "new_fence": 3.3194212553207763, "old_cutoff": 9.177589814353269, "new_cutoff": 0.5792500090319663}}
+{"passed": true, "actual_sampled_ids_retained": true, "checked": 180, "vocabulary_size": 248077, "candidate_token_ids": 68, "all_single_token_backticks_covered": true, "prefix_causality_no_suffix_access": true, "timings_seconds": {"old_fence": 49.59231935982825, "new_fence": 3.3194212553207763, "old_cutoff": 9.177589814353269, "new_cutoff": 0.5792500090319663}, "candidate_sha256": {"token_boundaries.py": "2c0c20dcb52f95a2e5054192413b10b775c772a947a6150fe4c31aaf96f00865", "response_protocol.py": "0c3caff8d0c0a3ce7fd07e8700f97c0f35151899377365797ef29548dafaa748", "ucf/first_fence.py": "9b38d3c07ed532c50f07655c5f159a4ecce415b3007c2b6ce2310748e2e08259"}}

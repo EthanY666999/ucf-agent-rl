@@ -43,7 +43,9 @@ def truncate_response(branch, out, tokenizer):
     # Stop at the first sampled TOKEN completing the block. A token is atomic:
     # retain and record any characters sharing its closing-fence token.
     endpoint = None
-    for n in range(len(copied)+1, len(full)+1):
+    from token_boundaries import fence_token_positions
+    for pos in fence_token_positions(full,len(copied),len(full),tokenizer):
+        n=pos+1
         prefix = tokenizer.decode(full[:n], skip_special_tokens=True)
         if len(prefix) >= match.end():
             assert prefix.startswith(text[:match.end()])

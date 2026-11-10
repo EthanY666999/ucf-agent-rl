@@ -8,6 +8,10 @@ The production-interpreter CPU suite passes85 relevant tests. The scoped numeric
 
 Fresh no-task-SFT Sokoban UCF training has started from Qwen3.5-2B. GRPO4 independently starts from the same raw model under the same numerical protocol. Stages alternate UCF/GRPO at25/50/100/150/200 steps. Fixed validation runs every25 steps; there is no automatic400-step promotion and no final-test use during this diagnostic queue.
 
+The first full UCF update is finite and changes parameters. Its training success is4.6875%, with0/57 all-failure questions rescued. Initial validation is6.75% success /15%pass@4. These initial measurements do not demonstrate a learning improvement. First-step metrics and raw initial validation are under `results/scoped_ucf_step1/`.
+
+After a complete step1 checkpoint, a CPU-equivalent token-prefix scanner was admitted and training resumed atstep2.180 exact old/new boundary/cutoff cases and85 CPU regressions passed. The scanner removes repeated decoding of prefixes that cannot end an ASCII fence; it preserves sampled token IDs and does not inspect a suffix. Measured scanner operations became about15 times faster; whole-training speedup remains unmeasured. `reports/fastscan_resume/` and `reports/equivalence.json` record the planned interruption, admission and resume.
+
 ## Numerical issue and repair
 
 The original Sokoban contract failed the preset rollout/prefill logprob consistency gate. Batching probes alone also failed. Global vLLM batch-invariant mode reduced the discrepancy but broke actor backward. All failures are retained.
@@ -50,13 +54,17 @@ Both methods terminate a turn at the first complete action block at a sampled-to
 - `diagnostics/scoped_inference.py`, `diagnostics/train_scoped.py`: admitted numerical protocol shared by both new arms.
 - `configs_scoped/`: exact server-path configurations; adapt locations elsewhere and verify dataset hashes.
 - `control/v3_manager.py`, `reports/v3_plan_scoped_prepared.json`: hash-bound source/config admission, queue/GPU locks, resumable checkpoints and stage boundaries.
+- `reports/fastscan_resume/plan.json`: current admitted plan after the equivalent CPU optimization; earlier plans remain historical records.
+- `code/token_boundaries.py`, `diagnostics/check_prefix_scan.py`: exact boundary screening and old/new replay proof.
 - `control/review_pilot.py`: CPU fixed-validation review; never opens final/supplemental test data.
 - `reports/scoped_gpu/`: technical receipts, sampling diagnostics and preserved evidence.
 - `results/default_numerics_grpo25/`: earlier pilot metrics and compressed raw fixed-validation outcomes.
 - `data/sokoban/`: compressed frozen tasks/maps; original/compressed hashes are recorded in the evidence manifest.
 - `WORKLOG.md`: decisions, exact interruptions, provenance and limitations.
 
-Exact A/B component-gradient diagnostics are computed atstep1 and every25. Skipped measurements are explicitly null/false, not zero. Every actual update still checks finite loss/gradient and records parameter change. No measured speedup is claimed yet.
+Exact A/B component-gradient diagnostics are computed atstep1 and every25. Skipped measurements are explicitly null/false, not zero. Every actual update still checks finite loss/gradient and records parameter change. End-to-end training speedup has not yet been measured.
+
+`SOURCE_MANIFEST_V3.json` at the root inventories the current publication. Inherited manifests inside `code/` describe historical snapshots and are not current-release admission lists.
 
 ## Storage and evidence
 

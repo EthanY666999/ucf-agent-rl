@@ -1,0 +1,14 @@
+{
+  "step": 1,
+  "status": {
+    "status": "paused_checkpointed",
+    "step": 1,
+    "total_steps": 400,
+    "method": "ucf",
+    "final_evaluation_pending": false
+  },
+  "checkpoint_bytes": 22582327977,
+  "reason": "CPU-equivalent prefix scan optimization, not failed learning",
+  "final_test_used": false,
+  "unix": 1794311788.823241
+}

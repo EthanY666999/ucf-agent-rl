@@ -1,0 +1,142 @@
+{
+  "unix": 1794312316.71486,
+  "files": [
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/config.json",
+      "archive_path": "results/scoped_ucf_step1/config.json",
+      "bytes": 2015,
+      "source_sha256": "71c944380282f95b3df73469c6e6150360c0c2f6da1c3a69d724105f24c0a15f",
+      "archive_sha256": "71c944380282f95b3df73469c6e6150360c0c2f6da1c3a69d724105f24c0a15f"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/launch_config.json",
+      "archive_path": "results/scoped_ucf_step1/launch_config.json",
+      "bytes": 1872,
+      "source_sha256": "db61f5ee9a2fc4e58b48b347e66a123554c0f67e3a12c9c230d23af389c683da",
+      "archive_sha256": "db61f5ee9a2fc4e58b48b347e66a123554c0f67e3a12c9c230d23af389c683da"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/hardware.json",
+      "archive_path": "results/scoped_ucf_step1/hardware.json",
+      "bytes": 457,
+      "source_sha256": "9d53a08203b28f235a6a7555e9fe6d685cc27df5206b2903907f704ddeb4290c",
+      "archive_sha256": "9d53a08203b28f235a6a7555e9fe6d685cc27df5206b2903907f704ddeb4290c"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/prompt_contract.json",
+      "archive_path": "results/scoped_ucf_step1/prompt_contract.json",
+      "bytes": 307,
+      "source_sha256": "6975df474fc84736efd132b26c05e7569b0b750d80987066c27a5353e71e1b68",
+      "archive_sha256": "6975df474fc84736efd132b26c05e7569b0b750d80987066c27a5353e71e1b68"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/numerical_runtime.json",
+      "archive_path": "results/scoped_ucf_step1/numerical_runtime.json",
+      "bytes": 370,
+      "source_sha256": "bcb072140c4910a476a2e3926a4bcb96f408e39a4b170650c44d51deb13a97e4",
+      "archive_sha256": "bcb072140c4910a476a2e3926a4bcb96f408e39a4b170650c44d51deb13a97e4"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/source_versions.jsonl",
+      "archive_path": "results/scoped_ucf_step1/source_versions.jsonl.gz",
+      "bytes": 246,
+      "source_sha256": "9aabdfc0e7f83a293e3c51600ad47ecb87f1df74fc222185686380844cd7e31c",
+      "archive_sha256": "49c43d7acc097f6cce0f54663af558d05aeb15408611d71322e53601748e5980"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/validation_0000.json",
+      "archive_path": "results/scoped_ucf_step1/validation_0000.json",
+      "bytes": 785,
+      "source_sha256": "834b7d62b218ab009c4c737817add522b075bee7a0fdfe46683d499d7f316beb",
+      "archive_sha256": "834b7d62b218ab009c4c737817add522b075bee7a0fdfe46683d499d7f316beb"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/validation_0000.jsonl",
+      "archive_path": "results/scoped_ucf_step1/validation_0000.jsonl.gz",
+      "bytes": 4530679,
+      "source_sha256": "9b7d49b9a63a7455dbc09955114a642f46a68d8c261e94b41c9fa751e0dc115b",
+      "archive_sha256": "5c4ee4f4fa141ad1729205d89654a2ee2b02febe293529f3be1dcc9805f2f710"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/ucf_logs/budget_0001.json",
+      "archive_path": "results/scoped_ucf_step1/ucf_logs/budget_0001.json",
+      "bytes": 2813,
+      "source_sha256": "64ee850b0611a6f42cc42bedc4febd8efea2957e1e26fa6b11898c3eaf635f69",
+      "archive_sha256": "64ee850b0611a6f42cc42bedc4febd8efea2957e1e26fa6b11898c3eaf635f69"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/ucf_logs/select_0001.jsonl",
+      "archive_path": "results/scoped_ucf_step1/ucf_logs/select_0001.jsonl.gz",
+      "bytes": 43977,
+      "source_sha256": "8e3b5ac59e533cb6d86c3c0cf23a53c97d4933b6a0160f2932e963afb9af7e97",
+      "archive_sha256": "d7a6d99e167dfea23b66310fd4888165f478fb3cbf0cb7a33d115271e38aeeda"
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/ucf_logs/controller_0001.json",
+      "archive_path": "results/scoped_ucf_step1/ucf_logs/controller_0001.json",
+      "bytes": 3144,
+      "source_sha256": "5b92310ebbb4095ddb2d3fb63fa71cefe855c8ef8394c059cfe3742e951a1acb",
+      "archive_sha256": "5b92310ebbb4095ddb2d3fb63fa71cefe855c8ef8394c059cfe3742e951a1acb"
+    },
+    {
+      "path": "/data/runs/ucf_v3_paired_fastscan_20261110/cpu_tests.log",
+      "archive_path": "reports/fastscan_resume/cpu_tests.log",
+      "bytes": 180,
+      "source_sha256": "8b4e0bd983aae232e759e5629d474de06a13fb9236c60140bbd2e7cf09f616b6",
+      "archive_sha256": "8b4e0bd983aae232e759e5629d474de06a13fb9236c60140bbd2e7cf09f616b6"
+    },
+    {
+      "path": "/data/runs/ucf_v3_paired_fastscan_20261110/admission.json",
+      "archive_path": "reports/fastscan_resume/admission.json",
+      "bytes": 377,
+      "source_sha256": "bde4da79217a4c9770f15b55469e238e08284e4cabced063d6670aaf08b01c0c",
+      "archive_sha256": "bde4da79217a4c9770f15b55469e238e08284e4cabced063d6670aaf08b01c0c"
+    },
+    {
+      "path": "/data/runs/ucf_v3_paired_fastscan_20261110/launch.json",
+      "archive_path": "reports/fastscan_resume/launch.json",
+      "bytes": 197,
+      "source_sha256": "4e90fc1539a4c26ac7b5fb68fac09487d419ec9576d994ade9026d7ffea2541d",
+      "archive_sha256": "4e90fc1539a4c26ac7b5fb68fac09487d419ec9576d994ade9026d7ffea2541d"
+    },
+    {
+      "path": "/data/runs/ucf_v3_paired_fastscan_20261110/plan.json",
+      "archive_path": "reports/fastscan_resume/plan.json",
+      "bytes": 33374,
+      "source_sha256": "970034ab47a2e6633114cf3e51d2e548948e73f5fecc1aebefb8e09b7b7ea3a1",
+      "archive_sha256": "970034ab47a2e6633114cf3e51d2e548948e73f5fecc1aebefb8e09b7b7ea3a1"
+    },
+    {
+      "path": "/data/runs/ucf_v3_paired_fastscan_20261110/planned_pause_receipt.json",
+      "archive_path": "reports/fastscan_resume/planned_pause_receipt.json",
+      "bytes": 338,
+      "source_sha256": "17097d068441f4a4492991b96fc3f8222ad2a3ded9c06bd31a0ea7d605a672ac",
+      "archive_sha256": "17097d068441f4a4492991b96fc3f8222ad2a3ded9c06bd31a0ea7d605a672ac"
+    }
+  ],
+  "retained_rollouts": [
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/rollouts_0001.jsonl.gz",
+      "bytes": 22394455,
+      "sha256": "b662c3a256e87afa732baa20474c94bde8d9d6e2177219f02111e3e2d6152c2d",
+      "retained_remote": true,
+      "uploaded_in_this_snapshot": false
+    },
+    {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/ucf_logs/raw_leaves_0001.jsonl.gz",
+      "bytes": 18163329,
+      "sha256": "5b3ae23f87a8ef33f28beac933936e23ae1ee45aaadce0708bfb33a0588a879a",
+      "retained_remote": true,
+      "uploaded_in_this_snapshot": false
+    }
+  ],
+  "no_models_or_checkpoints_transferred": true,
+  "disks": {
+    "/home/vipuser": {
+      "free_bytes": 41131732992
+    },
+    "/data": {
+      "free_bytes": 61285535744
+    }
+  }
+}

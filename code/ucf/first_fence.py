@@ -14,7 +14,8 @@ def locate_token_prefix(ids, start, end, tokenizer):
     Handles spaced/fragmented fence tokens without scanning for a later
     canonical fence ID. Never inspect any token beyond the returned prefix.
     """
-    for pos in range(start,end):
+    from token_boundaries import fence_token_positions
+    for pos in fence_token_positions(ids,start,end,tokenizer):
         if '```' in tokenizer.decode(ids[start:pos+1],skip_special_tokens=True):
             return pos+1
     return None
