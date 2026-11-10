@@ -1,0 +1,337 @@
+{
+  "unix": 1794344613.9853432,
+  "run": "/data/runs/ucf_v3_budget10240_runs/V3_S_grpo_budget10240_from16_seed42",
+  "through_step": 20,
+  "source_sha256": {
+    "task_envs.py": "cd0f135cfe8ee0ddaff2e582f7317a338b6331b34d857c63f0a72ed5f8e71538",
+    "sokoban_exact.py": "ff13b3d523bed182821a424df30187c1ea06d631fc3625db3e74419e777108ce"
+  },
+  "protocol": "Original four only. First transition to structural deadlock or shortest remaining path longer than remaining environment turns. Length is assigned only if the terminal state is otherwise still solvable within the horizon.",
+  "caveat": "Training-only mechanism audit on varying sampled questions. No rewards, prompts, masks, sampling rules or queue entries changed. These categories do not establish UCF benefit or causal attribution of training behavior.",
+  "rows": [
+    {
+      "step": 17,
+      "original_count": 256,
+      "successes": 57,
+      "failed": 199,
+      "first_irrecoverable_cause": {
+        "insufficient_environment_turns": 165,
+        "structural_deadlock": 29,
+        "length_ended_while_still_solvable_within_turns": 5
+      },
+      "first_irrecoverable_turn": {
+        "1": 18,
+        "2": 26,
+        "3": 27,
+        "4": 17,
+        "5": 37,
+        "6": 22,
+        "7": 25,
+        "8": 17,
+        "9": 4,
+        "10": 1
+      },
+      "irrecoverable_by_turn3": 71,
+      "initial_question_difficulty": {
+        "1": 2,
+        "2": 6,
+        "3": 10,
+        "4": 12,
+        "5": 6,
+        "6": 9,
+        "7": 8,
+        "8": 7,
+        "9": 1,
+        "10": 3
+      },
+      "original_successes_by_difficulty": {
+        "1": {
+          "trajectories": 8,
+          "successes": 8
+        },
+        "2": {
+          "trajectories": 24,
+          "successes": 13
+        },
+        "3": {
+          "trajectories": 40,
+          "successes": 16
+        },
+        "4": {
+          "trajectories": 48,
+          "successes": 13
+        },
+        "5": {
+          "trajectories": 24,
+          "successes": 3
+        },
+        "6": {
+          "trajectories": 36,
+          "successes": 4
+        },
+        "7": {
+          "trajectories": 32,
+          "successes": 0
+        },
+        "8": {
+          "trajectories": 28,
+          "successes": 0
+        },
+        "9": {
+          "trajectories": 4,
+          "successes": 0
+        },
+        "10": {
+          "trajectories": 12,
+          "successes": 0
+        }
+      },
+      "executed_actions": 2175,
+      "ineffective_actions": 720,
+      "invalid_actions": 57,
+      "checked_after_action_states": 2175,
+      "rollout_sha256": "d07b546274dd1a8422117b397883018dadb45ecff446bdf5c9567487704be3ca"
+    },
+    {
+      "step": 18,
+      "original_count": 256,
+      "successes": 54,
+      "failed": 202,
+      "first_irrecoverable_cause": {
+        "structural_deadlock": 33,
+        "insufficient_environment_turns": 166,
+        "length_ended_while_still_solvable_within_turns": 3
+      },
+      "first_irrecoverable_turn": {
+        "1": 19,
+        "2": 27,
+        "3": 28,
+        "4": 42,
+        "5": 22,
+        "6": 28,
+        "7": 19,
+        "8": 12,
+        "9": 2
+      },
+      "irrecoverable_by_turn3": 74,
+      "initial_question_difficulty": {
+        "1": 3,
+        "2": 5,
+        "3": 7,
+        "4": 6,
+        "5": 13,
+        "6": 7,
+        "7": 12,
+        "8": 4,
+        "9": 2,
+        "10": 5
+      },
+      "original_successes_by_difficulty": {
+        "1": {
+          "trajectories": 12,
+          "successes": 11
+        },
+        "2": {
+          "trajectories": 20,
+          "successes": 13
+        },
+        "3": {
+          "trajectories": 28,
+          "successes": 15
+        },
+        "4": {
+          "trajectories": 24,
+          "successes": 4
+        },
+        "5": {
+          "trajectories": 52,
+          "successes": 7
+        },
+        "6": {
+          "trajectories": 28,
+          "successes": 3
+        },
+        "7": {
+          "trajectories": 48,
+          "successes": 1
+        },
+        "8": {
+          "trajectories": 16,
+          "successes": 0
+        },
+        "9": {
+          "trajectories": 8,
+          "successes": 0
+        },
+        "10": {
+          "trajectories": 20,
+          "successes": 0
+        }
+      },
+      "executed_actions": 2173,
+      "ineffective_actions": 790,
+      "invalid_actions": 55,
+      "checked_after_action_states": 2173,
+      "rollout_sha256": "365ab75adc6e4181c342a5c387a6753eca15b9fd941c29642683abf1288fe5cd"
+    },
+    {
+      "step": 19,
+      "original_count": 256,
+      "successes": 44,
+      "failed": 212,
+      "first_irrecoverable_cause": {
+        "structural_deadlock": 36,
+        "insufficient_environment_turns": 175,
+        "length_ended_while_still_solvable_within_turns": 1
+      },
+      "first_irrecoverable_turn": {
+        "1": 18,
+        "2": 25,
+        "3": 29,
+        "4": 36,
+        "5": 28,
+        "6": 23,
+        "7": 9,
+        "8": 35,
+        "9": 8
+      },
+      "irrecoverable_by_turn3": 72,
+      "initial_question_difficulty": {
+        "2": 1,
+        "3": 11,
+        "4": 11,
+        "5": 9,
+        "6": 15,
+        "7": 6,
+        "8": 7,
+        "9": 1,
+        "10": 3
+      },
+      "original_successes_by_difficulty": {
+        "2": {
+          "trajectories": 4,
+          "successes": 3
+        },
+        "3": {
+          "trajectories": 44,
+          "successes": 21
+        },
+        "4": {
+          "trajectories": 44,
+          "successes": 8
+        },
+        "5": {
+          "trajectories": 36,
+          "successes": 7
+        },
+        "6": {
+          "trajectories": 60,
+          "successes": 5
+        },
+        "7": {
+          "trajectories": 24,
+          "successes": 0
+        },
+        "8": {
+          "trajectories": 28,
+          "successes": 0
+        },
+        "9": {
+          "trajectories": 4,
+          "successes": 0
+        },
+        "10": {
+          "trajectories": 12,
+          "successes": 0
+        }
+      },
+      "executed_actions": 2313,
+      "ineffective_actions": 781,
+      "invalid_actions": 51,
+      "checked_after_action_states": 2313,
+      "rollout_sha256": "1237d9cf2c40e60271c981db8bca96413f6d35a1e63c38332d1d8f0f1e93ce07"
+    },
+    {
+      "step": 20,
+      "original_count": 256,
+      "successes": 53,
+      "failed": 203,
+      "first_irrecoverable_cause": {
+        "structural_deadlock": 33,
+        "insufficient_environment_turns": 170
+      },
+      "first_irrecoverable_turn": {
+        "1": 21,
+        "2": 23,
+        "3": 30,
+        "4": 30,
+        "5": 33,
+        "6": 21,
+        "7": 26,
+        "8": 9,
+        "9": 7,
+        "10": 3
+      },
+      "irrecoverable_by_turn3": 74,
+      "initial_question_difficulty": {
+        "1": 4,
+        "2": 6,
+        "3": 7,
+        "4": 8,
+        "5": 6,
+        "6": 14,
+        "7": 9,
+        "8": 4,
+        "9": 4,
+        "10": 2
+      },
+      "original_successes_by_difficulty": {
+        "1": {
+          "trajectories": 16,
+          "successes": 15
+        },
+        "2": {
+          "trajectories": 24,
+          "successes": 18
+        },
+        "3": {
+          "trajectories": 28,
+          "successes": 5
+        },
+        "4": {
+          "trajectories": 32,
+          "successes": 10
+        },
+        "5": {
+          "trajectories": 24,
+          "successes": 1
+        },
+        "6": {
+          "trajectories": 56,
+          "successes": 3
+        },
+        "7": {
+          "trajectories": 36,
+          "successes": 0
+        },
+        "8": {
+          "trajectories": 16,
+          "successes": 1
+        },
+        "9": {
+          "trajectories": 16,
+          "successes": 0
+        },
+        "10": {
+          "trajectories": 8,
+          "successes": 0
+        }
+      },
+      "executed_actions": 2223,
+      "ineffective_actions": 781,
+      "invalid_actions": 96,
+      "checked_after_action_states": 2223,
+      "rollout_sha256": "982c89ff15e398aa91dcc9570f99d714427db0fa02bc9d388b5bc76b44c06f6c"
+    }
+  ]
+}

@@ -1766,5 +1766,29 @@
   "diagnostics/compare_common_start_rollouts.py": {
     "bytes": 3630,
     "sha256": "94171af6ab38c9ad5729fb35f9f0e3a5342d7cc0bb74ef2b0134d30117f7b55d"
+  },
+  "reports/budget10240/common_start_rollouts_0017.json": {
+    "bytes": 710,
+    "sha256": "25ba5a863890c57de72f09abba869a5299c8f74337a7c1b25992c3ddf25c7b83"
+  },
+  "reports/budget10240/grpo_failures_0020.json": {
+    "bytes": 8014,
+    "sha256": "9136e969d98a7418fc968254773a0bdad70d9647b6f35607ed52e66998660b5b"
+  },
+  "diagnostics/paired_budget_accounting.py": {
+    "bytes": 6721,
+    "sha256": "1aab8c58a8c8078d7f60e6daaabfad8a3fa80ba79d12a3888cbc776a9208894f"
+  },
+  "control/export_budget_boundary.py": {
+    "bytes": 4156,
+    "sha256": "7c15045783ef217c7fc04823787c257b94ab9aa7c2d7b0dc2903e04e777e3714"
+  },
+  "control/review_budget_pair.sh": {
+    "bytes": 2768,
+    "sha256": "997bdaac917dcb137d3dc9dc709998169fd18ec18e444a40307c84c1c245f46e"
+  },
+  "reports/budget10240/MATCHED_REVIEW.md": {
+    "bytes": 2472,
+    "sha256": "e48eb460926c913f76d509e810d23289539f23da0f835c1291d7b5b2043909ac"
   }
 }

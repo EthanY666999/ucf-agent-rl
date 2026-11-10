@@ -1,0 +1,13 @@
+{
+  "step": 17,
+  "left": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42",
+  "right": "/data/runs/ucf_v3_budget10240_runs/V3_S_grpo_budget10240_from16_seed42",
+  "originals": 256,
+  "passed": true,
+  "exact_originals_equal": true,
+  "maximum_old_logprob_delta": 0.0,
+  "differences": [],
+  "shared_checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+  "audit_script_sha256": "94171af6ab38c9ad5729fb35f9f0e3a5342d7cc0bb74ef2b0134d30117f7b55d",
+  "scope": "Only the first new update shares model parameters. Later original samples may differ because the methods update differently. Equality is a sampler/initialization check, not a learning result."
+}
