@@ -1,0 +1,312 @@
+{
+  "run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+  "config_sha256": "71c944380282f95b3df73469c6e6150360c0c2f6da1c3a69d724105f24c0a15f",
+  "code_formula": "loss = (PG + kl_coefficient * KL) * row_weight for both A and B; B row_weight=beta/(rho*n_tasks*4*original_response_tokens)",
+  "interpretation": "Exact coefficient/token accounting on recorded samples, not actual KL magnitude or gradient direction. A zero PG advantage does not disable KL in the implemented loss. This alone cannot establish the cause of truncation.",
+  "steps": [
+    {
+      "step": 1,
+      "original_trajectories": 256,
+      "fork_nodes": 143,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.0651627859778592,
+        "total": 0.13494186303632275,
+        "counterfactual": 0.06977907705846388,
+        "zero_pg_advantage": 0.1220598723853052
+      },
+      "combined_coefficient_mass": 1.1349418630363228,
+      "part_b_mask_tokens": {
+        "original": 189371,
+        "counterfactual": 203163
+      },
+      "zero_pg_nodes": 116,
+      "zero_pg_fraction_of_b_kl_mass": 0.9045367363310373
+    },
+    {
+      "step": 2,
+      "original_trajectories": 256,
+      "fork_nodes": 143,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.04555883963959674,
+        "total": 0.0858441065052504,
+        "zero_pg_advantage": 0.0855243420806794,
+        "counterfactual": 0.04028526686565368
+      },
+      "combined_coefficient_mass": 1.0858441065052504,
+      "part_b_mask_tokens": {
+        "original": 136600,
+        "counterfactual": 120596
+      },
+      "zero_pg_nodes": 130,
+      "zero_pg_fraction_of_b_kl_mass": 0.9962750567559179
+    },
+    {
+      "step": 3,
+      "original_trajectories": 256,
+      "fork_nodes": 131,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.05484964925931947,
+        "total": 0.11097989188817654,
+        "zero_pg_advantage": 0.10707039280639287,
+        "counterfactual": 0.056130242628857116
+      },
+      "combined_coefficient_mass": 1.1109798918881766,
+      "part_b_mask_tokens": {
+        "original": 114840,
+        "counterfactual": 117874
+      },
+      "zero_pg_nodes": 123,
+      "zero_pg_fraction_of_b_kl_mass": 0.9647729060168585
+    },
+    {
+      "step": 4,
+      "original_trajectories": 256,
+      "fork_nodes": 124,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.0421775230323863,
+        "total": 0.0811901178647543,
+        "zero_pg_advantage": 0.07533599686594178,
+        "counterfactual": 0.03901259483236794
+      },
+      "combined_coefficient_mass": 1.0811901178647543,
+      "part_b_mask_tokens": {
+        "original": 75177,
+        "counterfactual": 66998
+      },
+      "zero_pg_nodes": 105,
+      "zero_pg_fraction_of_b_kl_mass": 0.9278961386832292
+    },
+    {
+      "step": 5,
+      "original_trajectories": 256,
+      "fork_nodes": 130,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.04309299010403977,
+        "total": 0.09083519593522958,
+        "zero_pg_advantage": 0.08622747776400992,
+        "counterfactual": 0.04774220583118991
+      },
+      "combined_coefficient_mass": 1.0908351959352296,
+      "part_b_mask_tokens": {
+        "original": 58650,
+        "counterfactual": 61222
+      },
+      "zero_pg_nodes": 118,
+      "zero_pg_fraction_of_b_kl_mass": 0.9492738676481173
+    },
+    {
+      "step": 6,
+      "original_trajectories": 256,
+      "fork_nodes": 138,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.025254427326788252,
+        "total": 0.05919495538922361,
+        "zero_pg_advantage": 0.05908004712010723,
+        "counterfactual": 0.03394052806243542
+      },
+      "combined_coefficient_mass": 1.0591949553892237,
+      "part_b_mask_tokens": {
+        "original": 24482,
+        "counterfactual": 32332
+      },
+      "zero_pg_nodes": 121,
+      "zero_pg_fraction_of_b_kl_mass": 0.9980588165264958
+    },
+    {
+      "step": 7,
+      "original_trajectories": 256,
+      "fork_nodes": 141,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.032138808738579897,
+        "total": 0.07109649613525,
+        "zero_pg_advantage": 0.06505031572407466,
+        "counterfactual": 0.03895768739667015
+      },
+      "combined_coefficient_mass": 1.07109649613525,
+      "part_b_mask_tokens": {
+        "original": 20036,
+        "counterfactual": 21415
+      },
+      "zero_pg_nodes": 106,
+      "zero_pg_fraction_of_b_kl_mass": 0.9149581098951286
+    },
+    {
+      "step": 8,
+      "original_trajectories": 256,
+      "fork_nodes": 121,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.025692166286686993,
+        "total": 0.04379405920155829,
+        "counterfactual": 0.018101892914871246,
+        "zero_pg_advantage": 0.043319110812832434
+      },
+      "combined_coefficient_mass": 1.0437940592015582,
+      "part_b_mask_tokens": {
+        "original": 14880,
+        "counterfactual": 9914
+      },
+      "zero_pg_nodes": 106,
+      "zero_pg_fraction_of_b_kl_mass": 0.9891549585175481
+    },
+    {
+      "step": 9,
+      "original_trajectories": 256,
+      "fork_nodes": 126,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.007137297545512236,
+        "total": 0.01933797667389263,
+        "zero_pg_advantage": 0.0019349910648486371,
+        "counterfactual": 0.01220067912838038
+      },
+      "combined_coefficient_mass": 1.0193379766738926,
+      "part_b_mask_tokens": {
+        "original": 3360,
+        "counterfactual": 3463
+      },
+      "zero_pg_nodes": 93,
+      "zero_pg_fraction_of_b_kl_mass": 0.1000617126331001
+    },
+    {
+      "step": 10,
+      "original_trajectories": 256,
+      "fork_nodes": 128,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.01618545166882366,
+        "total": 0.037848515012149586,
+        "zero_pg_advantage": 0.03261903666487978,
+        "counterfactual": 0.021663063343325895
+      },
+      "combined_coefficient_mass": 1.0378485150121497,
+      "part_b_mask_tokens": {
+        "original": 10620,
+        "counterfactual": 14898
+      },
+      "zero_pg_nodes": 111,
+      "zero_pg_fraction_of_b_kl_mass": 0.8618313467360315
+    },
+    {
+      "step": 11,
+      "original_trajectories": 256,
+      "fork_nodes": 110,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.012283590620454272,
+        "total": 0.02184587688341775,
+        "zero_pg_advantage": 0.02138532021866889,
+        "counterfactual": 0.009562286262963486
+      },
+      "combined_coefficient_mass": 1.0218458768834178,
+      "part_b_mask_tokens": {
+        "original": 7590,
+        "counterfactual": 5883
+      },
+      "zero_pg_nodes": 100,
+      "zero_pg_fraction_of_b_kl_mass": 0.9789179135629732
+    },
+    {
+      "step": 12,
+      "original_trajectories": 256,
+      "fork_nodes": 138,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.03037279957983508,
+        "total": 0.0637727735290533,
+        "zero_pg_advantage": 0.06226308516451072,
+        "counterfactual": 0.033399973949218224
+      },
+      "combined_coefficient_mass": 1.0637727735290534,
+      "part_b_mask_tokens": {
+        "original": 17057,
+        "counterfactual": 18351
+      },
+      "zero_pg_nodes": 115,
+      "zero_pg_fraction_of_b_kl_mass": 0.9763270706133738
+    },
+    {
+      "step": 13,
+      "original_trajectories": 256,
+      "fork_nodes": 130,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.01677078995343519,
+        "total": 0.04435566229472563,
+        "counterfactual": 0.02758487234129046,
+        "zero_pg_advantage": 0.03403445392068004
+      },
+      "combined_coefficient_mass": 1.0443556622947257,
+      "part_b_mask_tokens": {
+        "original": 7921,
+        "counterfactual": 13308
+      },
+      "zero_pg_nodes": 101,
+      "zero_pg_fraction_of_b_kl_mass": 0.7673079863971979
+    },
+    {
+      "step": 14,
+      "original_trajectories": 256,
+      "fork_nodes": 124,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.022518221452471114,
+        "total": 0.04806142017039039,
+        "zero_pg_advantage": 0.03686894957540401,
+        "counterfactual": 0.02554319871791922
+      },
+      "combined_coefficient_mass": 1.0480614201703904,
+      "part_b_mask_tokens": {
+        "original": 8921,
+        "counterfactual": 9183
+      },
+      "zero_pg_nodes": 80,
+      "zero_pg_fraction_of_b_kl_mass": 0.767121517522659
+    },
+    {
+      "step": 15,
+      "original_trajectories": 256,
+      "fork_nodes": 126,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.024845089519218738,
+        "total": 0.04173464949678804,
+        "counterfactual": 0.016889559977569222,
+        "zero_pg_advantage": 0.03354342677863136
+      },
+      "combined_coefficient_mass": 1.041734649496788,
+      "part_b_mask_tokens": {
+        "original": 10459,
+        "counterfactual": 6857
+      },
+      "zero_pg_nodes": 97,
+      "zero_pg_fraction_of_b_kl_mass": 0.8037308850817811
+    },
+    {
+      "step": 16,
+      "original_trajectories": 256,
+      "fork_nodes": 137,
+      "part_a_normalized_kl_coefficient_mass": 1.0,
+      "part_b_normalized_kl_coefficient_mass": {
+        "original": 0.01737174350894281,
+        "total": 0.037773567419476135,
+        "zero_pg_advantage": 0.0324974379868121,
+        "counterfactual": 0.0204018239105333
+      },
+      "combined_coefficient_mass": 1.0377735674194761,
+      "part_b_mask_tokens": {
+        "original": 6440,
+        "counterfactual": 7522
+      },
+      "zero_pg_nodes": 109,
+      "zero_pg_fraction_of_b_kl_mass": 0.8603221831268272
+    }
+  ]
+}

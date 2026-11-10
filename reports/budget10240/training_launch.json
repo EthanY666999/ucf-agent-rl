@@ -1,0 +1,10 @@
+{
+  "pid": 377181,
+  "unix": 1794326577.677243,
+  "source_step": 16,
+  "max_response_tokens": 10240,
+  "task_sft": false,
+  "shared_rl_warmstart": true,
+  "plan_sha256": "f3929f9ac2c73fad3432565b09efb566894401c965c9095e3f346a9611c3d6e0",
+  "attempt": 2
+}

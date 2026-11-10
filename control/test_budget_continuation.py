@@ -54,3 +54,12 @@ def test_fork_recovery_cannot_invent_missing_warmstart_update(tmp_path):
     (tmp_path/'train_metrics.jsonl').write_text('{"step":18}\n')
     with pytest.raises(AssertionError):reconcile(tmp_path,18)
     assert not (tmp_path/'recovery_archive').exists()
+
+def test_plan_cannot_silently_skip_required_entrypoint(tmp_path):
+    from prepare_budget_plan import hash_existing_sources
+    present=tmp_path/'helper.py';present.write_text('checked helper')
+    missing=tmp_path/'train_scoped.py'
+    with pytest.raises(AssertionError,match='Required runtime sources missing'):
+        hash_existing_sources([present,missing])
+    missing.write_text('checked entrypoint')
+    assert set(hash_existing_sources([present,missing]))=={str(present),str(missing)}

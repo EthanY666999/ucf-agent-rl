@@ -1,2 +1,4 @@
 
 - Diagnostic attempt 1: paired 4096/10240 sampling completed. The diagnostic wrapper then omitted `current_step` in phase status, causing KeyError before capture collection. Added the required field, preserved all evidence, and reuse the same completed paired sampling after checking checkpoint, config, question and seed identity. No training code or algorithm parameter changed in this repair. No optimizer update occurred.
+
+- Launch attempt 1 was blocked before GPU execution: the isolated runtime lacked storage/train_scoped.py, and the source inventory silently omitted missing paths. Copied the already verified unchanged scoped entrypoint, made missing required sources a hard error, added a CPU regression, and regenerated the plan. Both continuation checkpoints stayed at16. Preserved the failed plan and queue receipts; no training metrics or weights were overwritten.

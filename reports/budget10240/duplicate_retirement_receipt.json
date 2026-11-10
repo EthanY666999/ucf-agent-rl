@@ -1,0 +1,47 @@
+{
+  "manifest": {
+    "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42/checkpoint.pt",
+    "bytes": 22582328937,
+    "sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+    "reason": "Two independently verified continuations preserve all model, optimizer and RNG state at step16",
+    "replacements": [
+      {
+        "method": "grpo",
+        "path": "/data/runs/ucf_v3_budget10240_runs/V3_S_grpo_budget10240_from16_seed42/checkpoint.pt",
+        "bytes": 22582320977,
+        "sha256": "4c58504860340f47dc3fbc86d5f28f1b1ff8f113e5c8d967c2c3b0b9127005e8",
+        "config_path": "/data/runs/ucf_v3_budget10240_runs/V3_S_grpo_budget10240_from16_seed42/continuation_config.json",
+        "config_sha256": "8be8ca6b5dab92d28d677ecfcd66f02aca0d81d2c36224b5593dd261aaa7da49",
+        "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73"
+      },
+      {
+        "method": "ucf",
+        "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/checkpoint.pt",
+        "bytes": 22582321041,
+        "sha256": "435712c6d25b44587c7eb2807b864cacadd4b96630c9e30141437e83a3a46d6e",
+        "config_path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/continuation_config.json",
+        "config_sha256": "14c087bb54a5d4d9895db240177ca22c86be5dd26af85a6c2bb99c3051bd887b",
+        "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73"
+      }
+    ],
+    "records_logs_source_config_retained": true,
+    "execute_only_after_manifest_is_published": true,
+    "unix": 1794326014.9824905
+  },
+  "manifest_sha256": "d5169f129cc7781855cbdee405c53c9958465f1a654b4f5ad93aac88c7d4a3b1",
+  "published_commit": "40c0e9870b3644eb70a7f2ad2af9ea02ed1581e4",
+  "verification": "Fork transaction fully hashed both serialized checkpoints and verified all model/optimizer/RNG payloads; stable file sizes/mtimes and paused statuses rechecked under exclusive GPU/queue locks",
+  "exact_early_checkpoint_not_indefinitely_archived": true,
+  "source_weights_downloaded_to_mac": false,
+  "before_free_bytes": {
+    "/home/vipuser": 20173615104,
+    "/data": 38678638592
+  },
+  "unix": 1794326356.8258822,
+  "deleted": true,
+  "after_free_bytes": {
+    "/home/vipuser": 42755948544,
+    "/data": 38678634496
+  },
+  "released_system_bytes": 22582333440
+}

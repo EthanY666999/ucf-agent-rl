@@ -8,6 +8,10 @@ ROOT=Path('/home/vipuser/decision-point-ucf-v3-capture-candidate-20261110')
 STATE=Path('/data/runs/ucf_v3_budget10240_20261110')
 def read(p):return json.loads(Path(p).read_text())
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def hash_existing_sources(files):
+    missing=[str(p) for p in files if not p.is_file()]
+    assert not missing,'Required runtime sources missing: '+repr(missing)
+    return {str(p):sha(p) for p in files}
 def main():
     proof=read(STATE/'admission/acceptance.json');assert proof['passed']
     assert proof['original_sampling_bitwise_unchanged'] and proof['max_original_capture_logprob_delta']<=1e-4
@@ -20,7 +24,7 @@ def main():
     files += [ROOT/'storage/train_scoped.py',ROOT/'storage/scoped_inference.py',
               ROOT/'control/v3_manager.py',ROOT/'control/review_pilot.py']
     files=[p for p in files if '__pycache__' not in p.parts and 'artifacts' not in p.parts]
-    hashes={str(p):sha(p) for p in files if p.is_file()}
+    hashes=hash_existing_sources(files)
     for path,h in read(STATE/'admission_sources.json').items():
         assert sha(path)==h,'An admitted source changed after the GPU check'
     entries=[]

@@ -4,8 +4,8 @@
     "sha256": "c38b07fe10f2da98d9e8ac81f94c46901096cc9a9ff0270cc8056b18d6812cca"
   },
   "README.md": {
-    "bytes": 10211,
-    "sha256": "be62dcc67860db032a1b49072d02bf108e9f841b2b61d37b6282bbf127fbf42b"
+    "bytes": 10692,
+    "sha256": "dd97f813067a70b29ed18e92f8c425398345a34f18b7c7a99de9e90ba51a69b0"
   },
   "WORKLOG.md": {
     "bytes": 22934,
@@ -692,8 +692,8 @@
     "sha256": "d5eb632930e8be95b5ed2918c5f1f8a3455b6bdaee5b4833fd2adcaf63368362"
   },
   "control/prepare_budget_plan.py": {
-    "bytes": 3489,
-    "sha256": "41eb659c92b7be73e549cfce6b0a89c4ed55310f1cc10a2a1824df157b13d553"
+    "bytes": 3677,
+    "sha256": "6af01d4ad3d27ab37e4823f7f4640d3b17a1c5339ea7a8a8568fd0349f153ad6"
   },
   "control/prepare_scoped_plan.py": {
     "bytes": 1940,
@@ -707,6 +707,10 @@
     "bytes": 2455,
     "sha256": "84ffc4316df3238381d8c8b2fd05577d97a8380e2cadfd89dc5c322ae0957276"
   },
+  "control/retire_duplicate_and_launch.py": {
+    "bytes": 4506,
+    "sha256": "31365ebd18ae34ef359a5b6dee486188907a597345c37159ae29684e440db5fd"
+  },
   "control/review_pilot.py": {
     "bytes": 5412,
     "sha256": "0b7a34078f2a36f954561e88e30bf10b2650eb7b460725e2001879b9f905a0a1"
@@ -716,8 +720,8 @@
     "sha256": "2a5c3b65396c5a89de3157e1b7aca04e98465d09b5feac4c8fbf01de282bdbcc"
   },
   "control/test_budget_continuation.py": {
-    "bytes": 2532,
-    "sha256": "ea6f9be5f2962695a99c21a0709a2f0cb07794465dc7184509fc25523a65e44c"
+    "bytes": 3027,
+    "sha256": "47f7bce8da648318870269dd7b81d83533d859051b0aa924876928c91c3ed92b"
   },
   "control/test_component_cadence.py": {
     "bytes": 1837,
@@ -750,6 +754,10 @@
   "diagnostics/audit_live_probability_drift.py": {
     "bytes": 2678,
     "sha256": "08b2272cc2732c196f89dd7ca3bb60a52651a64173ed59c1e26fe7ae9a0ca796"
+  },
+  "diagnostics/audit_part_b_kl_mass.py": {
+    "bytes": 3563,
+    "sha256": "6fb420e365dafc77a58b858a767e2fba9d953cf83a80848cd0d55ee38ac1ef70"
   },
   "diagnostics/capture_candidate/check_budget_gpu.py": {
     "bytes": 11505,
@@ -840,8 +848,8 @@
     "sha256": "f4c9d499c65c3d255590f0c0860df0d553e4d0cb1fd244ac57ae894bd42eea7e"
   },
   "reports/budget10240/README.md": {
-    "bytes": 4843,
-    "sha256": "08896c84a86f7fddf4ede6a618ad6afc18ee4a29e7781202d11433278cd99522"
+    "bytes": 6404,
+    "sha256": "6903156c27f85a252d062da69ea5e44173c576a318a6947ecab90e24efe4a8af"
   },
   "reports/budget10240/acceptance.json": {
     "bytes": 14242,
@@ -852,8 +860,8 @@
     "sha256": "6b07957369650e89741c74e9846a8aa2d90cd474d61fd0fe6fc9e03fe29e16c8"
   },
   "reports/budget10240/autofix_log.md": {
-    "bytes": 427,
-    "sha256": "755d3508cb1887238cdd470f86330b576caf8e2c5665f03f48b67d5bf2ca1c53"
+    "bytes": 880,
+    "sha256": "04ab24f94a940be26483a311693fa965b8bfb7172c865735fbba9a962861e8e8"
   },
   "reports/budget10240/checkpoint_forks.json": {
     "bytes": 4164,
@@ -866,6 +874,14 @@
   "reports/budget10240/continuation_cpu_tests.log": {
     "bytes": 99,
     "sha256": "33c02398596ced85539912f028ee7bc4dc67403598a41ef7c27cd899e22c5876"
+  },
+  "reports/budget10240/continuation_cpu_tests_v2.log": {
+    "bytes": 99,
+    "sha256": "94591ad2e4c06749e3b6f43476506828b625f037c0ef31f12f1678e33eb41393"
+  },
+  "reports/budget10240/duplicate_retirement_receipt.json": {
+    "bytes": 2403,
+    "sha256": "fca85876fe6433e5e39e80344eaeffa900cb19154f52ce6725536597da33474c"
   },
   "reports/budget10240/observer_noop.json": {
     "bytes": 84213,
@@ -880,12 +896,20 @@
     "sha256": "d477994b02b927db2824f00acfc0f78838616b31d0754357437b98b95a47ee18"
   },
   "reports/budget10240/plan.json": {
+    "bytes": 33132,
+    "sha256": "f3929f9ac2c73fad3432565b09efb566894401c965c9095e3f346a9611c3d6e0"
+  },
+  "reports/budget10240/plan_attempt01_missing_entrypoint.json": {
     "bytes": 32971,
     "sha256": "433328126a547ac3b77e789b465fd5c3a1059e47c40e81e7e22434ea349af190"
   },
   "reports/budget10240/planned_duplicate_removal.json": {
     "bytes": 1590,
     "sha256": "d5169f129cc7781855cbdee405c53c9958465f1a654b4f5ad93aac88c7d4a3b1"
+  },
+  "reports/budget10240/prior_part_b_kl_mass_audit.json": {
+    "bytes": 10413,
+    "sha256": "b5f1e6d644a04416a3be8838b05a2c9774d358971c3cabed613c2e5fde433901"
   },
   "reports/budget10240/scope_acceptance.json": {
     "bytes": 346,
@@ -894,6 +918,10 @@
   "reports/budget10240/source_checkpoint.json": {
     "bytes": 2725,
     "sha256": "63bd6169c3eedc83f2800453bda261969b8c4a909b8b1d62caa70d62322191ac"
+  },
+  "reports/budget10240/training_launch.json": {
+    "bytes": 254,
+    "sha256": "00f3e72fe8d3b1c2b6cc46798c399834339b641405ded334a3e8d84bc7c4090f"
   },
   "reports/budget10240/validation_0016.json": {
     "bytes": 791,
