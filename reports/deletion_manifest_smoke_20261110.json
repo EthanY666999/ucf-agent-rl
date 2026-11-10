@@ -1,0 +1,95 @@
+{
+  "status": "planned",
+  "created_unix": 1794292408.4496713,
+  "files": [
+    {
+      "path": "/home/vipuser/q35-smoke-models/flh_f03/grpo/model.safetensors",
+      "bytes": 7527341904,
+      "sha256": "2093c14e4b245e71ffc8ef0944b590f20e32b075a979abc2572a6a5a1293e561"
+    }
+  ],
+  "reason": "Disposable one-step smoke weights; user authorized cleanup; smoke records retained",
+  "active_S07_model": "/data/runs/hard_queue/S02_SFT_seed42/sft/final_model",
+  "retained_evidence": {
+    "/data/runs/stage0/flh_f03_acceptance/grpo/progress.json": {
+      "bytes": 194,
+      "sha256": "5823952a1dcbbf384e83b2abbcaa8244cd1df363339078277da89857e405e7c0"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/validation_0000.jsonl": {
+      "bytes": 104744,
+      "sha256": "c2dab3945befb3acfb0c25a98e7983e258edb368fbfa58c85b58f73d6f4321ae"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/final_test.json": {
+      "bytes": 329,
+      "sha256": "1d3ccd5459badd94f1a563e1e54d3d4c9755599e6454af75a7f4ddc60ddd4a88"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/prompt_contract.json": {
+      "bytes": 307,
+      "sha256": "6975df474fc84736efd132b26c05e7569b0b750d80987066c27a5353e71e1b68"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/final_test.jsonl": {
+      "bytes": 91966,
+      "sha256": "ceea526fb16d82862124a99f33e918d588d036fce815c15a8c093c04007ca1fb"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/train_metrics.jsonl": {
+      "bytes": 992,
+      "sha256": "5484e31eb3afa47a60fc54e78f7c1f389e580b03c08f7e58a4782e67d99ffc10"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/rollouts_0001.jsonl.gz": {
+      "bytes": 9860,
+      "sha256": "10f1bfdd8a57d29982cf62279d0c45717f08adec1c986e75a12461d696aab1a1"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/loading_logprob_check.json": {
+      "bytes": 7982,
+      "sha256": "930540d7b82a328bdadd5aff028ddc97b33045c7105cfc582c4e0c9ea7b554f0"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/verification.json": {
+      "bytes": 1597,
+      "sha256": "28a2c18f77b8b091910b07375f23d8c1b9aed963f9b687312667001675780494"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/status.json": {
+      "bytes": 457,
+      "sha256": "0e5eb14cacc342d9a221e2c12717b8325a89a500c890775b2fc31b3b45a307d0"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/source_versions.jsonl": {
+      "bytes": 122,
+      "sha256": "e669bebf0c120449af044e9eaddba85a86b92da2078b17d9f1f2de5a18c8c166"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/hardware.json": {
+      "bytes": 482,
+      "sha256": "1b3d68e55987003b211e36c1e79da0851386757c2830421770687379a1e2b1f3"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/validation_0001.json": {
+      "bytes": 320,
+      "sha256": "84b9adb62a0a9d3623d9270151dfcc89b9136af20aca03ba7d626f27eefcb825"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/branch_events.jsonl": {
+      "bytes": 1608,
+      "sha256": "0dcc7281e8812c17eaa9e0b34aff78db7c2f6df42b8e6adaf901c90c38902d62"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/smoke_checks.json": {
+      "bytes": 917,
+      "sha256": "f2217bba41bc28713949f1acadc8f49e02309ad5905b476b8515cb9d1c9b6049"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/validation_0000.json": {
+      "bytes": 322,
+      "sha256": "afbef2f87b4cca51e71a0221723da997dfdf14d1eb87a31ff558a07da2147163"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/config.json": {
+      "bytes": 1694,
+      "sha256": "12df7e122a32acd195f15dde60b0d739a39a5569d8c7fb52960b55cc0e2aa458"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/model_storage.json": {
+      "bytes": 164,
+      "sha256": "66f4c8f2d621d15d10ef171c99921aa645faff877f36c39b4457a2909d34ed7c"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/checkpoint_pruning.json": {
+      "bytes": 470,
+      "sha256": "55b04990c73b3b5861a901ce30fcb58a0acaac100fcd39cec3079b9d781098c3"
+    },
+    "/data/runs/stage0/flh_f03_acceptance/grpo/validation_0001.jsonl": {
+      "bytes": 76735,
+      "sha256": "3cf1ea16c0d0fbfe347cbe543136d87fbc77a5e49f4490b957abf8c8f38ac7b4"
+    }
+  }
+}

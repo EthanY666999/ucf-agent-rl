@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "scope": "CPU/source/config admission only; GPU pending",
+  "plan_sha256": "91fc22b7778b71aab0cbc219a6c48df3f0f6e893a791864a864d2ab5a5b67cec",
+  "files": 159,
+  "created_unix": 1794293260.470807
+}

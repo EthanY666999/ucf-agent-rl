@@ -211,6 +211,15 @@ def update(actor,ref,optimizer,branches,cfg,method,tokenizer,rng,n_tasks):
 def save_checkpoint(path,actor,optimizer,step,rng,cfg,elapsed):
     path=Path(path)
     path.parent.mkdir(parents=True,exist_ok=True)
+    if cfg.get('ucf_v3',False):
+        import shutil
+        # The old checkpoint remains intact if the temporary replacement cannot
+        # fit. Reserve8GiB for logs and the operating system on this mount.
+        tensor_bytes=sum(p.numel()*p.element_size() for p in actor.parameters())
+        tensor_bytes+=sum(v.numel()*v.element_size() for s in optimizer.state.values() for v in s.values() if torch.is_tensor(v))
+        required=int(tensor_bytes*1.03)+8*2**30
+        if shutil.disk_usage(path.parent).free<required:
+            raise OSError(f'Checkpoint disk reserve: need {required} free bytes before atomic write')
     # torch.save handles CUDA tensors; restore maps to CPU before copying to model.
     state={'step':step,'model':actor.state_dict(),'optimizer':optimizer.state_dict(),
            'rng':rng.bit_generator.state,'torch_rng':torch.get_rng_state(),

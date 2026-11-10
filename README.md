@@ -4,7 +4,7 @@ Development branch, 2026-11-10. This branch does not replace the collaborator re
 
 ## Current status
 
-CPU sampling tests: 14 passed. Existing token/protocol/environment/recovery regression suite: 56 passed on the production interpreter with CUDA disabled. GPU acceptance and learning results are pending. Do not describe this as a successful UCF result yet.
+CPU sampling/adapter/controller tests: 21 passed. Existing token/protocol/environment/recovery regression suite: 63 passed on the production interpreter with CUDA disabled. GPU acceptance and learning results are pending. Do not describe this as a successful UCF result yet.
 
 ## Scope and hypothesis
 

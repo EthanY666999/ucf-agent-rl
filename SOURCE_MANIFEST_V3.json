@@ -1,7 +1,7 @@
 {
   "README.md": {
-    "bytes": 3248,
-    "sha256": "69bbddf024f6b203bd9c14e6e388eb63ea6dbe88d27a32aca96bdc46c541c456"
+    "bytes": 3267,
+    "sha256": "6eeb68f9bb5e70dc845b13341799081e2e08a95ad173d11e6a76c5d4882cfef2"
   },
   "WORKLOG.md": {
     "bytes": 5129,
@@ -48,8 +48,8 @@
     "sha256": "edcf4baa86b547aa4fb23519c1d799e18ce3f47729575847fa69aa62635f8694"
   },
   "code/train.py": {
-    "bytes": 26258,
-    "sha256": "d99c47da7907982d65cd69a97c9b9232c66d6b1aa1ff936fdbacb98a0d718081"
+    "bytes": 26886,
+    "sha256": "47247608e3b3eac97b28b0f6ba1f074659f2cc15a16215f442276b5bbf7e65c2"
   },
   "code/task_envs.py": {
     "bytes": 6695,
@@ -559,6 +559,10 @@
     "bytes": 9172,
     "sha256": "2514f48769bf06e0ab2010361c087f1475ff2365da762db3d395f51433a19d74"
   },
+  "code/ucf/tests/test_v3_collector.py": {
+    "bytes": 3203,
+    "sha256": "927ee2453e8ac3131302f7229fe243f64cb1b897bedcc323893af99a38b971e5"
+  },
   "code/ucf/tests/htsim_original.py": {
     "bytes": 4799,
     "sha256": "4db67deaa3dbc1a7db237610a8606695c0c53b983414e7550fe0bf79bfb2f8b3"
@@ -627,6 +631,14 @@
     "bytes": 1721,
     "sha256": "348b39d28d55df2c360815bba850f45769d588e876c52739cfc5f7c53e93d0fc"
   },
+  "control/test_v3_manager.py": {
+    "bytes": 3047,
+    "sha256": "2e8833e69bcc1f9d01e56508e9aa56a95eaddb5dfeb1f0daa6b2806c403708ec"
+  },
+  "control/v3_manager.py": {
+    "bytes": 9389,
+    "sha256": "8d786228e6a9fce892171712874d832b4b15b767c09f729ae7d759c26f4aa95e"
+  },
   "control/boundary_guard.py": {
     "bytes": 7518,
     "sha256": "b897c031046c8e0ef3075b9ebd575283ebceb85d7579c44fc83253dc4d83d737"
@@ -634,5 +646,21 @@
   "control/boundary_observer.py": {
     "bytes": 3955,
     "sha256": "3910fda508cfaa451e881b6e0e2f26caa220092bdc01eb78f69bd65812a5023d"
+  },
+  "reports/v3_plan.json": {
+    "bytes": 30743,
+    "sha256": "91fc22b7778b71aab0cbc219a6c48df3f0f6e893a791864a864d2ab5a5b67cec"
+  },
+  "reports/v3_cpu_admission.json": {
+    "bytes": 219,
+    "sha256": "b19f926516db3d7872948e519d4bfa6d899ebaae64febd740fc6396a248e0b56"
+  },
+  "reports/deletion_manifest_smoke_20261110.json": {
+    "bytes": 4103,
+    "sha256": "55f026adca48889f917614e8065394aaeb2d537ae1df99474eac103b06ab30c6"
+  },
+  "reports/cpu_regression_20261110.txt": {
+    "bytes": 100,
+    "sha256": "2a6e5ccdc82c62c1b22f316ac2b21a31fda63c09b96a63adecb4a8ea8018b6d0"
   }
 }
