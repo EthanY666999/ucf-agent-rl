@@ -1,0 +1,15 @@
+{
+  "starpo_s": {
+    "keep_fraction": 0.5,
+    "clip_low": 0.2,
+    "clip_high": 0.28,
+    "kl_coefficient": 0.0,
+    "decision": "User explicitly selected 50% retention on 2026-11-07; not claimed as a unique paper default"
+  },
+  "gigpo": {
+    "gamma": 0.95,
+    "omega": 1.0,
+    "group_size": 4,
+    "normalization": "sample std + 1e-6, same as frozen GRPO4"
+  }
+}

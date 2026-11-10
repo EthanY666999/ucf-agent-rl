@@ -1,0 +1,1912 @@
+{
+  "maps": [
+    {
+      "uid": "84433_8_0.6900225239533877",
+      "changed": true,
+      "map10": [
+        "FFHFFHFF",
+        "HFFHFHHF",
+        "FFFFFFFH",
+        "FFFFHHSF",
+        "FHFFFHFF",
+        "FFFFHFFF",
+        "GHFFFFFH",
+        "HFFHFFFF"
+      ],
+      "map8": [
+        "FHHFHFHH",
+        "FHFFFFFF",
+        "FFFFFFFH",
+        "HHFFSFFH",
+        "FFFFHFFF",
+        "FFFFHGFF",
+        "FFFFFFFF",
+        "FFFHHFHF"
+      ]
+    },
+    {
+      "uid": "73704_8_0.7193099687022328",
+      "changed": false,
+      "map10": [
+        "FFFFFHHF",
+        "FFFHFFHF",
+        "HFFFFFFH",
+        "FHFHFFFF",
+        "HFFFFHHF",
+        "HFHFHSFH",
+        "FFHFFFFF",
+        "FFFHFFFG"
+      ],
+      "map8": [
+        "FFFFFHHF",
+        "FFFHFFHF",
+        "HFFFFFFH",
+        "FHFHFFFF",
+        "HFFFFHHF",
+        "HFHFHSFH",
+        "FFHFFFFF",
+        "FFFHFFFG"
+      ]
+    },
+    {
+      "uid": "6861_9_0.7511561930505635",
+      "changed": false,
+      "map10": [
+        "HHHFFFFFH",
+        "FFHHFFFFF",
+        "FHFFFSFFF",
+        "FFHFHFFFF",
+        "FFFFFFFFH",
+        "FFFFFHGFF",
+        "FFHFFFFFH",
+        "FFFFFFHFF",
+        "FFHFFHFFF"
+      ],
+      "map8": [
+        "HHHFFFFFH",
+        "FFHHFFFFF",
+        "FHFFFSFFF",
+        "FFHFHFFFF",
+        "FFFFFFFFH",
+        "FFFFFHGFF",
+        "FFHFFFFFH",
+        "FFFFFFHFF",
+        "FFHFFHFFF"
+      ]
+    },
+    {
+      "uid": "61914_2_0.7671657724529218",
+      "changed": false,
+      "map10": [
+        "GS",
+        "FF"
+      ],
+      "map8": [
+        "GS",
+        "FF"
+      ]
+    },
+    {
+      "uid": "63888_8_0.7385536788297207",
+      "changed": false,
+      "map10": [
+        "HHFHFFFH",
+        "FFHHFFFH",
+        "HFFFFFFF",
+        "FHFFFFFF",
+        "HFFFFHFF",
+        "FHFHFFGF",
+        "HFFFFFHF",
+        "HFHFFSHF"
+      ],
+      "map8": [
+        "HHFHFFFH",
+        "FFHHFFFH",
+        "HFFFFFFF",
+        "FHFFFFFF",
+        "HFFFFHFF",
+        "FHFHFFGF",
+        "HFFFFFHF",
+        "HFHFFSHF"
+      ]
+    },
+    {
+      "uid": "79286_2_0.6878284802054639",
+      "changed": false,
+      "map10": [
+        "GF",
+        "HS"
+      ],
+      "map8": [
+        "GF",
+        "HS"
+      ]
+    },
+    {
+      "uid": "61293_5_0.8227293201412258",
+      "changed": false,
+      "map10": [
+        "GFFHF",
+        "SHFFH",
+        "FHHFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "map8": [
+        "GFFHF",
+        "SHFFH",
+        "FHHFF",
+        "FFFFF",
+        "FFFFF"
+      ]
+    },
+    {
+      "uid": "82524_9_0.6203480145044895",
+      "changed": false,
+      "map10": [
+        "FFFFHHFFF",
+        "FHFFFFFFF",
+        "HFFHHHHFH",
+        "FFFFHFHHH",
+        "FHHHFFHHF",
+        "FFFFHFGFF",
+        "FFFHSFFFH",
+        "HHFFHFFHH",
+        "FHFFHHFFF"
+      ],
+      "map8": [
+        "FFFFHHFFF",
+        "FHFFFFFFF",
+        "HFFHHHHFH",
+        "FFFFHFHHH",
+        "FHHHFFHHF",
+        "FFFFHFGFF",
+        "FFFHSFFFH",
+        "HHFFHFFHH",
+        "FHFFHHFFF"
+      ]
+    },
+    {
+      "uid": "68515_8_0.7165640135608737",
+      "changed": false,
+      "map10": [
+        "FFFFHFFF",
+        "SFFFFHHF",
+        "FFFHHFFF",
+        "FFHFHHFH",
+        "HGFHFFFF",
+        "FFFFFFFF",
+        "FFFFFFFF",
+        "FHFFFFHH"
+      ],
+      "map8": [
+        "FFFFHFFF",
+        "SFFFFHHF",
+        "FFFHHFFF",
+        "FFHFHHFH",
+        "HGFHFFFF",
+        "FFFFFFFF",
+        "FFFFFFFF",
+        "FHFFFFHH"
+      ]
+    },
+    {
+      "uid": "23524_3_0.7938912096168702",
+      "changed": false,
+      "map10": [
+        "FFS",
+        "GHF",
+        "FFF"
+      ],
+      "map8": [
+        "FFS",
+        "GHF",
+        "FFF"
+      ]
+    },
+    {
+      "uid": "7065_8_0.6152181663228502",
+      "changed": false,
+      "map10": [
+        "FFHHFFFG",
+        "FHFFFSHH",
+        "FHHFHFHH",
+        "HHHFHHFF",
+        "HHFHFFFH",
+        "FFFFHHHF",
+        "HHHHFFFF",
+        "FFFFFFHF"
+      ],
+      "map8": [
+        "FFHHFFFG",
+        "FHFFFSHH",
+        "FHHFHFHH",
+        "HHHFHHFF",
+        "HHFHFFFH",
+        "FFFFHHHF",
+        "HHHHFFFF",
+        "FFFFFFHF"
+      ]
+    },
+    {
+      "uid": "37684_7_0.7763338042028253",
+      "changed": false,
+      "map10": [
+        "FFFSFFF",
+        "FFHFFHF",
+        "FHFFHFF",
+        "FFFFFFH",
+        "FHFGFFF",
+        "FFFHFHF",
+        "FFHFFFF"
+      ],
+      "map8": [
+        "FFFSFFF",
+        "FFHFFHF",
+        "FHFFHFF",
+        "FFFFFFH",
+        "FHFGFFF",
+        "FFFHFHF",
+        "FFHFFFF"
+      ]
+    },
+    {
+      "uid": "88720_6_0.8049279056883312",
+      "changed": false,
+      "map10": [
+        "FFHHFF",
+        "HFFFFF",
+        "HFFFFH",
+        "GHFFFH",
+        "FFSFFH",
+        "FHFHFF"
+      ],
+      "map8": [
+        "FFHHFF",
+        "HFFFFF",
+        "HFFFFH",
+        "GHFFFH",
+        "FFSFFH",
+        "FHFHFF"
+      ]
+    },
+    {
+      "uid": "33365_3_0.7652078246317631",
+      "changed": false,
+      "map10": [
+        "FFG",
+        "FFS",
+        "HFF"
+      ],
+      "map8": [
+        "FFG",
+        "FFS",
+        "HFF"
+      ]
+    },
+    {
+      "uid": "58876_8_0.603234223068839",
+      "changed": false,
+      "map10": [
+        "FFFFHHFF",
+        "HFHFFHHH",
+        "FFSHFFFG",
+        "HHFHFHFF",
+        "FFFFFFFF",
+        "FFFFFFFF",
+        "FFFFFHFF",
+        "FFHHFHFF"
+      ],
+      "map8": [
+        "FFFFHHFF",
+        "HFHFFHHH",
+        "FFSHFFFG",
+        "HHFHFHFF",
+        "FFFFFFFF",
+        "FFFFFFFF",
+        "FFFFFHFF",
+        "FFHHFHFF"
+      ]
+    },
+    {
+      "uid": "23704_3_0.6450342567830516",
+      "changed": false,
+      "map10": [
+        "HSF",
+        "FFH",
+        "FFG"
+      ],
+      "map8": [
+        "HSF",
+        "FFH",
+        "FFG"
+      ]
+    },
+    {
+      "uid": "57857_9_0.6855282697229876",
+      "changed": false,
+      "map10": [
+        "FFFFFFHFH",
+        "HFFFFFFHF",
+        "HFFFFFHFF",
+        "GFFFFHHHF",
+        "HHHHFFFFF",
+        "FFFHFFFHF",
+        "FFHHSHHFF",
+        "FHFFFFFFF",
+        "HFFHHFHFF"
+      ],
+      "map8": [
+        "FFFFFFHFH",
+        "HFFFFFFHF",
+        "HFFFFFHFF",
+        "GFFFFHHHF",
+        "HHHHFFFFF",
+        "FFFHFFFHF",
+        "FFHHSHHFF",
+        "FHFFFFFFF",
+        "HFFHHFHFF"
+      ]
+    },
+    {
+      "uid": "5622_2_0.6584225089095115",
+      "changed": false,
+      "map10": [
+        "SG",
+        "FF"
+      ],
+      "map8": [
+        "SG",
+        "FF"
+      ]
+    },
+    {
+      "uid": "83797_5_0.8406630350568568",
+      "changed": false,
+      "map10": [
+        "FFFFF",
+        "FFFFS",
+        "FHFFF",
+        "FFFFF",
+        "FHFFG"
+      ],
+      "map8": [
+        "FFFFF",
+        "FFFFS",
+        "FHFFF",
+        "FFFFF",
+        "FHFFG"
+      ]
+    },
+    {
+      "uid": "93955_5_0.7628984785284484",
+      "changed": false,
+      "map10": [
+        "FFGFH",
+        "FFFFH",
+        "FFFHF",
+        "FSHHF",
+        "FFHFF"
+      ],
+      "map8": [
+        "FFGFH",
+        "FFFFH",
+        "FFFHF",
+        "FSHHF",
+        "FFHFF"
+      ]
+    },
+    {
+      "uid": "91141_9_0.6742427393378926",
+      "changed": false,
+      "map10": [
+        "FFFFFFFFF",
+        "HFFHFFFFF",
+        "FFSFHHHFF",
+        "HFFFHFFHF",
+        "FFFHFHFFF",
+        "FFFHFFHFH",
+        "HFFFFFFHF",
+        "HFGFFFFFF",
+        "FFFFFFFFF"
+      ],
+      "map8": [
+        "FFFFFFFFF",
+        "HFFHFFFFF",
+        "FFSFHHHFF",
+        "HFFFHFFHF",
+        "FFFHFHFFF",
+        "FFFHFFHFH",
+        "HFFFFFFHF",
+        "HFGFFFFFF",
+        "FFFFFFFFF"
+      ]
+    },
+    {
+      "uid": "94707_9_0.8324243746663613",
+      "changed": false,
+      "map10": [
+        "HHHFFFFFF",
+        "FFFFHFFFF",
+        "FFFFFFFFF",
+        "FFFFFFFFF",
+        "FFFFFFFFF",
+        "FFFGFFFFF",
+        "FFFFFHFFF",
+        "FFFFHFFFF",
+        "HFFFFSFHF"
+      ],
+      "map8": [
+        "HHHFFFFFF",
+        "FFFFHFFFF",
+        "FFFFFFFFF",
+        "FFFFFFFFF",
+        "FFFFFFFFF",
+        "FFFGFFFFF",
+        "FFFFFHFFF",
+        "FFFFHFFFF",
+        "HFFFFSFHF"
+      ]
+    },
+    {
+      "uid": "87700_3_0.7851485498690467",
+      "changed": false,
+      "map10": [
+        "FHS",
+        "HGF",
+        "FFF"
+      ],
+      "map8": [
+        "FHS",
+        "HGF",
+        "FFF"
+      ]
+    },
+    {
+      "uid": "79332_9_0.6711518029567605",
+      "changed": false,
+      "map10": [
+        "HFHHFFFFF",
+        "FFFHHFFHF",
+        "FFHFFFFFF",
+        "HFFFFFFFF",
+        "FFFHHFSFH",
+        "HFFFFFHFH",
+        "FFHFGHFHF",
+        "FHFHFFFFF",
+        "FFFHFHFFF"
+      ],
+      "map8": [
+        "HFHHFFFFF",
+        "FFFHHFFHF",
+        "FFHFFFFFF",
+        "HFFFFFFFF",
+        "FFFHHFSFH",
+        "HFFFFFHFH",
+        "FFHFGHFHF",
+        "FHFHFFFFF",
+        "FFFHFHFFF"
+      ]
+    },
+    {
+      "uid": "96856_3_0.6947203923504888",
+      "changed": false,
+      "map10": [
+        "SFF",
+        "HFG",
+        "FFF"
+      ],
+      "map8": [
+        "SFF",
+        "HFG",
+        "FFF"
+      ]
+    },
+    {
+      "uid": "66201_9_0.6498572145759891",
+      "changed": false,
+      "map10": [
+        "FFHHHFFFF",
+        "FHHFFHHHF",
+        "FHHHGFHFS",
+        "HFFHHFFFH",
+        "HHFFFFFFH",
+        "HFFHHFHHH",
+        "HFFFFFHFH",
+        "HFHHFHFHF",
+        "FFHFFFFHF"
+      ],
+      "map8": [
+        "FFHHHFFFF",
+        "FHHFFHHHF",
+        "FHHHGFHFS",
+        "HFFHHFFFH",
+        "HHFFFFFFH",
+        "HFFHHFHHH",
+        "HFFFFFHFH",
+        "HFHHFHFHF",
+        "FFHFFFFHF"
+      ]
+    },
+    {
+      "uid": "32694_8_0.8427684995664555",
+      "changed": false,
+      "map10": [
+        "FFHFFFFF",
+        "FFFFFFFF",
+        "FFFFFFFF",
+        "FFFFFFSH",
+        "FGFHFFFF",
+        "FFFHFFFF",
+        "FFHFFFFF",
+        "FHHFFFFF"
+      ],
+      "map8": [
+        "FFHFFFFF",
+        "FFFFFFFF",
+        "FFFFFFFF",
+        "FFFFFFSH",
+        "FGFHFFFF",
+        "FFFHFFFF",
+        "FFHFFFFF",
+        "FHHFFFFF"
+      ]
+    },
+    {
+      "uid": "89766_9_0.7293241239725183",
+      "changed": false,
+      "map10": [
+        "FFFFGHHHF",
+        "FHHHFFHHF",
+        "FFHFFFFFF",
+        "HFHHHFHFS",
+        "FFFFFHHHF",
+        "FHHHHFHFF",
+        "FHHFFFFHF",
+        "FFFFHFFFH",
+        "FHFFFFFHF"
+      ],
+      "map8": [
+        "FFFFGHHHF",
+        "FHHHFFHHF",
+        "FFHFFFFFF",
+        "HFHHHFHFS",
+        "FFFFFHHHF",
+        "FHHHHFHFF",
+        "FHHFFFFHF",
+        "FFFFHFFFH",
+        "FHFFFFFHF"
+      ]
+    },
+    {
+      "uid": "22995_4_0.8240141718744961",
+      "changed": false,
+      "map10": [
+        "HHFF",
+        "SFFH",
+        "FFGF",
+        "FFFH"
+      ],
+      "map8": [
+        "HHFF",
+        "SFFH",
+        "FFGF",
+        "FFFH"
+      ]
+    },
+    {
+      "uid": "92320_7_0.6866249427542119",
+      "changed": false,
+      "map10": [
+        "FFFFFFH",
+        "HFFHHFF",
+        "HFHGHFH",
+        "FFHFHFF",
+        "FFFFSFH",
+        "HFHHFFH",
+        "FFFFHHH"
+      ],
+      "map8": [
+        "FFFFFFH",
+        "HFFHHFF",
+        "HFHGHFH",
+        "FFHFHFF",
+        "FFFFSFH",
+        "HFHHFFH",
+        "FFFFHHH"
+      ]
+    },
+    {
+      "uid": "80141_2_0.8152104007743689",
+      "changed": false,
+      "map10": [
+        "SG",
+        "FH"
+      ],
+      "map8": [
+        "SG",
+        "FH"
+      ]
+    },
+    {
+      "uid": "82999_7_0.613471712106791",
+      "changed": false,
+      "map10": [
+        "FHFFFFG",
+        "HFHFFHF",
+        "FFFSHFF",
+        "HHHFHFH",
+        "FFFFFFF",
+        "HFFFFHH",
+        "FFHFFHF"
+      ],
+      "map8": [
+        "FHFFFFG",
+        "HFHFFHF",
+        "FFFSHFF",
+        "HHHFHFH",
+        "FFFFFFF",
+        "HFFFFHH",
+        "FFHFFHF"
+      ]
+    },
+    {
+      "uid": "8419_6_0.845522579381072",
+      "changed": false,
+      "map10": [
+        "GFFFFF",
+        "FHFSFF",
+        "FFFFFF",
+        "HFFFFF",
+        "FFFHFF",
+        "FFFFFF"
+      ],
+      "map8": [
+        "GFFFFF",
+        "FHFSFF",
+        "FFFFFF",
+        "HFFFFF",
+        "FFFHFF",
+        "FFFFFF"
+      ]
+    },
+    {
+      "uid": "47952_6_0.8280085917583256",
+      "changed": false,
+      "map10": [
+        "FFFSFF",
+        "HFFHFF",
+        "FHFFHF",
+        "FFGHHF",
+        "FFFHFF",
+        "HFFHFF"
+      ],
+      "map8": [
+        "FFFSFF",
+        "HFFHFF",
+        "FHFFHF",
+        "FFGHHF",
+        "FFFHFF",
+        "HFFHFF"
+      ]
+    },
+    {
+      "uid": "33837_5_0.6908007361941637",
+      "changed": false,
+      "map10": [
+        "HFFSF",
+        "FFHHF",
+        "FHHFF",
+        "GFFFH",
+        "FHFHF"
+      ],
+      "map8": [
+        "HFFSF",
+        "FFHHF",
+        "FHHFF",
+        "GFFFH",
+        "FHFHF"
+      ]
+    },
+    {
+      "uid": "70799_2_0.7936805413286443",
+      "changed": false,
+      "map10": [
+        "SF",
+        "HG"
+      ],
+      "map8": [
+        "SF",
+        "HG"
+      ]
+    },
+    {
+      "uid": "48877_7_0.7880644816184565",
+      "changed": false,
+      "map10": [
+        "FFHFFHF",
+        "FFFFFHF",
+        "FFFFHFF",
+        "HFHFFFF",
+        "HGFSHFF",
+        "HFHFFFF",
+        "HFHFFFH"
+      ],
+      "map8": [
+        "FFHFFHF",
+        "FFFFFHF",
+        "FFFFHFF",
+        "HFHFFFF",
+        "HGFSHFF",
+        "HFHFFFF",
+        "HFHFFFH"
+      ]
+    },
+    {
+      "uid": "45687_5_0.8253136992757328",
+      "changed": false,
+      "map10": [
+        "SFFHF",
+        "FFHFF",
+        "FFFFF",
+        "FFFGF",
+        "HFFFF"
+      ],
+      "map8": [
+        "SFFHF",
+        "FFHFF",
+        "FFFFF",
+        "FFFGF",
+        "HFFFF"
+      ]
+    },
+    {
+      "uid": "99667_6_0.6768137452822027",
+      "changed": false,
+      "map10": [
+        "FFHHFF",
+        "FFFHHF",
+        "FFFHSF",
+        "FFFFFH",
+        "HFFHFF",
+        "FFFFHG"
+      ],
+      "map8": [
+        "FFHHFF",
+        "FFFHHF",
+        "FFFHSF",
+        "FFFFFH",
+        "HFFHFF",
+        "FFFFHG"
+      ]
+    },
+    {
+      "uid": "37276_3_0.7163800013285373",
+      "changed": false,
+      "map10": [
+        "SHH",
+        "FHF",
+        "GFH"
+      ],
+      "map8": [
+        "SHH",
+        "FHF",
+        "GFH"
+      ]
+    },
+    {
+      "uid": "34523_2_0.8162499031515132",
+      "changed": false,
+      "map10": [
+        "GS",
+        "HF"
+      ],
+      "map8": [
+        "GS",
+        "HF"
+      ]
+    },
+    {
+      "uid": "66055_2_0.7946448635338039",
+      "changed": false,
+      "map10": [
+        "SG",
+        "FF"
+      ],
+      "map8": [
+        "SG",
+        "FF"
+      ]
+    },
+    {
+      "uid": "54615_9_0.6983666796850698",
+      "changed": false,
+      "map10": [
+        "FFFHHFHFH",
+        "FHFFHFFFF",
+        "FFHFSFFFF",
+        "HFFHFFFFF",
+        "FFFFFHHHH",
+        "FFFFFFFFH",
+        "FFHFFHFFH",
+        "FFHGHHHFF",
+        "FFFHFFHFF"
+      ],
+      "map8": [
+        "FFFHHFHFH",
+        "FHFFHFFFF",
+        "FFHFSFFFF",
+        "HFFHFFFFF",
+        "FFFFFHHHH",
+        "FFFFFFFFH",
+        "FFHFFHFFH",
+        "FFHGHHHFF",
+        "FFFHFFHFF"
+      ]
+    },
+    {
+      "uid": "96642_9_0.8114313082280304",
+      "changed": true,
+      "map10": [
+        "HFFHSHFFF",
+        "HFFFFFFFF",
+        "HFFFFFHFH",
+        "HFHFFFFHH",
+        "FFHFHFHFF",
+        "FHFFFFFFF",
+        "FHFFFFFFF",
+        "GFFFFFHFF",
+        "HFHFFFFFF"
+      ],
+      "map8": [
+        "FFHHFFFFF",
+        "FFFHFFFHF",
+        "FFFFFFFFF",
+        "FFFFFGFFF",
+        "FFHFFFFHF",
+        "FFFFFFFFF",
+        "FFFFHFFHF",
+        "FFFFFHFFH",
+        "FFHFFFSFH"
+      ]
+    },
+    {
+      "uid": "10514_7_0.6117385098081003",
+      "changed": true,
+      "map10": [
+        "FHFFFFS",
+        "FFHHFFF",
+        "FHHFFHF",
+        "HFFHHHF",
+        "FFHHGFF",
+        "FHHHHHF",
+        "FFHHHHH"
+      ],
+      "map8": [
+        "HFHFHFH",
+        "FFHFHFH",
+        "HHHHFFF",
+        "FHFFHFF",
+        "FSFFFFF",
+        "FHHHHHG",
+        "HHHHFFH"
+      ]
+    },
+    {
+      "uid": "47456_9_0.7955115757407475",
+      "changed": true,
+      "map10": [
+        "FFFFFFFFF",
+        "FHFFGFHFF",
+        "FFFHFFFFF",
+        "FHFFFFFFF",
+        "FFFFFFFHF",
+        "FFFHFFFFH",
+        "FFFHFFFFF",
+        "FFFFFFFFF",
+        "FFHHFFFSH"
+      ],
+      "map8": [
+        "FFHFFFFFF",
+        "HFFFFFFHF",
+        "FFHHHFHFF",
+        "FFFHHSFFH",
+        "HFFFFFFFF",
+        "HFFFFFFHF",
+        "FFFFHFFFF",
+        "FFFFGFFFF",
+        "FFFHFFFFF"
+      ]
+    },
+    {
+      "uid": "7233_9_0.6516914648584251",
+      "changed": false,
+      "map10": [
+        "FFHFFFFFF",
+        "FFHFFHHFF",
+        "FFHFHFFFH",
+        "FFFFHFFHF",
+        "FFHHFFHFH",
+        "FSFFHHFHH",
+        "FHHFHHFHF",
+        "FGHFFFHHF",
+        "FFHHHFHFF"
+      ],
+      "map8": [
+        "FFHFFFFFF",
+        "FFHFFHHFF",
+        "FFHFHFFFH",
+        "FFFFHFFHF",
+        "FFHHFFHFH",
+        "FSFFHHFHH",
+        "FHHFHHFHF",
+        "FGHFFFHHF",
+        "FFHHHFHFF"
+      ]
+    },
+    {
+      "uid": "1102_8_0.6715302269559468",
+      "changed": false,
+      "map10": [
+        "FFHFFFFF",
+        "FFHFFFHH",
+        "HFFFFFFF",
+        "HFGFHFFF",
+        "FFFHFHFS",
+        "FFFFFHFH",
+        "HFHFHFFH",
+        "FFFFFFFF"
+      ],
+      "map8": [
+        "FFHFFFFF",
+        "FFHFFFHH",
+        "HFFFFFFF",
+        "HFGFHFFF",
+        "FFFHFHFS",
+        "FFFFFHFH",
+        "HFHFHFFH",
+        "FFFFFFFF"
+      ]
+    },
+    {
+      "uid": "66133_4_0.7233037108988984",
+      "changed": false,
+      "map10": [
+        "FFFF",
+        "FFFF",
+        "FGHF",
+        "FSFF"
+      ],
+      "map8": [
+        "FFFF",
+        "FFFF",
+        "FGHF",
+        "FSFF"
+      ]
+    },
+    {
+      "uid": "46715_7_0.7124336252674934",
+      "changed": true,
+      "map10": [
+        "FHFFHFF",
+        "SFFFFFF",
+        "FFHHFFF",
+        "FFFFHHG",
+        "HFHFHHF",
+        "FFHFFFH",
+        "FFFFFHF"
+      ],
+      "map8": [
+        "HFFFGFF",
+        "FHFHHFF",
+        "HFFFHFH",
+        "FFHFFSF",
+        "FFHFFFH",
+        "HHHFFFF",
+        "FFFFFHF"
+      ]
+    },
+    {
+      "uid": "85193_9_0.7301425267174702",
+      "changed": false,
+      "map10": [
+        "HFFHFFFFF",
+        "HFFFFHFFH",
+        "HFFHFFFHF",
+        "FFFHHFFFF",
+        "HFFFFFFHS",
+        "FFGFFFFHH",
+        "FFHFFFFHF",
+        "HFFFFFFFF",
+        "FFHFHFHHF"
+      ],
+      "map8": [
+        "HFFHFFFFF",
+        "HFFFFHFFH",
+        "HFFHFFFHF",
+        "FFFHHFFFF",
+        "HFFFFFFHS",
+        "FFGFFFFHH",
+        "FFHFFFFHF",
+        "HFFFFFFFF",
+        "FFHFHFHHF"
+      ]
+    },
+    {
+      "uid": "6256_3_0.7361938989180059",
+      "changed": false,
+      "map10": [
+        "HGF",
+        "FFH",
+        "FSH"
+      ],
+      "map8": [
+        "HGF",
+        "FFH",
+        "FSH"
+      ]
+    },
+    {
+      "uid": "64800_8_0.6828819227578742",
+      "changed": true,
+      "map10": [
+        "FHFFHFFH",
+        "FHFFFFFF",
+        "HFHHFFFF",
+        "FFFFFHHH",
+        "HGFFHFHS",
+        "FFFHFFFF",
+        "FHFFFHFH",
+        "FFFFHFHF"
+      ],
+      "map8": [
+        "FFFHFHFF",
+        "FFHFFHFH",
+        "FHFFHHFF",
+        "HFFFHHFH",
+        "FFFFGFFF",
+        "FFHHSFFF",
+        "FFFFHFFH",
+        "FHFFHFHF"
+      ]
+    },
+    {
+      "uid": "94937_8_0.6438068782542574",
+      "changed": false,
+      "map10": [
+        "FFFHHFHF",
+        "FFFFFFFF",
+        "FGHFHHHF",
+        "HFFHFFFF",
+        "FFHFFFFF",
+        "HFSHFFHH",
+        "FFFFFFHF",
+        "FFHFFHHF"
+      ],
+      "map8": [
+        "FFFHHFHF",
+        "FFFFFFFF",
+        "FGHFHHHF",
+        "HFFHFFFF",
+        "FFHFFFFF",
+        "HFSHFFHH",
+        "FFFFFFHF",
+        "FFHFFHHF"
+      ]
+    },
+    {
+      "uid": "41548_8_0.7921203073218265",
+      "changed": false,
+      "map10": [
+        "FFFFFFFF",
+        "FFHSFFFH",
+        "FFFFFFHF",
+        "FFFHFHHF",
+        "HGFFFFFF",
+        "FFFFFFHH",
+        "FFHFHFFF",
+        "FFFFFFHF"
+      ],
+      "map8": [
+        "FFFFFFFF",
+        "FFHSFFFH",
+        "FFFFFFHF",
+        "FFFHFHHF",
+        "HGFFFFFF",
+        "FFFFFFHH",
+        "FFHFHFFF",
+        "FFFFFFHF"
+      ]
+    },
+    {
+      "uid": "72090_3_0.6999940372717854",
+      "changed": false,
+      "map10": [
+        "FHG",
+        "FFS",
+        "FFF"
+      ],
+      "map8": [
+        "FHG",
+        "FFS",
+        "FFF"
+      ]
+    },
+    {
+      "uid": "78200_5_0.7264602156147647",
+      "changed": false,
+      "map10": [
+        "FFFFF",
+        "FFSFG",
+        "FFHFH",
+        "FHFFF",
+        "FFFFH"
+      ],
+      "map8": [
+        "FFFFF",
+        "FFSFG",
+        "FFHFH",
+        "FHFFF",
+        "FFFFH"
+      ]
+    },
+    {
+      "uid": "42367_2_0.7611741795877796",
+      "changed": false,
+      "map10": [
+        "FF",
+        "SG"
+      ],
+      "map8": [
+        "FF",
+        "SG"
+      ]
+    },
+    {
+      "uid": "89922_5_0.827409480576664",
+      "changed": true,
+      "map10": [
+        "HFFFF",
+        "HFHFF",
+        "HFFFF",
+        "FFHHF",
+        "GHSFF"
+      ],
+      "map8": [
+        "FFFFF",
+        "FFFHF",
+        "FFFFH",
+        "FHFFH",
+        "GSFFF"
+      ]
+    },
+    {
+      "uid": "70382_3_0.776888207785055",
+      "changed": false,
+      "map10": [
+        "HFS",
+        "GFF",
+        "FHF"
+      ],
+      "map8": [
+        "HFS",
+        "GFF",
+        "FHF"
+      ]
+    },
+    {
+      "uid": "26205_4_0.611364806397596",
+      "changed": false,
+      "map10": [
+        "HFFG",
+        "HFSF",
+        "HFHF",
+        "FHHF"
+      ],
+      "map8": [
+        "HFFG",
+        "HFSF",
+        "HFHF",
+        "FHHF"
+      ]
+    },
+    {
+      "uid": "25570_2_0.8096400908495044",
+      "changed": false,
+      "map10": [
+        "FF",
+        "SG"
+      ],
+      "map8": [
+        "FF",
+        "SG"
+      ]
+    },
+    {
+      "uid": "30255_3_0.8473387537818797",
+      "changed": false,
+      "map10": [
+        "SGH",
+        "FFH",
+        "FFF"
+      ],
+      "map8": [
+        "SGH",
+        "FFH",
+        "FFF"
+      ]
+    },
+    {
+      "uid": "21182_4_0.7181212563428455",
+      "changed": false,
+      "map10": [
+        "SHFH",
+        "FFHF",
+        "HGFF",
+        "FHFF"
+      ],
+      "map8": [
+        "SHFH",
+        "FFHF",
+        "HGFF",
+        "FHFF"
+      ]
+    },
+    {
+      "uid": "39373_7_0.8423975841136502",
+      "changed": false,
+      "map10": [
+        "FFFFFFF",
+        "HFHFHFF",
+        "FHFFGFF",
+        "FHFFFFH",
+        "FFFFHFF",
+        "FSFFFFF",
+        "HFFFFHF"
+      ],
+      "map8": [
+        "FFFFFFF",
+        "HFHFHFF",
+        "FHFFGFF",
+        "FHFFFFH",
+        "FFFFHFF",
+        "FSFFFFF",
+        "HFFFFHF"
+      ]
+    },
+    {
+      "uid": "43019_6_0.7368321855857873",
+      "changed": false,
+      "map10": [
+        "FFFFFH",
+        "FFHFFH",
+        "FFFHFH",
+        "FSFFGF",
+        "FHFFHF",
+        "FFFHFF"
+      ],
+      "map8": [
+        "FFFFFH",
+        "FFHFFH",
+        "FFFHFH",
+        "FSFFGF",
+        "FHFFHF",
+        "FFFHFF"
+      ]
+    },
+    {
+      "uid": "62619_8_0.7149039989679874",
+      "changed": false,
+      "map10": [
+        "FFFFFHFF",
+        "FFFFFFFF",
+        "HHFHFFSF",
+        "FFHFFHFF",
+        "FFFHHFFF",
+        "HFFFFGFF",
+        "FHFHHFFF",
+        "FHFFFFHF"
+      ],
+      "map8": [
+        "FFFFFHFF",
+        "FFFFFFFF",
+        "HHFHFFSF",
+        "FFHFFHFF",
+        "FFFHHFFF",
+        "HFFFFGFF",
+        "FHFHHFFF",
+        "FHFFFFHF"
+      ]
+    },
+    {
+      "uid": "16043_9_0.6828511911818638",
+      "changed": false,
+      "map10": [
+        "FFHFFFHFF",
+        "FFFFHFFFF",
+        "FFFFFFHFF",
+        "HHFHHHFFF",
+        "FFHFFFFGF",
+        "FFFFHHFFF",
+        "HHFHFFFFF",
+        "FSFFHFFFF",
+        "FHHFFHFFF"
+      ],
+      "map8": [
+        "FFHFFFHFF",
+        "FFFFHFFFF",
+        "FFFFFFHFF",
+        "HHFHHHFFF",
+        "FFHFFFFGF",
+        "FFFFHHFFF",
+        "HHFHFFFFF",
+        "FSFFHFFFF",
+        "FHHFFHFFF"
+      ]
+    },
+    {
+      "uid": "45532_3_0.7643887189583347",
+      "changed": false,
+      "map10": [
+        "FFF",
+        "FFG",
+        "SFF"
+      ],
+      "map8": [
+        "FFF",
+        "FFG",
+        "SFF"
+      ]
+    },
+    {
+      "uid": "65936_6_0.6574551051312612",
+      "changed": false,
+      "map10": [
+        "GFFFFS",
+        "HFFHHH",
+        "HHFHFF",
+        "FFHFHF",
+        "FHFFFF",
+        "FFFFFH"
+      ],
+      "map8": [
+        "GFFFFS",
+        "HFFHHH",
+        "HHFHFF",
+        "FFHFHF",
+        "FHFFFF",
+        "FFFFFH"
+      ]
+    },
+    {
+      "uid": "19239_5_0.6262335546286011",
+      "changed": false,
+      "map10": [
+        "FSFFH",
+        "HGHFH",
+        "FFFHF",
+        "FFFHF",
+        "HHHHH"
+      ],
+      "map8": [
+        "FSFFH",
+        "HGHFH",
+        "FFFHF",
+        "FFFHF",
+        "HHHHH"
+      ]
+    },
+    {
+      "uid": "10416_6_0.6068092756460535",
+      "changed": false,
+      "map10": [
+        "FFHFFF",
+        "FHFFHF",
+        "HHFHHG",
+        "FFFFFF",
+        "FSHHHF",
+        "FFFHFF"
+      ],
+      "map8": [
+        "FFHFFF",
+        "FHFFHF",
+        "HHFHHG",
+        "FFFFFF",
+        "FSHHHF",
+        "FFFHFF"
+      ]
+    },
+    {
+      "uid": "3412_3_0.673095028178816",
+      "changed": false,
+      "map10": [
+        "FFH",
+        "FSF",
+        "FFG"
+      ],
+      "map8": [
+        "FFH",
+        "FSF",
+        "FFG"
+      ]
+    },
+    {
+      "uid": "81976_6_0.6989427080417595",
+      "changed": false,
+      "map10": [
+        "HFFFHH",
+        "SHFFFH",
+        "FFFHFF",
+        "FHFFHH",
+        "FHFGFF",
+        "HFFHFF"
+      ],
+      "map8": [
+        "HFFFHH",
+        "SHFFFH",
+        "FFFHFF",
+        "FHFFHH",
+        "FHFGFF",
+        "HFFHFF"
+      ]
+    },
+    {
+      "uid": "24406_8_0.7380191740703119",
+      "changed": true,
+      "map10": [
+        "FFFFHFFF",
+        "FGHFHFFH",
+        "FFFFHFFH",
+        "FFFFFHHH",
+        "FFFHFFFF",
+        "FFFFHFFH",
+        "FFFHFFSF",
+        "HFFFFHFF"
+      ],
+      "map8": [
+        "FHFFFFFH",
+        "FFHFFHHH",
+        "HFGFFFHH",
+        "FFFFHFFH",
+        "HHHFFFFF",
+        "FFHSFFFF",
+        "FFFFFHFH",
+        "FFFHFHFF"
+      ]
+    },
+    {
+      "uid": "1875_2_0.6731874562967516",
+      "changed": false,
+      "map10": [
+        "FS",
+        "GF"
+      ],
+      "map8": [
+        "FS",
+        "GF"
+      ]
+    },
+    {
+      "uid": "37066_3_0.8460148930963528",
+      "changed": false,
+      "map10": [
+        "SFH",
+        "FFF",
+        "FGF"
+      ],
+      "map8": [
+        "SFH",
+        "FFF",
+        "FGF"
+      ]
+    },
+    {
+      "uid": "5752_4_0.6729362920602919",
+      "changed": false,
+      "map10": [
+        "FFHH",
+        "FFFF",
+        "FFSF",
+        "FFGH"
+      ],
+      "map8": [
+        "FFHH",
+        "FFFF",
+        "FFSF",
+        "FFGH"
+      ]
+    },
+    {
+      "uid": "86753_6_0.7102438471116022",
+      "changed": false,
+      "map10": [
+        "FFFFHF",
+        "HFFFFH",
+        "HFFFFF",
+        "FFFFFS",
+        "GFFHFF",
+        "FFFHFH"
+      ],
+      "map8": [
+        "FFFFHF",
+        "HFFFFH",
+        "HFFFFF",
+        "FFFFFS",
+        "GFFHFF",
+        "FFFHFH"
+      ]
+    },
+    {
+      "uid": "78025_2_0.6258190413829751",
+      "changed": false,
+      "map10": [
+        "FF",
+        "SG"
+      ],
+      "map8": [
+        "FF",
+        "SG"
+      ]
+    },
+    {
+      "uid": "1353_8_0.6651566283342689",
+      "changed": false,
+      "map10": [
+        "FFFHFFFH",
+        "FHHFHHFH",
+        "FHFHFHFF",
+        "HHFFFFHF",
+        "FFFHFFFF",
+        "HFFFFFFH",
+        "FFHFFFFH",
+        "FSGHFFHF"
+      ],
+      "map8": [
+        "FFFHFFFH",
+        "FHHFHHFH",
+        "FHFHFHFF",
+        "HHFFFFHF",
+        "FFFHFFFF",
+        "HFFFFFFH",
+        "FFHFFFFH",
+        "FSGHFFHF"
+      ]
+    },
+    {
+      "uid": "26986_5_0.6120830349472477",
+      "changed": false,
+      "map10": [
+        "FHHHF",
+        "HFGFH",
+        "HFHFF",
+        "HFHFF",
+        "FFFHS"
+      ],
+      "map8": [
+        "FHHHF",
+        "HFGFH",
+        "HFHFF",
+        "HFHFF",
+        "FFFHS"
+      ]
+    },
+    {
+      "uid": "86907_5_0.739877158359332",
+      "changed": false,
+      "map10": [
+        "FFFSF",
+        "FHHFF",
+        "FFFFF",
+        "FGFFH",
+        "FFHFH"
+      ],
+      "map8": [
+        "FFFSF",
+        "FHHFF",
+        "FFFFF",
+        "FGFFH",
+        "FFHFH"
+      ]
+    },
+    {
+      "uid": "14691_8_0.7877661707831078",
+      "changed": false,
+      "map10": [
+        "FFFFFFHF",
+        "FFHFFFFF",
+        "FFFFFHHF",
+        "HFFFHFFF",
+        "FFFFGFFF",
+        "FFFFFFFH",
+        "HFHFFFFF",
+        "FFFFFFSF"
+      ],
+      "map8": [
+        "FFFFFFHF",
+        "FFHFFFFF",
+        "FFFFFHHF",
+        "HFFFHFFF",
+        "FFFFGFFF",
+        "FFFFFFFH",
+        "HFHFFFFF",
+        "FFFFFFSF"
+      ]
+    },
+    {
+      "uid": "69847_6_0.6489274535840169",
+      "changed": false,
+      "map10": [
+        "FHFFFF",
+        "FFFFHF",
+        "HFFFFH",
+        "FFHFSH",
+        "HFFHGF",
+        "FFFFHF"
+      ],
+      "map8": [
+        "FHFFFF",
+        "FFFFHF",
+        "HFFFFH",
+        "FFHFSH",
+        "HFFHGF",
+        "FFFFHF"
+      ]
+    },
+    {
+      "uid": "48075_5_0.6919777344540177",
+      "changed": false,
+      "map10": [
+        "FFFFG",
+        "FFFHF",
+        "HHFHF",
+        "HHFFS",
+        "HHFHF"
+      ],
+      "map8": [
+        "FFFFG",
+        "FFFHF",
+        "HHFHF",
+        "HHFFS",
+        "HHFHF"
+      ]
+    },
+    {
+      "uid": "10794_4_0.6041540566817901",
+      "changed": false,
+      "map10": [
+        "FFHF",
+        "HFSF",
+        "FGHH",
+        "HFHH"
+      ],
+      "map8": [
+        "FFHF",
+        "HFSF",
+        "FGHH",
+        "HFHH"
+      ]
+    },
+    {
+      "uid": "68470_3_0.8098805139305529",
+      "changed": false,
+      "map10": [
+        "FGH",
+        "FFS",
+        "HFF"
+      ],
+      "map8": [
+        "FGH",
+        "FFS",
+        "HFF"
+      ]
+    },
+    {
+      "uid": "16406_2_0.7949908812329174",
+      "changed": false,
+      "map10": [
+        "SF",
+        "GF"
+      ],
+      "map8": [
+        "SF",
+        "GF"
+      ]
+    },
+    {
+      "uid": "75930_7_0.6158135077185731",
+      "changed": false,
+      "map10": [
+        "HFHHFFF",
+        "FFHGFFF",
+        "FHFFFHF",
+        "HFFFSFF",
+        "HHHFFHF",
+        "FFHFFFH",
+        "FHFFFFF"
+      ],
+      "map8": [
+        "HFHHFFF",
+        "FFHGFFF",
+        "FHFFFHF",
+        "HFFFSFF",
+        "HHHFFHF",
+        "FFHFFFH",
+        "FHFFFFF"
+      ]
+    },
+    {
+      "uid": "26872_6_0.6912169023301028",
+      "changed": false,
+      "map10": [
+        "FFFFHF",
+        "FFFHFF",
+        "HHHFHS",
+        "FFHHHF",
+        "FFHHFF",
+        "FFHFGF"
+      ],
+      "map8": [
+        "FFFFHF",
+        "FFFHFF",
+        "HHHFHS",
+        "FFHHHF",
+        "FFHHFF",
+        "FFHFGF"
+      ]
+    },
+    {
+      "uid": "41708_5_0.8388216534623738",
+      "changed": false,
+      "map10": [
+        "HFFFF",
+        "GFFSF",
+        "FFHFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "map8": [
+        "HFFFF",
+        "GFFSF",
+        "FFHFF",
+        "FFFFF",
+        "FFFFF"
+      ]
+    },
+    {
+      "uid": "20800_3_0.6980067640197443",
+      "changed": false,
+      "map10": [
+        "HFH",
+        "FGS",
+        "FHF"
+      ],
+      "map8": [
+        "HFH",
+        "FGS",
+        "FHF"
+      ]
+    },
+    {
+      "uid": "43397_7_0.731552169181004",
+      "changed": false,
+      "map10": [
+        "FFHHFHF",
+        "SHHFFFF",
+        "FHHFFFF",
+        "FFHFGFF",
+        "FFFFFFF",
+        "FHFFFHF",
+        "FHFHFFF"
+      ],
+      "map8": [
+        "FFHHFHF",
+        "SHHFFFF",
+        "FHHFFFF",
+        "FFHFGFF",
+        "FFFFFFF",
+        "FHFFFHF",
+        "FHFHFFF"
+      ]
+    },
+    {
+      "uid": "37909_4_0.6888107152525887",
+      "changed": false,
+      "map10": [
+        "FHSF",
+        "FHFH",
+        "FFGF",
+        "FFFF"
+      ],
+      "map8": [
+        "FHSF",
+        "FHFH",
+        "FFGF",
+        "FFFF"
+      ]
+    },
+    {
+      "uid": "21352_5_0.7490328470320654",
+      "changed": false,
+      "map10": [
+        "FFHSH",
+        "FHHFF",
+        "FFFFH",
+        "FHHGF",
+        "FFFHH"
+      ],
+      "map8": [
+        "FFHSH",
+        "FHHFF",
+        "FFFFH",
+        "FHHGF",
+        "FFFHH"
+      ]
+    },
+    {
+      "uid": "93848_5_0.8445392189092056",
+      "changed": false,
+      "map10": [
+        "HFFFH",
+        "FFFFF",
+        "HFHHG",
+        "FFFHS",
+        "FFFFH"
+      ],
+      "map8": [
+        "HFFFH",
+        "FFFFF",
+        "HFHHG",
+        "FFFHS",
+        "FFFFH"
+      ]
+    },
+    {
+      "uid": "15438_2_0.8493756258702992",
+      "changed": false,
+      "map10": [
+        "FS",
+        "FG"
+      ],
+      "map8": [
+        "FS",
+        "FG"
+      ]
+    },
+    {
+      "uid": "88921_4_0.7936787445027977",
+      "changed": false,
+      "map10": [
+        "FGFF",
+        "FHFF",
+        "FFSH",
+        "FFHF"
+      ],
+      "map8": [
+        "FGFF",
+        "FHFF",
+        "FFSH",
+        "FFHF"
+      ]
+    },
+    {
+      "uid": "44999_4_0.7010777745051098",
+      "changed": false,
+      "map10": [
+        "FGFS",
+        "FHFF",
+        "HFFH",
+        "FFFF"
+      ],
+      "map8": [
+        "FGFS",
+        "FHFF",
+        "HFFH",
+        "FFFF"
+      ]
+    }
+  ],
+  "changed": 8,
+  "map_generation_max_steps": 8,
+  "interaction_horizon": 10,
+  "old_map8_geometry_verified": true
+}

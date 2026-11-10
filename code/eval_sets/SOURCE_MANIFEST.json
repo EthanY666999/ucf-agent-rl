@@ -1,0 +1,26 @@
+{
+  "supplemental500/tasks.json": {
+    "source": "ucf-0.5b-40g:/home/vipuser/golden-sft-patr-20261031/results/supplemental500/tasks.json",
+    "sha256": "ccfa4066e01bb7e419024a2a39b740091a2e2d365857c24f241b33512802ec72"
+  },
+  "supplemental500/protocol.json": {
+    "source": "ucf-0.5b-40g:/home/vipuser/golden-sft-patr-20261031/results/supplemental500/protocol.json",
+    "sha256": "e923760dfd77420aca2b93adca12f9b30c63bb493a62144eec8f5fa0d5b0ecc5"
+  },
+  "supplemental500/maps.json": {
+    "source": "ucf-0.5b-40g:/home/vipuser/golden-sft-patr-20261031/results/supplemental500/maps.json",
+    "sha256": "f3d4a16583b5364e9503df241660c0c9661e30ba640eba192d853e571859d3d0"
+  },
+  "filtered409/source_overlap.json": {
+    "source": "ucf-0.5b-40g:/home/vipuser/golden-controls-20261031/code/runs/audit/overlap_report.json",
+    "sha256": "0a5318a55209f19eb9e2c6576ce57f223a24bc14c1b0b1c6a0e987ef218e81ed"
+  },
+  "map8/source_identity.json": {
+    "source": "ucf-0.5b-40g:/home/vipuser/ucf-nosft-20261106/queue/map8/identity.json",
+    "sha256": "fdbb0e5c3b03b7de42345285a1b09329987e0e5fcd6c08a92fd428fb303dc1f2"
+  },
+  "map8/source_maps.json": {
+    "source": "ucf-0.5b-40g:/home/vipuser/ucf-nosft-20261106/queue/map8/maps.json",
+    "sha256": "21bf33b0f952c6b39af6cf04086a6abe7208aaf35c85d9a5f8d95dd8e8e7aed5"
+  }
+}

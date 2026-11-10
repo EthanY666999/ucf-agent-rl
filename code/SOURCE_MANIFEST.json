@@ -1,0 +1,34 @@
+{
+  "source_commit": "acc2863185aea11a5343b7f88f8a2a608a454f33",
+  "source_archive": "experiments/patr-v1-tree-closeout-20261017/source",
+  "files": {
+    "train.py": "b96d29530fb2c874a73ed1e6a1e233a6a421b3c24dce7484264a112803647fed",
+    "patr_core.py": "1e85177395b6718e8829ad0eeb8a7f7b3558134a7a2dfddd745b94524e7a4648",
+    "configs/frozenlake_05b.json": "2999322b99e572b08619211d4a38d9be870485cabb17adef4438653f90a89e09",
+    "artifacts/data.json": "5f15b04e47338132d9de8ba732ccc66c97c7142cc6200161cfd03e0eb18bfdf9",
+    "artifacts/runtime_override.json": "082b63635490e3be5091cd87ddd5889a70af17e129c37311914e3e20986f9dfb",
+    "vendor/rllm_source/rllm/agents/system_prompts.py": "745e3398d4c6974626c236c2abbdbf1c5bb68dab95529ea5d5a6d482c81addee",
+    "vendor/rllm_source/rllm/agents/frozenlake_agent.py": "32f7d4845b33f37ed4b1b23581382ecbbcc79fee298ab51b55442833a1815ae3",
+    "vendor/rllm_source/rllm/agents/agent.py": "1898181d6146e1eb2322e8bde8ce3b6b413d6230a76afd57856dccaa78e1b977",
+    "vendor/rllm_source/rllm/environments/frozenlake/frozenlake.py": "a73f31913b62a62ae6e441b4e5a1dd11b18a74d90fced50537d5598d081e2638",
+    "vendor/rllm_source/rllm/environments/base/base_env.py": "ec4b803aad51782114f503fe2d8164d269478f4b73b48974a78c4fdead7b6b48",
+    "vendor/rllm_source/examples/frozenlake/prepare_frozenlake_data.py": "7e53cdb08f5c053d8288bad617a09a3f13b100b5c04bc1fe69d60ffa3e937788"
+  },
+  "historical_files": {
+    "train.py": "30a2159330ab60352a1d3759fe83b7db051b630b2ff96a27c7407b174b5955c1",
+    "patr_core.py": "1e85177395b6718e8829ad0eeb8a7f7b3558134a7a2dfddd745b94524e7a4648",
+    "configs/frozenlake_05b.json": "2999322b99e572b08619211d4a38d9be870485cabb17adef4438653f90a89e09",
+    "artifacts/data.json": "5f15b04e47338132d9de8ba732ccc66c97c7142cc6200161cfd03e0eb18bfdf9",
+    "artifacts/runtime_override.json": "082b63635490e3be5091cd87ddd5889a70af17e129c37311914e3e20986f9dfb",
+    "vendor/rllm_source/rllm/agents/system_prompts.py": "745e3398d4c6974626c236c2abbdbf1c5bb68dab95529ea5d5a6d482c81addee",
+    "vendor/rllm_source/rllm/agents/frozenlake_agent.py": "32f7d4845b33f37ed4b1b23581382ecbbcc79fee298ab51b55442833a1815ae3",
+    "vendor/rllm_source/rllm/agents/agent.py": "1898181d6146e1eb2322e8bde8ce3b6b413d6230a76afd57856dccaa78e1b977",
+    "vendor/rllm_source/rllm/environments/frozenlake/frozenlake.py": "a73f31913b62a62ae6e441b4e5a1dd11b18a74d90fced50537d5598d081e2638",
+    "vendor/rllm_source/rllm/environments/base/base_env.py": "ec4b803aad51782114f503fe2d8164d269478f4b73b48974a78c4fdead7b6b48",
+    "vendor/rllm_source/examples/frozenlake/prepare_frozenlake_data.py": "7e53cdb08f5c053d8288bad617a09a3f13b100b5c04bc1fe69d60ffa3e937788"
+  },
+  "current_release": "2026-11-03 collaborator main consolidation",
+  "changes": {
+    "train.py": "Optional AdamW8bit; default AdamW settings and policy objective unchanged. Historical hash retained in historical_files."
+  }
+}

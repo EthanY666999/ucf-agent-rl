@@ -1,0 +1,7 @@
+{
+  "map_generation_max_steps": 8,
+  "interaction_max_turns": 10,
+  "evaluation_seed": 200042,
+  "samples_per_task": 4,
+  "task_file_sha256": "afc75ad20abf3d08e147285c97139747a9644f8be11272da14405a93c3f8bf81"
+}

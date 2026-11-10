@@ -1,0 +1,82 @@
+{
+  "cert_collect.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/cert_collect.py",
+    "original_sha256": "391dd664ab82c16a5454831737b567073824512159b731387c04676ca25d098e"
+  },
+  "cert_entropy.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/cert_entropy.py",
+    "original_sha256": "7bb679dc84356c08bdaa968023f135a3873ebc301fb242ba2893710dbb3ac236"
+  },
+  "cert_probe.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/cert_probe.py",
+    "original_sha256": "24cca0b67b9e2b35c4250c61999f24cfbc885794120fc1cd678c92f04b9141b1"
+  },
+  "cert_select.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/cert_select.py",
+    "original_sha256": "954bc70dee6c5861a3a3f9a34d3144e00217d4c17bfd4350febb66ec8dae4804"
+  },
+  "ucf_collect.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/ucf_collect.py",
+    "original_sha256": "9293e0767aa69dee25b90b703df565c5f9f870d70f17df2cbe51083ef41cc451"
+  },
+  "ucf_probe.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/ucf_probe.py",
+    "original_sha256": "5cc41d87d0f1390c27f8fb31ce7f396fdbcf3607a04191b66d0cb69384f548a2"
+  },
+  "ucf_recovery.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/ucf_recovery.py",
+    "original_sha256": "a4e6a89214c7d19a8f9dac0deccc4092833e07ea1df5bb8375b015e55a019ba0"
+  },
+  "ucf_runtime.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/ucf_runtime.py",
+    "original_sha256": "e9a307a3a1eb5c227732dcbcb8ebaf858de5c8130c2f05c14ba8b3b2f0a9da04"
+  },
+  "ucf_select.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/ucf_select.py",
+    "original_sha256": "022af32659e2330d887ce3be92c2c130a2091881ae081f04039ffa9de8e566ec"
+  },
+  "ucf_weights.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/ucf_weights.py",
+    "original_sha256": "e231376dbacca92b12376e180a86945a1050b2aa1b7ba3e201e2b638411fadbd"
+  },
+  "run_ucf.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/run_ucf.py",
+    "original_sha256": "6475df40aa89790cec9875b6c8c1745e03c4ec9c9387fed4d664d707be0b7d84"
+  },
+  "scripts/accept_ucf.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/scripts/accept_ucf.py",
+    "original_sha256": "6a1d7fa819acfe1529994c73d2c4da05ba01a25a3742e99f579d61dfffbb4db3"
+  },
+  "tests/test_ucf.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-followups-20261106/queue_v2/cpu_workspace/tests/test_ucf.py",
+    "original_sha256": "333c4856200bfe09c61cccff12d8885e9d3245815981ae54bfcc589a00e2581d"
+  },
+  "tests/htsim_regression.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-followups-20261106/queue_v2/cpu_workspace/tests/htsim_regression.py",
+    "original_sha256": "8f53176cb556ac56c102cae49f536b38aed21b2688516d0a1e1d0ee0b24716f1"
+  },
+  "tests/htsim_original.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-followups-20261106/queue_v2/cpu_workspace/tests/htsim_original.py",
+    "original_sha256": "4db67deaa3dbc1a7db237610a8606695c0c53b983414e7550fe0bf79bfb2f8b3"
+  },
+  "scripts/phase1_ucf.py": {
+    "source_host": "ucf-0.5b-40g",
+    "source_path": "/home/vipuser/ucf-nosft-20261106/code/scripts/phase1_ucf.py",
+    "original_sha256": "47620506de45b57f8a3a86c908eab27f9f499663a264a80499813bcebbea0f2c"
+  }
+}
