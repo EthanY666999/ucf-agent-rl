@@ -73,3 +73,5 @@ Weights and optimizer checkpoints remain on the server, outside Git and off the 
 The verified S07 final weight was relocated from the system mount to the data mount, retaining its old path as a symlink. Its content hash is unchanged; total model storage was not reduced. Published plans and the execution receipt are in `reports/storage/`.
 
 The new lightweight evidence export is6,036,357bytes and contains no weights/checkpoints. Earlier GRPO training rollouts and its25-step optimizer checkpoint remain remote; `reports/retained_default_grpo25_inventory.json` records paths, sizes and SHA256 rather than claiming they were uploaded. Historical S07 SFT StarPO-S results remain separate from V3/no-SFT evidence.
+
+The inactive default-kernel GRPO25 checkpoint was losslessly compressed on the server, releasing2.00GiB while retaining model/optimizer/RNG. See `reports/storage/CHECKPOINT_ARCHIVE.md` and its manifest/receipt; restore it before any historical resume. Active training checkpoints remain uncompressed.

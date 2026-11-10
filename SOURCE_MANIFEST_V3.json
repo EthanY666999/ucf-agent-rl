@@ -4,16 +4,16 @@
     "sha256": "c38b07fe10f2da98d9e8ac81f94c46901096cc9a9ff0270cc8056b18d6812cca"
   },
   "README.md": {
-    "bytes": 7861,
-    "sha256": "d73f60e73f83a0c7674fa94e60014346c2ee76d82efa328a95b36be5bc085036"
+    "bytes": 8163,
+    "sha256": "29b5d72b1ec10f0c8d8b2a21fbeaa9c1adc27e1145503895277037f8edb3eb6f"
   },
   "WORKLOG.md": {
-    "bytes": 20928,
-    "sha256": "3a0c2154529fc25c365601496456407ad64e230cd8a842d5b2eeb53e36e4a363"
+    "bytes": 21872,
+    "sha256": "46323bb05dfffdae647c742cf7a3939b6aaf4888716884ade318449b37761877"
   },
   "autofix_log.md": {
-    "bytes": 2662,
-    "sha256": "22d09a293fcdf268d8a4eaedfdbfa3b1a1243aa2f8c67580c71f71d8894fea2f"
+    "bytes": 2921,
+    "sha256": "142247272eadef8e4fd505def3debd093e52eb1ce304c70165027c181374e93c"
   },
   "code/README.md": {
     "bytes": 1540,
@@ -1032,8 +1032,8 @@
     "sha256": "c877a2665ddd35f1d7e81e9eacfc64633009872f95075bf8cc8a57e76574c770"
   },
   "reports/retained_default_grpo25_inventory.json": {
-    "bytes": 7634,
-    "sha256": "b253a5655ed12b7a5753a41f8b80919bee2591b82c15622a33bbc03d3466ee7e"
+    "bytes": 8037,
+    "sha256": "2f31a81e14ae3a514e2cb864dff7f6fb138cd2a3eefd08e23568a25b8d15fdd5"
   },
   "reports/scoped_cpu_admission.json": {
     "bytes": 374,
@@ -1198,6 +1198,10 @@
   "reports/storage/default_grpo25_compression_manifest.json": {
     "bytes": 999,
     "sha256": "aac1639d85380ea45b78d8ad67f3d714117947bfbe9d7cf86615d02e88944662"
+  },
+  "reports/storage/default_grpo25_compression_receipt.json": {
+    "bytes": 1512,
+    "sha256": "69bbaa7ba1536cb14459d8b7139b10f29b9fb5db6a668bcf46dc3625f175077f"
   },
   "reports/v3_batched_admission.json": {
     "bytes": 215,

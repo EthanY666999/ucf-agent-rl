@@ -1,0 +1,31 @@
+{
+  "status": "lossless_archive_complete",
+  "original": "/home/vipuser/ucf-v3-runs-20261110/V3_S_grpo_nosft_seed42/checkpoint.pt",
+  "original_bytes": 22582328681,
+  "original_sha256": "d3fdd5fd96aba34bbf9c2b0a61fb87c25424c8c70170e2a6ec44a08635517e3d",
+  "staging_archive": "/data/runs/ucf_v3_storage_20261110/default_grpo25_checkpoint.pt.zst",
+  "final_archive": "/home/vipuser/ucf-v3-runs-20261110/V3_S_grpo_nosft_seed42/checkpoint.pt.zst",
+  "archive_bytes": 20430581501,
+  "archive_sha256": "b37d02f4f5a28b61ed7ec5b87d4114b9b2d88701b38eb8a0b2c3822762b5b451",
+  "decompressed_sha256": "d3fdd5fd96aba34bbf9c2b0a61fb87c25424c8c70170e2a6ec44a08635517e3d",
+  "lossless": true,
+  "model_optimizer_rng_preserved": true,
+  "active_scoped_run_untouched": true,
+  "before_free_bytes": {
+    "/home/vipuser": 41056141312,
+    "/data": 61285486592
+  },
+  "unix": 1794314296.6174667,
+  "reason": "Inactive default-numerics GRPO25 is retained for reproducibility, not in the current paired queue",
+  "published_commit": "1f71df96ec555b3adc520d2dec836d6d62825c58",
+  "published_manifest_sha256": "aac1639d85380ea45b78d8ad67f3d714117947bfbe9d7cf86615d02e88944662",
+  "source_unlinked_unix": 1794314704.5203652,
+  "actual_archive": "/home/vipuser/ucf-v3-runs-20261110/V3_S_grpo_nosft_seed42/checkpoint.pt.zst",
+  "released_bytes": 2151747180,
+  "after_free_bytes": {
+    "/home/vipuser": 43154862080,
+    "/data": 61285462016
+  },
+  "restored_plaintext_required_before_resume": true,
+  "completed_unix": 1794314833.207673
+}

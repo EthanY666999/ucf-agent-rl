@@ -179,8 +179,14 @@
       "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_grpo_nosft_seed42/checkpoint.pt",
       "bytes": 22582328681,
       "sha256": "d3fdd5fd96aba34bbf9c2b0a61fb87c25424c8c70170e2a6ec44a08635517e3d",
-      "retained_remote": true,
-      "uploaded_in_this_snapshot": false
+      "retained_remote": false,
+      "uploaded_in_this_snapshot": false,
+      "original_payload_retained_losslessly": true,
+      "archive_path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_grpo_nosft_seed42/checkpoint.pt.zst",
+      "archive_bytes": 20430581501,
+      "archive_sha256": "b37d02f4f5a28b61ed7ec5b87d4114b9b2d88701b38eb8a0b2c3822762b5b451",
+      "restore_before_resume": true,
+      "storage_receipt": "reports/storage/default_grpo25_compression_receipt.json"
     }
   ],
   "no_model_or_checkpoint_transferred": true
