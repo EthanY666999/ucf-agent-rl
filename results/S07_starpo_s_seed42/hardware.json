@@ -1,0 +1,81 @@
+{
+  "model_family": "Qwen3.5",
+  "code_commit": "6e8f0591639afdc674f428edca1baa0d96367ddc",
+  "source_manifest_sha256": "763e3fcd25a710d7a28802454edca90dcb735e7372423f4cb4aab0a59c4f5fdd",
+  "config_difference": {
+    "model": {
+      "base": "/data/models/Qwen3.5-2B",
+      "value": "/data/runs/hard_queue/S02_SFT_seed42/sft/final_model"
+    },
+    "clip_low": {
+      "base": 0.28,
+      "value": 0.2
+    },
+    "kl_coefficient": {
+      "base": 0.001,
+      "value": 0.0
+    },
+    "flat_group_size": {
+      "base": 8,
+      "value": 4
+    },
+    "eval_every": {
+      "base": 40,
+      "value": 25
+    },
+    "run_label": {
+      "base": "qwen35_2b_preregistered_20261107",
+      "value": "S07_starpo_s_seed42"
+    },
+    "model_family": {
+      "base": null,
+      "value": "Qwen3.5"
+    },
+    "environment": {
+      "base": null,
+      "value": "sokoban"
+    },
+    "evaluate_extra_sets": {
+      "base": null,
+      "value": true
+    },
+    "eval_sets_dir": {
+      "base": null,
+      "value": "/data/runs/datasets/sokoban"
+    },
+    "dataset_path": {
+      "base": null,
+      "value": "/data/runs/datasets/sokoban/data.json"
+    },
+    "dataset_sha256": {
+      "base": null,
+      "value": "6584a8b35a19350459193cce7d1a868cd24eb28e407295f78ee4727a71555d87"
+    },
+    "frozen_maps_path": {
+      "base": null,
+      "value": "/data/runs/datasets/sokoban/maps.json"
+    },
+    "frozen_maps_sha256": {
+      "base": null,
+      "value": "53932236e5f528da5c6442586b2054561b8a510782f42943268cdf44eb53af27"
+    },
+    "starpo_keep_fraction": {
+      "base": null,
+      "value": 0.5
+    }
+  },
+  "pilot_phase": false,
+  "comparison": "S05 historical v2; P1/P2 v2.2",
+  "software_versions": {
+    "torch": "2.10.0",
+    "vllm": "0.19.1",
+    "transformers": "5.22.2"
+  },
+  "software_versions_provenance": {
+    "recorded_at": "2026-11-10T11:12:57.721206+08:00",
+    "python": "/data/venvs/qwen35/bin/python",
+    "source": "importlib.metadata of actual production interpreter",
+    "backfilled": false,
+    "historical_loaded_versions_proven": true
+  }
+}

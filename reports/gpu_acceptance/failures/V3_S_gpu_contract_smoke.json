@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/data/venvs/qwen35/bin/python",
+    "-u",
+    "/home/vipuser/decision-point-ucf-v3-20261110/code/scripts/v3_gpu_acceptance.py",
+    "--config",
+    "/home/vipuser/decision-point-ucf-v3-20261110/v3_configs/V3_S_ucf_nosft_seed42.json",
+    "--output",
+    "/data/runs/ucf_v3_control_20261110/gpu_acceptance/S"
+  ],
+  "started": 1794295626.5084991,
+  "config_sha256": "da12f5cdc9d537e63da447925189837580a38220a7453c6f592a81a6b1c78fc6",
+  "kind": "smoke",
+  "pid": 348615,
+  "start_ticks": "31081030",
+  "returncode": 1,
+  "ended": 1794295786.5537543,
+  "log": "/data/runs/ucf_v3_control_20261110/logs/V3_S_gpu_contract_smoke.log",
+  "evidence_retained": true
+}

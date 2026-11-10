@@ -1,0 +1,82 @@
+{
+  "checked_unix": 1794295399.2342083,
+  "training_steps": 400,
+  "finite_metrics": true,
+  "nonzero_parameter_updates": 400,
+  "validation_point_count": 17,
+  "validation": {
+    "0": {
+      "success_rate_pct": 37.0,
+      "pass_at_4_pct": 56
+    },
+    "25": {
+      "success_rate_pct": 64.75,
+      "pass_at_4_pct": 74
+    },
+    "50": {
+      "success_rate_pct": 71.25,
+      "pass_at_4_pct": 76
+    },
+    "75": {
+      "success_rate_pct": 76.0,
+      "pass_at_4_pct": 77
+    },
+    "100": {
+      "success_rate_pct": 76.25,
+      "pass_at_4_pct": 78
+    },
+    "125": {
+      "success_rate_pct": 75.75,
+      "pass_at_4_pct": 77
+    },
+    "150": {
+      "success_rate_pct": 80.5,
+      "pass_at_4_pct": 84
+    },
+    "175": {
+      "success_rate_pct": 76.25,
+      "pass_at_4_pct": 77
+    },
+    "200": {
+      "success_rate_pct": 80.25,
+      "pass_at_4_pct": 81
+    },
+    "225": {
+      "success_rate_pct": 80.0,
+      "pass_at_4_pct": 80
+    },
+    "250": {
+      "success_rate_pct": 79.25,
+      "pass_at_4_pct": 80
+    },
+    "275": {
+      "success_rate_pct": 81.75,
+      "pass_at_4_pct": 82
+    },
+    "300": {
+      "success_rate_pct": 82.0,
+      "pass_at_4_pct": 82
+    },
+    "325": {
+      "success_rate_pct": 79.75,
+      "pass_at_4_pct": 80
+    },
+    "350": {
+      "success_rate_pct": 79.5,
+      "pass_at_4_pct": 80
+    },
+    "375": {
+      "success_rate_pct": 81.75,
+      "pass_at_4_pct": 82
+    },
+    "400": {
+      "success_rate_pct": 81.0,
+      "pass_at_4_pct": 81
+    }
+  },
+  "final_evaluation_verified": false,
+  "mean17": {
+    "success_rate_pct": 75.47058823529412,
+    "pass_at_4_pct": 78.05882352941177
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "handed_to_v3",
+  "pid": 348614,
+  "command": [
+    "/data/venvs/qwen35/bin/python",
+    "-u",
+    "/home/vipuser/decision-point-ucf-v3-20261110/control/v3_manager.py",
+    "/home/vipuser/decision-point-ucf-v3-20261110/v3_plan.json"
+  ],
+  "unix": 1794295626.1768863
+}

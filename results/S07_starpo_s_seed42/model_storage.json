@@ -1,0 +1,8 @@
+{
+  "logical_path": "/data/runs/hard_queue/S07_starpo_s_seed42/final_model",
+  "physical_path": "/home/vipuser/q35-final-models/S07_starpo_s_seed42",
+  "verified_sha256": {
+    "model.safetensors": "9a345e9b616acdbcb8d9ddf733f66a9c0e0cef67e9c5c8678a554488420baca8"
+  },
+  "retained": true
+}

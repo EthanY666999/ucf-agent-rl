@@ -31,3 +31,11 @@ Runtime: torch2.10.0, vLLM0.19.1, transformers5.22.2, production A10080GB. GPU c
 ## Storage policy
 
 Only small code/configuration/results are published here. Remote weights/checkpoints stay off the Mac and outside Git. Preserve trajectories, logs, evaluations, source and failures. Check both mounts before each launch and reserve room for atomic checkpoint replacement; delete only explicitly disposable or verified obsolete weights, with a deletion manifest.
+
+## First GPU evidence and S07 boundary
+
+S07 completed before this branch took over the GPU. The independently checked raw-record results are in `results/S07_starpo_s_seed42` and `reports/S07_independent_completion_audit.json`. S07 is a historical SFT StarPO-S run, not V3 evidence.
+
+FrozenLake's train-only V3 GPU contract passed (one update). Sokoban's first contract failed the preset prefill/decode logprob consistency mean threshold; it is not admitted to UCF training. The first paired-protocol GRPO4 diagnostic is running while this numerical issue is investigated. Neither smoke nor the GRPO run is evidence of UCF improvement. Both failed and passed receipts are retained under `reports/gpu_acceptance`.
+
+Frozen Sokoban tasks/maps are provided as lossless `.json.gz` files in `data/sokoban`. Unpack them on the experiment server; if paths differ, update only file locations in the configuration and verify the original content SHA256. `reports/evidence_export_manifest.json` records both original and compressed hashes. No weights or checkpoint are included.

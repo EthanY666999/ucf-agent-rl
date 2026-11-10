@@ -1,0 +1,6 @@
+{
+  "n_tasks": 500,
+  "n_trajectories": 2000,
+  "success_rate": 0.7685,
+  "pass_at_4": 0.772
+}

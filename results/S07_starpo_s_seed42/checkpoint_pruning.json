@@ -1,0 +1,8 @@
+{
+  "unix": 1794295558.8007576,
+  "path": "/data/runs/hard_queue/S07_starpo_s_seed42/checkpoint.pt",
+  "bytes": 22582327657,
+  "reason": "Final evaluation and all 400/63 training steps verified; records and final_model retained",
+  "verification_sha256": "504842094d7319924ab61aa9db78d5959ae44558d141a7673faf6633d57d1d83",
+  "status": "complete"
+}
