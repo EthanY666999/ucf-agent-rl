@@ -1,0 +1,20 @@
+{
+  "owner": "paired50_handoff",
+  "original_plan_sha256": "f3929f9ac2c73fad3432565b09efb566894401c965c9095e3f346a9611c3d6e0",
+  "continue_after_ucf": "same matched GRPO configuration through step 50 only",
+  "successor": "/data/runs/ucf_v3_budget10240_20261110/paired50_handoff/grpo50_only.json",
+  "stop_after_pair": true,
+  "candidate_margin_percentage_points": -2,
+  "rescue_windows": [
+    [
+      17,
+      25
+    ],
+    [
+      42,
+      50
+    ]
+  ],
+  "rescue_denominator": "all four-original-failure training questions including those with zero selected forks",
+  "uncertainty": "report question-paired bootstrap; this is an exploratory resource rule, not a statistical noninferiority claim"
+}

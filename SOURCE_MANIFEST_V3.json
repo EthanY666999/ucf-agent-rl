@@ -1990,5 +1990,33 @@
   "results/budget10240_paired25/fork_effects_0025.json": {
     "bytes": 6273,
     "sha256": "5eaf126308af9f3399c375b84104ffcd44c493a01ed3f1a6b5ece22cc9a90cad"
+  },
+  "control/pair50_handoff.py": {
+    "bytes": 7995,
+    "sha256": "48d17a6ccc584d996e363fe31194c7ad7c3bab8d4034f7cc086ef92ca01bde90"
+  },
+  "diagnostics/replay_uniform_gate.py": {
+    "bytes": 6155,
+    "sha256": "7cfc2bdda497c2cc98d3e6a35b58f6b556ab3663c3ad896fff52469e161edb64"
+  },
+  "reports/budget10240/PAIRED50_DECISION.md": {
+    "bytes": 4728,
+    "sha256": "7c49c5ac47d14890cd8c75938c0bdc2b1b1503affe98d220ab4815101c56c14e"
+  },
+  "reports/budget10240/gate_replay_0017_0025.json": {
+    "bytes": 8996,
+    "sha256": "5e58b91b7b5d8a870eb5e3c49afe5a543023e51bdd2bf3b5eb712a1cd78a387a"
+  },
+  "reports/budget10240/gate_replay_0026_0034.json": {
+    "bytes": 8995,
+    "sha256": "0eb77e2759bec22bddafcec9fd3cc220a2bba255834781f2adeb73c7f099bfb0"
+  },
+  "reports/budget10240/paired50_decision.json": {
+    "bytes": 704,
+    "sha256": "cbdf1c44c7249ebe5f3150fa0734711ad10f0f049dc02736bed2fbaab9a2eae7"
+  },
+  "reports/budget10240/uniform_step0030_anchor.json": {
+    "bytes": 856,
+    "sha256": "5ce4e4b48efbf6b212aa2d13b3f6ec080a5c81d4e0d5abdbf55749b7f0718427"
   }
 }

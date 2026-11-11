@@ -1,0 +1,15 @@
+{
+  "step": 30,
+  "source": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/checkpoint.pt",
+  "source_bytes": 22582329065,
+  "source_sha256": "9d1972eda418277973f99a7baf156f81ddec6a2b248e515d7ee24c92dfdc57d6",
+  "archive_bytes": 20486665697,
+  "archive_sha256": "bb1049e946aaa34369e88aa75bb1b4095f9da2dde825a13edc9e7bf090ddf891",
+  "staged_path": "/data/runs/ucf_v3_budget10240_20261110/paired50_handoff/uniform_ucf_step0030.pt.zst",
+  "final_path": "/home/vipuser/ucf-v3-anchors-20261111/uniform_ucf_step0030.pt.zst",
+  "decompressed_sha256": "9d1972eda418277973f99a7baf156f81ddec6a2b248e515d7ee24c92dfdc57d6",
+  "source_method": "uniform UCF, seed42, 10240 retained tokens",
+  "model_optimizer_rng": true,
+  "comparison": "same uniform UCF trajectory through step30; fork for updates 31-50",
+  "captured_unix": 1794370208.767015
+}
