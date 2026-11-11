@@ -1,0 +1,81 @@
+{
+  "models": {
+    "S03_grpo_seed42": {
+      "format_version": 1,
+      "source": "/home/vipuser/q35-final-models/S03_grpo_seed42/model.safetensors",
+      "base": "/home/vipuser/q35-final-models/S02_SFT_seed42/model.safetensors",
+      "archive": "/data/runs/ucf_v3_budget10240_20261110/paired100/storage/archives/S03_grpo_seed42.f32delta",
+      "source_bytes": 7527341904,
+      "source_sha256": "0cfbed44cf94aa809b401980eb697749b95f014cb016abc5fccec165d519bdcc",
+      "base_sha256": "7f69cbe37deef8f04bd24b1653a1e2cd602f58304a98ee5dc922d082c40492bf",
+      "archive_bytes": 3862909332,
+      "archive_sha256": "83b57dc5250eb8fae6ad6a18ec4c8f478bb9f1a844cd01a88ec193fed64b4137",
+      "chunks": 898,
+      "verified": true,
+      "verified_unix": 1794427320.9726393,
+      "decompressed_sha256": "0cfbed44cf94aa809b401980eb697749b95f014cb016abc5fccec165d519bdcc"
+    },
+    "S04_tree_random_seed42": {
+      "format_version": 1,
+      "source": "/home/vipuser/q35-final-models/S04_tree_random_seed42/model.safetensors",
+      "base": "/home/vipuser/q35-final-models/S02_SFT_seed42/model.safetensors",
+      "archive": "/home/vipuser/ucf-v3-weight-archives-20261112/S04_tree_random_seed42.f32delta",
+      "source_bytes": 7527341904,
+      "source_sha256": "873cd5bfc69582c5b2207ec92b0b176ac8a1da7ca356d181ff7c20b4dba47fe0",
+      "base_sha256": "7f69cbe37deef8f04bd24b1653a1e2cd602f58304a98ee5dc922d082c40492bf",
+      "archive_bytes": 3875538970,
+      "archive_sha256": "f779d8f0187bcbc114b1b11d3fbc978c6d205de0e5d3e6739beed626c4362d44",
+      "chunks": 898,
+      "verified": true,
+      "verified_unix": 1794427594.7354605,
+      "decompressed_sha256": "873cd5bfc69582c5b2207ec92b0b176ac8a1da7ca356d181ff7c20b4dba47fe0"
+    },
+    "S05_ucf_seed42": {
+      "format_version": 1,
+      "source": "/home/vipuser/q35-final-models/S05_ucf_seed42/model.safetensors",
+      "base": "/home/vipuser/q35-final-models/S02_SFT_seed42/model.safetensors",
+      "archive": "/home/vipuser/ucf-v3-weight-archives-20261112/S05_ucf_seed42.f32delta",
+      "source_bytes": 7527341904,
+      "source_sha256": "fed786bc4f0b498b29d27e9b1f0852438a10cbd4202d6c376f884955bf55dbdc",
+      "base_sha256": "7f69cbe37deef8f04bd24b1653a1e2cd602f58304a98ee5dc922d082c40492bf",
+      "archive_bytes": 4055029475,
+      "archive_sha256": "ca3d0516935dc4b040b3c68b6a848dfd09aa6c1d71efd11314123df39a874c19",
+      "chunks": 898,
+      "verified": true,
+      "verified_unix": 1794427873.7069943,
+      "decompressed_sha256": "fed786bc4f0b498b29d27e9b1f0852438a10cbd4202d6c376f884955bf55dbdc"
+    },
+    "S06_gigpo_seed42": {
+      "format_version": 1,
+      "source": "/home/vipuser/q35-final-models/S06_gigpo_seed42/model.safetensors",
+      "base": "/home/vipuser/q35-final-models/S02_SFT_seed42/model.safetensors",
+      "archive": "/home/vipuser/ucf-v3-weight-archives-20261112/S06_gigpo_seed42.f32delta",
+      "source_bytes": 7527341904,
+      "source_sha256": "22c817b4e96f9652c6c3c6afcf7bca507a23e88533eea37dd312f47dcb12c609",
+      "base_sha256": "7f69cbe37deef8f04bd24b1653a1e2cd602f58304a98ee5dc922d082c40492bf",
+      "archive_bytes": 4026355879,
+      "archive_sha256": "9eaacc9471a8d7876bdcde1e22f42a841446221bf9afb4daef2721d7bc6258c5",
+      "chunks": 898,
+      "verified": true,
+      "verified_unix": 1794426843.1338675,
+      "decompressed_sha256": "22c817b4e96f9652c6c3c6afcf7bca507a23e88533eea37dd312f47dcb12c609"
+    },
+    "S07_starpo_s_seed42": {
+      "format_version": 1,
+      "source": "/data/runs/retained_models/S07_starpo_s_seed42/model.safetensors",
+      "base": "/home/vipuser/q35-final-models/S02_SFT_seed42/model.safetensors",
+      "archive": "/home/vipuser/ucf-v3-weight-archives-20261112/S07_starpo_s_seed42.f32delta",
+      "source_bytes": 7527341904,
+      "source_sha256": "9a345e9b616acdbcb8d9ddf733f66a9c0e0cef67e9c5c8678a554488420baca8",
+      "base_sha256": "7f69cbe37deef8f04bd24b1653a1e2cd602f58304a98ee5dc922d082c40492bf",
+      "archive_bytes": 3826374454,
+      "archive_sha256": "549979f237ba4bc3c3fb886b205a117903698e600be4b935227be73e8fcab530",
+      "chunks": 898,
+      "verified": true,
+      "verified_unix": 1794428135.4237528,
+      "decompressed_sha256": "9a345e9b616acdbcb8d9ddf733f66a9c0e0cef67e9c5c8678a554488420baca8"
+    }
+  },
+  "reserved_unarchived_base": "/home/vipuser/q35-final-models/S02_SFT_seed42/model.safetensors",
+  "policy": "Verified independent reconstruction of each original safetensors before replacing an inactive plain copy."
+}

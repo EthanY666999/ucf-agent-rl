@@ -82,7 +82,15 @@ def main():
     for e in new["entries"]:
         a = anchors[e["method"]]
         assert a["step"] == 50 and len(a["sha256"]) == 64
-        assert Path(a["path"]).stat().st_size == a["size_bytes"] > 0
+        anchor = Path(a["path"])
+        if anchor.is_file():
+            assert anchor.stat().st_size == a["size_bytes"] > 0
+        else:
+            pointer = read(anchor.with_suffix(".pt.archive.json"))
+            manifest = read(Path(pointer["manifest"]))
+            assert manifest["verified"] and manifest["source_sha256"] == a["sha256"]
+            assert manifest["source_bytes"] == a["size_bytes"]
+            assert all(Path(p["path"]).stat().st_size == p["packed_bytes"] for p in manifest["parts"])
         out = Path(e["output"])
         if not (WORK / e["method"] / "attempts").exists():
             assert os.path.samefile(out / "checkpoint.pt", a["path"])

@@ -112,6 +112,13 @@ def main():
         if args.arm:
             record = archive_arm(root, args.arm, runs[args.arm])
             print(json.dumps(record))
+            if args.arm == "ucf":
+                storage = root / "paired100" / "storage"
+                if (storage / "models_released.json").exists():
+                    # UCF has made its last atomic save. Rebalance only
+                    # verified idle archives before the data-volume writer runs.
+                    subprocess.run([sys.executable, str(storage / "paired100_storage.py"),
+                                    "reserve", "grpo", "--target", "35", "--idle-floor", "7"], check=True)
             return
         records = {arm: archive_arm(root, arm, runs[arm]) for arm in ARMS}
         paired = report_dir / 'paired_export_0100.json'
