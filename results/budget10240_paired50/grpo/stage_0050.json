@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "steps": 50,
+  "continuation_updates": 34,
+  "initial_step": 16,
+  "final_test_used": false,
+  "checkpoint_retained": true,
+  "metrics_sha256": "85ea191f8e63851233e03dc2e7d7c29f07a04d5c4ac5b6c4dbbb8f9bf7822e03",
+  "validation_sha256": {
+    "16": "30e6de4e27a847b0d00829db2cac3788462785e3b1e809a676a114b5a6f5674c",
+    "25": "1a72de318aaa55b3557f3be545123e1fde1bc4c57fc7b72c59aabc0f2c2e5388",
+    "50": "d501836421e69fb3d197fa1eec5be4517a39da0ee140e2d3beda068dc57db901"
+  }
+}

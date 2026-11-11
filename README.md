@@ -4,7 +4,7 @@ Development branch, 2026-11-10. This branch does not replace the collaborator re
 
 ## Current status
 
-**Latest matched validation (2026-11-11, Beijing):** at total step 25 (nine new, no-SFT updates from the same RL checkpoint), matched GRPO reached **22.00%** success and **45%** pass@4, versus **15.75%** and **32%** for UCF. UCF had fewer token-limit terminations (13.50% vs 18.25%), but used 1.16× the generated tokens and 1.89× the recorded training-step time. Both improved over the shared start (10.75% success). The fixed protocols continue to the next paired review at 50; no 400-step promotion or final test. [Raw outcomes, paired uncertainty and resource accounting](results/budget10240_paired25/README.md).
+At total step 50 on November 12, matched GRPO solved **253/400 (63.25%)** fixed validation trajectories and uniform UCF solved **216/400 (54.00%)**. Pass@4 was 83% and 80% respectively. Across the 34 updates since their shared step-16 checkpoint, UCF consumed 1.27× the generated tokens and 2.09× the recorded training-step time. The user authorized 50 further updates per arm starting from each arm’s own step-50 checkpoint, in the order UCF then GRPO, with fixed validation at total step 100. The final test remains sealed. [Paired results and uncertainty](results/budget10240_paired50/README.md) · [Bounded continuation plan](reports/budget10240/paired100/bounded_plan.json) · [Verified restart hashes](reports/budget10240/paired100/anchors50.json)
 
 **2026-11-10, 10240-token exploratory revision:** the user explicitly requested a larger **whole-trajectory** generated-token budget after severe truncation. The 4096-token UCF run completed and checkpointed step16; the old wait-for-25 queue is superseded. On the same step16 checkpoint and eight training questions (32 trajectories), increasing the budget from4096 to10240 reduced token-limit terminations from25 to2 and increased successes from1 to3. This small sampling comparison is not a training or final-test result. See [the budget diagnostic and continuation protocol](reports/budget10240/README.md).
 
@@ -66,7 +66,7 @@ Both methods terminate a turn at the first complete action block at a sampled-to
 - `diagnostics/scoped_inference.py`, `diagnostics/train_scoped.py`: admitted numerical protocol shared by both new arms.
 - `configs_scoped/`: exact server-path configurations; adapt locations elsewhere and verify dataset hashes.
 - `control/v3_manager.py`, `reports/v3_plan_scoped_prepared.json`: hash-bound source/config admission, queue/GPU locks, resumable checkpoints and stage boundaries.
-- `reports/budget10240/plan.json`: current admitted continuation plan; `reports/fastscan_resume/plan.json` remains the superseded4096 plan.
+- The [bounded continuation plan](reports/budget10240/paired100/bounded_plan.json) ends at total step 100. The [original budget plan](reports/budget10240/plan.json) records the parent settings.
 - `code/token_boundaries.py`, `diagnostics/check_prefix_scan.py`: exact boundary screening and old/new replay proof.
 - `control/review_pilot.py`: CPU fixed-validation review; never opens final/supplemental test data.
 - `reports/scoped_gpu/`: technical receipts, sampling diagnostics and preserved evidence.

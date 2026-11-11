@@ -1,0 +1,667 @@
+{
+  "through": 50,
+  "run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42",
+  "counts": {
+    "selected": 4441,
+    "feasible_pre_action": 2931,
+    "all_originals_failed": 1735,
+    "all_failed_and_infeasible": 970,
+    "with_cf": 4441,
+    "outcome_flip": 662,
+    "original_failure_cf_success": 248,
+    "zero_advantage_on_both_rows": 2023,
+    "cf_token_partition_parser_disagreement": 1259,
+    "both_execute": 4422,
+    "same_next_board": 1341,
+    "different_next_board": 3081,
+    "flip_despite_same_next_board": 199,
+    "at_least_one_action_not_executed": 19
+  },
+  "by_step": [
+    {
+      "step": 17,
+      "counts": {
+        "selected": 121,
+        "feasible_pre_action": 67,
+        "all_originals_failed": 81,
+        "all_failed_and_infeasible": 44,
+        "with_cf": 121,
+        "outcome_flip": 16,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 79,
+        "cf_token_partition_parser_disagreement": 18,
+        "both_execute": 121,
+        "same_next_board": 17,
+        "different_next_board": 104,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 18,
+      "counts": {
+        "selected": 139,
+        "feasible_pre_action": 70,
+        "all_originals_failed": 109,
+        "all_failed_and_infeasible": 62,
+        "with_cf": 139,
+        "outcome_flip": 10,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 108,
+        "cf_token_partition_parser_disagreement": 26,
+        "both_execute": 138,
+        "same_next_board": 27,
+        "different_next_board": 111,
+        "flip_despite_same_next_board": 3,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 19,
+      "counts": {
+        "selected": 127,
+        "feasible_pre_action": 52,
+        "all_originals_failed": 98,
+        "all_failed_and_infeasible": 68,
+        "with_cf": 127,
+        "outcome_flip": 6,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 97,
+        "cf_token_partition_parser_disagreement": 23,
+        "both_execute": 126,
+        "same_next_board": 21,
+        "different_next_board": 105,
+        "flip_despite_same_next_board": 0,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 20,
+      "counts": {
+        "selected": 128,
+        "feasible_pre_action": 66,
+        "all_originals_failed": 87,
+        "all_failed_and_infeasible": 47,
+        "with_cf": 128,
+        "outcome_flip": 11,
+        "original_failure_cf_success": 4,
+        "zero_advantage_on_both_rows": 85,
+        "cf_token_partition_parser_disagreement": 25,
+        "both_execute": 128,
+        "same_next_board": 23,
+        "different_next_board": 105,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 21,
+      "counts": {
+        "selected": 125,
+        "feasible_pre_action": 53,
+        "all_originals_failed": 95,
+        "all_failed_and_infeasible": 64,
+        "with_cf": 125,
+        "outcome_flip": 5,
+        "original_failure_cf_success": 2,
+        "zero_advantage_on_both_rows": 96,
+        "cf_token_partition_parser_disagreement": 23,
+        "both_execute": 125,
+        "same_next_board": 22,
+        "different_next_board": 103,
+        "flip_despite_same_next_board": 0
+      }
+    },
+    {
+      "step": 22,
+      "counts": {
+        "selected": 124,
+        "feasible_pre_action": 71,
+        "all_originals_failed": 74,
+        "all_failed_and_infeasible": 42,
+        "with_cf": 124,
+        "outcome_flip": 14,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 73,
+        "cf_token_partition_parser_disagreement": 25,
+        "both_execute": 124,
+        "same_next_board": 19,
+        "different_next_board": 105,
+        "flip_despite_same_next_board": 7
+      }
+    },
+    {
+      "step": 23,
+      "counts": {
+        "selected": 121,
+        "feasible_pre_action": 73,
+        "all_originals_failed": 59,
+        "all_failed_and_infeasible": 34,
+        "with_cf": 121,
+        "outcome_flip": 20,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 56,
+        "cf_token_partition_parser_disagreement": 26,
+        "both_execute": 120,
+        "same_next_board": 25,
+        "different_next_board": 95,
+        "flip_despite_same_next_board": 4,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 24,
+      "counts": {
+        "selected": 118,
+        "feasible_pre_action": 69,
+        "all_originals_failed": 85,
+        "all_failed_and_infeasible": 46,
+        "with_cf": 118,
+        "outcome_flip": 11,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 84,
+        "cf_token_partition_parser_disagreement": 27,
+        "both_execute": 118,
+        "same_next_board": 28,
+        "different_next_board": 90,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 25,
+      "counts": {
+        "selected": 155,
+        "feasible_pre_action": 82,
+        "all_originals_failed": 94,
+        "all_failed_and_infeasible": 54,
+        "with_cf": 155,
+        "outcome_flip": 15,
+        "original_failure_cf_success": 8,
+        "zero_advantage_on_both_rows": 93,
+        "cf_token_partition_parser_disagreement": 40,
+        "both_execute": 155,
+        "same_next_board": 38,
+        "different_next_board": 117,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 26,
+      "counts": {
+        "selected": 134,
+        "feasible_pre_action": 78,
+        "all_originals_failed": 70,
+        "all_failed_and_infeasible": 40,
+        "with_cf": 134,
+        "outcome_flip": 12,
+        "original_failure_cf_success": 7,
+        "zero_advantage_on_both_rows": 74,
+        "cf_token_partition_parser_disagreement": 31,
+        "both_execute": 133,
+        "same_next_board": 31,
+        "different_next_board": 102,
+        "flip_despite_same_next_board": 3,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 27,
+      "counts": {
+        "selected": 125,
+        "feasible_pre_action": 85,
+        "all_originals_failed": 44,
+        "all_failed_and_infeasible": 16,
+        "with_cf": 125,
+        "outcome_flip": 17,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 45,
+        "cf_token_partition_parser_disagreement": 28,
+        "both_execute": 124,
+        "same_next_board": 27,
+        "different_next_board": 97,
+        "flip_despite_same_next_board": 3,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 28,
+      "counts": {
+        "selected": 139,
+        "feasible_pre_action": 91,
+        "all_originals_failed": 49,
+        "all_failed_and_infeasible": 26,
+        "with_cf": 139,
+        "outcome_flip": 14,
+        "original_failure_cf_success": 8,
+        "zero_advantage_on_both_rows": 47,
+        "cf_token_partition_parser_disagreement": 39,
+        "both_execute": 139,
+        "same_next_board": 39,
+        "different_next_board": 100,
+        "flip_despite_same_next_board": 3
+      }
+    },
+    {
+      "step": 29,
+      "counts": {
+        "selected": 134,
+        "feasible_pre_action": 104,
+        "all_originals_failed": 45,
+        "all_failed_and_infeasible": 18,
+        "with_cf": 134,
+        "outcome_flip": 29,
+        "original_failure_cf_success": 13,
+        "zero_advantage_on_both_rows": 48,
+        "cf_token_partition_parser_disagreement": 37,
+        "both_execute": 132,
+        "same_next_board": 43,
+        "different_next_board": 89,
+        "flip_despite_same_next_board": 10,
+        "at_least_one_action_not_executed": 2
+      }
+    },
+    {
+      "step": 30,
+      "counts": {
+        "selected": 127,
+        "feasible_pre_action": 87,
+        "all_originals_failed": 61,
+        "all_failed_and_infeasible": 24,
+        "with_cf": 127,
+        "outcome_flip": 18,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 62,
+        "cf_token_partition_parser_disagreement": 39,
+        "both_execute": 126,
+        "same_next_board": 46,
+        "different_next_board": 80,
+        "flip_despite_same_next_board": 6,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 31,
+      "counts": {
+        "selected": 126,
+        "feasible_pre_action": 92,
+        "all_originals_failed": 58,
+        "all_failed_and_infeasible": 27,
+        "with_cf": 126,
+        "outcome_flip": 21,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 61,
+        "cf_token_partition_parser_disagreement": 37,
+        "both_execute": 126,
+        "same_next_board": 46,
+        "different_next_board": 80,
+        "flip_despite_same_next_board": 8
+      }
+    },
+    {
+      "step": 32,
+      "counts": {
+        "selected": 129,
+        "feasible_pre_action": 94,
+        "all_originals_failed": 43,
+        "all_failed_and_infeasible": 19,
+        "with_cf": 129,
+        "outcome_flip": 27,
+        "original_failure_cf_success": 14,
+        "zero_advantage_on_both_rows": 44,
+        "cf_token_partition_parser_disagreement": 39,
+        "both_execute": 128,
+        "same_next_board": 46,
+        "different_next_board": 82,
+        "flip_despite_same_next_board": 8,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 33,
+      "counts": {
+        "selected": 132,
+        "feasible_pre_action": 93,
+        "all_originals_failed": 36,
+        "all_failed_and_infeasible": 19,
+        "with_cf": 132,
+        "outcome_flip": 35,
+        "original_failure_cf_success": 7,
+        "zero_advantage_on_both_rows": 39,
+        "cf_token_partition_parser_disagreement": 48,
+        "both_execute": 131,
+        "same_next_board": 47,
+        "different_next_board": 84,
+        "flip_despite_same_next_board": 12,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 34,
+      "counts": {
+        "selected": 150,
+        "feasible_pre_action": 112,
+        "all_originals_failed": 40,
+        "all_failed_and_infeasible": 15,
+        "with_cf": 150,
+        "outcome_flip": 32,
+        "original_failure_cf_success": 12,
+        "zero_advantage_on_both_rows": 45,
+        "cf_token_partition_parser_disagreement": 42,
+        "both_execute": 150,
+        "same_next_board": 47,
+        "different_next_board": 103,
+        "flip_despite_same_next_board": 9
+      }
+    },
+    {
+      "step": 35,
+      "counts": {
+        "selected": 118,
+        "feasible_pre_action": 73,
+        "all_originals_failed": 46,
+        "all_failed_and_infeasible": 29,
+        "with_cf": 118,
+        "outcome_flip": 22,
+        "original_failure_cf_success": 10,
+        "zero_advantage_on_both_rows": 52,
+        "cf_token_partition_parser_disagreement": 37,
+        "both_execute": 118,
+        "same_next_board": 45,
+        "different_next_board": 73,
+        "flip_despite_same_next_board": 11
+      }
+    },
+    {
+      "step": 36,
+      "counts": {
+        "selected": 138,
+        "feasible_pre_action": 88,
+        "all_originals_failed": 39,
+        "all_failed_and_infeasible": 25,
+        "with_cf": 138,
+        "outcome_flip": 19,
+        "original_failure_cf_success": 7,
+        "zero_advantage_on_both_rows": 43,
+        "cf_token_partition_parser_disagreement": 37,
+        "both_execute": 138,
+        "same_next_board": 42,
+        "different_next_board": 96,
+        "flip_despite_same_next_board": 9
+      }
+    },
+    {
+      "step": 37,
+      "counts": {
+        "selected": 130,
+        "feasible_pre_action": 78,
+        "all_originals_failed": 41,
+        "all_failed_and_infeasible": 24,
+        "with_cf": 130,
+        "outcome_flip": 19,
+        "original_failure_cf_success": 9,
+        "zero_advantage_on_both_rows": 45,
+        "cf_token_partition_parser_disagreement": 39,
+        "both_execute": 130,
+        "same_next_board": 39,
+        "different_next_board": 91,
+        "flip_despite_same_next_board": 6
+      }
+    },
+    {
+      "step": 38,
+      "counts": {
+        "selected": 134,
+        "feasible_pre_action": 96,
+        "all_originals_failed": 25,
+        "all_failed_and_infeasible": 20,
+        "with_cf": 134,
+        "outcome_flip": 16,
+        "original_failure_cf_success": 8,
+        "zero_advantage_on_both_rows": 43,
+        "cf_token_partition_parser_disagreement": 37,
+        "both_execute": 134,
+        "same_next_board": 41,
+        "different_next_board": 93,
+        "flip_despite_same_next_board": 6
+      }
+    },
+    {
+      "step": 39,
+      "counts": {
+        "selected": 126,
+        "feasible_pre_action": 82,
+        "all_originals_failed": 42,
+        "all_failed_and_infeasible": 22,
+        "with_cf": 126,
+        "outcome_flip": 18,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 50,
+        "cf_token_partition_parser_disagreement": 43,
+        "both_execute": 125,
+        "same_next_board": 46,
+        "different_next_board": 79,
+        "flip_despite_same_next_board": 4,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 40,
+      "counts": {
+        "selected": 147,
+        "feasible_pre_action": 99,
+        "all_originals_failed": 33,
+        "all_failed_and_infeasible": 22,
+        "with_cf": 147,
+        "outcome_flip": 28,
+        "original_failure_cf_success": 13,
+        "zero_advantage_on_both_rows": 44,
+        "cf_token_partition_parser_disagreement": 43,
+        "both_execute": 147,
+        "same_next_board": 46,
+        "different_next_board": 101,
+        "flip_despite_same_next_board": 7
+      }
+    },
+    {
+      "step": 41,
+      "counts": {
+        "selected": 120,
+        "feasible_pre_action": 66,
+        "all_originals_failed": 54,
+        "all_failed_and_infeasible": 34,
+        "with_cf": 120,
+        "outcome_flip": 15,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 64,
+        "cf_token_partition_parser_disagreement": 38,
+        "both_execute": 120,
+        "same_next_board": 43,
+        "different_next_board": 77,
+        "flip_despite_same_next_board": 5
+      }
+    },
+    {
+      "step": 42,
+      "counts": {
+        "selected": 132,
+        "feasible_pre_action": 99,
+        "all_originals_failed": 36,
+        "all_failed_and_infeasible": 19,
+        "with_cf": 132,
+        "outcome_flip": 21,
+        "original_failure_cf_success": 6,
+        "zero_advantage_on_both_rows": 40,
+        "cf_token_partition_parser_disagreement": 37,
+        "both_execute": 131,
+        "same_next_board": 49,
+        "different_next_board": 82,
+        "flip_despite_same_next_board": 6,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 43,
+      "counts": {
+        "selected": 123,
+        "feasible_pre_action": 87,
+        "all_originals_failed": 31,
+        "all_failed_and_infeasible": 14,
+        "with_cf": 123,
+        "outcome_flip": 27,
+        "original_failure_cf_success": 8,
+        "zero_advantage_on_both_rows": 50,
+        "cf_token_partition_parser_disagreement": 46,
+        "both_execute": 123,
+        "same_next_board": 49,
+        "different_next_board": 74,
+        "flip_despite_same_next_board": 7
+      }
+    },
+    {
+      "step": 44,
+      "counts": {
+        "selected": 124,
+        "feasible_pre_action": 85,
+        "all_originals_failed": 21,
+        "all_failed_and_infeasible": 14,
+        "with_cf": 124,
+        "outcome_flip": 20,
+        "original_failure_cf_success": 7,
+        "zero_advantage_on_both_rows": 39,
+        "cf_token_partition_parser_disagreement": 41,
+        "both_execute": 124,
+        "same_next_board": 44,
+        "different_next_board": 80,
+        "flip_despite_same_next_board": 4
+      }
+    },
+    {
+      "step": 45,
+      "counts": {
+        "selected": 129,
+        "feasible_pre_action": 100,
+        "all_originals_failed": 19,
+        "all_failed_and_infeasible": 15,
+        "with_cf": 129,
+        "outcome_flip": 24,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 49,
+        "cf_token_partition_parser_disagreement": 40,
+        "both_execute": 129,
+        "same_next_board": 41,
+        "different_next_board": 88,
+        "flip_despite_same_next_board": 7
+      }
+    },
+    {
+      "step": 46,
+      "counts": {
+        "selected": 135,
+        "feasible_pre_action": 100,
+        "all_originals_failed": 38,
+        "all_failed_and_infeasible": 24,
+        "with_cf": 135,
+        "outcome_flip": 19,
+        "original_failure_cf_success": 7,
+        "zero_advantage_on_both_rows": 61,
+        "cf_token_partition_parser_disagreement": 45,
+        "both_execute": 133,
+        "same_next_board": 49,
+        "different_next_board": 84,
+        "flip_despite_same_next_board": 4,
+        "at_least_one_action_not_executed": 2
+      }
+    },
+    {
+      "step": 47,
+      "counts": {
+        "selected": 135,
+        "feasible_pre_action": 107,
+        "all_originals_failed": 25,
+        "all_failed_and_infeasible": 15,
+        "with_cf": 135,
+        "outcome_flip": 25,
+        "original_failure_cf_success": 9,
+        "zero_advantage_on_both_rows": 51,
+        "cf_token_partition_parser_disagreement": 56,
+        "both_execute": 133,
+        "same_next_board": 53,
+        "different_next_board": 80,
+        "flip_despite_same_next_board": 10,
+        "at_least_one_action_not_executed": 2
+      }
+    },
+    {
+      "step": 48,
+      "counts": {
+        "selected": 131,
+        "feasible_pre_action": 104,
+        "all_originals_failed": 18,
+        "all_failed_and_infeasible": 11,
+        "with_cf": 131,
+        "outcome_flip": 23,
+        "original_failure_cf_success": 5,
+        "zero_advantage_on_both_rows": 41,
+        "cf_token_partition_parser_disagreement": 41,
+        "both_execute": 130,
+        "same_next_board": 49,
+        "different_next_board": 81,
+        "flip_despite_same_next_board": 6,
+        "at_least_one_action_not_executed": 1
+      }
+    },
+    {
+      "step": 49,
+      "counts": {
+        "selected": 144,
+        "feasible_pre_action": 125,
+        "all_originals_failed": 19,
+        "all_failed_and_infeasible": 9,
+        "with_cf": 144,
+        "outcome_flip": 30,
+        "original_failure_cf_success": 11,
+        "zero_advantage_on_both_rows": 68,
+        "cf_token_partition_parser_disagreement": 59,
+        "both_execute": 142,
+        "same_next_board": 62,
+        "different_next_board": 80,
+        "flip_despite_same_next_board": 8,
+        "at_least_one_action_not_executed": 2
+      }
+    },
+    {
+      "step": 50,
+      "counts": {
+        "selected": 121,
+        "feasible_pre_action": 103,
+        "all_originals_failed": 20,
+        "all_failed_and_infeasible": 8,
+        "with_cf": 121,
+        "outcome_flip": 23,
+        "original_failure_cf_success": 7,
+        "zero_advantage_on_both_rows": 47,
+        "cf_token_partition_parser_disagreement": 47,
+        "both_execute": 121,
+        "same_next_board": 51,
+        "different_next_board": 70,
+        "flip_despite_same_next_board": 7
+      }
+    }
+  ],
+  "pi_cf": {
+    "all": {
+      "n": 4441,
+      "mean": 0.01828624143824608,
+      "median": 0.00031347642297655605
+    },
+    "original_failure_cf_success": {
+      "n": 248,
+      "mean": 0.04432833330240925,
+      "median": 0.000718201194465093
+    }
+  },
+  "scope": "Actual sampled forks, not all candidate nodes. A change in the first environment transition and an eventual reward flip are distinct. Stochastic tails can differ even after identical next boards. No final test or model weights were used.",
+  "sha256": {
+    "audit_budget_forks.py": "ebe13a3177855e9950a7fa544e5e012da565ba0c433c1d7afbcfa43484c4add1",
+    "sokoban_exact.py": "ff13b3d523bed182821a424df30187c1ea06d631fc3625db3e74419e777108ce",
+    "config.json": "3f33951689e0feb8c3e5fa3f87d073ab92b3cf5b1cca3a5f8714f8fb956d54c3"
+  }
+}

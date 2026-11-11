@@ -1,0 +1,343 @@
+{
+  "unix": 1794424362.8470485,
+  "run": "/data/runs/ucf_v3_budget10240_runs/V3_S_grpo_budget10240_from16_seed42",
+  "step": 50,
+  "final_test_used": false,
+  "initialization": {
+    "kind": "shared_rl_warmstart_budget_exploration",
+    "initial_step": 16,
+    "source_run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+    "source_checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+    "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73",
+    "reference_model": "/data/models/Qwen3.5-2B",
+    "task_sft": false,
+    "prior_training_method": "ucf",
+    "prior_training_steps": 16,
+    "prior_max_response_tokens": 4096,
+    "continuation_max_response_tokens": 10240,
+    "method": "grpo",
+    "not_a_fresh_raw_start_comparison": true,
+    "unix": 1794325671.9382625
+  },
+  "continuation_updates": 34,
+  "configured_reference_model_is_raw": true,
+  "initial_validation": {
+    "success_rate_pct": 10.75,
+    "pass_at_4_pct": 17.0,
+    "response_length": 2535.71,
+    "turns": 8.95,
+    "n_tasks": 100,
+    "n_trajectories": 400,
+    "invalid_action_fraction": 0.013407821229050279,
+    "terminal_counts": {
+      "turn_limit": 332,
+      "success": 43,
+      "token_limit": 25
+    },
+    "response_protocol_metrics": {
+      "turns": 3605,
+      "complete_action_blocks": 3532,
+      "boundary_token_extra_characters": 1,
+      "boundary_token_extra_fraction": 0.00028312570781426955,
+      "first_fence_not_first_complete_block_start": 34,
+      "first_fence_not_first_complete_block_fraction": 0.009626274065685165,
+      "denominator": "turns with a complete action block; pseudo training rows excluded"
+    },
+    "split": "validation",
+    "seconds": 416.31841471698135,
+    "generated_tokens": 1029405
+  },
+  "current_validation": {
+    "success_rate_pct": 63.24999999999999,
+    "pass_at_4_pct": 83.0,
+    "response_length": 4505.935,
+    "turns": 6.3025,
+    "n_tasks": 100,
+    "n_trajectories": 400,
+    "invalid_action_fraction": 0.002380007933359778,
+    "terminal_counts": {
+      "turn_limit": 97,
+      "success": 253,
+      "token_limit": 50
+    },
+    "response_protocol_metrics": {
+      "turns": 2571,
+      "complete_action_blocks": 2515,
+      "boundary_token_extra_characters": 2,
+      "boundary_token_extra_fraction": 0.0007952286282306163,
+      "first_fence_not_first_complete_block_start": 48,
+      "first_fence_not_first_complete_block_fraction": 0.019085487077534793,
+      "denominator": "turns with a complete action block; pseudo training rows excluded"
+    },
+    "split": "validation",
+    "seconds": 712.5822409859975,
+    "generated_tokens": 1957306
+  },
+  "raw_validation_sha256": {
+    "summary": "d501836421e69fb3d197fa1eec5be4517a39da0ee140e2d3beda068dc57db901",
+    "records": "41618989cff8e07e87e6a26fdd20f9f42e3c06a4ae2800922db843916878ce13"
+  },
+  "initial_validation_sha256": {
+    "summary": "30e6de4e27a847b0d00829db2cac3788462785e3b1e809a676a114b5a6f5674c",
+    "records": "b328b507a57dcdf0d21972f63cdc14ded623d960573187f8b14f413d665460f5"
+  },
+  "improvement_over_initialization": {
+    "overall": {
+      "n_tasks": 100,
+      "replicates": 10000,
+      "success": {
+        "difference_percentage_points": 52.5,
+        "percentile_95_ci_percentage_points": [
+          45.25,
+          59.75
+        ]
+      },
+      "pass4": {
+        "difference_percentage_points": 66.0,
+        "percentile_95_ci_percentage_points": [
+          56.99999999999999,
+          75.0
+        ]
+      }
+    },
+    "by_shortest_path": {
+      "1": {
+        "n_tasks": 2,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "left_success_pct": 100.0,
+        "right_success_pct": 100.0
+      },
+      "2": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 21.428571428571427,
+          "percentile_95_ci_percentage_points": [
+            -10.714285714285714,
+            57.14285714285714
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 14.285714285714285,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            42.857142857142854
+          ]
+        },
+        "left_success_pct": 92.85714285714286,
+        "right_success_pct": 71.42857142857143
+      },
+      "3": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 71.42857142857143,
+          "percentile_95_ci_percentage_points": [
+            50.0,
+            92.85714285714286
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 57.14285714285714,
+          "percentile_95_ci_percentage_points": [
+            28.57142857142857,
+            85.71428571428571
+          ]
+        },
+        "left_success_pct": 92.85714285714286,
+        "right_success_pct": 21.428571428571427
+      },
+      "4": {
+        "n_tasks": 14,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 78.57142857142857,
+          "percentile_95_ci_percentage_points": [
+            64.28571428571429,
+            91.07142857142857
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 78.57142857142857,
+          "percentile_95_ci_percentage_points": [
+            57.14285714285714,
+            100.0
+          ]
+        },
+        "left_success_pct": 89.28571428571429,
+        "right_success_pct": 10.714285714285714
+      },
+      "5": {
+        "n_tasks": 21,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 72.61904761904762,
+          "percentile_95_ci_percentage_points": [
+            61.904761904761905,
+            82.14285714285714
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 90.47619047619048,
+          "percentile_95_ci_percentage_points": [
+            76.19047619047619,
+            100.0
+          ]
+        },
+        "left_success_pct": 73.80952380952381,
+        "right_success_pct": 1.1904761904761905
+      },
+      "6": {
+        "n_tasks": 20,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 55.00000000000001,
+          "percentile_95_ci_percentage_points": [
+            41.25,
+            68.75
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 75.0,
+          "percentile_95_ci_percentage_points": [
+            55.00000000000001,
+            95.0
+          ]
+        },
+        "left_success_pct": 57.5,
+        "right_success_pct": 2.5
+      },
+      "7": {
+        "n_tasks": 12,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 50.0,
+          "percentile_95_ci_percentage_points": [
+            29.166666666666668,
+            70.83333333333334
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 75.0,
+          "percentile_95_ci_percentage_points": [
+            50.0,
+            100.0
+          ]
+        },
+        "left_success_pct": 50.0,
+        "right_success_pct": 0.0
+      },
+      "8": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 32.142857142857146,
+          "percentile_95_ci_percentage_points": [
+            17.857142857142858,
+            42.857142857142854
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 85.71428571428571,
+          "percentile_95_ci_percentage_points": [
+            57.14285714285714,
+            100.0
+          ]
+        },
+        "left_success_pct": 32.142857142857146,
+        "right_success_pct": 0.0
+      },
+      "9": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 7.142857142857142,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            21.428571428571427
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 14.285714285714285,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            42.857142857142854
+          ]
+        },
+        "left_success_pct": 7.142857142857143,
+        "right_success_pct": 0.0
+      },
+      "10": {
+        "n_tasks": 3,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "left_success_pct": 0.0,
+        "right_success_pct": 0.0
+      }
+    }
+  },
+  "finite_training": true,
+  "updates_with_nonzero_parameter_change": 34,
+  "last25_training": {
+    "loss": {
+      "mean": 8.474729408419534e-05,
+      "maximum": 0.00013063900885867952
+    },
+    "kl": {
+      "mean": 0.08075228473404422,
+      "maximum": 0.10169043354107998
+    },
+    "grad_norm": {
+      "mean": 0.33665033608675005,
+      "maximum": 0.40265877544879913
+    },
+    "step_seconds": {
+      "mean": 916.4872100680391,
+      "maximum": 1214.7306174180121
+    },
+    "max_parameter_change": {
+      "mean": 1.149522140622139e-06,
+      "maximum": 1.2797536328434944e-06
+    },
+    "success_rate": {
+      "mean": 0.51203125,
+      "maximum": 0.734375
+    },
+    "mean_response_tokens": {
+      "mean": 6285.90015625,
+      "maximum": 7742.703125
+    },
+    "mean_turns": {
+      "mean": 6.35515625,
+      "maximum": 7.1640625
+    }
+  },
+  "caveat": "Exploratory validation with repeated looks; task bootstrap intervals are descriptive, not a held-out-test claim. Baseline learning alone is not UCF gain."
+}

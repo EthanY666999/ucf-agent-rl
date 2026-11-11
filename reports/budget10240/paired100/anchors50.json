@@ -1,0 +1,38 @@
+{
+  "arms": {
+    "ucf": {
+      "path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/retained_checkpoints/step0050.pt",
+      "rolling_path": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42/checkpoint.pt",
+      "step": 50,
+      "inode": 5526484,
+      "size_bytes": 22582329065,
+      "model_tensors": 321,
+      "optimizer_parameters": 320,
+      "rng_components": [
+        "rng",
+        "torch_rng",
+        "cuda_rng",
+        "python_rng"
+      ],
+      "sha256": "8f3886e3ffbad5c4e5c55c281df0c330309c4850bc600b8788d0e9974cf10e05"
+    },
+    "grpo": {
+      "path": "/data/runs/ucf_v3_budget10240_runs/V3_S_grpo_budget10240_from16_seed42/retained_checkpoints/step0050.pt",
+      "rolling_path": "/data/runs/ucf_v3_budget10240_runs/V3_S_grpo_budget10240_from16_seed42/checkpoint.pt",
+      "step": 50,
+      "inode": 2495519,
+      "size_bytes": 22582328937,
+      "model_tensors": 321,
+      "optimizer_parameters": 320,
+      "rng_components": [
+        "rng",
+        "torch_rng",
+        "cuda_rng",
+        "python_rng"
+      ],
+      "sha256": "dbb4309eaa497e85d862d623e5283f0bc5535e28017b6e6de4377d43128a6ef8"
+    }
+  },
+  "unix": 1794426485.9751892,
+  "method": "verified full rolling checkpoint preserved with same-filesystem hardlink before first resumed write"
+}
