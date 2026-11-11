@@ -1,0 +1,345 @@
+{
+  "unix": 1794406548.8517606,
+  "run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_budget10240_from16_seed42",
+  "step": 50,
+  "final_test_used": false,
+  "initialization": {
+    "kind": "shared_rl_warmstart_budget_exploration",
+    "initial_step": 16,
+    "source_run": "/home/vipuser/ucf-v3-runs-20261110/V3_S_ucf_nosft_scoped_seed42",
+    "source_checkpoint_sha256": "a4a4ccaae75a3f9056d17b924d4184facaed7b4ae677709ddb04a0daf1338c0b",
+    "tensor_optimizer_rng_sha256": "231188e10ecb453f584bd6ecafa308777bdccbcd04552d68664661ac1b9d0d73",
+    "reference_model": "/data/models/Qwen3.5-2B",
+    "task_sft": false,
+    "prior_training_method": "ucf",
+    "prior_training_steps": 16,
+    "prior_max_response_tokens": 4096,
+    "continuation_max_response_tokens": 10240,
+    "method": "ucf",
+    "not_a_fresh_raw_start_comparison": true,
+    "unix": 1794325948.304225,
+    "imported_controller_sha256": "25fe6381dcd17d7addfb44d39ec7118da5ca985906faaec2827fe78348c61e8c",
+    "controller_note": "Historical uniform-selector boundary receipt; next selection is freshly calibrated from the new batch"
+  },
+  "continuation_updates": 34,
+  "configured_reference_model_is_raw": true,
+  "initial_validation": {
+    "success_rate_pct": 10.75,
+    "pass_at_4_pct": 17.0,
+    "response_length": 2535.71,
+    "turns": 8.95,
+    "n_tasks": 100,
+    "n_trajectories": 400,
+    "invalid_action_fraction": 0.013407821229050279,
+    "terminal_counts": {
+      "turn_limit": 332,
+      "success": 43,
+      "token_limit": 25
+    },
+    "response_protocol_metrics": {
+      "turns": 3605,
+      "complete_action_blocks": 3532,
+      "boundary_token_extra_characters": 1,
+      "boundary_token_extra_fraction": 0.00028312570781426955,
+      "first_fence_not_first_complete_block_start": 34,
+      "first_fence_not_first_complete_block_fraction": 0.009626274065685165,
+      "denominator": "turns with a complete action block; pseudo training rows excluded"
+    },
+    "split": "validation",
+    "seconds": 416.31841471698135,
+    "generated_tokens": 1029405
+  },
+  "current_validation": {
+    "success_rate_pct": 54.0,
+    "pass_at_4_pct": 80.0,
+    "response_length": 4995.91,
+    "turns": 6.88,
+    "n_tasks": 100,
+    "n_trajectories": 400,
+    "invalid_action_fraction": 0.006540697674418605,
+    "terminal_counts": {
+      "turn_limit": 130,
+      "token_limit": 54,
+      "success": 216
+    },
+    "response_protocol_metrics": {
+      "turns": 2806,
+      "complete_action_blocks": 2734,
+      "boundary_token_extra_characters": 1,
+      "boundary_token_extra_fraction": 0.000365764447695684,
+      "first_fence_not_first_complete_block_start": 182,
+      "first_fence_not_first_complete_block_fraction": 0.06656912948061448,
+      "denominator": "turns with a complete action block; pseudo training rows excluded"
+    },
+    "split": "validation",
+    "seconds": 807.3015273030032,
+    "generated_tokens": 2148814
+  },
+  "raw_validation_sha256": {
+    "summary": "98a3ea0039ef45c54e6f3f77c8970417c4206c17ceb25f093d4cd4e81b34e338",
+    "records": "6ee8b84aa5dcc18d52ea09a97ce5fd2cb74fb846f13f100c597731599bc00dbc"
+  },
+  "initial_validation_sha256": {
+    "summary": "30e6de4e27a847b0d00829db2cac3788462785e3b1e809a676a114b5a6f5674c",
+    "records": "b328b507a57dcdf0d21972f63cdc14ded623d960573187f8b14f413d665460f5"
+  },
+  "improvement_over_initialization": {
+    "overall": {
+      "n_tasks": 100,
+      "replicates": 10000,
+      "success": {
+        "difference_percentage_points": 43.25,
+        "percentile_95_ci_percentage_points": [
+          36.5,
+          50.0
+        ]
+      },
+      "pass4": {
+        "difference_percentage_points": 63.0,
+        "percentile_95_ci_percentage_points": [
+          53.0,
+          72.0
+        ]
+      }
+    },
+    "by_shortest_path": {
+      "1": {
+        "n_tasks": 2,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "left_success_pct": 100.0,
+        "right_success_pct": 100.0
+      },
+      "2": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 28.57142857142857,
+          "percentile_95_ci_percentage_points": [
+            3.571428571428571,
+            57.14285714285714
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 14.285714285714285,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            42.857142857142854
+          ]
+        },
+        "left_success_pct": 100.0,
+        "right_success_pct": 71.42857142857143
+      },
+      "3": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 64.28571428571429,
+          "percentile_95_ci_percentage_points": [
+            42.857142857142854,
+            85.71428571428571
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 57.14285714285714,
+          "percentile_95_ci_percentage_points": [
+            28.57142857142857,
+            85.71428571428571
+          ]
+        },
+        "left_success_pct": 85.71428571428571,
+        "right_success_pct": 21.428571428571427
+      },
+      "4": {
+        "n_tasks": 14,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 57.14285714285714,
+          "percentile_95_ci_percentage_points": [
+            46.42857142857143,
+            67.85714285714286
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 78.57142857142857,
+          "percentile_95_ci_percentage_points": [
+            57.14285714285714,
+            100.0
+          ]
+        },
+        "left_success_pct": 67.85714285714286,
+        "right_success_pct": 10.714285714285714
+      },
+      "5": {
+        "n_tasks": 21,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 65.47619047619048,
+          "percentile_95_ci_percentage_points": [
+            53.57142857142857,
+            77.38095238095238
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 90.47619047619048,
+          "percentile_95_ci_percentage_points": [
+            76.19047619047619,
+            100.0
+          ]
+        },
+        "left_success_pct": 66.66666666666667,
+        "right_success_pct": 1.1904761904761905
+      },
+      "6": {
+        "n_tasks": 20,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 41.25,
+          "percentile_95_ci_percentage_points": [
+            28.749999999999996,
+            53.75
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 70.0,
+          "percentile_95_ci_percentage_points": [
+            50.0,
+            90.0
+          ]
+        },
+        "left_success_pct": 43.75,
+        "right_success_pct": 2.5
+      },
+      "7": {
+        "n_tasks": 12,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 33.33333333333333,
+          "percentile_95_ci_percentage_points": [
+            16.666666666666664,
+            52.083333333333336
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 66.66666666666666,
+          "percentile_95_ci_percentage_points": [
+            41.66666666666667,
+            91.66666666666666
+          ]
+        },
+        "left_success_pct": 33.333333333333336,
+        "right_success_pct": 0.0
+      },
+      "8": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 32.142857142857146,
+          "percentile_95_ci_percentage_points": [
+            10.714285714285714,
+            53.57142857142857
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 71.42857142857143,
+          "percentile_95_ci_percentage_points": [
+            28.57142857142857,
+            100.0
+          ]
+        },
+        "left_success_pct": 32.142857142857146,
+        "right_success_pct": 0.0
+      },
+      "9": {
+        "n_tasks": 7,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 7.142857142857142,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            21.428571428571427
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 14.285714285714285,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            42.857142857142854
+          ]
+        },
+        "left_success_pct": 7.142857142857143,
+        "right_success_pct": 0.0
+      },
+      "10": {
+        "n_tasks": 3,
+        "replicates": 10000,
+        "success": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "pass4": {
+          "difference_percentage_points": 0.0,
+          "percentile_95_ci_percentage_points": [
+            0.0,
+            0.0
+          ]
+        },
+        "left_success_pct": 0.0,
+        "right_success_pct": 0.0
+      }
+    }
+  },
+  "finite_training": true,
+  "updates_with_nonzero_parameter_change": 34,
+  "last25_training": {
+    "loss": {
+      "mean": 0.0032656983205891273,
+      "maximum": 0.01953135541109107
+    },
+    "kl": {
+      "mean": 0.07890929670934241,
+      "maximum": 0.1052350098855749
+    },
+    "grad_norm": {
+      "mean": 0.3746077686548233,
+      "maximum": 0.45210492610931396
+    },
+    "step_seconds": {
+      "mean": 1975.1450389913166,
+      "maximum": 3013.146294735023
+    },
+    "max_parameter_change": {
+      "mean": 1.177991507574916e-06,
+      "maximum": 1.2870877981185913e-06
+    },
+    "success_rate": {
+      "mean": 0.466875,
+      "maximum": 0.74609375
+    },
+    "mean_response_tokens": {
+      "mean": 6458.4425,
+      "maximum": 7823.40625
+    },
+    "mean_turns": {
+      "mean": 6.65765625,
+      "maximum": 7.68359375
+    }
+  },
+  "caveat": "Exploratory validation with repeated looks; task bootstrap intervals are descriptive, not a held-out-test claim. Baseline learning alone is not UCF gain."
+}

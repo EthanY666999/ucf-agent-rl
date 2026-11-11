@@ -1,0 +1,10 @@
+{
+  "path": "/home/vipuser/ucf-v3-anchors-20261111/uniform_ucf_step0030.pt.zst",
+  "sha256": "bb1049e946aaa34369e88aa75bb1b4095f9da2dde825a13edc9e7bf090ddf891",
+  "verified_staging_copy_removed": true,
+  "free_gib": {
+    "/home": 18.580501556396484,
+    "/data": 35.880401611328125
+  },
+  "unix": 1794400126.6187894
+}
